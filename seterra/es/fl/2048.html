@@ -1,0 +1,2973 @@
+
+
+<!DOCTYPE html >
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="twitter:image" content="../../mapimage/2048.png" /><meta name="twitter:description" content="Países francófonos: Banderas: Seterra es una plataforma de juegos de geografía gratuita, que te enseñará a ubicar ciudades y países del mundo a través de los mapas." /><meta name="twitter:url" content="https://www.geoguessr.com/seterra/es/fl/2048" /><meta name="twitter:creator" content="@seterrageo" /><meta name="twitter:site" content="@seterrageo" /><meta name="twitter:title" content="Países francófonos: Banderas" /><meta name="twitter:card" content="summary_large_image" /><meta property="og:url" content="https://www.geoguessr.com/seterra/es/fl/2048" /><meta property="og:type" content="game" /><meta property="og:description" content="Países francófonos: Banderas: Seterra es una plataforma de juegos de geografía gratuita, que te enseñará a ubicar ciudades y países del mundo a través de los mapas." /><meta name="Description" content="Países francófonos: Banderas: Seterra es una plataforma de juegos de geografía gratuita, que te enseñará a ubicar ciudades y países del mundo a través de los mapas." /><meta property="og:title" content="Países francófonos: Banderas" /><meta property="fb:app_id" content="319599044764636" /><meta property="og:image" content="../../mapimage/2048.png" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="apple-itunes-app" content="app-id=1168940059" /><title>
+	Países francófonos: Banderas - Juego de Geografía
+</title><link href="../../CSS/pagestyles.css" rel="stylesheet" type="text/css" /><link href="../../CSS/geoguessr.css" rel="stylesheet" type="text/css" /><link href="../../CSS/game_fl.css" rel="stylesheet" />
+    <script src="../../Scripts/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script src="../../Scripts/jquery.cookie.js" type="text/javascript"></script>
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" defer></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" async="" />
+    <script src="../../Scripts/game_fl.js" type="text/javascript" defer></script>
+    <script src="../../Scripts/general.js" type="text/javascript" defer></script>
+
+    
+
+<link rel="icon" href="../../favicon.ico" type="image/x-icon" />
+<script type="text/javascript" src="../../Scripts/jquery.ddslick.min.js"></script>
+<script src="../../Scripts/utils.js"></script>
+<script src="../../Scripts/highscores.js"></script>
+
+
+    
+     <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <!-- Google Tag Manager -->
+    
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-W5K3B7M');</script>    
+    
+    <!-- End Google Tag Manager -->
+
+    <script>
+        var activeUnits = [
+            'gg-seterra_sidebar_right',
+            'gg-seterra_sidebar_right_2',
+            'gg-seterra_mobile_1',
+            'gg-seterra_headerleader',
+            'gg-seterra_nvu-and-float',
+            'gg-seterra_learboard_adhesion',
+            'gg-seterra_bottom_mpu',
+            'gg-seterra_outstream_mw'
+        ];
+
+        if (window.isProUser()) {
+            activeUnits = [];
+        }
+
+        window.snigelPubConf = {
+            "adengine": {
+                "activeAdUnits": activeUnits
+            }
+        };
+    </script>
+
+    
+        <script async data-cfasync="false" src="https://cdn.snigelweb.com/adengine/geoguessr.com/loader.js" type="text/javascript"></script>
+    <link rel="canonical" href="2048.html" /></head>
+
+<body>
+    <div id="anicircle" class="acircle" style="display: none;"></div>    
+    <script type="text/javascript">
+
+        var gameID = "2048";
+        var _IDs = 'AREA_BELGIUM,AREA_BENIN,AREA_BURKINAFASO,AREA_BURUNDI,AREA_CAMEROON,AREA_CANADA,AREA_CHAD,AREA_COMOROS,AREA_DEMOCRATICREPUBLICOFTHECONGO,AREA_DJIBOUTI,AREA_EQUATORIALGUINEA,AREA_FRANCE,AREA_GABON,AREA_GUINEA,AREA_HAITI,AREA_LUXEMBURG,AREA_MADAGASCAR,AREA_MALI,AREA_NIGER,AREA_RWANDA,AREA_SENEGAL,AREA_SEYCHELLES,AREA_SWITZERLAND,AREA_THECENTRALAFRICANREPUBLIC,AREA_THECONGO,AREA_THEIVORYCOAST,AREA_TOGO,CITY_MONACO,CITY_VANUATU'; //Do not remove
+        var strTranslations = "AREA_BELGIUM,Bélgica,AREA_BENIN,Benín,AREA_BURKINAFASO,Burkina Faso,AREA_BURUNDI,Burundi,AREA_CAMEROON,Camerún,AREA_CANADA,Canadá,AREA_CHAD,Chad,AREA_COMOROS,Comoras,AREA_DEMOCRATICREPUBLICOFTHECONGO,la República Democrática del Congo,AREA_DJIBOUTI,Yibuti,AREA_EQUATORIALGUINEA,Guinea Ecuatorial,AREA_FRANCE,Francia,AREA_GABON,Gabón,AREA_GUINEA,Guinea,AREA_HAITI,Haití,AREA_LUXEMBURG,Luxemburgo,AREA_MADAGASCAR,Madagascar,AREA_MALI,Malí,AREA_NIGER,Níger,AREA_RWANDA,Ruanda,AREA_SENEGAL,Senegal,AREA_SEYCHELLES,Seychelles,AREA_SWITZERLAND,Suiza,AREA_THECENTRALAFRICANREPUBLIC,la República Centroafricana,AREA_THECONGO,la República del Congo,AREA_THEIVORYCOAST,Costa de Marfil,AREA_TOGO,Togo,CITY_MONACO,Mónaco,CITY_VANUATU,Vanuatu,LANG_9,Haga clic en";
+        var strInfoTranslations = "INFO_AREA_BELGIUM,\u003cb\u003eBélgica\u003c/b\u003e \u0026nbsp; Capital: BruselasINFO_AREA_BENIN,\u003cb\u003eBenín\u003c/b\u003e \u0026nbsp; Capital: Porto NovoINFO_AREA_BURKINAFASO,\u003cb\u003eBurkina Faso\u003c/b\u003e \u0026nbsp; Capital: UagadugúINFO_AREA_BURUNDI,\u003cb\u003eBurundi\u003c/b\u003e \u0026nbsp; Capital: GitegaINFO_AREA_CAMEROON,\u003cb\u003eCamerún\u003c/b\u003e \u0026nbsp; Capital: YaundéINFO_AREA_CANADA,\u003cb\u003eCanadá\u003c/b\u003e \u0026nbsp; Capital: OttawaINFO_AREA_CHAD,\u003cb\u003eChad\u003c/b\u003e \u0026nbsp; Capital: YamenaINFO_AREA_COMOROS,\u003cb\u003eComoras\u003c/b\u003e \u0026nbsp; Capital: MoroniINFO_AREA_DEMOCRATICREPUBLICOFTHECONGO,\u003cb\u003ela República Democrática del Congo\u003c/b\u003e \u0026nbsp; Capital: KinsasaINFO_AREA_DJIBOUTI,\u003cb\u003eYibuti\u003c/b\u003e \u0026nbsp; Capital: YibutiINFO_AREA_EQUATORIALGUINEA,\u003cb\u003eGuinea Ecuatorial\u003c/b\u003e \u0026nbsp; Capital: MalaboINFO_AREA_FRANCE,\u003cb\u003eFrancia\u003c/b\u003e \u0026nbsp; Capital: ParísINFO_AREA_GABON,\u003cb\u003eGabón\u003c/b\u003e \u0026nbsp; Capital: LibrevilleINFO_AREA_GUINEA,\u003cb\u003eGuinea \u003c/b\u003e \u0026nbsp; Capital: ConakryINFO_AREA_HAITI,\u003cb\u003eHaití\u003c/b\u003e \u0026nbsp; Capital: Puerto PríncipeINFO_AREA_LUXEMBURG,\u003cb\u003eLuxemburgo\u003c/b\u003e \u0026nbsp; Capital: LuxemburgoINFO_AREA_MADAGASCAR,\u003cb\u003eMadagascar\u003c/b\u003e \u0026nbsp; Capital: AntananarivoINFO_AREA_MALI,\u003cb\u003eMalí\u003c/b\u003e \u0026nbsp; Capital: BamakoINFO_AREA_NIGER,\u003cb\u003eNíger\u003c/b\u003e \u0026nbsp; Capital: NiameyINFO_AREA_RWANDA,\u003cb\u003eRuanda\u003c/b\u003e \u0026nbsp; Capital: KigaliINFO_AREA_SENEGAL,\u003cb\u003eSenegal\u003c/b\u003e \u0026nbsp; Capital: DakarINFO_AREA_SEYCHELLES,\u003cb\u003eSeychelles\u003c/b\u003e \u0026nbsp; Capital: VictoriaINFO_AREA_SWITZERLAND,\u003cb\u003eSuiza\u003c/b\u003e \u0026nbsp; Capital: BernaINFO_AREA_THECENTRALAFRICANREPUBLIC,\u003cb\u003ela República Centroafricana\u003c/b\u003e \u0026nbsp; Capital: BanguiINFO_AREA_THECONGO,\u003cb\u003ela República del Congo\u003c/b\u003e \u0026nbsp; Capital: BrazzavilleINFO_AREA_THEIVORYCOAST,\u003cb\u003eCosta de Marfil\u003c/b\u003e \u0026nbsp; Capital: YamusukroINFO_AREA_TOGO,\u003cb\u003eTogo\u003c/b\u003e \u0026nbsp; Capital: LoméINFO_CITY_MONACO,\u003cb\u003eMónaco\u003c/b\u003e \u0026nbsp; Capital: MónacoINFO_CITY_VANUATU,\u003cb\u003eVanuatu\u003c/b\u003e \u0026nbsp; Capital: Port Vila";
+        //  alert(strTranslations);
+        var clickOnText = 'Haga clic en';
+        var lang = "es";
+        var customID = '';
+        var isChallenge = false;
+        var anonymizeNames = false;
+
+        var extraHeight = 0;
+        var inputLabel = "Escribe el nombre de la ubicación resaltada en el cuadro de texto.";
+        var submitValue = "Verificar";
+        var skipValue = "Saltar";
+        var hintValue = "¿Te doy una pista?";
+        var hintLabel = "Pista";
+
+        var txtScore1 = '¡Bien hecho!';
+        var txtScore2 = 'Tu resultado';
+
+        var gameName2 = 'Países francófonos: Banderas';
+        var txtScore3 = 'Mi resultado:';
+        var c = '';
+        var btnText = 'OK';
+
+
+    </script>
+    <form name="form1" method="post" action="2048.html" id="form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJNDIxNzgzMzI0ZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQUJY2JTb3VuZE9u8zuAHTPeKf8JYe+jV3sStsgSeKMtb1yeZqD4pAlUTh4=" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="7FC9D3CD" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAlo1nPJXD41Ms+xTY3AIXdE21fjV6CxyAT8g1rw8Gs3qxpO4tmnfm1OcYJrbFIXXTPs/GYJiqeQRLKH8pjplKg6KXJ487ED6Wa4gor5+nELBXwPj4CwZN+C5+0a4v+N+SlTpdYcFC5k6QkkYG+qYivmei48wRnMCwbi62U9rmLm4ckC4EBQMNljz+UG/jDbRdPiCDb5nuq2kDWc0K8GFNBwZik88WBJks2R6CMjJ39Rcw==" />
+        <div>
+            
+<script async src="https://cse.google.com/cse.js?cx=1110b678f1dd23364"></script>
+<script>
+    function getCookie(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+
+    function hasDarkMode(url) {
+        var res = true
+        if (url.indexOf("terms.aspx") != -1) {
+            res = false
+        }
+        if (url.indexOf("privacy.aspx") != -1) {
+            res = false
+        }
+        if (url.indexOf("searchresults.aspx") != -1) {
+            res = false
+        }
+
+        return res
+    }
+
+    var darkmode = getCookie("darkmode");
+
+    if (hasDarkMode(window.location.href) == true) {
+        if (darkmode == "1" && (window.location.href.indexOf("darkmode") == -1)) {
+            document.write('<link rel="stylesheet" type="text/css" href="/seterra/css/darkmode.css" />');
+            
+        }
+        if (window.location.href.indexOf("noborders=1") != -1) {
+            document.write('<link rel="stylesheet" type="text/css" href="/seterra/css/noborders.css" />');
+        }
+
+        if (window.location.href.indexOf("darkmap=1") != -1) {
+            document.write('<link rel="stylesheet" type="text/css" href="/seterra/css/darkmap.css" />');
+        }
+    }
+
+    $(document).ready(function () {
+        if (window.location.href.indexOf("darkmode=0") != -1) {
+            $.cookie('darkmode', '0', { path: '/', expires: 14 });
+        }
+        if ($.cookie('darkmode') == "1" || window.location.href.indexOf("darkmode=1") != -1) {
+            $('#chkDarkMode').prop('checked', true);
+        }
+        setTimeout(function () {
+            if (document.getElementById("gsc-i-id1")) {
+                document.getElementById("gsc-i-id1").setAttribute("placeholder", "Search Seterra")
+            }
+        }, 1000);
+
+    })
+</script>
+
+
+ 
+<script>
+    $(document).ready(function () {
+        if (!!$.cookie('pledges')) {
+            $("#patreon-banner").show();
+        }
+    });
+</script>
+
+<style>#patreon-banner
+{
+    border-color: rgba(255, 216, 0, 0.5);
+    background-color: rgba(255, 216, 0, 0.2);
+}
+
+.patreon-banner-content {
+    margin:auto;
+    padding: 0.5rem;
+    max-width:1250px;
+}
+</style>
+
+<div id="patreon-banner" style="display:none;">
+    <div class="patreon-banner-content">
+        <p>
+            Patreon will be replaced with our GeoGuessr subscription.
+
+        <a href="../../patreon.html">Read more about the change here.</a>
+        </p>
+    </div>
+</div>
+ 
+
+<div id="header">
+    <div id="header-content-wrapper">
+        <div id="logo">
+            <a href="../../index.html">
+                <img src="../../images/system/gg-seterra-logo.png" class="wordmark" alt="Seterra logo"/>
+            </a>
+        </div>
+        <div id="divLanguageDropDown"></div>
+        <div class="spacer">
+            <div style="padding-top: 70px; padding-left: 20px; color: #888888;">
+                <input type="checkbox" id="chkDarkMode" onclick="loadDarkMode()" />
+                <label for="chkDarkMode">🌙 Dark Mode</label>
+            </div>
+
+            <div style="padding-top: 70px; padding-left: 20px; color: #888888; display: none;">
+                &nbsp;
+            </div>
+
+        </div>
+
+
+        <div id="socialmedia">
+
+            <div class="searchbox">
+                <div class="gcse-searchbox-only" data-resultsurl="/seterra/searchresults.aspx" data-autocompletemaxcompletions="35"></div>
+            </div>
+            <div class="mobilemenu">
+                <div class="mobilemenucontainer" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+            <div class="login-buttons">
+                <div id="logindiv">
+                    <span id="text-login" class="mem-login">Log in:</span>
+                    <a id="header1_linkLoginPatreon" class="mem-login linkLogin linkLoginPatreon" href="https://www.patreon.com/oauth2/authorize?response_type=code&amp;scope=users%20pledges-to-me%20my-campaign&amp;client_id=3865155315c95a00e278b2c3bd3a5b66ddf2c12b8fe486317e74a0e392eb1ec3&amp;redirect_uri=https://www.geoguessr.com/seterra/memberRedirect.aspx">Patreon</a>
+                    <a id="header1_linkLogoutPatreon" class="mem-login linkLogout linkLogoutPatreon" href="../../logout2.aspx.html">Log out</a>
+                    <a id="header1_linkLoginGeoGuessr" class="mem-login linkLogin linkLoginGeoGuessr" href="../../../signin%EF%B9%96target=%EA%A4%B7seterra.html">GeoGuessr</a>
+                    <a id="header1_linkLogoutGeoGuessr" class="mem-login linkLogout linkLogoutGeoGuessr" href="../../../signout%EF%B9%96target=%EA%A4%B7seterra.html">Log out</a>
+                </div>
+                <div id="loginName"></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+<div id="header1_panMainNav_es">
+	
+    <div style="width: 100%;" class="nav-wrapper">
+        <div id="mainnav">
+            <a class="navlink" href="../../es.html">Todo</a> | <a class="navlink" href="../l/eur.html">Europa</a> | <a class="navlink" href="../l/nam.html">América del Norte</a> | <a class="navlink" href="../l/sam.html">América del Sur</a> | <a class="navlink" href="../l/afr.html">África</a> | <a class="navlink" href="../l/asi.html">Asia</a> | <a class="navlink" href="../l/aus.html">Oceania</a> | <a class="navlink" href="../l/wor.html">El Mundo</a> | <a class="navlink" href="../l/pdf%EF%B9%96img=1.html">PDF</a> | <a class="navlink" href="../../en/p/faq.html" title="Frequently Asked Questions">FAQ</a>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="mobiledropdown" style="display: none">
+    <div class="mobiledropdowninner">
+        <div id="mainnav2" style="margin-bottom: 15px;">
+        </div>
+        <div style="margin-bottom: 15px;">
+            <a id="lnkDarkModeOn" class="navlink2" href="../../index.html" onclick="$('#chkDarkMode').prop('checked', true);loadDarkMode();return false;">Dark Mode On 🌙 </a>
+            <a id="lnkDarkModeOff" class="navlink2" href="../../index.html" onclick="$('#chkDarkMode').prop('checked', false);loadDarkMode();return false;">Dark Mode Off 🌙 </a>
+            <a id="lnkMyCustomQuizzes" class="navlink2 linkLogout" href='../../GenericErrorPage%EF%B9%96aspxerrorpath=%EA%A4%B7seterra%EA%A4%B7es%EA%A4%B7myaccount.aspx.htm'>My Custom Quizzes </a>
+
+            <a class="navlink2" href="../../index.html">Change language</a>
+
+            <div id="login2">
+            </div>
+            <div id="search2">
+                        <gcse:searchbox-only resultsurl="/seterra/searchresults.aspx"></gcse:searchbox-only>
+                </div>
+        </div>
+    </div>
+</div>
+<script>
+    var fFirst = true;
+    pageLang = 'es';
+
+    if (pageLang == '') pageLang = 'en';
+    pageLang = pageLang.toLowerCase();
+
+    if (window.location.href.indexOf("searchresult") == -1) {
+        $.cookie('recentlang', pageLang, { path: '/', expires: 14 });
+    }
+
+    function myFunction(x) {
+        x.classList.toggle("change");
+        var y = document.getElementsByClassName("mobiledropdown")[0];
+
+        if (y.style.display === "none") {
+            y.style.display = "block";
+        } else {
+            y.style.display = "none";
+        }
+    }
+
+    $(document).ready(function () {
+        var strMenu = "";
+        var navLinks = document.getElementsByClassName("navlink");
+        var i = 0;
+        var currentPage = window.location.pathname;
+        for (i; i < navLinks.length; i++) {
+            var lb = navLinks[i].getAttribute("href")
+            if (lb == currentPage) {
+                navLinks[i].classList.add("active")
+            }
+            strMenu = strMenu + navLinks[i].outerHTML;
+
+        }
+
+        $("#mainnav2").html(strMenu);
+        if (document.documentElement.clientWidth <= 820) {
+            $("#logindiv").appendTo("#login2")
+        };
+
+        var ddBasic = [
+        { text: "Afrikaans", imageSrc: "/seterra/images/system/flags/langlistflags/flag-af.png", value: "af", selected: false}, { text: "Čeština (Czech)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-cs.png", value: "cs", selected: false}, { text: "Català (Catalan)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ca.png", value: "ca", selected: false}, { text: "Dansk (Danish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-da.png", value: "da", selected: false}, { text: "Deutsch (German)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-de.png", value: "de", selected: false}, { text: "English", imageSrc: "/seterra/images/system/flags/langlistflags/flag-en.png", value: "en", selected: false}, { text: "Eesti (Estonian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-et.png", value: "et", selected: false}, { text: "Español (Spanish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-es.png", value: "es", selected: false}, { text: "Français (French)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-fr.png", value: "fr", selected: false}, { text: "Ελληνικά (Greek)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-el.png", value: "el", selected: false}, { text: "Gaeilge (Irish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ga.png", value: "ga", selected: false}, { text: "Hrvatski (Croatian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-hr.png", value: "hr", selected: false}, { text: "Bahasa Indonesia (Indonesian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-id.png", value: "id", selected: false}, { text: "Íslenska (Icelandic)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-is.png", value: "is", selected: false}, { text: "Italiano (Italian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-it.png", value: "it", selected: false}, { text: "Latviešu valoda (Latvian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-lv.png", value: "lv", selected: false}, { text: "Lietuvių (Lithuanian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-lt.png", value: "lt", selected: false}, { text: "Magyar (Hungarian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-hu.png", value: "hu", selected: false}, { text: "Nederlands (Dutch)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-nl.png", value: "nl", selected: false}, { text: "Norsk (Norwegian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-nb.png", value: "nb", selected: false}, { text: "Polski (Polish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-pl.png", value: "pl", selected: false}, { text: "Português (Portuguese)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-pt.png", value: "pt", selected: false}, { text: "Română (Romanian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ro.png", value: "ro", selected: false}, { text: "русский (Russian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ru.png", value: "ru", selected: false}, { text: "Shqip (Albanian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-sq.png", value: "sq", selected: false}, { text: "Slovenský jazyk (Slovak)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-sk.png", value: "sk", selected: false}, { text: "Slovenski jezik (Slovene)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-sl.png", value: "sl", selected: false}, { text: "српски (Serbian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-sr.png", value: "sr", selected: false}, { text: "Suomi (Finnish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-fi.png", value: "fi", selected: false}, { text: "Svenska (Swedish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-sv.png", value: "sv", selected: false}, { text: "Türkçe (Turkish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-tr.png", value: "tr", selected: false}, { text: "Українська (Ukrainian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-uk.png", value: "uk", selected: false}, { text: "Oʻzbekcha (Uzbek)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-uz.png", value: "uz", selected: false}, { text: "አማርኛ (Amharic)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-am.png", value: "am", selected: false}, { text: "العربية (Arabic)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ar.png", value: "ar", selected: false}, { text: "فارسی (Persian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-fa.png", value: "fa", selected: false}, { text: "български (Bulgarian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-bg.png", value: "bg", selected: false}, { text: "中文 (Chinese (simplified))", imageSrc: "/seterra/images/system/flags/langlistflags/flag-zh.png", value: "zh", selected: false}, { text: "עִבְרִית‎ (Hebrew)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-he.png", value: "he", selected: false}, { text: "हिन्दी (Hindi)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-hi.png", value: "hi", selected: false}, { text: "தமிழ் (Tamil)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ta.png", value: "ta", selected: false}, { text: "සිංහල (Sinhala)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-si.png", value: "si", selected: false}, { text: "日本語 (Japanese)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ja.png", value: "ja", selected: false}, { text: "한국어 (Korean)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ko.png", value: "ko", selected: false}, { text: "ไทย (Thai)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-th.png", value: "th", selected: false}
+        ];
+        var fFound = false;
+        for (var i = 0; i < ddBasic.length; i++) {
+            if (ddBasic[i].value == pageLang) {
+                ddBasic[i].selected = true;
+                fFound = true;
+            }
+        }
+
+        if (fFound == true) {
+            $('#divLanguageDropDown').ddslick({
+                data: ddBasic,
+                
+                selectText: "Select language",
+                imagePosition: "left",
+                onSelected: function (data) {
+                    if (fFirst == false) {
+                        window.location = "/seterra/" + data.selectedData.value;
+                    }
+                    fFirst = false;
+                }
+            })
+
+        }
+        else {
+            $('#divLanguageDropDown').hide;
+        }
+
+        $(".dd-selected-image").attr("alt", "Flag " + pageLang)
+
+    })
+</script>
+
+
+            <div id="contentwrapper" class="gg-container">
+
+                <div id="leftcol" class="gg-item gg-item-left gg-flag-game">
+                    
+<div id="divAd_Panorama1" class="divAd_Panorama" >
+
+    <!-- adngin-gg-seterra_headerleader-0  -->
+    <div id="adngin-gg-seterra_headerleader-0"></div>
+
+    <!-- adngin-seterra_mobile_1-0 -->
+    <div id="adngin-gg-seterra_mobile_1-0"></div>
+    
+</div>
+
+
+                    <div id="mainbanner">
+                        <img id="bannerImg" src="../../images/system/banners/world.jpg" alt="Países francófonos: Banderas: Seterra es una plataforma de juegos de geografía gratuita, que te enseñará a ubicar ciudades y países del mundo a través de los mapas." border="0" />
+                    </div>
+
+                    <div id="maincontent" style="clear: both">
+                        <div id="breadcrumbs">
+                            <span id="breadcrumbs1"><a href='../../../seterra.html' >Home</a> >> <a href='../../es.html'>Juego de Mapas</a> >> <a href='../l/wor.html' > El Mundo</a> >> Países francófonos: Banderas</span>
+                        </div>
+                        <div class="sectioncontent" style="padding-right: 10px;">
+                            <div class="sectionhead fullwidth ">
+                                <div class="sectionheadtext areaheading" style="padding-bottom: 5px;">
+                                    <h1 class="header">
+                                        <span id="lblTitleLeft">Países francófonos: Banderas</span>
+                                        <span id="lblTitleRt" class="coloredheader"> - Juego de Geografía</span>
+                                    </h1>
+                                </div>
+                            </div>
+                            <div style="clear: both;"></div>
+
+                            <div class="gamepartlist">
+                                <img id="imgFlag" class="gameflag" src="../../images/system/flags/gamelistflags/flag-france.png" border="0" />
+                                <div id="divGoogleClassroom">
+
+
+                                    <g:sharetoclassroom url="http://www.geoguessr.com/seterra/es/fl/2048" size="48"></g:sharetoclassroom>
+                                </div>
+
+                                <div class="gamelist">
+                                    <b>
+                                        </b>
+                                    <span id="dlstgamelist"><span>Bélgica</span><span>, </span><span>Benín</span><span>, </span><span>Burkina Faso</span><span>, </span><span>Burundi</span><span>, </span><span>Camerún</span><span>, </span><span>Canadá</span><span>, </span><span>Chad</span><span>, </span><span>Comoras</span><span>, </span><span>Costa de Marfil</span><span>, </span><span>Francia</span><span>, </span><span>Gabón</span><span>, </span><span>Guinea</span><span>, </span><span>Guinea Ecuatorial</span><span>, </span><span>Haití</span><span>, </span><span>la República Centroafricana</span><span>, </span><span>la República del Congo</span><span>, </span><span>la República Democrática del Congo</span><span>, </span><span>Luxemburgo</span><span>, </span><span>Madagascar</span><span>, </span><span>Malí</span><span>, </span><span>Mónaco</span><span>, </span><span>Níger</span><span>, </span><span>Ruanda</span><span>, </span><span>Senegal</span><span>, </span><span>Seychelles</span><span>, </span><span>Suiza</span><span>, </span><span>Togo</span><span>, </span><span>Vanuatu</span><span>, </span><span>Yibuti</span></span>.
+                                <span id="lblCount">(29)</span>
+                                    &nbsp; <b>
+                                        <a id="lnkCreateCustom" href="https://www.geoguessr.com/seterra/es/custom.aspx?GameID=2048">Crear cuestionario personalizado</a></b>
+                                </div>
+                                <div style="clear: both;"></div>
+                            </div>
+                            <div id="topScoreInfo" style="padding-top: 15px; display: none;">
+                                <span class="ts-label">For: </span><span class="top-game-nickname user-val"></span>
+                                <span class="ts-label">Score: </span><span class="top-game-score user-val"></span>
+                                <span class="ts-label">Time: </span><span class="top-game-time user-val"></span>
+                            </div>
+                            <div>
+                                
+
+                            </div>
+
+
+                            <div id="gameselect">
+                                <div class="gamewindow">
+                                    <div id="controls">
+                                        <span id="timer"></span>&nbsp;
+                                        <span id="score"></span>&nbsp; &nbsp;
+                                        <span id="qlabel2"></span>
+
+                                        <div id="txtQ"></div>
+
+                                    </div>
+                                    <div id="typeControls" style="display: none; margin: 15px; border-bottom: 2px solid black">
+                                        <span style="float: right; width: 250px; margin-left: 20px; font-size: 18px;">
+                                            <span id="timer2" style="float: right; width: 50px; margin-left: 20px;"></span>&nbsp;<span id="score2" style="float: right"></span>
+                                        </span>
+
+                                        <div style="width: 300px; float: left">
+                                            <img src="" id="imgTypeFlag" style="width: auto; height: 150px; max-width: 280px; overflow: hidden;" />
+                                        </div>
+                                        <span id="typeSpan" style="float: left; width: 250px; height: 100px"></span>
+
+
+
+                                        <div style="clear: both">&nbsp;</div>
+                                    </div>
+
+                                    <div id="gameWrapper">
+                                    </div>
+                                    <div style="clear: both;"></div>
+                                    <div id="completion" style="opacity: 0.95">
+                                        <input id="btnComplete2" type="button" value="X" style="float: right" onclick="location.reload()" />
+                                        <div id="lblFinalScore1" style="margin-left: 35px; margin-right: 35px;"></div>
+                                        <br>
+                                        <div id="lblFinalScore2"></div>
+                                        <br />
+
+                                        <div id="ltrGameName"></div>
+                                        <br />
+
+                                        <div id="saveScoreOptions" style="display: none">
+                                            <div style="text-align: center; margin-top: 25px; margin-bottom: 15px">
+                                                Nickname:
+                                                <br />
+                                                <input type="text" id="nickname" style="text-align: center;" maxlength="50"  />
+                                            </div>
+                                            <div>
+                                                <input id="btnSaveHighScore" type="button" value="Save" style="width: 250px; height: 40px" onclick="saveHighScore()" />
+                                                <br />
+                                            </div>
+                                        </div>
+                                        <div id="noAcctOptions">
+
+
+                                            <br />
+                                            <br />
+                                            <input id="btnComplete" type="button" style="width: 250px; height: 40px" onclick="location.reload()" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="divFlagZoom" style="position: absolute; display: none; z-index: 800; padding: 0px; margin: 0px;"></div>
+                                <div style="clear: both; text-align: right">
+                                    <div id="gameModeWrapper">
+                                        <span id="lblGameMode">Modo de juego:</span>
+                                        <select name="drpGameMode" id="drpGameMode" onchange="javascript:setupGame(2048);">
+	<option value="show">Mostrar todo</option>
+	<option value="learn">Modo aprendizaje</option>
+	<option value="multi">Multiopci&#243;n</option>
+	<option selected="selected" value="pin">Localiza</option>
+	<option value="pinhard">Localiza (dif&#237;cil)</option>
+	<option value="typeauto">Modo escritura (con autocompletar)</option>
+	<option value="type">Modo escritura</option>
+
+</select>
+                                    </div>
+                                    <div id="optionsRight">
+                                        <input id="cbSoundOn" type="checkbox" name="cbSoundOn" checked="checked" /><label for="cbSoundOn">Activar Sonido</label>
+                                        &nbsp; 
+                                        
+                                        &nbsp; 
+                                    <button id='cmdRestart' onclick="setupGame( 2048 );return false">Reiniciar</button>
+                                    </div>
+                                </div>
+                                <div id="pnlRestart">
+                                </div>
+                                <div id="fb-root">
+                                </div>
+                                <audio id="location">
+                                    <source id="mp3_src" type="audio/mp3" />
+                                    <source id="ogg_src" type="audio/ogg" />
+                                </audio>
+
+                                <div id="audioFiles">
+                                    <audio id="WrongAnswerSound">
+                                        <source src="../../media/incorrect_new.mp3" /><!-- both versions of the audio file are required to make sure it will work on all browsers-->
+                                        <source src="../../media/incorrect_new.wav" />
+                                    </audio>
+                                    <audio id="CorrectAnswerSound">
+                                        <source src="../../media/correct_new.mp3" />
+                                        <source src="../../media/correct_new.wav" />
+                                    </audio>
+
+                                    <audio id="CorrectAnswerSoundEnd">
+                                        <source src="../../media/game_end.mp3" />
+                                        <source src="../../media/game_end.ogg" />
+                                    </audio>
+
+                                    <audio id="CorrectAnswerSoundEnd100">
+                                        <source src="../../media/game_end_100.mp3" />
+                                        <source src="../../media/game_end_100.ogg" />
+                                    </audio>
+                                    <audio id="SwooshSound">
+                                        <source src="../../media/swoosh.mp3" />
+                                    </audio>
+
+
+                                    <audio id="OtherSound">
+                                        <source src="../../media/turn.mp3" />
+                                    </audio>
+                                </div>
+                                <div id="pnlInfo">
+                                </div>
+                            </div>
+                            <div class="sectioncontent purch-links">
+                                <div style="clear: both;">
+                                    <div id="panVideoPlayer" cssstyle="width: 550px;height:450px;" style="margin-top: 0px; margin-right: 20px; float: left;">
+	
+
+                                        <div style="width: 500px; height: 400px; margin: auto; padding-top: 0px">
+
+                                            <div id="Video2" style="width: 500px; height: 400px; padding-left: 0px; padding-right: 0px;">
+
+                                                <span id="lblVideoPlayer"><div id='adngin-gg-seterra_nvu-and-float-0'></div></span>
+                                            </div>
+                                        </div>
+                                    
+</div>
+                                    <div id="panTop10">
+	
+                                        <div class="top10-wrapper">
+                                            <div id="filter" style="padding-left: 40px; padding-bottom: 15px;">
+                                                <div>
+                                                    <span><b>Filter:</b> &nbsp;</span>
+                                                    <select onchange="displayTop10()" style="width: 200px; height: 25px;" id="drpPeriod" class="top10DropDown">
+                                                        <option value="1hour">Last Hour</option>
+                                                        <option value="today">Last 24 Hours</option>
+                                                        <option value="7days">Last 7 Days</option>
+                                                        <option value="30days">Last 30 Days</option>
+                                                        <option value="alltime" selected="">All Time</option>
+                                                    </select>
+                                                </div>
+                                                <div style="padding-top: 5px" id="divScoreGameMode">
+                                                    <span style="width: 60px; float: left;">&nbsp;</span>
+                                                    <select onchange="displayTop10()" style="width: 200px; height: 25px;" id="drpScoreGameMode" class="top10DropDown">
+                                                        <option value="-" selected="">All Game Modes</option>
+                                                        <option value="m">Multiopción</option>
+                                                        <option value="p">Localiza</option>
+                                                        <option value="h">Localiza (difícil)</option>
+                                                        <option value="a">Modo escritura (con autocompletar)</option>
+                                                        <option value="t">Modo escritura</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <table id="tblTop10">
+                                                <thead>
+                                                    <tr>
+                                                        <th style="width: 30px; text-align: right"></th>
+                                                        <th style="width: 130px; text-align: left">Nickname</th>
+                                                        <th style="width: 80px; text-align: right">Score</th>
+                                                        <th style="width: 80px; text-align: right; padding-right: 8px">Time</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody></tbody>
+                                            </table>
+
+                                            <div id="divDown">
+                                                <img src="../../images/system/down.png" />
+                                            </div>
+
+                                            <div id="divUp">
+                                                <img src="../../images/system/up.png" />
+                                            </div>
+                                        </div>
+                                    
+</div>
+                                    
+                                    <div id="ltrGlobalHighScore"></div>
+                                </div>
+                            </div>
+                            <div style="clear: both"></div>
+                            <div class="divGameInfo" style="direction: ltr" lang="en">
+
+                                <div style="padding-bottom: 5px;" id="divAvailable">
+                                    <span id="lblAvailable">The game <b>Países francófonos: Banderas</b> is available in the following 13 languages:</span>
+
+                                </div>
+                                <a href="../../da/fl/2048.html"><img src="../../images/system/flags/langlistflags/flag-da.png" title="Dansk (Danish)" style="padding:5px"></a> <a href="../../de/fl/2048.html"><img src="../../images/system/flags/langlistflags/flag-de.png" title="Deutsch (German)" style="padding:5px"></a> <a href="../../en/fl/2048.html"><img src="../../images/system/flags/langlistflags/flag-en.png" title="English" style="padding:5px"></a> <a href="2048.html"><img src="../../images/system/flags/langlistflags/flag-es.png" title="Español (Spanish)" style="padding:5px"></a> <a href="../../fr/fl/2048.html"><img src="../../images/system/flags/langlistflags/flag-fr.png" title="Français (French)" style="padding:5px"></a> <a href="../../he/fl/2048.html"><img src="../../images/system/flags/langlistflags/flag-he.png" title="עִבְרִית‎ (Hebrew)" style="padding:5px"></a> <a href="../../it/fl/2048.html"><img src="../../images/system/flags/langlistflags/flag-it.png" title="Italiano (Italian)" style="padding:5px"></a> <a href="../../ja/fl/2048.html"><img src="../../images/system/flags/langlistflags/flag-ja.png" title="日本語 (Japanese)" style="padding:5px"></a> <a href="../../lt/fl/2048.html"><img src="../../images/system/flags/langlistflags/flag-lt.png" title="Lietuvių (Lithuanian)" style="padding:5px"></a> <a href="../../nb/fl/2048.html"><img src="../../images/system/flags/langlistflags/flag-nb.png" title="Norsk (Norwegian)" style="padding:5px"></a> <a href="../../nl/fl/2048.html"><img src="../../images/system/flags/langlistflags/flag-nl.png" title="Nederlands (Dutch)" style="padding:5px"></a> <a href="../../pl/fl/2048.html"><img src="../../images/system/flags/langlistflags/flag-pl.png" title="Polski (Polish)" style="padding:5px"></a> <a href="../../ru/fl/2048.html"><img src="../../images/system/flags/langlistflags/flag-ru.png" title="русский (Russian)" style="padding:5px"></a> 
+                                <span id="lblGameCount" dir="ltr"><p>This game in <b>Spanish (Español)</b> was played 2 times yesterday.</p></span>
+                            </div>
+
+                            <div class="exblock">
+                                
+<div id="gamelist" style="width:100%">
+    <table id="fulllist1_exlist1" cellspacing="0" border="0" width="100%">
+	<tr>
+		<td>
+            <div class="sectionhead fullwidth lrg">
+
+                <div class="sectionheadtext areaheading lrg" id="WOR">
+                    El Mundo
+                </div>
+                <div style="clear: both;"></div>
+
+            </div>
+            <div class="exblock">
+
+                
+
+<div class="gamesublist vertical">
+    
+            <div id="fulllist1_exlist1_ctl00_subex1_ctl00_ctl00_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Continentes (7)" class="flag1 game3004" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Continentes (7)" href="../vgp/3004.html">Continentes</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist1_exlist1_ctl00_subex1_ctl00_ctl01_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Continentes y océanos (12)" class="flag1 game3188" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Continentes y océanos (12)" href="../vgp/3188.html">Continentes y océanos</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist1_exlist1_ctl00_subex1_ctl00_ctl02_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Continentes y océanos (con imágenes) (12)" class="flag1 game3287" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Continentes y océanos (con imágenes) (12)" href="../vgp/3287.html">Continentes y océanos (con imágenes)</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist1_exlist1_ctl00_subex1_ctl00_ctl03_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Mundo: Mapa físico (23)" class="flag1 game3459" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Mundo: Mapa físico (23)" href="../vgp/3459.html">Mundo: Mapa físico</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist1_exlist1_ctl00_subex1_ctl00_ctl04_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Mundo: 30 países más poblados (30)" class="flag1 game3154" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Mundo: 30 países más poblados (30)" href="../vgp/3154.html">Mundo: 30 países más poblados</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist1_exlist1_ctl00_subex1_ctl00_ctl05_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Mundo: 30 países más poblados, capitales (30)" class="flag1 game3232" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Mundo: 30 países más poblados, capitales (30)" href="../vgp/3232.html">Mundo: 30 países más poblados, capitales</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist1_exlist1_ctl00_subex1_ctl00_ctl06_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Mundo: 70 países más poblados (70)" class="flag1 game3156" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Mundo: 70 países más poblados (70)" href="../vgp/3156.html">Mundo: 70 países más poblados</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist1_exlist1_ctl00_subex1_ctl00_ctl07_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Mundo: 150 mayores países por área (150)" class="flag1 game3198" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Mundo: 150 mayores países por área (150)" href="../vgp/3198.html">Mundo: 150 mayores países por área</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist1_exlist1_ctl00_subex1_ctl00_ctl08_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Mundo: 150 mayores países por área, capitales (150)" class="flag1 game3237" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Mundo: 150 mayores países por área, capitales (150)" href="../vgp/3237.html">Mundo: 150 mayores países por área, capitales</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist1_exlist1_ctl00_subex1_ctl00_ctl09_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Estados miembros de las Naciones Unidas (193)" class="flag1 game3199" loading="lazy" src="../../exlflags/flag-un.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Estados miembros de las Naciones Unidas (193)" href="../vgp/3199.html">Estados miembros de las Naciones Unidas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist1_exlist1_ctl00_subex1_ctl00_ctl10_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Estados miembros de las Naciones Unidas, capitales (193)" class="flag1 game3238" loading="lazy" src="../../exlflags/flag-un.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Estados miembros de las Naciones Unidas, capitales (193)" href="../vgp/3238.html">Estados miembros de las Naciones Unidas, capitales</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist1_exlist1_ctl00_subex1_ctl00_ctl11_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Mundo: Capitales de países de habla hispana (22)" class="flag1 game3160" loading="lazy" src="../../exlflags/flag-spain.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Mundo: Capitales de países de habla hispana (22)" href="../vgp/3160.html">Mundo: Capitales de países de habla hispana</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist1_exlist1_ctl00_subex1_ctl00_ctl12_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Países de habla hispana (21)" class="flag1 game3153" loading="lazy" src="../../exlflags/flag-spain.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Países de habla hispana (21)" href="../vgp/3153.html">Países de habla hispana</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist1_exlist1_ctl00_subex1_ctl00_ctl13_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Países francófonos (29)" class="flag1 game3210" loading="lazy" src="../../exlflags/flag-france.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Países francófonos (29)" href="../vgp/3210.html">Países francófonos</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist1_exlist1_ctl00_subex1_ctl00_ctl14_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Mundo: Áreas en disputa y regiones separatistas (20)" class="flag1 game3247" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Mundo: Áreas en disputa y regiones separatistas (20)" href="../vgp/3247.html">Mundo: Áreas en disputa y regiones separatistas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist1_exlist1_ctl00_subex1_ctl00_ctl15_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Mundo: Desiertos (21)" class="flag1 game3245" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Mundo: Desiertos (21)" href="../vgp/3245.html">Mundo: Desiertos</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist1_exlist1_ctl00_subex1_ctl00_ctl16_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Mundo: Islas (39)" class="flag1 game3046" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Mundo: Islas (39)" href="../vgp/3046.html">Mundo: Islas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist1_exlist1_ctl00_subex1_ctl00_ctl17_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Mundo: Montañas y volcanes (16)" class="flag1 game3047" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Mundo: Montañas y volcanes (16)" href="../vgp/3047.html">Mundo: Montañas y volcanes</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist1_exlist1_ctl00_subex1_ctl00_ctl18_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Mundo: Océanos, mares y lagos (29)" class="flag1 game3072" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Mundo: Océanos, mares y lagos (29)" href="../vgp/3072.html">Mundo: Océanos, mares y lagos</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist1_exlist1_ctl00_subex1_ctl00_ctl19_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Mundo: Penínsulas (21)" class="flag1 game3230" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Mundo: Penínsulas (21)" href="../vgp/3230.html">Mundo: Penínsulas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist1_exlist1_ctl00_subex1_ctl00_ctl20_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Mundo: Ríos (21)" class="flag1 game3133" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Mundo: Ríos (21)" href="../vgp/3133.html">Mundo: Ríos</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist1_exlist1_ctl00_subex1_ctl00_ctl21_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Mundo: 21 ciudades grandes (con imágenes) (21)" class="flag1 game3288" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Mundo: 21 ciudades grandes (con imágenes) (21)" href="../vgp/3288.html">Mundo: 21 ciudades grandes (con imágenes)</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist1_exlist1_ctl00_subex1_ctl00_ctl22_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Mundo: 25 ciudades muy grandes (25)" class="flag1 game3127" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Mundo: 25 ciudades muy grandes (25)" href="../vgp/3127.html">Mundo: 25 ciudades muy grandes</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist1_exlist1_ctl00_subex1_ctl00_ctl23_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Mundo: 35 ciudades grandes (35)" class="flag1 game3229" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Mundo: 35 ciudades grandes (35)" href="../vgp/3229.html">Mundo: 35 ciudades grandes</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist1_exlist1_ctl00_subex1_ctl00_ctl24_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Mundo: Banderas (16)" class="flag1 game2007" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Mundo: Banderas (16)" href="2007.html">Mundo: Banderas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist1_exlist1_ctl00_subex1_ctl00_ctl25_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Mundo: Banderas (versión difícil) (105)" class="flag1 game2008" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Mundo: Banderas (versión difícil) (105)" href="2008.html">Mundo: Banderas (versión difícil)</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist1_exlist1_ctl00_subex1_ctl00_ctl26_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Estados miembros de las Naciones Unidas: Banderas (192)" class="flag1 game2022" loading="lazy" src="../../exlflags/flag-un.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Estados miembros de las Naciones Unidas: Banderas (192)" href="2022.html">Estados miembros de las Naciones Unidas: Banderas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist1_exlist1_ctl00_subex1_ctl00_ctl27_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Países de habla hispana: banderas (21)" class="flag1 game2041" loading="lazy" src="../../exlflags/flag-spain.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Países de habla hispana: banderas (21)" href="2041.html">Países de habla hispana: banderas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist1_exlist1_ctl00_subex1_ctl00_ctl28_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Mundo: Maravillas y lugares turísticos (14)" class="flag1 game3401" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Mundo: Maravillas y lugares turísticos (14)" href="../vgp/3401.html">Mundo: Maravillas y lugares turísticos</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist1_exlist1_ctl00_subex1_ctl00_ctl29_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Paralelos principales (12)" class="flag1 game3124" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Paralelos principales (12)" href="../vgp/3124.html">Paralelos principales</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist1_exlist1_ctl00_subex1_ctl00_ctl30_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="La Antártida: Características físicas (16)" class="flag1 game3637" loading="lazy" src="../../exlflags/flag-antarctica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="La Antártida: Características físicas (16)" href="../vgp/3637.html">La Antártida: Características físicas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist1_exlist1_ctl00_subex1_ctl00_ctl31_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Sistema solar: Planetas (8)" class="flag1 game3123" loading="lazy" src="../../exlflags/flag-solar.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Sistema solar: Planetas (8)" href="../vgp/3123.html">Sistema solar: Planetas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+</div>
+
+<div class="gamesublist horizontal" style="width: auto;">
+    
+
+</div>
+
+                <div style="clear: both;"></div>
+                <h3 style="margin-top:10px;margin-bottom:15px;">
+                    <a id="fulllist1_exlist1_ctl00_lnkFinal" href="../l/wor.html">Mostrar todos los juegos sobre El Mundo >></a>
+                </h3>
+            </div>
+        </td>
+	</tr>
+</table>
+
+
+</div>
+
+                                
+<div id="gamelist" style="width:100%">
+    <table id="fulllist2_exlist1" cellspacing="0" border="0" width="100%">
+	<tr>
+		<td>
+            <div class="sectionhead fullwidth small">
+
+                <div class="sectionheadtext areaheading small" id="EUR">
+                    Europa
+                </div>
+                <div style="clear: both;"></div>
+
+            </div>
+            <div class="exblock">
+
+                
+
+<div class="gamesublist vertical">
+    
+            <div id="fulllist2_exlist1_ctl00_subex1_ctl00_ctl00_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Europa: Países (45)" class="flag1 game3142" loading="lazy" src="../../exlflags/flag-europe.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Europa: Países (45)" href="../vgp/3142.html">Europa: Países</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl00_subex1_ctl00_ctl01_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Unión Europea: Países (después del Brexit) (27)" class="flag1 game3387" loading="lazy" src="../../exlflags/flag-eu.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Unión Europea: Países (después del Brexit) (27)" href="../vgp/3387.html">Unión Europea: Países (después del Brexit)</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl00_subex1_ctl00_ctl02_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Europa: Capitales (38)" class="flag1 game3144" loading="lazy" src="../../exlflags/flag-europe.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Europa: Capitales (38)" href="../vgp/3144.html">Europa: Capitales</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl00_subex1_ctl00_ctl03_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Europa: Ciudades (39)" class="flag1 game3073" loading="lazy" src="../../exlflags/flag-europe.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Europa: Ciudades (39)" href="../vgp/3073.html">Europa: Ciudades</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl00_subex1_ctl00_ctl04_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Europa: Mapa físico (22)" class="flag1 game3453" loading="lazy" src="../../exlflags/flag-europe.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Europa: Mapa físico (22)" href="../vgp/3453.html">Europa: Mapa físico</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl00_subex1_ctl00_ctl05_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Europa: Banderas (45)" class="flag1 game2014" loading="lazy" src="../../exlflags/flag-europe.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Europa: Banderas (45)" href="2014.html">Europa: Banderas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl00_subex1_ctl00_ctl06_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Europa del Este: Banderas (20)" class="flag1 game2012" loading="lazy" src="../../exlflags/flag-europe.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Europa del Este: Banderas (20)" href="2012.html">Europa del Este: Banderas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl00_subex1_ctl00_ctl07_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="España: Comunidades autónomas (17)" class="flag1 game3005" loading="lazy" src="../../exlflags/flag-spain.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="España: Comunidades autónomas (17)" href="../vgp/3005.html">España: Comunidades autónomas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl00_subex1_ctl00_ctl08_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="España: Comunidades autónomas, banderas (17)" class="flag1 game2033" loading="lazy" src="../../exlflags/flag-spain.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="España: Comunidades autónomas, banderas (17)" href="2033.html">España: Comunidades autónomas, banderas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl00_subex1_ctl00_ctl09_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="España: Comunidades autónomas, capitales (17)" class="flag1 game3062" loading="lazy" src="../../exlflags/flag-spain.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="España: Comunidades autónomas, capitales (17)" href="../vgp/3062.html">España: Comunidades autónomas, capitales</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl00_subex1_ctl00_ctl10_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="España: Distritos de Barcelona (10)" class="flag1 game3759" loading="lazy" src="../../exlflags/flag-spain.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="España: Distritos de Barcelona (10)" href="../vgp/3759.html">España: Distritos de Barcelona</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl00_subex1_ctl00_ctl11_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="España: Distritos de Madrid (21)" class="flag1 game3333" loading="lazy" src="../../exlflags/flag-spain.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="España: Distritos de Madrid (21)" href="../vgp/3333.html">España: Distritos de Madrid</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl00_subex1_ctl00_ctl12_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="España: Islas Baleares (6)" class="flag1 game3313" loading="lazy" src="../../exlflags/flag-spain.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="España: Islas Baleares (6)" href="../vgp/3313.html">España: Islas Baleares</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl00_subex1_ctl00_ctl13_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="España: Islas Canarias (9)" class="flag1 game3312" loading="lazy" src="../../exlflags/flag-spain.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="España: Islas Canarias (9)" href="../vgp/3312.html">España: Islas Canarias</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl00_subex1_ctl00_ctl14_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="España: Provincias (50)" class="flag1 game3240" loading="lazy" src="../../exlflags/flag-spain.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="España: Provincias (50)" href="../vgp/3240.html">España: Provincias</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl00_subex1_ctl00_ctl15_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="España: Provincias, capitales (52)" class="flag1 game3077" loading="lazy" src="../../exlflags/flag-spain.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="España: Provincias, capitales (52)" href="../vgp/3077.html">España: Provincias, capitales</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl00_subex1_ctl00_ctl16_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="España: Ríos (26)" class="flag1 game3307" loading="lazy" src="../../exlflags/flag-spain.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="España: Ríos (26)" href="../vgp/3307.html">España: Ríos</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl00_subex1_ctl00_ctl17_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Mar Mediterráneo: Países e islas (30)" class="flag1 game3334" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Mar Mediterráneo: Países e islas (30)" href="../vgp/3334.html">Mar Mediterráneo: Países e islas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+</div>
+
+<div class="gamesublist horizontal" style="width: auto;">
+    
+
+</div>
+
+                <div style="clear: both;"></div>
+                <h3 style="margin-top:10px;margin-bottom:15px;">
+                    <a id="fulllist2_exlist1_ctl00_lnkFinal" href="../l/eur.html">Mostrar todos los juegos sobre Europa >></a>
+                </h3>
+            </div>
+        </td>
+	</tr><tr>
+		<td>
+            <div class="sectionhead fullwidth small">
+
+                <div class="sectionheadtext areaheading small" id="NAM">
+                    América del Norte
+                </div>
+                <div style="clear: both;"></div>
+
+            </div>
+            <div class="exblock">
+
+                
+
+<div class="gamesublist vertical">
+    
+            <div id="fulllist2_exlist1_ctl01_subex1_ctl00_ctl00_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="América del Norte y Central: Países (14)" class="flag1 game3015" loading="lazy" src="../../exlflags/flag-northamerica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="América del Norte y Central: Países (14)" href="../vgp/3015.html">América del Norte y Central: Países</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl01_subex1_ctl00_ctl01_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="América del Norte y Central: Capitales (14)" class="flag1 game3079" loading="lazy" src="../../exlflags/flag-northamerica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="América del Norte y Central: Capitales (14)" href="../vgp/3079.html">América del Norte y Central: Capitales</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl01_subex1_ctl00_ctl02_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="América del Norte: Mapa físico (30)" class="flag1 game3452" loading="lazy" src="../../exlflags/flag-northamerica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="América del Norte: Mapa físico (30)" href="../vgp/3452.html">América del Norte: Mapa físico</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl01_subex1_ctl00_ctl03_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="América del Norte y Central: Banderas (14)" class="flag1 game2015" loading="lazy" src="../../exlflags/flag-northamerica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="América del Norte y Central: Banderas (14)" href="2015.html">América del Norte y Central: Banderas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl01_subex1_ctl00_ctl04_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="América Central: Países (7)" class="flag1 game3217" loading="lazy" src="../../exlflags/flag-centralamerica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="América Central: Países (7)" href="../vgp/3217.html">América Central: Países</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl01_subex1_ctl00_ctl05_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="América Central: Capitales (7)" class="flag1 game3266" loading="lazy" src="../../exlflags/flag-centralamerica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="América Central: Capitales (7)" href="../vgp/3266.html">América Central: Capitales</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl01_subex1_ctl00_ctl06_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Caribe: Países (13)" class="flag1 game3342" loading="lazy" src="../../exlflags/flag-caribbean.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Caribe: Países (13)" href="../vgp/3342.html">Caribe: Países</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl01_subex1_ctl00_ctl07_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Caribe: Capitales (13)" class="flag1 game3444" loading="lazy" src="../../exlflags/flag-caribbean.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Caribe: Capitales (13)" href="../vgp/3444.html">Caribe: Capitales</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl01_subex1_ctl00_ctl08_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Estados Unidos: Estados (50)" class="flag1 game3003" loading="lazy" src="../../exlflags/flag-usa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Estados Unidos: Estados (50)" href="../vgp/3003.html">Estados Unidos: Estados</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl01_subex1_ctl00_ctl09_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Estados Unidos: Grandes ciudades (24)" class="flag1 game3095" loading="lazy" src="../../exlflags/flag-usa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Estados Unidos: Grandes ciudades (24)" href="../vgp/3095.html">Estados Unidos: Grandes ciudades</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl01_subex1_ctl00_ctl10_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Costa Rica: Provincias (7)" class="flag1 game3267" loading="lazy" src="../../exlflags/flag-costaric.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Costa Rica: Provincias (7)" href="../vgp/3267.html">Costa Rica: Provincias</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl01_subex1_ctl00_ctl11_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="El Salvador: Departamentos (14)" class="flag1 game3265" loading="lazy" src="../../exlflags/flag-elsalv.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="El Salvador: Departamentos (14)" href="../vgp/3265.html">El Salvador: Departamentos</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl01_subex1_ctl00_ctl12_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Guatemala: Departamentos (22)" class="flag1 game3260" loading="lazy" src="../../exlflags/flag-guatemala.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Guatemala: Departamentos (22)" href="../vgp/3260.html">Guatemala: Departamentos</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl01_subex1_ctl00_ctl13_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Honduras: Departamentos (18)" class="flag1 game3264" loading="lazy" src="../../exlflags/flag-honduras.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Honduras: Departamentos (18)" href="../vgp/3264.html">Honduras: Departamentos</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl01_subex1_ctl00_ctl14_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="México: Capitales de estado (31)" class="flag1 game3280" loading="lazy" src="../../exlflags/flag-mexico.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="México: Capitales de estado (31)" href="../vgp/3280.html">México: Capitales de estado</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl01_subex1_ctl00_ctl15_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="México: Ciudades (15)" class="flag1 game3080" loading="lazy" src="../../exlflags/flag-mexico.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="México: Ciudades (15)" href="../vgp/3080.html">México: Ciudades</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl01_subex1_ctl00_ctl16_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="México: Estados (32)" class="flag1 game3078" loading="lazy" src="../../exlflags/flag-mexico.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="México: Estados (32)" href="../vgp/3078.html">México: Estados</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl01_subex1_ctl00_ctl17_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="México: Mapa físico (19)" class="flag1 game3460" loading="lazy" src="../../exlflags/flag-mexico.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="México: Mapa físico (19)" href="../vgp/3460.html">México: Mapa físico</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl01_subex1_ctl00_ctl18_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Nicaragua: Departamentos (17)" class="flag1 game3360" loading="lazy" src="../../exlflags/flag-nicaragua.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Nicaragua: Departamentos (17)" href="../vgp/3360.html">Nicaragua: Departamentos</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl01_subex1_ctl00_ctl19_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Panamá: Provincias y comarcas indígenas (14)" class="flag1 game3388" loading="lazy" src="../../exlflags/flag-panama.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Panamá: Provincias y comarcas indígenas (14)" href="../vgp/3388.html">Panamá: Provincias y comarcas indígenas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl01_subex1_ctl00_ctl20_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="República Dominicana: Provincias (32)" class="flag1 game3372" loading="lazy" src="../../exlflags/flag-dominica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="República Dominicana: Provincias (32)" href="../vgp/3372.html">República Dominicana: Provincias</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+</div>
+
+<div class="gamesublist horizontal" style="width: auto;">
+    
+
+</div>
+
+                <div style="clear: both;"></div>
+                <h3 style="margin-top:10px;margin-bottom:15px;">
+                    <a id="fulllist2_exlist1_ctl01_lnkFinal" href="../l/nam.html">Mostrar todos los juegos sobre América del Norte >></a>
+                </h3>
+            </div>
+        </td>
+	</tr><tr>
+		<td>
+            <div class="sectionhead fullwidth small">
+
+                <div class="sectionheadtext areaheading small" id="SAM">
+                    América del Sur
+                </div>
+                <div style="clear: both;"></div>
+
+            </div>
+            <div class="exblock">
+
+                
+
+<div class="gamesublist vertical">
+    
+            <div id="fulllist2_exlist1_ctl02_subex1_ctl00_ctl00_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="América del Sur: Países (13)" class="flag1 game3016" loading="lazy" src="../../exlflags/flag-southamerica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="América del Sur: Países (13)" href="../vgp/3016.html">América del Sur: Países</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl02_subex1_ctl00_ctl01_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="América del Sur: Capitales (12)" class="flag1 game3017" loading="lazy" src="../../exlflags/flag-southamerica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="América del Sur: Capitales (12)" href="../vgp/3017.html">América del Sur: Capitales</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl02_subex1_ctl00_ctl02_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="América del Sur: Ciudades (22)" class="flag1 game3218" loading="lazy" src="../../exlflags/flag-southamerica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="América del Sur: Ciudades (22)" href="../vgp/3218.html">América del Sur: Ciudades</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl02_subex1_ctl00_ctl03_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="América del Sur: Ciudades (versión difícil) (43)" class="flag1 game3789" loading="lazy" src="../../exlflags/flag-southamerica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="América del Sur: Ciudades (versión difícil) (43)" href="../vgp/3789.html">América del Sur: Ciudades (versión difícil)</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl02_subex1_ctl00_ctl04_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="América del Sur: Mapa físico (18)" class="flag1 game3451" loading="lazy" src="../../exlflags/flag-southamerica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="América del Sur: Mapa físico (18)" href="../vgp/3451.html">América del Sur: Mapa físico</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl02_subex1_ctl00_ctl05_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="América del Sur: Banderas (12)" class="flag1 game2004" loading="lazy" src="../../exlflags/flag-southamerica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="América del Sur: Banderas (12)" href="2004.html">América del Sur: Banderas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl02_subex1_ctl00_ctl06_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Argentina: Provincias (23)" class="flag1 game3081" loading="lazy" src="../../exlflags/flag-argentin.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Argentina: Provincias (23)" href="../vgp/3081.html">Argentina: Provincias</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl02_subex1_ctl00_ctl07_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Argentina: Provincias, banderas (23)" class="flag1 game2045" loading="lazy" src="../../exlflags/flag-argentin.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Argentina: Provincias, banderas (23)" href="2045.html">Argentina: Provincias, banderas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl02_subex1_ctl00_ctl08_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Bolivia: Banderas de los departamentos (9)" class="flag1 game2079" loading="lazy" src="../../exlflags/flag-bolivia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Bolivia: Banderas de los departamentos (9)" href="2079.html">Bolivia: Banderas de los departamentos</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl02_subex1_ctl00_ctl09_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Bolivia: Departamentos (9)" class="flag1 game3277" loading="lazy" src="../../exlflags/flag-bolivia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Bolivia: Departamentos (9)" href="../vgp/3277.html">Bolivia: Departamentos</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl02_subex1_ctl00_ctl10_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Chile: Banderas regionales (16)" class="flag1 game2069" loading="lazy" src="../../exlflags/flag-chile.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Chile: Banderas regionales (16)" href="2069.html">Chile: Banderas regionales</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl02_subex1_ctl00_ctl11_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Chile: Regiones (16)" class="flag1 game3171" loading="lazy" src="../../exlflags/flag-chile.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Chile: Regiones (16)" href="../vgp/3171.html">Chile: Regiones</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl02_subex1_ctl00_ctl12_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Colombia: Departamentos (33)" class="flag1 game3274" loading="lazy" src="../../exlflags/flag-colombia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Colombia: Departamentos (33)" href="../vgp/3274.html">Colombia: Departamentos</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl02_subex1_ctl00_ctl13_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Ecuador: Provincias (24)" class="flag1 game3278" loading="lazy" src="../../exlflags/flag-ecuador.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Ecuador: Provincias (24)" href="../vgp/3278.html">Ecuador: Provincias</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl02_subex1_ctl00_ctl14_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Ecuador: Provincias, banderas (24)" class="flag1 game2087" loading="lazy" src="../../exlflags/flag-ecuador.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Ecuador: Provincias, banderas (24)" href="2087.html">Ecuador: Provincias, banderas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl02_subex1_ctl00_ctl15_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Guyana: Regiones (10)" class="flag1 game3378" loading="lazy" src="../../exlflags/flag-guyana.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Guyana: Regiones (10)" href="../vgp/3378.html">Guyana: Regiones</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl02_subex1_ctl00_ctl16_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Paraguay: Departamentos (18)" class="flag1 game3276" loading="lazy" src="../../exlflags/flag-paraguay.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Paraguay: Departamentos (18)" href="../vgp/3276.html">Paraguay: Departamentos</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl02_subex1_ctl00_ctl17_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Perú: Banderas regionales (25)" class="flag1 game2084" loading="lazy" src="../../exlflags/flag-peru.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Perú: Banderas regionales (25)" href="2084.html">Perú: Banderas regionales</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl02_subex1_ctl00_ctl18_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Perú: Regiones (26)" class="flag1 game3279" loading="lazy" src="../../exlflags/flag-peru.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Perú: Regiones (26)" href="../vgp/3279.html">Perú: Regiones</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl02_subex1_ctl00_ctl19_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Uruguay: Departamentos (19)" class="flag1 game3261" loading="lazy" src="../../exlflags/flag-uruguay.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Uruguay: Departamentos (19)" href="../vgp/3261.html">Uruguay: Departamentos</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl02_subex1_ctl00_ctl20_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Venezuela: Entidades federales (25)" class="flag1 game3227" loading="lazy" src="../../exlflags/flag-venezuela.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Venezuela: Entidades federales (25)" href="../vgp/3227.html">Venezuela: Entidades federales</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+</div>
+
+<div class="gamesublist horizontal" style="width: auto;">
+    
+
+</div>
+
+                <div style="clear: both;"></div>
+                <h3 style="margin-top:10px;margin-bottom:15px;">
+                    <a id="fulllist2_exlist1_ctl02_lnkFinal" href="../l/sam.html">Mostrar todos los juegos sobre América del Sur >></a>
+                </h3>
+            </div>
+        </td>
+	</tr><tr>
+		<td>
+            <div class="sectionhead fullwidth small">
+
+                <div class="sectionheadtext areaheading small" id="AFR">
+                    África
+                </div>
+                <div style="clear: both;"></div>
+
+            </div>
+            <div class="exblock">
+
+                
+
+<div class="gamesublist vertical">
+    
+            <div id="fulllist2_exlist1_ctl03_subex1_ctl00_ctl00_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="África: Países (55)" class="flag1 game3163" loading="lazy" src="../../exlflags/flag-africa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="África: Países (55)" href="../vgp/3163.html">África: Países</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl03_subex1_ctl00_ctl01_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="África: Capitales (54)" class="flag1 game3204" loading="lazy" src="../../exlflags/flag-africa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="África: Capitales (54)" href="../vgp/3204.html">África: Capitales</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl03_subex1_ctl00_ctl02_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="África: Mapa físico (23)" class="flag1 game3450" loading="lazy" src="../../exlflags/flag-africa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="África: Mapa físico (23)" href="../vgp/3450.html">África: Mapa físico</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl03_subex1_ctl00_ctl03_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="África: Banderas (54)" class="flag1 game2017" loading="lazy" src="../../exlflags/flag-africa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="África: Banderas (54)" href="2017.html">África: Banderas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+</div>
+
+<div class="gamesublist horizontal" style="width: auto;">
+    
+
+</div>
+
+                <div style="clear: both;"></div>
+                <h3 style="margin-top:10px;margin-bottom:15px;">
+                    <a id="fulllist2_exlist1_ctl03_lnkFinal" href="../l/afr.html">Mostrar todos los juegos sobre África >></a>
+                </h3>
+            </div>
+        </td>
+	</tr><tr>
+		<td>
+            <div class="sectionhead fullwidth small">
+
+                <div class="sectionheadtext areaheading small" id="ASI">
+                    Asia
+                </div>
+                <div style="clear: both;"></div>
+
+            </div>
+            <div class="exblock">
+
+                
+
+<div class="gamesublist vertical">
+    
+            <div id="fulllist2_exlist1_ctl04_subex1_ctl00_ctl00_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Asia: Países (48)" class="flag1 game3167" loading="lazy" src="../../exlflags/flag-asia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Asia: Países (48)" href="../vgp/3167.html">Asia: Países</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl04_subex1_ctl00_ctl01_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Asia: Capitales (47)" class="flag1 game3203" loading="lazy" src="../../exlflags/flag-asia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Asia: Capitales (47)" href="../vgp/3203.html">Asia: Capitales</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl04_subex1_ctl00_ctl02_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Asia: Mapa físico (28)" class="flag1 game3454" loading="lazy" src="../../exlflags/flag-asia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Asia: Mapa físico (28)" href="../vgp/3454.html">Asia: Mapa físico</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl04_subex1_ctl00_ctl03_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Asia: Banderas (47)" class="flag1 game2016" loading="lazy" src="../../exlflags/flag-asia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Asia: Banderas (47)" href="2016.html">Asia: Banderas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+</div>
+
+<div class="gamesublist horizontal" style="width: auto;">
+    
+
+</div>
+
+                <div style="clear: both;"></div>
+                <h3 style="margin-top:10px;margin-bottom:15px;">
+                    <a id="fulllist2_exlist1_ctl04_lnkFinal" href="../l/asi.html">Mostrar todos los juegos sobre Asia >></a>
+                </h3>
+            </div>
+        </td>
+	</tr><tr>
+		<td>
+            <div class="sectionhead fullwidth small">
+
+                <div class="sectionheadtext areaheading small" id="AUS">
+                    Oceania
+                </div>
+                <div style="clear: both;"></div>
+
+            </div>
+            <div class="exblock">
+
+                
+
+<div class="gamesublist vertical">
+    
+            <div id="fulllist2_exlist1_ctl05_subex1_ctl00_ctl00_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Oceanía: Países (14)" class="flag1 game3341" loading="lazy" src="../../exlflags/flag-oceania.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Oceanía: Países (14)" href="../vgp/3341.html">Oceanía: Países</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl05_subex1_ctl00_ctl01_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Oceanía: Países y territorios (23)" class="flag1 game3128" loading="lazy" src="../../exlflags/flag-oceania.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Oceanía: Países y territorios (23)" href="../vgp/3128.html">Oceanía: Países y territorios</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl05_subex1_ctl00_ctl02_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Oceanía: Banderas (14)" class="flag1 game2018" loading="lazy" src="../../exlflags/flag-oceania.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Oceanía: Banderas (14)" href="2018.html">Oceanía: Banderas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl05_subex1_ctl00_ctl03_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Oceania: Banderas de países y territorios (21)" class="flag1 game2058" loading="lazy" src="../../exlflags/flag-oceania.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Oceania: Banderas de países y territorios (21)" href="2058.html">Oceania: Banderas de países y territorios</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="fulllist2_exlist1_ctl05_subex1_ctl00_ctl04_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Australia: Mapa físico (26)" class="flag1 game3455" loading="lazy" src="../../exlflags/flag-austral.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Australia: Mapa físico (26)" href="../vgp/3455.html">Australia: Mapa físico</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+</div>
+
+<div class="gamesublist horizontal" style="width: auto;">
+    
+
+</div>
+
+                <div style="clear: both;"></div>
+                <h3 style="margin-top:10px;margin-bottom:15px;">
+                    <a id="fulllist2_exlist1_ctl05_lnkFinal" href="../l/aus.html">Mostrar todos los juegos sobre Oceania >></a>
+                </h3>
+            </div>
+        </td>
+	</tr>
+</table>
+
+
+</div>
+
+                                <div style="padding-top: 30px">
+                                    <a id="lnkAllGames" href="../../es.html" style="font-size: 15px; font-weight: bold;">Mostrar todos los juegos de geografía >></a>
+                                </div>
+                                <div class="sectionhead fullwidth ">
+                                    <div class="sectionheadtext areaheading" style="padding-bottom: 5px;">
+                                    </div>
+                                </div>
+                                <div id="divGameText" style="margin: 0px; font-size: 15px; color: #606060; line-height: 1.75;">
+                                    <img id="imgThumb" src="../../mapimage/2048.png" alt="Países francófonos: Banderas - Juego de Geografía" width="160" border="0" style="padding-left: 10px; float: right;" />
+
+                                    Seterra es un juego gratuito de geografía, que le enseñará acerca de países, estados y capitales de todo el mundo. Esta es la versión en línea, que está escrita en lenguaje HTML5. También hay una versión para iOS (iPhone un iPad), y una versión para Android.<br><br>
+
+
+                                </div>
+                            </div>
+                            <br />
+                            <br />
+
+                            <div class="keywords">
+                                Términos de búsqueda: Programa de geografía, juego, jugar, gratuito, quiz, mapas, juego de mapas, mapa en blanco, ciencias sociales, tarea, estudios sociales, flash
+                            </div>
+
+                            <br />
+
+
+                        </div>
+                    </div>
+                    <div class="featureddiv2">
+                        
+<div>
+
+    
+               <div class="featureditem">
+                   <a id="featured2_repFeatured_ctl00_lnkItem" class="featured" href="../vgp/3199.html">
+                        <div class="divFeaturedImage">
+                            <img id="featured2_repFeatured_ctl00_imgImage" title="Estados miembros de las Naciones Unidas" class="featuredimage" loading="lazy" src="../../images/system/united-nations_150.jpg" alt="Estados miembros de las Naciones Unidas" height="100" width="150" border="0" />
+                        </div>
+                        <h4 style="margin:0px"><span id="featured2_repFeatured_ctl00_lblTitle">Estados miembros de las Naciones Unidas</span></h4>
+                        <p style="margin:0px"><span id="featured2_repFeatured_ctl00_lblDescription">Juego de mapas</span></p>
+                        <div style="clear:both"></div>
+                    </a>
+               </div>
+        
+               <div class="featureditem">
+                   <a id="featured2_repFeatured_ctl01_lnkItem" class="featured" href="../vgp/3124.html">
+                        <div class="divFeaturedImage">
+                            <img id="featured2_repFeatured_ctl01_imgImage" title="Los paralelos principales" class="featuredimage" loading="lazy" src="../../images/system/globe2_150.jpg" alt="Los paralelos principales" height="100" width="150" border="0" />
+                        </div>
+                        <h4 style="margin:0px"><span id="featured2_repFeatured_ctl01_lblTitle">Los paralelos principales</span></h4>
+                        <p style="margin:0px"><span id="featured2_repFeatured_ctl01_lblDescription">Juego de mapas</span></p>
+                        <div style="clear:both"></div>
+                    </a>
+               </div>
+        
+               <div class="featureditem">
+                   <a id="featured2_repFeatured_ctl02_lnkItem" class="featured" href="../vgp/3287.html">
+                        <div class="divFeaturedImage">
+                            <img id="featured2_repFeatured_ctl02_imgImage" title="Continentes y océanos (con imagenes)" class="featuredimage" loading="lazy" src="../../mapimage/thumbs150/3287.png" alt="Continentes y océanos (con imagenes)" height="100" width="150" border="0" />
+                        </div>
+                        <h4 style="margin:0px"><span id="featured2_repFeatured_ctl02_lblTitle">Continentes y océanos (con imagenes)</span></h4>
+                        <p style="margin:0px"><span id="featured2_repFeatured_ctl02_lblDescription">Juego de mapas</span></p>
+                        <div style="clear:both"></div>
+                    </a>
+               </div>
+        
+               <div class="featureditem">
+                   <a id="featured2_repFeatured_ctl03_lnkItem" class="featured" href="../vgp/3285.html">
+                        <div class="divFeaturedImage">
+                            <img id="featured2_repFeatured_ctl03_imgImage" title="Estados Unidos: Estados (con imagenes)" class="featuredimage" loading="lazy" src="../../mapimage/thumbs150/3285.png" alt="Estados Unidos: Estados (con imagenes)" height="100" width="150" border="0" />
+                        </div>
+                        <h4 style="margin:0px"><span id="featured2_repFeatured_ctl03_lblTitle">Estados Unidos: Estados (con imagenes)</span></h4>
+                        <p style="margin:0px"><span id="featured2_repFeatured_ctl03_lblDescription">Juego de mapas</span></p>
+                        <div style="clear:both"></div>
+                    </a>
+               </div>
+        
+</div>
+
+
+                    </div>
+                    <div style="clear: both"></div>
+                </div>
+                <div id="rtcol" class="gg-item gg-item-right">
+                    <div id="panApp">
+	
+                        <div class="applinks">
+                            <a href="https://itunes.apple.com/us/app/seterra-geography-full/id1093460065">
+                                <img src="../../images/system/appstore_en.png" style="padding-right: 20px; width: 150px; height: 45px;" /></a><br />
+                            <a href="https://play.google.com/store/apps/details?id=com.seterra">
+                                <img src="../../images/system/googleplay_en.png" style="padding-right: 20px; width: 150px; height: 45px;"></a>
+                        </div>
+                    
+</div>
+                    
+                    <div id="panSpeedrun">
+	
+                        <div class="divSpeedrun">
+                            <a href="https://www.speedrun.com/seterra/_French_Speaking_Countries_Flags" rel="nofollow">
+                                <img src="../../images/system/speedrun.png" alt="Speedrun.com" /><br />
+                                Seterra on Speedrun.com</a>
+
+                        </div>
+                    
+</div>
+                    
+<div id="divAd_Skyscraper1" class="divAd_Skyscraper">
+        
+        <!-- adngin-gg-seterra_sidebar_right-0  -->
+        <div id="adngin-gg-seterra_sidebar_right-0"></div>
+
+</div>
+                    
+
+<div id="divAd_Skyscraper2" class="divAd_Skyscraper">
+    
+    <!-- adngin-gg-seterra_sidebar_right_2-0  -->
+    <div id="adngin-gg-seterra_sidebar_right_2-0"></div>
+
+    <div style="text-align:center; margin-top:10px">
+        <a id="Ad_Skyscraper2_lnkRemoveAds3" href="../../pro.html"></a>
+    </div>
+
+</div>
+
+                    <div id="panFeatured">
+	
+                        <div class="featureddiv">
+                            
+<div>
+
+    
+               <div class="featureditem">
+                   <a id="featured_repFeatured_ctl00_lnkItem" class="featured" href="../vgp/3402.html">
+                        <div class="divFeaturedImage">
+                            <img id="featured_repFeatured_ctl00_imgImage" title="Siete maravillas del mundo antiguo" class="featuredimage" loading="lazy" src="../../images/system/ancient_150.jpg" alt="Siete maravillas del mundo antiguo" height="100" width="150" border="0" />
+                        </div>
+                        <h4 style="margin:0px"><span id="featured_repFeatured_ctl00_lblTitle">Siete maravillas del mundo antiguo</span></h4>
+                        <p style="margin:0px"><span id="featured_repFeatured_ctl00_lblDescription">Juego de mapas</span></p>
+                        <div style="clear:both"></div>
+                    </a>
+               </div>
+        
+               <div class="featureditem">
+                   <a id="featured_repFeatured_ctl01_lnkItem" class="featured" href="../vgp/3287.html">
+                        <div class="divFeaturedImage">
+                            <img id="featured_repFeatured_ctl01_imgImage" title="Continentes y océanos (con imagenes)" class="featuredimage" loading="lazy" src="../../mapimage/thumbs150/3287.png" alt="Continentes y océanos (con imagenes)" height="100" width="150" border="0" />
+                        </div>
+                        <h4 style="margin:0px"><span id="featured_repFeatured_ctl01_lblTitle">Continentes y océanos (con imagenes)</span></h4>
+                        <p style="margin:0px"><span id="featured_repFeatured_ctl01_lblDescription">Juego de mapas</span></p>
+                        <div style="clear:both"></div>
+                    </a>
+               </div>
+        
+               <div class="featureditem">
+                   <a id="featured_repFeatured_ctl02_lnkItem" class="featured" href="../vgp/3199.html">
+                        <div class="divFeaturedImage">
+                            <img id="featured_repFeatured_ctl02_imgImage" title="Estados miembros de las Naciones Unidas" class="featuredimage" loading="lazy" src="../../images/system/unflag_150.jpg" alt="Estados miembros de las Naciones Unidas" height="100" width="150" border="0" />
+                        </div>
+                        <h4 style="margin:0px"><span id="featured_repFeatured_ctl02_lblTitle">Estados miembros de las Naciones Unidas</span></h4>
+                        <p style="margin:0px"><span id="featured_repFeatured_ctl02_lblDescription">Juego de Mapas</span></p>
+                        <div style="clear:both"></div>
+                    </a>
+               </div>
+        
+               <div class="featureditem">
+                   <a id="featured_repFeatured_ctl03_lnkItem" class="featured" href="../vgp/3130.html">
+                        <div class="divFeaturedImage">
+                            <img id="featured_repFeatured_ctl03_imgImage" title="El Caribe: Capitales" class="featuredimage" loading="lazy" src="../../images/system/havana_150.jpg" alt="El Caribe: Capitales" height="100" width="150" border="0" />
+                        </div>
+                        <h4 style="margin:0px"><span id="featured_repFeatured_ctl03_lblTitle">El Caribe: Capitales</span></h4>
+                        <p style="margin:0px"><span id="featured_repFeatured_ctl03_lblDescription">Juego de mapas</span></p>
+                        <div style="clear:both"></div>
+                    </a>
+               </div>
+        
+</div>
+
+
+                        </div>
+                    
+</div>
+
+                </div>
+            </div>
+            
+
+<div id="footer">
+    <div id="footercontent">
+        <div class="smediawrapper">
+            <a href="https://www.twitch.tv/directory/game/Seterra/videos/all" style="text-decoration: none;">
+                <img alt="Twitch" class="smedia smediatwitch" src="../../images/system/twitch.png" style="width: 35px; height: 35px;" /></a>
+            <a href="https://discord.gg/kW8Y3AG9wk" style="text-decoration: none;">
+                <img alt="Discord" class="smedia " src="../../images/system/discord.png" style="width: 35px; height: 35px;" /></a>
+            <a href="https://www.facebook.com/seterra.geography" style="text-decoration: none;">
+                <img alt="Facebook" class="smedia" src="../../images/system/facebook.png" style="width: 35px; height: 35px;" /></a>
+            <a href="https://twitter.com/SeterraGeo">
+                <img alt="Twitter" class="smedia" src="../../images/system/twitter.png" style="width: 35px; height: 35px;" /></a>
+            <a href="https://www.youtube.com/c/seterrageography">
+                <img alt="Youtube" class="smedia" src="../../images/system/youtube3.png" style="width: 35px; height: 35px;" /></a>
+            <a href="https://bit.ly/2SntfBU">
+                <img alt="Instagram" class="smedia" src="../../images/system/instagram.png" style="width: 35px; height: 35px;" /></a>
+        </div>
+        <div style="max-width: 900px;">
+            <div class="footerMenu"><div class="title">Help Center</div>  <ul> <li><a href="../../en/p/contact.html">Contact Us</a></li> <li><a href="../../en/p/faq.html">FAQ (Website)</a></li> <li><a href="../../en/p/app-faq.html">FAQ (App)</a></li> <li><a href="../../en/p/tips-and-tricks.html">Tips & Tricks</a></li> <li><a href="../../pro.html">Pricing</a></li> <li><a href="../../en/blog.html">Blog</a></li> </ul>  </div>  <div class="footerMenu"><div class="title">&nbsp;</div>  <ul>  <li><a href="../../en/p/seterra-modes.html">Game Modes</a></li> <li><a href="../../en/p/seterra-highscores.html">Personal Leaderboards</a></li> <li><a href="../../en/p/custom-quizzes.html">Create Custom Quizzes</a></li> <li><a href="../../en/p/public-leaderboards.html">Public Leaderboards</a></li> <li><a href="../../en/p/custom-locations.html">Add Custom Locations</a></li>    </ul>  </div>  <div class="footerMenu"><div class="title">Resources</div> <ul> <li><a href="../../en/l/pdf%EF%B9%96img=1.html">Printables</a></li> <li><a href="../../en/l/bla.html">Blank Maps</a></li> <li><a href="../../en/p/user-quizzes.html">User Generated Quizzes</a></li> <li><a href="../../en-an.html">Science Quizzes</a></li> <li><a href="../../en/p/top-scores.html">Top Scores</a></li> <li><a href="https://www.speedrun.com/seterra">Speedrun.com</a></li> </ul>  </div>  <div class="footerMenu"><div class="title">About</div>  <ul> <li><a href="../../terms.aspx.html">Terms & Conditions</a></li> <li><a href="../../privacy.aspx.html">Privacy Policy</a></li> <li><a href="../../en/p/contact.html">Contact Us</a></li> </ul>  </div>  <div style="clear:both"></div><br><br><span style="padding-left:20px;font-size:13px;color:#AAAAAA">01/02/2023 23:08:45</span>
+        </div>
+        <div style="clear:both"></div>
+        <div id="ccpa" style="display: none; cursor: pointer;margin-top:20px;">Do not share my Personal Information.</div>
+    </div>
+</div>
+
+        </div>
+    </form>
+</body>
+</html>

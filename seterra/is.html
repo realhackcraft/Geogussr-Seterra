@@ -1,0 +1,1348 @@
+
+
+<!DOCTYPE html >
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="is">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="twitter:image" content="https://www.geoguessr.com/seterra/img/phones.png" /><meta name="og:image" content="https://www.geoguessr.com/seterra/img/phones.png" /><meta name="twitter:description" content="Seterra er ókeypis landakortaleikur sem kennir þér um lönd, borgir og fleira um landafræði heimsins." /><meta name="twitter:creator" content="@seterrageo" /><meta name="twitter:site" content="@seterrageo" /><meta name="twitter:title" content="Seterra á vefnum - Landakortapróf" /><meta name="twitter:card" content="summary_large_image" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="Scripts/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script src="Scripts/jquery.cookie.js" type="text/javascript"></script>
+    <meta name="apple-itunes-app" content="app-id=1093460065" /><link href="CSS/pagestyles.css" rel="stylesheet" type="text/css" /><link href="CSS/geoguessr.css" rel="stylesheet" type="text/css" />
+    <script src="Scripts/general.js" type="text/javascript"></script>
+
+    
+
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<script type="text/javascript" src="Scripts/jquery.ddslick.min.js"></script>
+<script src="Scripts/utils.js"></script>
+<script src="Scripts/highscores.js"></script>
+
+
+    
+     <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <!-- Google Tag Manager -->
+    
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-W5K3B7M');</script>    
+    
+    <!-- End Google Tag Manager -->
+
+    <script>
+        var activeUnits = [
+            'gg-seterra_sidebar_right',
+            'gg-seterra_sidebar_right_2',
+            'gg-seterra_mobile_1',
+            'gg-seterra_headerleader',
+            'gg-seterra_nvu-and-float',
+            'gg-seterra_learboard_adhesion',
+            'gg-seterra_bottom_mpu',
+            'gg-seterra_outstream_mw'
+        ];
+
+        if (window.isProUser()) {
+            activeUnits = [];
+        }
+
+        window.snigelPubConf = {
+            "adengine": {
+                "activeAdUnits": activeUnits
+            }
+        };
+    </script>
+
+    
+        <script async data-cfasync="false" src="https://cdn.snigelweb.com/adengine/geoguessr.com/loader.js" type="text/javascript"></script>
+    <meta name="Description" content="Seterra er ókeypis landakortaleikur sem kennir þér um lönd, borgir og fleira um landafræði heimsins." /><link rel="canonical" href="is.html" /><meta property="og:type" content="website" /><title>
+	Seterra á vefnum - Landakortapróf
+</title></head>
+
+<body>
+    <script>
+        var lang ='is'
+    </script>
+    <form name="form1" method="post" action="is.html" id="form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTExMjIyODY0NWRkGR8obKExxmLBiG908nSG6CiHoaZFtYz7pic+k3Qd4Hs=" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="ED111DFB" />
+        
+<script async src="https://cse.google.com/cse.js?cx=1110b678f1dd23364"></script>
+<script>
+    function getCookie(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+
+    function hasDarkMode(url) {
+        var res = true
+        if (url.indexOf("terms.aspx") != -1) {
+            res = false
+        }
+        if (url.indexOf("privacy.aspx") != -1) {
+            res = false
+        }
+        if (url.indexOf("searchresults.aspx") != -1) {
+            res = false
+        }
+
+        return res
+    }
+
+    var darkmode = getCookie("darkmode");
+
+    if (hasDarkMode(window.location.href) == true) {
+        if (darkmode == "1" && (window.location.href.indexOf("darkmode") == -1)) {
+            document.write('<link rel="stylesheet" type="text/css" href="/seterra/css/darkmode.css" />');
+            
+        }
+        if (window.location.href.indexOf("noborders=1") != -1) {
+            document.write('<link rel="stylesheet" type="text/css" href="/seterra/css/noborders.css" />');
+        }
+
+        if (window.location.href.indexOf("darkmap=1") != -1) {
+            document.write('<link rel="stylesheet" type="text/css" href="/seterra/css/darkmap.css" />');
+        }
+    }
+
+    $(document).ready(function () {
+        if (window.location.href.indexOf("darkmode=0") != -1) {
+            $.cookie('darkmode', '0', { path: '/', expires: 14 });
+        }
+        if ($.cookie('darkmode') == "1" || window.location.href.indexOf("darkmode=1") != -1) {
+            $('#chkDarkMode').prop('checked', true);
+        }
+        setTimeout(function () {
+            if (document.getElementById("gsc-i-id1")) {
+                document.getElementById("gsc-i-id1").setAttribute("placeholder", "Search Seterra")
+            }
+        }, 1000);
+
+    })
+</script>
+
+
+ 
+<script>
+    $(document).ready(function () {
+        if (!!$.cookie('pledges')) {
+            $("#patreon-banner").show();
+        }
+    });
+</script>
+
+<style>#patreon-banner
+{
+    border-color: rgba(255, 216, 0, 0.5);
+    background-color: rgba(255, 216, 0, 0.2);
+}
+
+.patreon-banner-content {
+    margin:auto;
+    padding: 0.5rem;
+    max-width:1250px;
+}
+</style>
+
+<div id="patreon-banner" style="display:none;">
+    <div class="patreon-banner-content">
+        <p>
+            Patreon will be replaced with our GeoGuessr subscription.
+
+        <a href="patreon.html">Read more about the change here.</a>
+        </p>
+    </div>
+</div>
+ 
+
+<div id="header">
+    <div id="header-content-wrapper">
+        <div id="logo">
+            <a href="index.html">
+                <img src="images/system/gg-seterra-logo.png" class="wordmark" alt="Seterra logo"/>
+            </a>
+        </div>
+        <div id="divLanguageDropDown"></div>
+        <div class="spacer">
+            <div style="padding-top: 70px; padding-left: 20px; color: #888888;">
+                <input type="checkbox" id="chkDarkMode" onclick="loadDarkMode()" />
+                <label for="chkDarkMode">🌙 Dark Mode</label>
+            </div>
+
+            <div style="padding-top: 70px; padding-left: 20px; color: #888888; display: none;">
+                &nbsp;
+            </div>
+
+        </div>
+
+
+        <div id="socialmedia">
+
+            <div class="searchbox">
+                <div class="gcse-searchbox-only" data-resultsurl="/seterra/searchresults.aspx" data-autocompletemaxcompletions="35"></div>
+            </div>
+            <div class="mobilemenu">
+                <div class="mobilemenucontainer" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+            <div class="login-buttons">
+                <div id="logindiv">
+                    <span id="text-login" class="mem-login">Log in:</span>
+                    <a id="header1_linkLoginPatreon" class="mem-login linkLogin linkLoginPatreon" href="https://www.patreon.com/oauth2/authorize?response_type=code&amp;scope=users%20pledges-to-me%20my-campaign&amp;client_id=3865155315c95a00e278b2c3bd3a5b66ddf2c12b8fe486317e74a0e392eb1ec3&amp;redirect_uri=https://www.geoguessr.com/seterra/memberRedirect.aspx">Patreon</a>
+                    <a id="header1_linkLogoutPatreon" class="mem-login linkLogout linkLogoutPatreon" href="logout2.aspx.html">Log out</a>
+                    <a id="header1_linkLoginGeoGuessr" class="mem-login linkLogin linkLoginGeoGuessr" href="../signin%EF%B9%96target=%EA%A4%B7seterra.html">GeoGuessr</a>
+                    <a id="header1_linkLogoutGeoGuessr" class="mem-login linkLogout linkLogoutGeoGuessr" href="../signout%EF%B9%96target=%EA%A4%B7seterra.html">Log out</a>
+                </div>
+                <div id="loginName"></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="mobiledropdown" style="display: none">
+    <div class="mobiledropdowninner">
+        <div id="mainnav2" style="margin-bottom: 15px;">
+        </div>
+        <div style="margin-bottom: 15px;">
+            <a id="lnkDarkModeOn" class="navlink2" href="index.html" onclick="$('#chkDarkMode').prop('checked', true);loadDarkMode();return false;">Dark Mode On 🌙 </a>
+            <a id="lnkDarkModeOff" class="navlink2" href="index.html" onclick="$('#chkDarkMode').prop('checked', false);loadDarkMode();return false;">Dark Mode Off 🌙 </a>
+            <a id="lnkMyCustomQuizzes" class="navlink2 linkLogout" href='GenericErrorPage%EF%B9%96aspxerrorpath=%EA%A4%B7seterra%EA%A4%B7is%EA%A4%B7myaccount.aspx.htm'>My Custom Quizzes </a>
+
+            <a class="navlink2" href="index.html">Change language</a>
+
+            <div id="login2">
+            </div>
+            <div id="search2">
+                        <gcse:searchbox-only resultsurl="/seterra/searchresults.aspx"></gcse:searchbox-only>
+                </div>
+        </div>
+    </div>
+</div>
+<script>
+    var fFirst = true;
+    pageLang = 'is';
+
+    if (pageLang == '') pageLang = 'en';
+    pageLang = pageLang.toLowerCase();
+
+    if (window.location.href.indexOf("searchresult") == -1) {
+        $.cookie('recentlang', pageLang, { path: '/', expires: 14 });
+    }
+
+    function myFunction(x) {
+        x.classList.toggle("change");
+        var y = document.getElementsByClassName("mobiledropdown")[0];
+
+        if (y.style.display === "none") {
+            y.style.display = "block";
+        } else {
+            y.style.display = "none";
+        }
+    }
+
+    $(document).ready(function () {
+        var strMenu = "";
+        var navLinks = document.getElementsByClassName("navlink");
+        var i = 0;
+        var currentPage = window.location.pathname;
+        for (i; i < navLinks.length; i++) {
+            var lb = navLinks[i].getAttribute("href")
+            if (lb == currentPage) {
+                navLinks[i].classList.add("active")
+            }
+            strMenu = strMenu + navLinks[i].outerHTML;
+
+        }
+
+        $("#mainnav2").html(strMenu);
+        if (document.documentElement.clientWidth <= 820) {
+            $("#logindiv").appendTo("#login2")
+        };
+
+        var ddBasic = [
+        { text: "Afrikaans", imageSrc: "/seterra/images/system/flags/langlistflags/flag-af.png", value: "af", selected: false}, { text: "Čeština (Czech)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-cs.png", value: "cs", selected: false}, { text: "Català (Catalan)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ca.png", value: "ca", selected: false}, { text: "Dansk (Danish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-da.png", value: "da", selected: false}, { text: "Deutsch (German)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-de.png", value: "de", selected: false}, { text: "English", imageSrc: "/seterra/images/system/flags/langlistflags/flag-en.png", value: "en", selected: false}, { text: "Eesti (Estonian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-et.png", value: "et", selected: false}, { text: "Español (Spanish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-es.png", value: "es", selected: false}, { text: "Français (French)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-fr.png", value: "fr", selected: false}, { text: "Ελληνικά (Greek)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-el.png", value: "el", selected: false}, { text: "Gaeilge (Irish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ga.png", value: "ga", selected: false}, { text: "Hrvatski (Croatian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-hr.png", value: "hr", selected: false}, { text: "Bahasa Indonesia (Indonesian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-id.png", value: "id", selected: false}, { text: "Íslenska (Icelandic)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-is.png", value: "is", selected: false}, { text: "Italiano (Italian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-it.png", value: "it", selected: false}, { text: "Latviešu valoda (Latvian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-lv.png", value: "lv", selected: false}, { text: "Lietuvių (Lithuanian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-lt.png", value: "lt", selected: false}, { text: "Magyar (Hungarian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-hu.png", value: "hu", selected: false}, { text: "Nederlands (Dutch)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-nl.png", value: "nl", selected: false}, { text: "Norsk (Norwegian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-nb.png", value: "nb", selected: false}, { text: "Polski (Polish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-pl.png", value: "pl", selected: false}, { text: "Português (Portuguese)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-pt.png", value: "pt", selected: false}, { text: "Română (Romanian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ro.png", value: "ro", selected: false}, { text: "русский (Russian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ru.png", value: "ru", selected: false}, { text: "Shqip (Albanian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-sq.png", value: "sq", selected: false}, { text: "Slovenský jazyk (Slovak)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-sk.png", value: "sk", selected: false}, { text: "Slovenski jezik (Slovene)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-sl.png", value: "sl", selected: false}, { text: "српски (Serbian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-sr.png", value: "sr", selected: false}, { text: "Suomi (Finnish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-fi.png", value: "fi", selected: false}, { text: "Svenska (Swedish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-sv.png", value: "sv", selected: false}, { text: "Türkçe (Turkish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-tr.png", value: "tr", selected: false}, { text: "Українська (Ukrainian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-uk.png", value: "uk", selected: false}, { text: "Oʻzbekcha (Uzbek)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-uz.png", value: "uz", selected: false}, { text: "አማርኛ (Amharic)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-am.png", value: "am", selected: false}, { text: "العربية (Arabic)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ar.png", value: "ar", selected: false}, { text: "فارسی (Persian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-fa.png", value: "fa", selected: false}, { text: "български (Bulgarian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-bg.png", value: "bg", selected: false}, { text: "中文 (Chinese (simplified))", imageSrc: "/seterra/images/system/flags/langlistflags/flag-zh.png", value: "zh", selected: false}, { text: "עִבְרִית‎ (Hebrew)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-he.png", value: "he", selected: false}, { text: "हिन्दी (Hindi)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-hi.png", value: "hi", selected: false}, { text: "தமிழ் (Tamil)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ta.png", value: "ta", selected: false}, { text: "සිංහල (Sinhala)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-si.png", value: "si", selected: false}, { text: "日本語 (Japanese)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ja.png", value: "ja", selected: false}, { text: "한국어 (Korean)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ko.png", value: "ko", selected: false}, { text: "ไทย (Thai)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-th.png", value: "th", selected: false}
+        ];
+        var fFound = false;
+        for (var i = 0; i < ddBasic.length; i++) {
+            if (ddBasic[i].value == pageLang) {
+                ddBasic[i].selected = true;
+                fFound = true;
+            }
+        }
+
+        if (fFound == true) {
+            $('#divLanguageDropDown').ddslick({
+                data: ddBasic,
+                
+                selectText: "Select language",
+                imagePosition: "left",
+                onSelected: function (data) {
+                    if (fFirst == false) {
+                        window.location = "/seterra/" + data.selectedData.value;
+                    }
+                    fFirst = false;
+                }
+            })
+
+        }
+        else {
+            $('#divLanguageDropDown').hide;
+        }
+
+        $(".dd-selected-image").attr("alt", "Flag " + pageLang)
+
+    })
+</script>
+
+        <div>
+            <div class="search-results">
+                <gcse:searchresults></gcse:searchresults>
+            </div>
+            <div id="contentwrapper">
+                <div id="leftcol">
+                    <div id="mainbanner">
+	
+                        <img id="imgMain" src="images/system/banners/world.jpg" alt="Landafræðileikir" border="0" />
+
+                    
+</div>
+                    <div id="maincontent">
+                        <div id="breadcrumbs">
+                            <span id="breadcrumbs1"><a href='index.html' >Home</a> >> Seterra á vefnum - Landakortapróf</span>
+                        </div>
+
+                        <div class="sectioncontent">
+                            <h1 class="header">
+                                <span class='titleleft'>Seterra á vefnum </span><span class='titlert'>- Landakortapróf</span>
+                            </h1>
+                            <div id="panPreamble">
+	
+                                <div class="preambleExlist">
+                                    Seterra er ögrandi fræðsluleikur um landafræði með fjölmörgum prófum. Þú getur fræðst um lönd, höfuðborgir, úthöf, fána og borgir í Afríku, Evrópu, Suður-Ameríku, Norður-Ameríku, Asíu og Eyjaálfu með prófum sem byggja á útlínuteikningum! Seterra hóf göngu sína árið 1997 og hefur verið þýtt á 40 tungumál. Fólk alls staðar að úr heiminum hefur notið þess að leika og fræðast.
+                                </div>
+                            
+</div>
+                            <div id="gameselect" style="margin-top: 17px;">
+
+                                <div class="exblock">
+                                    <div id="gamelist1_listtype" class="listtoggle">
+    <a id="gamelist1_btnhoriz" class="enabledlink" href="http://www.geoguessr.com/seterra/is?img=1">Sjá myndir</a>
+    <a id="gamelist1_btnvert" disabled="disabled" class="disabledlink">Sjá texta</a>
+</div>
+<div id="gamelist" style="width:100%">
+    <table id="gamelist1_exlist1" cellspacing="0" border="0" width="100%">
+	<tr>
+		<td>
+            <div class="sectionhead fullwidth lrg">
+
+                <div class="sectionheadtext areaheading lrg" id="EUR">
+                    Evrópa
+                </div>
+                <div style="clear: both;"></div>
+
+            </div>
+            <div class="exblock">
+
+                
+
+<div class="gamesublist vertical">
+    
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl00_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Evrópa: Lönd (46)" class="flag1 game3007" loading="lazy" src="exlflags/flag-europe.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Evrópa: Lönd (46)" href="is/vgp/3007.html">Evrópa: Lönd</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl01_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Evrópa: Höfuðborgir (39)" class="flag1 game3051" loading="lazy" src="exlflags/flag-europe.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Evrópa: Höfuðborgir (39)" href="is/vgp/3051.html">Evrópa: Höfuðborgir</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl02_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Evrópa: Borgir (39)" class="flag1 game3073" loading="lazy" src="exlflags/flag-europe.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Evrópa: Borgir (39)" href="is/vgp/3073.html">Evrópa: Borgir</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl03_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Evrópa: Fljót (18)" class="flag1 game3135" loading="lazy" src="exlflags/flag-europe.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Evrópa: Fljót (18)" href="is/vgp/3135.html">Evrópa: Fljót</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl04_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Evrópa: Fánar (37)" class="flag1 game2010" loading="lazy" src="exlflags/flag-europe.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Evrópa: Fánar (37)" href="is/fl/2010.html">Evrópa: Fánar</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl05_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Norðurlönd: Lönd og höfuðborgir (10)" class="flag1 game3187" loading="lazy" src="exlflags/flag-scandinavia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Norðurlönd: Lönd og höfuðborgir (10)" href="is/vgp/3187.html">Norðurlönd: Lönd og höfuðborgir</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl06_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Danmörk: Borgir (14)" class="flag1 game3075" loading="lazy" src="exlflags/flag-denmark.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Danmörk: Borgir (14)" href="is/vgp/3075.html">Danmörk: Borgir</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl07_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Ísland: Svæði (8)" class="flag1 game3688" loading="lazy" src="exlflags/flag-iceland.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Ísland: Svæði (8)" href="is/vgp/3688.html">Ísland: Svæði</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl08_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Ísland: Sveitarfélög (69)" class="flag1 game3689" loading="lazy" src="exlflags/flag-iceland.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Ísland: Sveitarfélög (69)" href="is/vgp/3689.html">Ísland: Sveitarfélög</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+</div>
+
+<div class="gamesublist horizontal" style="width: auto;">
+    
+
+</div>
+
+                <div style="clear: both;"></div>
+                <h3 style="margin-top:10px;margin-bottom:15px;">
+                    
+                </h3>
+            </div>
+        </td>
+	</tr><tr>
+		<td>
+            <div class="sectionhead fullwidth lrg">
+
+                <div class="sectionheadtext areaheading lrg" id="NAM">
+                    Norður Ameríka
+                </div>
+                <div style="clear: both;"></div>
+
+            </div>
+            <div class="exblock">
+
+                
+
+<div class="gamesublist vertical">
+    
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl00_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Norður- og Mið-Ameríka: Lönd (14)" class="flag1 game3015" loading="lazy" src="exlflags/flag-northamerica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Norður- og Mið-Ameríka: Lönd (14)" href="is/vgp/3015.html">Norður- og Mið-Ameríka: Lönd</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl01_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Norður- og Mið-Ameríka: Borgir (14)" class="flag1 game3079" loading="lazy" src="exlflags/flag-northamerica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Norður- og Mið-Ameríka: Borgir (14)" href="is/vgp/3079.html">Norður- og Mið-Ameríka: Borgir</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl02_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Norður- og Mið-Ameríka: Fánar (14)" class="flag1 game2015" loading="lazy" src="exlflags/flag-northamerica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Norður- og Mið-Ameríka: Fánar (14)" href="is/fl/2015.html">Norður- og Mið-Ameríka: Fánar</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl03_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Karíbahafseyjar: Lönd (24)" class="flag1 game3129" loading="lazy" src="exlflags/flag-caribbean.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Karíbahafseyjar: Lönd (24)" href="is/vgp/3129.html">Karíbahafseyjar: Lönd</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl04_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Bandaríkin: Ríkin 50 (50)" class="flag1 game3003" loading="lazy" src="exlflags/flag-usa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Bandaríkin: Ríkin 50 (50)" href="is/vgp/3003.html">Bandaríkin: Ríkin 50</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl05_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Bandaríkin: Stærstu borgir (24)" class="flag1 game3095" loading="lazy" src="exlflags/flag-usa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Bandaríkin: Stærstu borgir (24)" href="is/vgp/3095.html">Bandaríkin: Stærstu borgir</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl06_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Bandaríkin: Borgir (53)" class="flag1 game3094" loading="lazy" src="exlflags/flag-usa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Bandaríkin: Borgir (53)" href="is/vgp/3094.html">Bandaríkin: Borgir</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl07_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Bandaríkin: Ár og fljót (14)" class="flag1 game3134" loading="lazy" src="exlflags/flag-usa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Bandaríkin: Ár og fljót (14)" href="is/vgp/3134.html">Bandaríkin: Ár og fljót</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl08_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Bandaríkin: Fánar ríkja (50)" class="flag1 game2009" loading="lazy" src="exlflags/flag-usa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Bandaríkin: Fánar ríkja (50)" href="is/fl/2009.html">Bandaríkin: Fánar ríkja</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+</div>
+
+<div class="gamesublist horizontal" style="width: auto;">
+    
+
+</div>
+
+                <div style="clear: both;"></div>
+                <h3 style="margin-top:10px;margin-bottom:15px;">
+                    
+                </h3>
+            </div>
+        </td>
+	</tr><tr>
+		<td>
+            <div class="sectionhead fullwidth lrg">
+
+                <div class="sectionheadtext areaheading lrg" id="SAM">
+                    Suður Ameríka
+                </div>
+                <div style="clear: both;"></div>
+
+            </div>
+            <div class="exblock">
+
+                
+
+<div class="gamesublist vertical">
+    
+            <div id="gamelist1_exlist1_ctl02_subex1_ctl00_ctl00_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Suður-Ameríka: Lönd (13)" class="flag1 game3016" loading="lazy" src="exlflags/flag-southamerica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Suður-Ameríka: Lönd (13)" href="is/vgp/3016.html">Suður-Ameríka: Lönd</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl02_subex1_ctl00_ctl01_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Suður-Ameríka: Höfuðborgir (12)" class="flag1 game3017" loading="lazy" src="exlflags/flag-southamerica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Suður-Ameríka: Höfuðborgir (12)" href="is/vgp/3017.html">Suður-Ameríka: Höfuðborgir</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl02_subex1_ctl00_ctl02_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Suður-Ameríka: Fánar (12)" class="flag1 game2004" loading="lazy" src="exlflags/flag-southamerica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Suður-Ameríka: Fánar (12)" href="is/fl/2004.html">Suður-Ameríka: Fánar</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+</div>
+
+<div class="gamesublist horizontal" style="width: auto;">
+    
+
+</div>
+
+                <div style="clear: both;"></div>
+                <h3 style="margin-top:10px;margin-bottom:15px;">
+                    
+                </h3>
+            </div>
+        </td>
+	</tr><tr>
+		<td>
+            <div class="sectionhead fullwidth lrg">
+
+                <div class="sectionheadtext areaheading lrg" id="AFR">
+                    Afríka
+                </div>
+                <div style="clear: both;"></div>
+
+            </div>
+            <div class="exblock">
+
+                
+
+<div class="gamesublist vertical">
+    
+            <div id="gamelist1_exlist1_ctl03_subex1_ctl00_ctl00_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Afríka: Lönd (55)" class="flag1 game3163" loading="lazy" src="exlflags/flag-africa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Afríka: Lönd (55)" href="is/vgp/3163.html">Afríka: Lönd</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl03_subex1_ctl00_ctl01_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Afríka: Höfuðborgir (54)" class="flag1 game3204" loading="lazy" src="exlflags/flag-africa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Afríka: Höfuðborgir (54)" href="is/vgp/3204.html">Afríka: Höfuðborgir</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl03_subex1_ctl00_ctl02_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Afríka: Fánar (24)" class="flag1 game2003" loading="lazy" src="exlflags/flag-africa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Afríka: Fánar (24)" href="is/fl/2003.html">Afríka: Fánar</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+</div>
+
+<div class="gamesublist horizontal" style="width: auto;">
+    
+
+</div>
+
+                <div style="clear: both;"></div>
+                <h3 style="margin-top:10px;margin-bottom:15px;">
+                    
+                </h3>
+            </div>
+        </td>
+	</tr><tr>
+		<td>
+            <div class="sectionhead fullwidth lrg">
+
+                <div class="sectionheadtext areaheading lrg" id="ASI">
+                    Asía
+                </div>
+                <div style="clear: both;"></div>
+
+            </div>
+            <div class="exblock">
+
+                
+
+<div class="gamesublist vertical">
+    
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl00_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Asía: Lönd (49)" class="flag1 game3646" loading="lazy" src="exlflags/flag-asia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Asía: Lönd (49)" href="is/vgp/3646.html">Asía: Lönd</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl01_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Asía: Höfuðborgir (47)" class="flag1 game3647" loading="lazy" src="exlflags/flag-asia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Asía: Höfuðborgir (47)" href="is/vgp/3647.html">Asía: Höfuðborgir</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+</div>
+
+<div class="gamesublist horizontal" style="width: auto;">
+    
+
+</div>
+
+                <div style="clear: both;"></div>
+                <h3 style="margin-top:10px;margin-bottom:15px;">
+                    
+                </h3>
+            </div>
+        </td>
+	</tr><tr>
+		<td>
+            <div class="sectionhead fullwidth lrg">
+
+                <div class="sectionheadtext areaheading lrg" id="AUS">
+                    Ástralasía
+                </div>
+                <div style="clear: both;"></div>
+
+            </div>
+            <div class="exblock">
+
+                
+
+<div class="gamesublist vertical">
+    
+            <div id="gamelist1_exlist1_ctl05_subex1_ctl00_ctl00_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Eyjaálfa: Lönd (23)" class="flag1 game3128" loading="lazy" src="exlflags/flag-oceania.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Eyjaálfa: Lönd (23)" href="is/vgp/3128.html">Eyjaálfa: Lönd</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl05_subex1_ctl00_ctl01_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Ástralía: Nágrannalönd (9)" class="flag1 game3061" loading="lazy" src="exlflags/flag-austral.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Ástralía: Nágrannalönd (9)" href="is/vgp/3061.html">Ástralía: Nágrannalönd</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+</div>
+
+<div class="gamesublist horizontal" style="width: auto;">
+    
+
+</div>
+
+                <div style="clear: both;"></div>
+                <h3 style="margin-top:10px;margin-bottom:15px;">
+                    
+                </h3>
+            </div>
+        </td>
+	</tr><tr>
+		<td>
+            <div class="sectionhead fullwidth lrg">
+
+                <div class="sectionheadtext areaheading lrg" id="WOR">
+                    Heimurinn
+                </div>
+                <div style="clear: both;"></div>
+
+            </div>
+            <div class="exblock">
+
+                
+
+<div class="gamesublist vertical">
+    
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl00_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Heimurinn: Heimsálfur (7)" class="flag1 game3004" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Heimurinn: Heimsálfur (7)" href="is/vgp/3004.html">Heimurinn: Heimsálfur</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl01_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Heimurinn: Aðildarríki Sameinuðu þjóðanna (193)" class="flag1 game3199" loading="lazy" src="exlflags/flag-un.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Heimurinn: Aðildarríki Sameinuðu þjóðanna (193)" href="is/vgp/3199.html">Heimurinn: Aðildarríki Sameinuðu þjóðanna</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl02_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Spænskumælandi lönd (21)" class="flag1 game3153" loading="lazy" src="exlflags/flag-spain.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Spænskumælandi lönd (21)" href="is/vgp/3153.html">Spænskumælandi lönd</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl03_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Heimurinn: Fánar (16)" class="flag1 game2007" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Heimurinn: Fánar (16)" href="is/fl/2007.html">Heimurinn: Fánar</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl04_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Heimurinn: Fánar (erfiða útgáfan) (105)" class="flag1 game2008" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Heimurinn: Fánar (erfiða útgáfan) (105)" href="is/fl/2008.html">Heimurinn: Fánar (erfiða útgáfan)</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl05_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Heimurinn: Jarðflekar (15)" class="flag1 game3161" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Heimurinn: Jarðflekar (15)" href="is/vgp/3161.html">Heimurinn: Jarðflekar</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl06_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Sólkerfið: Reikistjörnur (8)" class="flag1 game3123" loading="lazy" src="exlflags/flag-solar.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Sólkerfið: Reikistjörnur (8)" href="is/vgp/3123.html">Sólkerfið: Reikistjörnur</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+</div>
+
+<div class="gamesublist horizontal" style="width: auto;">
+    
+
+</div>
+
+                <div style="clear: both;"></div>
+                <h3 style="margin-top:10px;margin-bottom:15px;">
+                    
+                </h3>
+            </div>
+        </td>
+	</tr>
+</table>
+
+
+</div>
+
+                                </div>
+                                <br />
+                                <hr />
+                                <div style="direction: ltr" lang="en">
+                                    <span id="lblGameCount" dir="ltr"><p>In <b>Icelandic (Íslenska)</b>, 38 games were played yesterday.</p></span>
+                                </div>
+                                <br />
+                                <br />
+                                -
+                                <br />
+
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                    <div style="width: 100%; clear: both;padding-top:50px;">
+                        <div style="margin: auto;width:600px;text-align:center">
+                            <img src="images/system/plan-international.jpg" alt="Plan International Corporate Partner 2021" />
+                        <br />
+                            <div style="direction:ltr;">As a Corporate Partner, Seterra Geography supports <a href="https://plan-international.org/">Plan International</a> / <a href="https://plansverige.org/for-foretag/partnerskap/">Plan Sverige</a>, advancing childrenï¿½s rights in more than 70 countries.</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="rtcol">
+                    <div id="panApp">
+	
+                        <div class="applinks">
+
+                            <a href="https://itunes.apple.com/us/app/seterra-geography-full/id1093460065">
+                                <img src="images/system/appstore_en.png" style="padding-right: 20px; width: 150px; height: 45px;" /></a><br />
+                            <a href="https://play.google.com/store/apps/details?id=com.seterra">
+                                <img src="images/system/googleplay_en.png" style="padding-right: 20px; width: 150px; height: 45px;"></a>
+                        </div>
+                    
+</div>
+
+                    
+                    <br />
+
+
+                </div>
+
+
+
+                <div id="panFeatured">
+	
+                    <div class="featureddiv">
+                        
+<div>
+
+    
+               <div class="featureditem">
+                   <a id="featured_repFeatured_ctl00_lnkItem" class="featured" href="is/vgp/3007.html">
+                        <div class="divFeaturedImage">
+                            <img id="featured_repFeatured_ctl00_imgImage" title="Evrópa: Lönd" class="featuredimage" loading="lazy" src="mapimage/thumbs150/3007.png" alt="Evrópa: Lönd" height="100" width="150" border="0" />
+                        </div>
+                        <h4 style="margin:0px"><span id="featured_repFeatured_ctl00_lblTitle">Evrópa: Lönd</span></h4>
+                        <p style="margin:0px"><span id="featured_repFeatured_ctl00_lblDescription">Landakortapróf</span></p>
+                        <div style="clear:both"></div>
+                    </a>
+               </div>
+        
+               <div class="featureditem">
+                   <a id="featured_repFeatured_ctl01_lnkItem" class="featured" href="is/vgp/3163.html">
+                        <div class="divFeaturedImage">
+                            <img id="featured_repFeatured_ctl01_imgImage" title="Afríka: Lönd" class="featuredimage" loading="lazy" src="mapimage/thumbs150/3163.png" alt="Afríka: Lönd" height="100" width="150" border="0" />
+                        </div>
+                        <h4 style="margin:0px"><span id="featured_repFeatured_ctl01_lblTitle">Afríka: Lönd</span></h4>
+                        <p style="margin:0px"><span id="featured_repFeatured_ctl01_lblDescription">Landakortapróf</span></p>
+                        <div style="clear:both"></div>
+                    </a>
+               </div>
+        
+               <div class="featureditem">
+                   <a id="featured_repFeatured_ctl02_lnkItem" class="featured" href="is/vgp/3016.html">
+                        <div class="divFeaturedImage">
+                            <img id="featured_repFeatured_ctl02_imgImage" title="Suður-Ameríka: Lönd" class="featuredimage" loading="lazy" src="mapimage/thumbs150/3016.png" alt="Suður-Ameríka: Lönd" height="100" width="150" border="0" />
+                        </div>
+                        <h4 style="margin:0px"><span id="featured_repFeatured_ctl02_lblTitle">Suður-Ameríka: Lönd</span></h4>
+                        <p style="margin:0px"><span id="featured_repFeatured_ctl02_lblDescription">Landakortapróf</span></p>
+                        <div style="clear:both"></div>
+                    </a>
+               </div>
+        
+</div>
+
+
+                    </div>
+                
+</div>
+                <div style="clear: both;"></div>
+            </div>
+            
+
+<div id="footer">
+    <div id="footercontent">
+        <div class="smediawrapper">
+            <a href="https://www.twitch.tv/directory/game/Seterra/videos/all" style="text-decoration: none;">
+                <img alt="Twitch" class="smedia smediatwitch" src="images/system/twitch.png" style="width: 35px; height: 35px;" /></a>
+            <a href="https://discord.gg/kW8Y3AG9wk" style="text-decoration: none;">
+                <img alt="Discord" class="smedia " src="images/system/discord.png" style="width: 35px; height: 35px;" /></a>
+            <a href="https://www.facebook.com/seterra.geography" style="text-decoration: none;">
+                <img alt="Facebook" class="smedia" src="images/system/facebook.png" style="width: 35px; height: 35px;" /></a>
+            <a href="https://twitter.com/SeterraGeo">
+                <img alt="Twitter" class="smedia" src="images/system/twitter.png" style="width: 35px; height: 35px;" /></a>
+            <a href="https://www.youtube.com/c/seterrageography">
+                <img alt="Youtube" class="smedia" src="images/system/youtube3.png" style="width: 35px; height: 35px;" /></a>
+            <a href="https://bit.ly/2SntfBU">
+                <img alt="Instagram" class="smedia" src="images/system/instagram.png" style="width: 35px; height: 35px;" /></a>
+        </div>
+        <div style="max-width: 900px;">
+            <div class="footerMenu"><div class="title">Help Center</div>  <ul> <li><a href="en/p/contact.html">Contact Us</a></li> <li><a href="en/p/faq.html">FAQ (Website)</a></li> <li><a href="en/p/app-faq.html">FAQ (App)</a></li> <li><a href="en/p/tips-and-tricks.html">Tips & Tricks</a></li> <li><a href="pro.html">Pricing</a></li> <li><a href="en/blog.html">Blog</a></li> </ul>  </div>  <div class="footerMenu"><div class="title">&nbsp;</div>  <ul>  <li><a href="en/p/seterra-modes.html">Game Modes</a></li> <li><a href="en/p/seterra-highscores.html">Personal Leaderboards</a></li> <li><a href="en/p/custom-quizzes.html">Create Custom Quizzes</a></li> <li><a href="en/p/public-leaderboards.html">Public Leaderboards</a></li> <li><a href="en/p/custom-locations.html">Add Custom Locations</a></li>    </ul>  </div>  <div class="footerMenu"><div class="title">Resources</div> <ul> <li><a href="en/l/pdf%EF%B9%96img=1.html">Printables</a></li> <li><a href="en/l/bla.html">Blank Maps</a></li> <li><a href="en/p/user-quizzes.html">User Generated Quizzes</a></li> <li><a href="en-an.html">Science Quizzes</a></li> <li><a href="en/p/top-scores.html">Top Scores</a></li> <li><a href="https://www.speedrun.com/seterra">Speedrun.com</a></li> </ul>  </div>  <div class="footerMenu"><div class="title">About</div>  <ul> <li><a href="terms.aspx.html">Terms & Conditions</a></li> <li><a href="privacy.aspx.html">Privacy Policy</a></li> <li><a href="en/p/contact.html">Contact Us</a></li> </ul>  </div>  <div style="clear:both"></div><br><br><span style="padding-left:20px;font-size:13px;color:#AAAAAA">2/1/2023 11:16:11 PM</span>
+        </div>
+        <div style="clear:both"></div>
+        <div id="ccpa" style="display: none; cursor: pointer;margin-top:20px;">Do not share my Personal Information.</div>
+    </div>
+</div>
+
+
+
+        </div>
+    </form>
+
+</body>
+</html>

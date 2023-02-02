@@ -1,0 +1,1380 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="twitter:image" content="https://www.geoguessr.com/seterra//seterra/images/system/banners/world.jpg" /><meta name="twitter:description" /><meta name="twitter:creator" content="@seterrageo" /><meta name="twitter:site" content="@seterrageo" /><meta name="twitter:title" content="A világ- Interaktív földrajzi játékok" /><meta name="twitter:card" content="summary_large_image" /><meta property="og:type" content="game" /><meta property="og:description" /><meta name="Description" /><meta property="og:title" content="A világ- Interaktív földrajzi játékok" /><meta property="fb:app_id" content="319599044764636" /><meta Property="og:image" content="https://www.geoguessr.com/seterra//seterra/images/system/banners/world.jpg" /><meta name="apple-itunes-app" content="app-id=1093460065" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="../../Scripts/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script src="../../Scripts/jquery.cookie.js" type="text/javascript"></script>
+    <link href="../../CSS/pagestyles.css" rel="stylesheet" type="text/css" /><link href="../../CSS/geoguessr.css" rel="stylesheet" type="text/css" />
+    <script src="../../Scripts/general.js" type="text/javascript" defer></script>
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" defer></script>
+
+
+    
+
+<link rel="icon" href="../../favicon.ico" type="image/x-icon" />
+<script type="text/javascript" src="../../Scripts/jquery.ddslick.min.js"></script>
+<script src="../../Scripts/utils.js"></script>
+<script src="../../Scripts/highscores.js"></script>
+
+
+    
+     <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <!-- Google Tag Manager -->
+    
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-W5K3B7M');</script>    
+    
+    <!-- End Google Tag Manager -->
+
+    <script>
+        var activeUnits = [
+            'gg-seterra_sidebar_right',
+            'gg-seterra_sidebar_right_2',
+            'gg-seterra_mobile_1',
+            'gg-seterra_headerleader',
+            'gg-seterra_nvu-and-float',
+            'gg-seterra_learboard_adhesion',
+            'gg-seterra_bottom_mpu',
+            'gg-seterra_outstream_mw'
+        ];
+
+        if (window.isProUser()) {
+            activeUnits = [];
+        }
+
+        window.snigelPubConf = {
+            "adengine": {
+                "activeAdUnits": activeUnits
+            }
+        };
+    </script>
+
+    
+        <script async data-cfasync="false" src="https://cdn.snigelweb.com/adengine/geoguessr.com/loader.js" type="text/javascript"></script>
+    
+    <script>
+        var lang = "hu"
+        document.documentElement.setAttribute("lang", lang);
+
+    </script>
+<link rel="canonical" href="wor.html" /><title>
+	A világ- Interaktív földrajzi játékok - Seterra
+</title></head>
+
+
+<body>
+
+
+    <form name="aspnetForm" method="post" action="wor.html" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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bsOpcGVzZWJiIG9yc3rDoWcgZsWRdsOhcm9zYWkfCQUoNTAgbGVnbsOpcGVzZWJiIG9yc3rDoWcgZsWRdsOhcm9zYWkgKDUwKR8ABQ1+L2h1L3ZncC8zMjMzZGQCDA9kFgICAQ9kFgQCAQ8PFggfBAUOZmxhZzEgZ2FtZTMxNTYfAgUgL3NldGVycmEvZXhsZmxhZ3MvZmxhZy13b3JsZC5wbmcfCQUcNzAgbGVnbsOpcGVzZWJiIG9yc3rDoWcgKDcwKR8FAgJkZAIDDw8WBh8DBRc3MCBsZWduw6lwZXNlYmIgb3JzesOhZx8JBRw3MCBsZWduw6lwZXNlYmIgb3JzesOhZyAoNzApHwAFDX4vaHUvdmdwLzMxNTZkZAIND2QWAgIBD2QWBAIBDw8WCB8EBQ5mbGFnMSBnYW1lMzIzNB8CBSAvc2V0ZXJyYS9leGxmbGFncy9mbGFnLXdvcmxkLnBuZx8JBSg3MCBsZWduw6lwZXNlYmIgb3JzesOhZyBmxZF2w6Fyb3NhaSAoNzApHwUCAmRkAgMPDxYGHwMFIzcwIGxlZ27DqXBlc2ViYiBvcnN6w6FnIGbFkXbDoXJvc2FpHwkFKDcwIGxlZ27DqXBlc2ViYiBvcnN6w6FnIGbFkXbDoXJvc2FpICg3MCkfAAUNfi9odS92Z3AvMzIzNGRkAg4PZBYCAgEPZBYEAgEPDxYIHwQFDmZsYWcxIGdhbWUzMTg1HwIFIC9zZXRlcnJhL2V4bGZsYWdzL2ZsYWctd29ybGQucG5nHwkFHDkwIGxlZ27DqXBlc2ViYiBvcnN6w6FnICg5MCkfBQICZGQCAw8PFgYfAwUXOTAgbGVnbsOpcGVzZWJiIG9yc3rDoWcfCQUcOTAgbGVnbsOpcGVzZWJiIG9yc3rDoWcgKDkwKR8ABQ1+L2h1L3ZncC8zMTg1ZGQCDw9kFgICAQ9kFgQCAQ8PFggfBAUOZmxhZzEgZ2FtZTMyMzUfAgUgL3NldGVycmEvZXhsZmxhZ3MvZmxhZy13b3JsZC5wbmcfCQUoOTAgbGVnbsOpcGVzZWJiIG9yc3rDoWcgZsWRdsOhcm9zYWkgKDkwKR8FAgJkZAIDDw8WBh8DBSM5MCBsZWduw6lwZXNlYmIgb3JzesOhZyBmxZF2w6Fyb3NhaR8JBSg5MCBsZWduw6lwZXNlYmIgb3Jz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ZsWRdsOhcm9zYWkgKDE5MykfAAUNfi9odS92Z3AvMzIzOGRkAhwPZBYCAgEPZBYEAgEPDxYIHwQFDmZsYWcxIGdhbWUzMDY5HwIFIC9zZXRlcnJhL2V4bGZsYWdzL2ZsYWctd29ybGQucG5nHwkFIVZpbMOhZzogbGVnbmFneW9iYiBvcnN6w6Fnb2sgKDU4KR8FAgJkZAIDDw8WBh8DBRxWaWzDoWc6IGxlZ25hZ3lvYmIgb3JzesOhZ29rHwkFIVZpbMOhZzogbGVnbmFneW9iYiBvcnN6w6Fnb2sgKDU4KR8ABQ1+L2h1L3ZncC8zMDY5ZGQCHQ9kFgICAQ9kFgQCAQ8PFggfBAUOZmxhZzEgZ2FtZTMyMTAfAgUhL3NldGVycmEvZXhsZmxhZ3MvZmxhZy1mcmFuY2UucG5nHwkFHkZyYW5jaWEgbnllbHbFsSBvcnN6w6Fnb2sgKDI5KR8FAgJkZAIDDw8WBh8DBRlGcmFuY2lhIG55ZWx2xbEgb3JzesOhZ29rHwkFHkZyYW5jaWEgbnllbHbFsSBvcnN6w6Fnb2sgKDI5KR8ABQ1+L2h1L3ZncC8zMjEwZGQCHg9kFgICAQ9kFgQCAQ8PFggfBAUOZmxhZzEgZ2FtZTMyNTAfAgUjL3NldGVycmEvZXhsZmxhZ3MvZmxhZy1wb3J0dWdhbC5wbmcfCQUfUG9ydHVnw6FsIG55ZWx2xbEgb3JzesOhZ29rICg5KR8FAgJkZAIDDw8WBh8DBRtQb3J0dWfDoWwgbnllbHbFsSBvcnN6w6Fnb2sfCQUfUG9ydHVnw6FsIG55ZWx2xbEgb3JzesOhZ29rICg5KR8ABQ1+L2h1L3ZncC8zMjUwZGQCHw9kFgICAQ9kFgQCAQ8PFggfBAUOZmxhZzEgZ2FtZTMxNTMfAgUgL3NldGVycmEvZXhsZmxhZ3MvZmxhZy1zcGFpbi5wbmcfCQUeU3BhbnlvbCBueWVsdsWxIG9yc3rDoWdvayAoMjEpHwUCAmRkAgMPDxYGHwMFGVNwYW55b2wgbnllbHbFsSBvcnN6w6Fnb2sfCQUeU3BhbnlvbCBueWVsdsWxIG9yc3rDoWdvayAoMjEpHwAFDX4vaHUvdmdwLzMxNTNkZAIgD2QWAgIBD2QWBAIBDw8WCB8EBQ5mbGFnMSBnYW1lMzEzMx8CBSAvc2V0ZXJy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w6F0w6lrb2tkZAIFD2QWAgIBDxYCHwMFiw08ZGl2IGNsYXNzPSJmb290ZXJNZW51Ij48ZGl2IGNsYXNzPSJ0aXRsZSI+SGVscCBDZW50ZXI8L2Rpdj4gIDx1bD4gPGxpPjxhIGhyZWY9Ii9zZXRlcnJhL2VuL3AvY29udGFjdCI+Q29udGFjdCBVczwvYT48L2xpPiA8bGk+PGEgaHJlZj0iL3NldGVycmEvZW4vcC9mYXEiPkZBUSAoV2Vic2l0ZSk8L2E+PC9saT4gPGxpPjxhIGhyZWY9Ii9zZXRlcnJhL2VuL3AvYXBwLWZhcSI+RkFRIChBcHApPC9hPjwvbGk+IDxsaT48YSBocmVmPSIvc2V0ZXJyYS9lbi9wL3RpcHMtYW5kLXRyaWNrcyI+VGlwcyAmIFRyaWNrczwvYT48L2xpPiA8bGk+PGEgaHJlZj0iL3NldGVycmEvcHJvIj5QcmljaW5nPC9hPjwvbGk+IDxsaT48YSBocmVmPSIvc2V0ZXJyYS9lbi9ibG9nIj5CbG9nPC9hPjwvbGk+IDwvdWw+ICA8L2Rpdj4gIDxkaXYgY2xhc3M9ImZvb3Rlck1lbnUiPjxkaXYgY2xhc3M9InRpdGxlIj4mbmJzcDs8L2Rpdj4gIDx1bD4gIDxsaT48YSBocmVmPSIvc2V0ZXJyYS9lbi9wL3NldGVycmEtbW9kZXMiPkdhbWUgTW9kZXM8L2E+PC9saT4gPGxpPjxhIGhyZWY9Ii9zZXRlcnJhL2VuL3Avc2V0ZXJyYS1oaWdoc2NvcmVzIj5QZXJzb25hbCBMZWFkZXJib2FyZHM8L2E+PC9saT4gPGxpPjxhIGhyZWY9Ii9zZXRlcnJhL2VuL3AvY3VzdG9tLXF1aXp6ZXMiPkNyZWF0ZSBDdXN0b20gUXVpenplczwvYT48L2xpPiA8bGk+PGEgaHJlZj0iL3NldGVycmEvZW4vcC9wdWJsaWMtbGVhZGVyYm9hcmRzIj5QdWJsaWMgTGVhZGVyYm9hcmRzPC9hPjwvbGk+IDxsaT48YSBocmVmPSIvc2V0ZXJyYS9lbi9wL2N1c3RvbS1sb2NhdGlvbnMiPkFkZCBDdXN0b20gTG9jYXRpb25zPC9hPjwvbGk+ICAgIDwvdWw+ICA8L2Rpdj4gIDxkaXYgY2xhc3M9ImZvb3Rlck1lbnUiPjxkaXYgY2xhc3M9InRpdGxlIj5SZXNvdXJjZXM8L2Rpdj4gPHVsPiA8bGk+PGEgaHJlZj0iL3NldGVycmEvZW4vbC9wZGY/aW1nPTEiPlByaW50YWJsZXM8L2E+PC9saT4gPGxpPjxhIGhyZWY9Ii9zZXRlcnJhL2VuL2wvYmxhIj5CbGFuayBNYXBzPC9hPjwvbGk+IDxsaT48YSBocmVmPSIvc2V0ZXJyYS9lbi9wL3VzZXItcXVpenplcyI+VXNlciBHZW5lcmF0ZWQgUXVpenplczwvYT48L2xpPiA8bGk+PGEgaHJlZj0iL3NldGVycmEvZW4tYW4iPlNjaWVuY2UgUXVpenplczwvYT48L2xpPiA8bGk+PGEgaHJlZj0iL3NldGVycmEvZW4vcC90b3Atc2NvcmVzIj5Ub3AgU2NvcmVzPC9hPjwvbGk+IDxsaT48YSBocmVmPSJodHRwczovL3d3dy5zcGVlZHJ1bi5jb20vc2V0ZXJyYSI+U3BlZWRydW4uY29tPC9hPjwvbGk+IDwvdWw+ICA8L2Rpdj4gIDxkaXYgY2xhc3M9ImZvb3Rlck1lbnUiPjxkaXYgY2xhc3M9InRpdGxlIj5BYm91dDwvZGl2PiAgPHVsPiA8bGk+PGEgaHJlZj0iL3NldGVycmEvdGVybXMuYXNweCI+VGVybXMgJiBDb25kaXRpb25zPC9hPjwvbGk+IDxsaT48YSBocmVmPSIvc2V0ZXJyYS9wcml2YWN5LmFzcHgiPlByaXZhY3kgUG9saWN5PC9hPjwvbGk+IDxsaT48YSBocmVmPSIvc2V0ZXJyYS9lbi9wL2NvbnRhY3QiPkNvbnRhY3QgVXM8L2E+PC9saT4gPC91bD4gIDwvZGl2PiAgPGRpdiBzdHlsZT0iY2xlYXI6Ym90aCI+PC9kaXY+PGJyPjxicj48c3BhbiBzdHlsZT0icGFkZGluZy1sZWZ0OjIwcHg7Zm9udC1zaXplOjEzcHg7Y29sb3I6I0FBQUFBQSI+Mi8xLzIwMjMgMTE6MTY6MTMgUE08L3NwYW4+ZGRikchoUxZXtMXN7qd2Y4Ggbtto3MMRqlhi8GwuZ191WQ==" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="EE7B4E72" />
+        
+<script async src="https://cse.google.com/cse.js?cx=1110b678f1dd23364"></script>
+<script>
+    function getCookie(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+
+    function hasDarkMode(url) {
+        var res = true
+        if (url.indexOf("terms.aspx") != -1) {
+            res = false
+        }
+        if (url.indexOf("privacy.aspx") != -1) {
+            res = false
+        }
+        if (url.indexOf("searchresults.aspx") != -1) {
+            res = false
+        }
+
+        return res
+    }
+
+    var darkmode = getCookie("darkmode");
+
+    if (hasDarkMode(window.location.href) == true) {
+        if (darkmode == "1" && (window.location.href.indexOf("darkmode") == -1)) {
+            document.write('<link rel="stylesheet" type="text/css" href="/seterra/css/darkmode.css" />');
+            
+        }
+        if (window.location.href.indexOf("noborders=1") != -1) {
+            document.write('<link rel="stylesheet" type="text/css" href="/seterra/css/noborders.css" />');
+        }
+
+        if (window.location.href.indexOf("darkmap=1") != -1) {
+            document.write('<link rel="stylesheet" type="text/css" href="/seterra/css/darkmap.css" />');
+        }
+    }
+
+    $(document).ready(function () {
+        if (window.location.href.indexOf("darkmode=0") != -1) {
+            $.cookie('darkmode', '0', { path: '/', expires: 14 });
+        }
+        if ($.cookie('darkmode') == "1" || window.location.href.indexOf("darkmode=1") != -1) {
+            $('#chkDarkMode').prop('checked', true);
+        }
+        setTimeout(function () {
+            if (document.getElementById("gsc-i-id1")) {
+                document.getElementById("gsc-i-id1").setAttribute("placeholder", "Search Seterra")
+            }
+        }, 1000);
+
+    })
+</script>
+
+
+ 
+<script>
+    $(document).ready(function () {
+        if (!!$.cookie('pledges')) {
+            $("#patreon-banner").show();
+        }
+    });
+</script>
+
+<style>#patreon-banner
+{
+    border-color: rgba(255, 216, 0, 0.5);
+    background-color: rgba(255, 216, 0, 0.2);
+}
+
+.patreon-banner-content {
+    margin:auto;
+    padding: 0.5rem;
+    max-width:1250px;
+}
+</style>
+
+<div id="patreon-banner" style="display:none;">
+    <div class="patreon-banner-content">
+        <p>
+            Patreon will be replaced with our GeoGuessr subscription.
+
+        <a href="../../patreon.html">Read more about the change here.</a>
+        </p>
+    </div>
+</div>
+ 
+
+<div id="header">
+    <div id="header-content-wrapper">
+        <div id="logo">
+            <a href="../../index.html">
+                <img src="../../images/system/gg-seterra-logo.png" class="wordmark" alt="Seterra logo"/>
+            </a>
+        </div>
+        <div id="divLanguageDropDown"></div>
+        <div class="spacer">
+            <div style="padding-top: 70px; padding-left: 20px; color: #888888;">
+                <input type="checkbox" id="chkDarkMode" onclick="loadDarkMode()" />
+                <label for="chkDarkMode">🌙 Dark Mode</label>
+            </div>
+
+            <div style="padding-top: 70px; padding-left: 20px; color: #888888; display: none;">
+                &nbsp;
+            </div>
+
+        </div>
+
+
+        <div id="socialmedia">
+
+            <div class="searchbox">
+                <div class="gcse-searchbox-only" data-resultsurl="/seterra/searchresults.aspx" data-autocompletemaxcompletions="35"></div>
+            </div>
+            <div class="mobilemenu">
+                <div class="mobilemenucontainer" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+            <div class="login-buttons">
+                <div id="logindiv">
+                    <span id="text-login" class="mem-login">Log in:</span>
+                    <a id="ctl00_header1_linkLoginPatreon" class="mem-login linkLogin linkLoginPatreon" href="https://www.patreon.com/oauth2/authorize?response_type=code&amp;scope=users%20pledges-to-me%20my-campaign&amp;client_id=3865155315c95a00e278b2c3bd3a5b66ddf2c12b8fe486317e74a0e392eb1ec3&amp;redirect_uri=https://www.geoguessr.com/seterra/memberRedirect.aspx">Patreon</a>
+                    <a id="ctl00_header1_linkLogoutPatreon" class="mem-login linkLogout linkLogoutPatreon" href="../../logout2.aspx.html">Log out</a>
+                    <a id="ctl00_header1_linkLoginGeoGuessr" class="mem-login linkLogin linkLoginGeoGuessr" href="../../../signin%EF%B9%96target=%EA%A4%B7seterra.html">GeoGuessr</a>
+                    <a id="ctl00_header1_linkLogoutGeoGuessr" class="mem-login linkLogout linkLogoutGeoGuessr" href="../../../signout%EF%B9%96target=%EA%A4%B7seterra.html">Log out</a>
+                </div>
+                <div id="loginName"></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="ctl00_header1_panMainNav_hu">
+	
+    <div style="width: 100%;" class="nav-wrapper">
+        <div id="mainnav">
+            <a class="navlink" href="../../hu.html">Minden</a> | <a class="navlink" href="eur.html">Európa</a> | <a class="navlink" href="nam.html">Észak-Amerika</a> | <a class="navlink" href="sam.html">Dél-Amerika</a> | <a class="navlink" href="afr.html">Afrika</a> | <a class="navlink" href="asi.html">Ázsia</a> | <a class="navlink" href="aus.html">Óceánia</a> | <a class="navlink" href="wor.html">A világ</a>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="mobiledropdown" style="display: none">
+    <div class="mobiledropdowninner">
+        <div id="mainnav2" style="margin-bottom: 15px;">
+        </div>
+        <div style="margin-bottom: 15px;">
+            <a id="lnkDarkModeOn" class="navlink2" href="../../index.html" onclick="$('#chkDarkMode').prop('checked', true);loadDarkMode();return false;">Dark Mode On 🌙 </a>
+            <a id="lnkDarkModeOff" class="navlink2" href="../../index.html" onclick="$('#chkDarkMode').prop('checked', false);loadDarkMode();return false;">Dark Mode Off 🌙 </a>
+            <a id="lnkMyCustomQuizzes" class="navlink2 linkLogout" href='../../GenericErrorPage%EF%B9%96aspxerrorpath=%EA%A4%B7seterra%EA%A4%B7hu%EA%A4%B7myaccount.aspx.htm'>My Custom Quizzes </a>
+
+            <a class="navlink2" href="../../index.html">Change language</a>
+
+            <div id="login2">
+            </div>
+            <div id="search2">
+                        <gcse:searchbox-only resultsurl="/seterra/searchresults.aspx"></gcse:searchbox-only>
+                </div>
+        </div>
+    </div>
+</div>
+<script>
+    var fFirst = true;
+    pageLang = 'hu';
+
+    if (pageLang == '') pageLang = 'en';
+    pageLang = pageLang.toLowerCase();
+
+    if (window.location.href.indexOf("searchresult") == -1) {
+        $.cookie('recentlang', pageLang, { path: '/', expires: 14 });
+    }
+
+    function myFunction(x) {
+        x.classList.toggle("change");
+        var y = document.getElementsByClassName("mobiledropdown")[0];
+
+        if (y.style.display === "none") {
+            y.style.display = "block";
+        } else {
+            y.style.display = "none";
+        }
+    }
+
+    $(document).ready(function () {
+        var strMenu = "";
+        var navLinks = document.getElementsByClassName("navlink");
+        var i = 0;
+        var currentPage = window.location.pathname;
+        for (i; i < navLinks.length; i++) {
+            var lb = navLinks[i].getAttribute("href")
+            if (lb == currentPage) {
+                navLinks[i].classList.add("active")
+            }
+            strMenu = strMenu + navLinks[i].outerHTML;
+
+        }
+
+        $("#mainnav2").html(strMenu);
+        if (document.documentElement.clientWidth <= 820) {
+            $("#logindiv").appendTo("#login2")
+        };
+
+        var ddBasic = [
+        { text: "Afrikaans", imageSrc: "/seterra/images/system/flags/langlistflags/flag-af.png", value: "af", selected: false}, { text: "Čeština (Czech)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-cs.png", value: "cs", selected: false}, { text: "Català (Catalan)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ca.png", value: "ca", selected: false}, { text: "Dansk (Danish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-da.png", value: "da", selected: false}, { text: "Deutsch (German)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-de.png", value: "de", selected: false}, { text: "English", imageSrc: "/seterra/images/system/flags/langlistflags/flag-en.png", value: "en", selected: false}, { text: "Eesti (Estonian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-et.png", value: "et", selected: false}, { text: "Español (Spanish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-es.png", value: "es", selected: false}, { text: "Français (French)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-fr.png", value: "fr", selected: false}, { text: "Ελληνικά (Greek)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-el.png", value: "el", selected: false}, { text: "Gaeilge (Irish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ga.png", value: "ga", selected: false}, { text: "Hrvatski (Croatian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-hr.png", value: "hr", selected: false}, { text: "Bahasa Indonesia (Indonesian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-id.png", value: "id", selected: false}, { text: "Íslenska (Icelandic)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-is.png", value: "is", selected: false}, { text: "Italiano (Italian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-it.png", value: "it", selected: false}, { text: "Latviešu valoda (Latvian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-lv.png", value: "lv", selected: false}, { text: "Lietuvių (Lithuanian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-lt.png", value: "lt", selected: false}, { text: "Magyar (Hungarian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-hu.png", value: "hu", selected: false}, { text: "Nederlands (Dutch)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-nl.png", value: "nl", selected: false}, { text: "Norsk (Norwegian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-nb.png", value: "nb", selected: false}, { text: "Polski (Polish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-pl.png", value: "pl", selected: false}, { text: "Português (Portuguese)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-pt.png", value: "pt", selected: false}, { text: "Română (Romanian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ro.png", value: "ro", selected: false}, { text: "русский (Russian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ru.png", value: "ru", selected: false}, { text: "Shqip (Albanian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-sq.png", value: "sq", selected: false}, { text: "Slovenský jazyk (Slovak)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-sk.png", value: "sk", selected: false}, { text: "Slovenski jezik (Slovene)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-sl.png", value: "sl", selected: false}, { text: "српски (Serbian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-sr.png", value: "sr", selected: false}, { text: "Suomi (Finnish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-fi.png", value: "fi", selected: false}, { text: "Svenska (Swedish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-sv.png", value: "sv", selected: false}, { text: "Türkçe (Turkish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-tr.png", value: "tr", selected: false}, { text: "Українська (Ukrainian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-uk.png", value: "uk", selected: false}, { text: "Oʻzbekcha (Uzbek)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-uz.png", value: "uz", selected: false}, { text: "አማርኛ (Amharic)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-am.png", value: "am", selected: false}, { text: "العربية (Arabic)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ar.png", value: "ar", selected: false}, { text: "فارسی (Persian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-fa.png", value: "fa", selected: false}, { text: "български (Bulgarian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-bg.png", value: "bg", selected: false}, { text: "中文 (Chinese (simplified))", imageSrc: "/seterra/images/system/flags/langlistflags/flag-zh.png", value: "zh", selected: false}, { text: "עִבְרִית‎ (Hebrew)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-he.png", value: "he", selected: false}, { text: "हिन्दी (Hindi)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-hi.png", value: "hi", selected: false}, { text: "தமிழ் (Tamil)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ta.png", value: "ta", selected: false}, { text: "සිංහල (Sinhala)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-si.png", value: "si", selected: false}, { text: "日本語 (Japanese)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ja.png", value: "ja", selected: false}, { text: "한국어 (Korean)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ko.png", value: "ko", selected: false}, { text: "ไทย (Thai)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-th.png", value: "th", selected: false}
+        ];
+        var fFound = false;
+        for (var i = 0; i < ddBasic.length; i++) {
+            if (ddBasic[i].value == pageLang) {
+                ddBasic[i].selected = true;
+                fFound = true;
+            }
+        }
+
+        if (fFound == true) {
+            $('#divLanguageDropDown').ddslick({
+                data: ddBasic,
+                
+                selectText: "Select language",
+                imagePosition: "left",
+                onSelected: function (data) {
+                    if (fFirst == false) {
+                        window.location = "/seterra/" + data.selectedData.value;
+                    }
+                    fFirst = false;
+                }
+            })
+
+        }
+        else {
+            $('#divLanguageDropDown').hide;
+        }
+
+        $(".dd-selected-image").attr("alt", "Flag " + pageLang)
+
+    })
+</script>
+
+        <div>
+            
+
+    <div id="contentwrapper">
+
+        <div id="leftcol">
+            <div id="mainbanner">
+                <img id="ctl00_ContentPlaceHolder1_imgBanner" src="../../images/system/banners/world.jpg" alt="Image banner" border="0" />
+            </div>
+            <div id="breadcrumbs">
+                <span id="ctl00_ContentPlaceHolder1_breadcrumbs1"><a href='../../../seterra.html' >Home</a> >> <a href='../../hu.html'>Földrajz játékok</a> >> A világ</span>
+            </div>
+
+            <div class="sectioncontent" style="width: 100%">
+                <h1>
+                    <span id="ctl00_ContentPlaceHolder1_lblHeader">A világ- Interaktív földrajzi játékok</span></h1>
+
+                <div style="font-size: 15px; max-width: 880px;">
+                    <p>
+                        <span id="ctl00_ContentPlaceHolder1_lblContent"></span>
+                    </p>
+                </div>
+
+                <span id="ctl00_ContentPlaceHolder1_lblDebug"></span>
+                <div id="ctl00_ContentPlaceHolder1_listtype" class="listtoggle">
+                    <a id="ctl00_ContentPlaceHolder1_btnhoriz" class="enabledlink" href="http://www.geoguessr.com/seterra/hu/l/wor?img=1">Megtekintés képként</a>
+                    <a id="ctl00_ContentPlaceHolder1_btnvert" disabled="disabled" class="disabledlink">Megtekintés szövegként</a>
+                </div>
+                <br />
+                <br />
+                <table id="ctl00_ContentPlaceHolder1_repSublabels" cellspacing="0" border="0" style="width: 100%">
+	<tr>
+		<td>
+                        <h3 style="margin: 2px;">
+                            </h3>
+                        <hr class="labelhr" />
+                        <div class="exblock exblock--blue" style="width: 100%">
+                            
+
+<div class="gamesublist vertical">
+    
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl00_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Földrészek (6)" class="flag1 game3111" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Földrészek (6)" href="../vgp/3111.html">Földrészek</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl01_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Világ: földrészek (7)" class="flag1 game3004" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Világ: földrészek (7)" href="../vgp/3004.html">Világ: földrészek</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl02_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Világ: földrészek és óceánok (12)" class="flag1 game3188" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Világ: földrészek és óceánok (12)" href="../vgp/3188.html">Világ: földrészek és óceánok</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl03_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Világ: földrészek és óceánok (rajzos verzió) (12)" class="flag1 game3287" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Világ: földrészek és óceánok (rajzos verzió) (12)" href="../vgp/3287.html">Világ: földrészek és óceánok (rajzos verzió)</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl04_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Világ: földrajzi képződmények (23)" class="flag1 game3459" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Világ: földrajzi képződmények (23)" href="../vgp/3459.html">Világ: földrajzi képződmények</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl05_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Világ: G20 tagországok (19)" class="flag1 game3220" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Világ: G20 tagországok (19)" href="../vgp/3220.html">Világ: G20 tagországok</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl06_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Világ: G20 tagországok fővárosai (19)" class="flag1 game3221" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Világ: G20 tagországok fővárosai (19)" href="../vgp/3221.html">Világ: G20 tagországok fővárosai</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl07_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Világ: OECD tagországok (38)" class="flag1 game3202" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Világ: OECD tagországok (38)" href="../vgp/3202.html">Világ: OECD tagországok</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl08_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="30 legnépesebb ország (30)" class="flag1 game3154" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="30 legnépesebb ország (30)" href="../vgp/3154.html">30 legnépesebb ország</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl09_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="30 legnépesebb ország fővárosai (30)" class="flag1 game3232" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="30 legnépesebb ország fővárosai (30)" href="../vgp/3232.html">30 legnépesebb ország fővárosai</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl10_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="50 legnépesebb ország (50)" class="flag1 game3155" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="50 legnépesebb ország (50)" href="../vgp/3155.html">50 legnépesebb ország</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl11_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="50 legnépesebb ország fővárosai (50)" class="flag1 game3233" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="50 legnépesebb ország fővárosai (50)" href="../vgp/3233.html">50 legnépesebb ország fővárosai</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl12_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="70 legnépesebb ország (70)" class="flag1 game3156" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="70 legnépesebb ország (70)" href="../vgp/3156.html">70 legnépesebb ország</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl13_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="70 legnépesebb ország fővárosai (70)" class="flag1 game3234" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="70 legnépesebb ország fővárosai (70)" href="../vgp/3234.html">70 legnépesebb ország fővárosai</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl14_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="90 legnépesebb ország (90)" class="flag1 game3185" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="90 legnépesebb ország (90)" href="../vgp/3185.html">90 legnépesebb ország</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl15_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="90 legnépesebb ország fővárosai (90)" class="flag1 game3235" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="90 legnépesebb ország fővárosai (90)" href="../vgp/3235.html">90 legnépesebb ország fővárosai</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl16_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="30 legnagyobb területű ország (30)" class="flag1 game3157" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="30 legnagyobb területű ország (30)" href="../vgp/3157.html">30 legnagyobb területű ország</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl17_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="32 legkisebb területű ország (32)" class="flag1 game3269" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="32 legkisebb területű ország (32)" href="../vgp/3269.html">32 legkisebb területű ország</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl18_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="50 legnagyobb területű ország (50)" class="flag1 game3158" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="50 legnagyobb területű ország (50)" href="../vgp/3158.html">50 legnagyobb területű ország</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl19_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="70 legnagyobb területű ország (70)" class="flag1 game3159" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="70 legnagyobb területű ország (70)" href="../vgp/3159.html">70 legnagyobb területű ország</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl20_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="90 legnagyobb területű ország (90)" class="flag1 game3195" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="90 legnagyobb területű ország (90)" href="../vgp/3195.html">90 legnagyobb területű ország</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl21_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="110 legnagyobb területű ország (110)" class="flag1 game3196" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="110 legnagyobb területű ország (110)" href="../vgp/3196.html">110 legnagyobb területű ország</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl22_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="110 legnagyobb területű ország fővárosai (110)" class="flag1 game3236" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="110 legnagyobb területű ország fővárosai (110)" href="../vgp/3236.html">110 legnagyobb területű ország fővárosai</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl23_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="130 legnagyobb területű ország (130)" class="flag1 game3197" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="130 legnagyobb területű ország (130)" href="../vgp/3197.html">130 legnagyobb területű ország</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl24_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="150 legnagyobb területű ország (150)" class="flag1 game3198" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="150 legnagyobb területű ország (150)" href="../vgp/3198.html">150 legnagyobb területű ország</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl25_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="150 legnagyobb területű ország fővárosai (150)" class="flag1 game3237" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="150 legnagyobb területű ország fővárosai (150)" href="../vgp/3237.html">150 legnagyobb területű ország fővárosai</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl26_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="193 ENSZ tagállam (193)" class="flag1 game3199" loading="lazy" src="../../exlflags/flag-un.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="193 ENSZ tagállam (193)" href="../vgp/3199.html">193 ENSZ tagállam</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl27_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="193 ENSZ tagállam fővárosai (193)" class="flag1 game3238" loading="lazy" src="../../exlflags/flag-un.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="193 ENSZ tagállam fővárosai (193)" href="../vgp/3238.html">193 ENSZ tagállam fővárosai</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl28_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Világ: legnagyobb országok (58)" class="flag1 game3069" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Világ: legnagyobb országok (58)" href="../vgp/3069.html">Világ: legnagyobb országok</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl29_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Francia nyelvű országok (29)" class="flag1 game3210" loading="lazy" src="../../exlflags/flag-france.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Francia nyelvű országok (29)" href="../vgp/3210.html">Francia nyelvű országok</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl30_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Portugál nyelvű országok (9)" class="flag1 game3250" loading="lazy" src="../../exlflags/flag-portugal.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Portugál nyelvű országok (9)" href="../vgp/3250.html">Portugál nyelvű országok</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl31_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Spanyol nyelvű országok (21)" class="flag1 game3153" loading="lazy" src="../../exlflags/flag-spain.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Spanyol nyelvű országok (21)" href="../vgp/3153.html">Spanyol nyelvű országok</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl32_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Világ: folyók (21)" class="flag1 game3133" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Világ: folyók (21)" href="../vgp/3133.html">Világ: folyók</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl33_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Világ: hegyek és tűzhányók (16)" class="flag1 game3047" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Világ: hegyek és tűzhányók (16)" href="../vgp/3047.html">Világ: hegyek és tűzhányók</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl34_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Világ: hegyvonulatok (14)" class="flag1 game3131" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Világ: hegyvonulatok (14)" href="../vgp/3131.html">Világ: hegyvonulatok</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl35_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Világ: óceánok, tengerek és tavak (29)" class="flag1 game3072" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Világ: óceánok, tengerek és tavak (29)" href="../vgp/3072.html">Világ: óceánok, tengerek és tavak</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl36_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Világ: szigetek (39)" class="flag1 game3046" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Világ: szigetek (39)" href="../vgp/3046.html">Világ: szigetek</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl37_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Világ: 21 főbb város (rajzos verzió) (21)" class="flag1 game3288" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Világ: 21 főbb város (rajzos verzió) (21)" href="../vgp/3288.html">Világ: 21 főbb város (rajzos verzió)</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl38_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Világ: 25 főbb város (25)" class="flag1 game3127" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Világ: 25 főbb város (25)" href="../vgp/3127.html">Világ: 25 főbb város</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl39_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Világ: 35 főbb város (35)" class="flag1 game3229" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Világ: 35 főbb város (35)" href="../vgp/3229.html">Világ: 35 főbb város</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl40_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Naprendszer: bolygók (8)" class="flag1 game3123" loading="lazy" src="../../exlflags/flag-solar.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Naprendszer: bolygók (8)" href="../vgp/3123.html">Naprendszer: bolygók</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+</div>
+
+<div class="gamesublist horizontal" style="width: auto;">
+    
+
+</div>
+
+                        </div>
+                        <br />
+                    </td>
+	</tr><tr>
+		<td>
+                        <h3 style="margin: 2px;">
+                            </h3>
+                        <hr class="labelhr" />
+                        <div class="exblock exblock--blue" style="width: 100%">
+                            
+
+<div class="gamesublist vertical">
+    
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl01_subex1_ctl00_ctl00_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Világ: zászlók (16)" class="flag1 game2007" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Világ: zászlók (16)" href="../fl/2007.html">Világ: zászlók</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl01_subex1_ctl00_ctl01_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Világ: zászlók (nehéz) (105)" class="flag1 game2008" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Világ: zászlók (nehéz) (105)" href="../fl/2008.html">Világ: zászlók (nehéz)</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl01_subex1_ctl00_ctl02_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Világ: zászlók (legnehezebb) (192)" class="flag1 game2022" loading="lazy" src="../../exlflags/flag-un.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Világ: zászlók (legnehezebb) (192)" href="../fl/2022.html">Világ: zászlók (legnehezebb)</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+</div>
+
+<div class="gamesublist horizontal" style="width: auto;">
+    
+
+</div>
+
+                        </div>
+                        <br />
+                    </td>
+	</tr><tr>
+		<td>
+                        <h3 style="margin: 2px;">
+                            </h3>
+                        <hr class="labelhr" />
+                        <div class="exblock exblock--blue" style="width: 100%">
+                            
+                        </div>
+                        <br />
+                    </td>
+	</tr><tr>
+		<td>
+                        <h3 style="margin: 2px;">
+                            </h3>
+                        <hr class="labelhr" />
+                        <div class="exblock exblock--blue" style="width: 100%">
+                            
+                        </div>
+                        <br />
+                    </td>
+	</tr><tr>
+		<td>
+                        <h3 style="margin: 2px;">
+                            </h3>
+                        <hr class="labelhr" />
+                        <div class="exblock exblock--blue" style="width: 100%">
+                            
+                        </div>
+                        <br />
+                    </td>
+	</tr>
+</table>
+
+                <div style="font-size: 16px; max-width: 880px;">
+                    <p>
+                        <span id="ctl00_ContentPlaceHolder1_lblContent2"></span>
+                    </p>
+                </div>
+
+                <h3>
+                    <a id="ctl00_ContentPlaceHolder1_lnkAllGames" href="../../hu.html">>> ---</a></h3>
+            </div>
+
+            <br />
+        </div>
+        <div id="rtcol">
+
+            <div id="ctl00_ContentPlaceHolder1_panApp">
+	
+                <div class="applinks">
+
+                    <a href="https://itunes.apple.com/us/app/seterra-geography-full/id1093460065">
+                        <img alt="AppStore" src="../../images/system/appstore_en.png" style="padding-right: 20px; width: 150px; height: 45px;" /></a><br />
+                    <a href="https://play.google.com/store/apps/details?id=com.seterra">
+                        <img alt="Google Play" src="../../images/system/googleplay_en.png" style="padding-right: 20px; width: 150px; height: 45px;"></a>
+                </div>
+            
+</div>
+            
+        </div>
+
+
+        <div id="ctl00_ContentPlaceHolder1_panFeatured">
+	
+
+
+
+            <div class="featureddiv">
+                
+<div>
+
+    
+               <div class="featureditem">
+                   <a id="ctl00_ContentPlaceHolder1_featured_repFeatured_ctl00_lnkItem" class="featured" href="../vgp/3287.html">
+                        <div class="divFeaturedImage">
+                            <img id="ctl00_ContentPlaceHolder1_featured_repFeatured_ctl00_imgImage" title="Világ: földrészek és óceánok (rajzos verzió)" class="featuredimage" loading="lazy" src="../../images/system/cartoon-world_150.jpg" alt="Világ: földrészek és óceánok (rajzos verzió)" height="100" width="150" border="0" />
+                        </div>
+                        <h4 style="margin:0px"><span id="ctl00_ContentPlaceHolder1_featured_repFeatured_ctl00_lblTitle">Világ: földrészek és óceánok (rajzos verzió)</span></h4>
+                        <p style="margin:0px"><span id="ctl00_ContentPlaceHolder1_featured_repFeatured_ctl00_lblDescription">Térképes kvízjátékok</span></p>
+                        <div style="clear:both"></div>
+                    </a>
+               </div>
+        
+               <div class="featureditem">
+                   <a id="ctl00_ContentPlaceHolder1_featured_repFeatured_ctl01_lnkItem" class="featured" href="../vgp/3202.html">
+                        <div class="divFeaturedImage">
+                            <img id="ctl00_ContentPlaceHolder1_featured_repFeatured_ctl01_imgImage" title="Világ: OECD tagországok" class="featuredimage" loading="lazy" src="../../mapimage/thumbs150/3202.png" alt="Világ: OECD tagországok" height="100" width="150" border="0" />
+                        </div>
+                        <h4 style="margin:0px"><span id="ctl00_ContentPlaceHolder1_featured_repFeatured_ctl01_lblTitle">Világ: OECD tagországok</span></h4>
+                        <p style="margin:0px"><span id="ctl00_ContentPlaceHolder1_featured_repFeatured_ctl01_lblDescription">Térképes kvízjátékok</span></p>
+                        <div style="clear:both"></div>
+                    </a>
+               </div>
+        
+               <div class="featureditem">
+                   <a id="ctl00_ContentPlaceHolder1_featured_repFeatured_ctl02_lnkItem" class="featured" href="../vgp/3046.html">
+                        <div class="divFeaturedImage">
+                            <img id="ctl00_ContentPlaceHolder1_featured_repFeatured_ctl02_imgImage" title="Világ: szigetek" class="featuredimage" loading="lazy" src="../../images/system/island_150.jpg" alt="Világ: szigetek" height="100" width="150" border="0" />
+                        </div>
+                        <h4 style="margin:0px"><span id="ctl00_ContentPlaceHolder1_featured_repFeatured_ctl02_lblTitle">Világ: szigetek</span></h4>
+                        <p style="margin:0px"><span id="ctl00_ContentPlaceHolder1_featured_repFeatured_ctl02_lblDescription">Térképes kvízjátékok</span></p>
+                        <div style="clear:both"></div>
+                    </a>
+               </div>
+        
+               <div class="featureditem">
+                   <a id="ctl00_ContentPlaceHolder1_featured_repFeatured_ctl03_lnkItem" class="featured" href="../vgp/3199.html">
+                        <div class="divFeaturedImage">
+                            <img id="ctl00_ContentPlaceHolder1_featured_repFeatured_ctl03_imgImage" title="193 ENSZ tagállam" class="featuredimage" loading="lazy" src="../../images/system/unflag_150.jpg" alt="193 ENSZ tagállam" height="100" width="150" border="0" />
+                        </div>
+                        <h4 style="margin:0px"><span id="ctl00_ContentPlaceHolder1_featured_repFeatured_ctl03_lblTitle">193 ENSZ tagállam</span></h4>
+                        <p style="margin:0px"><span id="ctl00_ContentPlaceHolder1_featured_repFeatured_ctl03_lblDescription">Térképes kvízjátékok</span></p>
+                        <div style="clear:both"></div>
+                    </a>
+               </div>
+        
+</div>
+
+
+            </div>
+        
+</div>
+    </div>
+
+
+        </div>
+        <div style="clear: both"></div>
+        
+
+<div id="footer">
+    <div id="footercontent">
+        <div class="smediawrapper">
+            <a href="https://www.twitch.tv/directory/game/Seterra/videos/all" style="text-decoration: none;">
+                <img alt="Twitch" class="smedia smediatwitch" src="../../images/system/twitch.png" style="width: 35px; height: 35px;" /></a>
+            <a href="https://discord.gg/kW8Y3AG9wk" style="text-decoration: none;">
+                <img alt="Discord" class="smedia " src="../../images/system/discord.png" style="width: 35px; height: 35px;" /></a>
+            <a href="https://www.facebook.com/seterra.geography" style="text-decoration: none;">
+                <img alt="Facebook" class="smedia" src="../../images/system/facebook.png" style="width: 35px; height: 35px;" /></a>
+            <a href="https://twitter.com/SeterraGeo">
+                <img alt="Twitter" class="smedia" src="../../images/system/twitter.png" style="width: 35px; height: 35px;" /></a>
+            <a href="https://www.youtube.com/c/seterrageography">
+                <img alt="Youtube" class="smedia" src="../../images/system/youtube3.png" style="width: 35px; height: 35px;" /></a>
+            <a href="https://bit.ly/2SntfBU">
+                <img alt="Instagram" class="smedia" src="../../images/system/instagram.png" style="width: 35px; height: 35px;" /></a>
+        </div>
+        <div style="max-width: 900px;">
+            <div class="footerMenu"><div class="title">Help Center</div>  <ul> <li><a href="../../en/p/contact.html">Contact Us</a></li> <li><a href="../../en/p/faq.html">FAQ (Website)</a></li> <li><a href="../../en/p/app-faq.html">FAQ (App)</a></li> <li><a href="../../en/p/tips-and-tricks.html">Tips & Tricks</a></li> <li><a href="../../pro.html">Pricing</a></li> <li><a href="../../en/blog.html">Blog</a></li> </ul>  </div>  <div class="footerMenu"><div class="title">&nbsp;</div>  <ul>  <li><a href="../../en/p/seterra-modes.html">Game Modes</a></li> <li><a href="../../en/p/seterra-highscores.html">Personal Leaderboards</a></li> <li><a href="../../en/p/custom-quizzes.html">Create Custom Quizzes</a></li> <li><a href="../../en/p/public-leaderboards.html">Public Leaderboards</a></li> <li><a href="../../en/p/custom-locations.html">Add Custom Locations</a></li>    </ul>  </div>  <div class="footerMenu"><div class="title">Resources</div> <ul> <li><a href="../../en/l/pdf%EF%B9%96img=1.html">Printables</a></li> <li><a href="../../en/l/bla.html">Blank Maps</a></li> <li><a href="../../en/p/user-quizzes.html">User Generated Quizzes</a></li> <li><a href="../../en-an.html">Science Quizzes</a></li> <li><a href="../../en/p/top-scores.html">Top Scores</a></li> <li><a href="https://www.speedrun.com/seterra">Speedrun.com</a></li> </ul>  </div>  <div class="footerMenu"><div class="title">About</div>  <ul> <li><a href="../../terms.aspx.html">Terms & Conditions</a></li> <li><a href="../../privacy.aspx.html">Privacy Policy</a></li> <li><a href="../../en/p/contact.html">Contact Us</a></li> </ul>  </div>  <div style="clear:both"></div><br><br><span style="padding-left:20px;font-size:13px;color:#AAAAAA">2/1/2023 11:16:13 PM</span>
+        </div>
+        <div style="clear:both"></div>
+        <div id="ccpa" style="display: none; cursor: pointer;margin-top:20px;">Do not share my Personal Information.</div>
+    </div>
+</div>
+
+    </form>
+</body>
+</html>

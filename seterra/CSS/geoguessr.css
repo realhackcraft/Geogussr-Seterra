@@ -1,0 +1,282 @@
+body {
+    font-family: neo-sans;
+    background: #fff;
+}
+
+#contentwrapper,
+#contentwrapper.gg-container {
+    background: #fff;
+}
+
+#langselect {
+    padding: 10px;
+}
+
+a {
+    color: rgba(22, 91, 219, 1);
+}
+a:hover {
+    color: rgba(22, 91, 219, 1);
+    text-decoration: underline;
+    border: 0;
+}
+
+.searchbox {
+    border: 1px solid #fff;
+    border-radius: 8px;
+}
+
+.searchbox .gsc-input-box {
+    background: none;
+    border: 0;
+}
+
+.searchbox .gsc-search-button {
+    opacity: 0.8;
+}
+
+input.gsc-input::placeholder {
+    opacity: 1;
+    color: rgba(255, 255, 255, 0.8)
+}
+
+.searchbox input {
+    background: none;
+    color: #fff;
+}
+
+.searchbox button {
+    background: none;
+    border: 0;
+}
+
+.searchbox .gscb_a {
+    color: #fff;
+}
+
+#header-content-wrapper .spacer {
+    display: none;
+}
+
+.nav-wrapper {
+    background: #0c2151;
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+#mainnav {
+    color: rgba(255,255,255, 0)
+}
+#mainnav a {
+    color: rgba(255,255,255,0.8);
+    margin-right: 8px;
+}
+#mainnav a.active {
+    color: #fff;
+    font-weight: bold;
+}
+
+#breadcrumbs {
+    font-size: 12px;
+}
+
+#mainbanner {
+    display: none;
+}
+
+h1 {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.listtoggle {
+    margin-top: 16px;
+    display: inline-block;
+    color: transparent;
+    padding: 2px;
+}
+
+.listtoggle a {
+    padding: 12px 16px;
+    display: inline-block;
+}
+
+.listtoggle .enabledlink {
+    color: rgba(22, 91, 219, 1);
+}
+
+.listtoggle .disabledlink {
+    background: rgba(0, 50, 143, 1);
+    border-radius: 8px;
+    color: #fff;
+    font-weight: bold;
+}
+
+#gamelist .exblock,
+.exblock--blue {
+    background: rgba(22, 91, 219, 0.04);
+    padding: 16px;
+    box-sizing: border-box;
+    box-shadow: 0px -2px 0px #00328F;
+    margin-top: 16px;
+}
+
+.gamesublist.horizontal {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.labelhr {
+    display: none;
+}
+
+.flag1 {
+    box-shadow: none;
+}
+
+.applinks {
+    display: none;
+}
+
+.divBlog {
+    border: 0;
+    padding: 0;
+}
+
+#rtcol.gg-item .featureditem,
+.featureditem {
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    padding: 0;
+    overflow: hidden;
+    box-shadow: 0px 4px 24px rgba(16, 16, 28, 0.05);
+    margin-bottom: 16px;
+    max-width: 210px;
+    width: 100%;
+}
+.featureditem img {
+    width: 100%;
+    min-height: 120px;
+}
+.featureditem h4 {
+    padding: 12px 16px 4px;
+    color: #000;
+}
+.featureditem p {
+    padding: 0 16px 12px;;
+}
+
+.gamewindow {
+    border: 1px solid rgba(0,0,0,0.05);
+    box-shadow: 0px 4px 24px rgba(16, 16, 28, 0.05);
+    border-radius: 8px;
+}
+
+.gamepartlist {
+    background: rgba(22, 91, 219, 0.04);
+    padding: 16px;
+    box-sizing: border-box;
+    box-shadow: 0px -3px 0px #00328F;
+    margin-top: 16px;
+}
+
+.sectionhead,
+.sectionhead.fullwidth.small{
+    border-bottom: 0;
+}
+.sectionhead.fullwidth,
+.sectionhead.fullwidth.small {
+    margin-bottom: 0;
+}
+.sectionheadtext.areaheading.small {
+    color: #000;
+}
+
+.divBlog > a {
+    color: #10101c;
+}
+
+.exblock h3:last-child a {
+    border-radius: 36px;
+    padding: 7px 20px;
+    margin-top: 10px;
+    display: inline-block;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    font-style: italic;
+    font-size: 14px;
+}
+
+#welcome {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#welcome .sectioncolumn {
+    background: #e6ebf4;
+    padding: 0 16px 16px;
+    box-sizing: border-box;
+    margin-right: 10px;
+    float: none;
+}
+
+@media (max-width: 1250px) {
+    .featureditem {
+        height: 280px;
+    }
+}
+
+.divGameInfo {
+    background: #fff;
+    border: 1px solid rgba(0,0,0,0.05);
+    box-shadow: 4px 4px 16px 0 rgba(0,0,0,0.05);
+}
+
+.sectionheadtext,
+.sectionheadtext.areaheading {
+    color: #10101c;
+}
+
+@font-face {
+    font-family: "neo-sans";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("https://use.typekit.net/af/b07eb4/00000000000000007735bb57/30/l?primer=83aaf8b3086dc5b082c9b97866118e90ec8a0116a2f1fa26fea125d379f2cd21&fvd=n7&v=3") format("woff2");
+}
+
+        
+@font-face {
+    font-family: "neo-sans";
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url("https://use.typekit.net/af/49bd4e/00000000000000007735bb45/30/l?primer=83aaf8b3086dc5b082c9b97866118e90ec8a0116a2f1fa26fea125d379f2cd21&fvd=i7&v=3") format("woff2");
+}
+
+        
+@font-face {
+    font-family: "neo-sans";
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url("https://use.typekit.net/af/cc16b7/00000000000000007735bb40/30/l?primer=83aaf8b3086dc5b082c9b97866118e90ec8a0116a2f1fa26fea125d379f2cd21&fvd=i4&v=3") format("woff2");
+}
+
+        
+@font-face {
+    font-family: "neo-sans";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("https://use.typekit.net/af/fde5b4/00000000000000007735bb56/30/l?primer=83aaf8b3086dc5b082c9b97866118e90ec8a0116a2f1fa26fea125d379f2cd21&fvd=n5&v=3") format("woff2");
+}
+
+        
+@font-face {
+    font-family: "neo-sans";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("https://use.typekit.net/af/b34fab/00000000000000007735bb5f/30/l?primer=83aaf8b3086dc5b082c9b97866118e90ec8a0116a2f1fa26fea125d379f2cd21&fvd=n4&v=3") format("woff2");
+}

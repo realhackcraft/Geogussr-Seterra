@@ -1,0 +1,2752 @@
+
+
+<!DOCTYPE html >
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="th">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="twitter:image" content="https://www.geoguessr.com/seterra/img/phones.png" /><meta name="og:image" content="https://www.geoguessr.com/seterra/img/phones.png" /><meta name="twitter:description" content="เซเทอร์รา เป็นเกมฟรีสำหรับทดสอบความรู้แผนที่ ซึ่งจะให้ความรู้คุณเกี่ยวกับประเทศ เมือง และสภาพภูมิศาสตร์ของที่ต่างๆในโลก" /><meta name="twitter:creator" content="@seterrageo" /><meta name="twitter:site" content="@seterrageo" /><meta name="twitter:title" content="เซเทอร์รา ออนไลน์" /><meta name="twitter:card" content="summary_large_image" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="Scripts/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script src="Scripts/jquery.cookie.js" type="text/javascript"></script>
+    <meta name="apple-itunes-app" content="app-id=1093460065" /><link href="CSS/pagestyles.css" rel="stylesheet" type="text/css" /><link href="CSS/geoguessr.css" rel="stylesheet" type="text/css" />
+    <script src="Scripts/general.js" type="text/javascript"></script>
+
+    
+
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<script type="text/javascript" src="Scripts/jquery.ddslick.min.js"></script>
+<script src="Scripts/utils.js"></script>
+<script src="Scripts/highscores.js"></script>
+
+
+    
+     <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <!-- Google Tag Manager -->
+    
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-W5K3B7M');</script>    
+    
+    <!-- End Google Tag Manager -->
+
+    <script>
+        var activeUnits = [
+            'gg-seterra_sidebar_right',
+            'gg-seterra_sidebar_right_2',
+            'gg-seterra_mobile_1',
+            'gg-seterra_headerleader',
+            'gg-seterra_nvu-and-float',
+            'gg-seterra_learboard_adhesion',
+            'gg-seterra_bottom_mpu',
+            'gg-seterra_outstream_mw'
+        ];
+
+        if (window.isProUser()) {
+            activeUnits = [];
+        }
+
+        window.snigelPubConf = {
+            "adengine": {
+                "activeAdUnits": activeUnits
+            }
+        };
+    </script>
+
+    
+        <script async data-cfasync="false" src="https://cdn.snigelweb.com/adengine/geoguessr.com/loader.js" type="text/javascript"></script>
+    <meta name="Description" content="เซเทอร์รา เป็นเกมฟรีสำหรับทดสอบความรู้แผนที่ ซึ่งจะให้ความรู้คุณเกี่ยวกับประเทศ เมือง และสภาพภูมิศาสตร์ของที่ต่างๆในโลก" /><link rel="canonical" href="th.html" /><meta property="og:type" content="website" /><title>
+	เซเทอร์รา ออนไลน์
+</title></head>
+
+<body>
+    <script>
+        var lang ='th'
+    </script>
+    <form name="form1" method="post" action="th.html" id="form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTExMjIyODY0NWRkGR8obKExxmLBiG908nSG6CiHoaZFtYz7pic+k3Qd4Hs=" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="ED111DFB" />
+        
+<script async src="https://cse.google.com/cse.js?cx=1110b678f1dd23364"></script>
+<script>
+    function getCookie(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+
+    function hasDarkMode(url) {
+        var res = true
+        if (url.indexOf("terms.aspx") != -1) {
+            res = false
+        }
+        if (url.indexOf("privacy.aspx") != -1) {
+            res = false
+        }
+        if (url.indexOf("searchresults.aspx") != -1) {
+            res = false
+        }
+
+        return res
+    }
+
+    var darkmode = getCookie("darkmode");
+
+    if (hasDarkMode(window.location.href) == true) {
+        if (darkmode == "1" && (window.location.href.indexOf("darkmode") == -1)) {
+            document.write('<link rel="stylesheet" type="text/css" href="/seterra/css/darkmode.css" />');
+            
+        }
+        if (window.location.href.indexOf("noborders=1") != -1) {
+            document.write('<link rel="stylesheet" type="text/css" href="/seterra/css/noborders.css" />');
+        }
+
+        if (window.location.href.indexOf("darkmap=1") != -1) {
+            document.write('<link rel="stylesheet" type="text/css" href="/seterra/css/darkmap.css" />');
+        }
+    }
+
+    $(document).ready(function () {
+        if (window.location.href.indexOf("darkmode=0") != -1) {
+            $.cookie('darkmode', '0', { path: '/', expires: 14 });
+        }
+        if ($.cookie('darkmode') == "1" || window.location.href.indexOf("darkmode=1") != -1) {
+            $('#chkDarkMode').prop('checked', true);
+        }
+        setTimeout(function () {
+            if (document.getElementById("gsc-i-id1")) {
+                document.getElementById("gsc-i-id1").setAttribute("placeholder", "Search Seterra")
+            }
+        }, 1000);
+
+    })
+</script>
+
+
+ 
+<script>
+    $(document).ready(function () {
+        if (!!$.cookie('pledges')) {
+            $("#patreon-banner").show();
+        }
+    });
+</script>
+
+<style>#patreon-banner
+{
+    border-color: rgba(255, 216, 0, 0.5);
+    background-color: rgba(255, 216, 0, 0.2);
+}
+
+.patreon-banner-content {
+    margin:auto;
+    padding: 0.5rem;
+    max-width:1250px;
+}
+</style>
+
+<div id="patreon-banner" style="display:none;">
+    <div class="patreon-banner-content">
+        <p>
+            Patreon will be replaced with our GeoGuessr subscription.
+
+        <a href="patreon.html">Read more about the change here.</a>
+        </p>
+    </div>
+</div>
+ 
+
+<div id="header">
+    <div id="header-content-wrapper">
+        <div id="logo">
+            <a href="index.html">
+                <img src="images/system/gg-seterra-logo.png" class="wordmark" alt="Seterra logo"/>
+            </a>
+        </div>
+        <div id="divLanguageDropDown"></div>
+        <div class="spacer">
+            <div style="padding-top: 70px; padding-left: 20px; color: #888888;">
+                <input type="checkbox" id="chkDarkMode" onclick="loadDarkMode()" />
+                <label for="chkDarkMode">🌙 Dark Mode</label>
+            </div>
+
+            <div style="padding-top: 70px; padding-left: 20px; color: #888888; display: none;">
+                &nbsp;
+            </div>
+
+        </div>
+
+
+        <div id="socialmedia">
+
+            <div class="searchbox">
+                <div class="gcse-searchbox-only" data-resultsurl="/seterra/searchresults.aspx" data-autocompletemaxcompletions="35"></div>
+            </div>
+            <div class="mobilemenu">
+                <div class="mobilemenucontainer" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+            <div class="login-buttons">
+                <div id="logindiv">
+                    <span id="text-login" class="mem-login">Log in:</span>
+                    <a id="header1_linkLoginPatreon" class="mem-login linkLogin linkLoginPatreon" href="https://www.patreon.com/oauth2/authorize?response_type=code&amp;scope=users%20pledges-to-me%20my-campaign&amp;client_id=3865155315c95a00e278b2c3bd3a5b66ddf2c12b8fe486317e74a0e392eb1ec3&amp;redirect_uri=https://www.geoguessr.com/seterra/memberRedirect.aspx">Patreon</a>
+                    <a id="header1_linkLogoutPatreon" class="mem-login linkLogout linkLogoutPatreon" href="logout2.aspx.html">Log out</a>
+                    <a id="header1_linkLoginGeoGuessr" class="mem-login linkLogin linkLoginGeoGuessr" href="../signin%EF%B9%96target=%EA%A4%B7seterra.html">GeoGuessr</a>
+                    <a id="header1_linkLogoutGeoGuessr" class="mem-login linkLogout linkLogoutGeoGuessr" href="../signout%EF%B9%96target=%EA%A4%B7seterra.html">Log out</a>
+                </div>
+                <div id="loginName"></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="mobiledropdown" style="display: none">
+    <div class="mobiledropdowninner">
+        <div id="mainnav2" style="margin-bottom: 15px;">
+        </div>
+        <div style="margin-bottom: 15px;">
+            <a id="lnkDarkModeOn" class="navlink2" href="index.html" onclick="$('#chkDarkMode').prop('checked', true);loadDarkMode();return false;">Dark Mode On 🌙 </a>
+            <a id="lnkDarkModeOff" class="navlink2" href="index.html" onclick="$('#chkDarkMode').prop('checked', false);loadDarkMode();return false;">Dark Mode Off 🌙 </a>
+            <a id="lnkMyCustomQuizzes" class="navlink2 linkLogout" href='GenericErrorPage%EF%B9%96aspxerrorpath=%EA%A4%B7seterra%EA%A4%B7th%EA%A4%B7myaccount.aspx.htm'>My Custom Quizzes </a>
+
+            <a class="navlink2" href="index.html">Change language</a>
+
+            <div id="login2">
+            </div>
+            <div id="search2">
+                        <gcse:searchbox-only resultsurl="/seterra/searchresults.aspx"></gcse:searchbox-only>
+                </div>
+        </div>
+    </div>
+</div>
+<script>
+    var fFirst = true;
+    pageLang = 'th';
+
+    if (pageLang == '') pageLang = 'en';
+    pageLang = pageLang.toLowerCase();
+
+    if (window.location.href.indexOf("searchresult") == -1) {
+        $.cookie('recentlang', pageLang, { path: '/', expires: 14 });
+    }
+
+    function myFunction(x) {
+        x.classList.toggle("change");
+        var y = document.getElementsByClassName("mobiledropdown")[0];
+
+        if (y.style.display === "none") {
+            y.style.display = "block";
+        } else {
+            y.style.display = "none";
+        }
+    }
+
+    $(document).ready(function () {
+        var strMenu = "";
+        var navLinks = document.getElementsByClassName("navlink");
+        var i = 0;
+        var currentPage = window.location.pathname;
+        for (i; i < navLinks.length; i++) {
+            var lb = navLinks[i].getAttribute("href")
+            if (lb == currentPage) {
+                navLinks[i].classList.add("active")
+            }
+            strMenu = strMenu + navLinks[i].outerHTML;
+
+        }
+
+        $("#mainnav2").html(strMenu);
+        if (document.documentElement.clientWidth <= 820) {
+            $("#logindiv").appendTo("#login2")
+        };
+
+        var ddBasic = [
+        { text: "Afrikaans", imageSrc: "/seterra/images/system/flags/langlistflags/flag-af.png", value: "af", selected: false}, { text: "Čeština (Czech)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-cs.png", value: "cs", selected: false}, { text: "Català (Catalan)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ca.png", value: "ca", selected: false}, { text: "Dansk (Danish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-da.png", value: "da", selected: false}, { text: "Deutsch (German)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-de.png", value: "de", selected: false}, { text: "English", imageSrc: "/seterra/images/system/flags/langlistflags/flag-en.png", value: "en", selected: false}, { text: "Eesti (Estonian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-et.png", value: "et", selected: false}, { text: "Español (Spanish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-es.png", value: "es", selected: false}, { text: "Français (French)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-fr.png", value: "fr", selected: false}, { text: "Ελληνικά (Greek)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-el.png", value: "el", selected: false}, { text: "Gaeilge (Irish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ga.png", value: "ga", selected: false}, { text: "Hrvatski (Croatian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-hr.png", value: "hr", selected: false}, { text: "Bahasa Indonesia (Indonesian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-id.png", value: "id", selected: false}, { text: "Íslenska (Icelandic)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-is.png", value: "is", selected: false}, { text: "Italiano (Italian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-it.png", value: "it", selected: false}, { text: "Latviešu valoda (Latvian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-lv.png", value: "lv", selected: false}, { text: "Lietuvių (Lithuanian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-lt.png", value: "lt", selected: false}, { text: "Magyar (Hungarian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-hu.png", value: "hu", selected: false}, { text: "Nederlands (Dutch)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-nl.png", value: "nl", selected: false}, { text: "Norsk (Norwegian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-nb.png", value: "nb", selected: false}, { text: "Polski (Polish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-pl.png", value: "pl", selected: false}, { text: "Português (Portuguese)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-pt.png", value: "pt", selected: false}, { text: "Română (Romanian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ro.png", value: "ro", selected: false}, { text: "русский (Russian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ru.png", value: "ru", selected: false}, { text: "Shqip (Albanian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-sq.png", value: "sq", selected: false}, { text: "Slovenský jazyk (Slovak)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-sk.png", value: "sk", selected: false}, { text: "Slovenski jezik (Slovene)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-sl.png", value: "sl", selected: false}, { text: "српски (Serbian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-sr.png", value: "sr", selected: false}, { text: "Suomi (Finnish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-fi.png", value: "fi", selected: false}, { text: "Svenska (Swedish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-sv.png", value: "sv", selected: false}, { text: "Türkçe (Turkish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-tr.png", value: "tr", selected: false}, { text: "Українська (Ukrainian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-uk.png", value: "uk", selected: false}, { text: "Oʻzbekcha (Uzbek)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-uz.png", value: "uz", selected: false}, { text: "አማርኛ (Amharic)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-am.png", value: "am", selected: false}, { text: "العربية (Arabic)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ar.png", value: "ar", selected: false}, { text: "فارسی (Persian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-fa.png", value: "fa", selected: false}, { text: "български (Bulgarian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-bg.png", value: "bg", selected: false}, { text: "中文 (Chinese (simplified))", imageSrc: "/seterra/images/system/flags/langlistflags/flag-zh.png", value: "zh", selected: false}, { text: "עִבְרִית‎ (Hebrew)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-he.png", value: "he", selected: false}, { text: "हिन्दी (Hindi)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-hi.png", value: "hi", selected: false}, { text: "தமிழ் (Tamil)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ta.png", value: "ta", selected: false}, { text: "සිංහල (Sinhala)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-si.png", value: "si", selected: false}, { text: "日本語 (Japanese)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ja.png", value: "ja", selected: false}, { text: "한국어 (Korean)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ko.png", value: "ko", selected: false}, { text: "ไทย (Thai)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-th.png", value: "th", selected: false}
+        ];
+        var fFound = false;
+        for (var i = 0; i < ddBasic.length; i++) {
+            if (ddBasic[i].value == pageLang) {
+                ddBasic[i].selected = true;
+                fFound = true;
+            }
+        }
+
+        if (fFound == true) {
+            $('#divLanguageDropDown').ddslick({
+                data: ddBasic,
+                
+                selectText: "Select language",
+                imagePosition: "left",
+                onSelected: function (data) {
+                    if (fFirst == false) {
+                        window.location = "/seterra/" + data.selectedData.value;
+                    }
+                    fFirst = false;
+                }
+            })
+
+        }
+        else {
+            $('#divLanguageDropDown').hide;
+        }
+
+        $(".dd-selected-image").attr("alt", "Flag " + pageLang)
+
+    })
+</script>
+
+        <div>
+            <div class="search-results">
+                <gcse:searchresults></gcse:searchresults>
+            </div>
+            <div id="contentwrapper">
+                <div id="leftcol">
+                    <div id="mainbanner">
+	
+                        <img id="imgMain" src="images/system/banners/world.jpg" alt="เกมภูมิศาสตร์" border="0" />
+
+                    
+</div>
+                    <div id="maincontent">
+                        <div id="breadcrumbs">
+                            <span id="breadcrumbs1"><a href='index.html' >Home</a> >> เซเทอร์รา ออนไลน์</span>
+                        </div>
+
+                        <div class="sectioncontent">
+                            <h1 class="header">
+                                <span class='titleleft'>เซเทอร์รา ออนไลน์</span>
+                            </h1>
+                            <div id="panPreamble">
+	
+                                <div class="preambleExlist">
+                                    เซเทอร์รา เป็นเกมความรู้ทางภูมิศาสตร์ที่มีความท้าทายด้วยแบบฝึกหัดต่างๆกว่า 200 แบบฝึกหัด เพื่อเรียนรู้เกี่ยวกับประเทศ เมืองหลวง มหาสมุทร ธงชาติ และเมืองต่างๆในทวีปแอฟริกา ยุโรป อเมริกาใต้ อเมริกาเหนือ เอเชีย ออสเตรเลีย โดยใช้แบบฝึกหัดเค้าโครงแผนที่ เซเทอร์ราถูกสร้างขึ้นเมื่อปี 2541 ถูกแปลเป็นภาษาต่างๆกว่า 40 ภาษา และเป็นที่ชื่นชอบของคนทั่วโลก
+                                </div>
+                            
+</div>
+                            <div id="gameselect" style="margin-top: 17px;">
+
+                                <div class="exblock">
+                                    <div id="gamelist1_listtype" class="listtoggle">
+    <a id="gamelist1_btnhoriz" class="enabledlink" href="http://www.geoguessr.com/seterra/th?img=1">ดูแบบรูปภาพ</a>
+    <a id="gamelist1_btnvert" disabled="disabled" class="disabledlink">ดูแบบตัวหนังสือ</a>
+</div>
+<div id="gamelist" style="width:100%">
+    <table id="gamelist1_exlist1" cellspacing="0" border="0" width="100%">
+	<tr>
+		<td>
+            <div class="sectionhead fullwidth lrg">
+
+                <div class="sectionheadtext areaheading lrg" id="EUR">
+                    ยุโรป
+                </div>
+                <div style="clear: both;"></div>
+
+            </div>
+            <div class="exblock">
+
+                
+
+<div class="gamesublist vertical">
+    
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl00_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="ยุโรป: ประเทศ (46)" class="flag1 game3007" loading="lazy" src="exlflags/flag-europe.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="ยุโรป: ประเทศ (46)" href="th/vgp/3007.html">ยุโรป: ประเทศ</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl01_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="ยุโรป: ประเทศ (พร้อมภาพ) (46)" class="flag1 game3286" loading="lazy" src="exlflags/flag-europe.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="ยุโรป: ประเทศ (พร้อมภาพ) (46)" href="th/vgp/3286.html">ยุโรป: ประเทศ (พร้อมภาพ)</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl02_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="สหภาพยุโรป: ประเทศ (27)" class="flag1 game3387" loading="lazy" src="exlflags/flag-eu.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="สหภาพยุโรป: ประเทศ (27)" href="th/vgp/3387.html">สหภาพยุโรป: ประเทศ</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl03_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="ยุโรป: เมืองหลวง (45)" class="flag1 game3225" loading="lazy" src="exlflags/flag-europe.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="ยุโรป: เมืองหลวง (45)" href="th/vgp/3225.html">ยุโรป: เมืองหลวง</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl04_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="ยุโรป: เมือง (39)" class="flag1 game3073" loading="lazy" src="exlflags/flag-europe.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="ยุโรป: เมือง (39)" href="th/vgp/3073.html">ยุโรป: เมือง</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl05_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="ยุโรปเหนือ: ประเทศ (10)" class="flag1 game3018" loading="lazy" src="exlflags/flag-europe.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="ยุโรปเหนือ: ประเทศ (10)" href="th/vgp/3018.html">ยุโรปเหนือ: ประเทศ</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl06_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="ยุโรปใต้: ประเทศ (18)" class="flag1 game3019" loading="lazy" src="exlflags/flag-europe.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="ยุโรปใต้: ประเทศ (18)" href="th/vgp/3019.html">ยุโรปใต้: ประเทศ</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl07_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="ยุโรปตะวันตก: ประเทศ (9)" class="flag1 game3021" loading="lazy" src="exlflags/flag-europe.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="ยุโรปตะวันตก: ประเทศ (9)" href="th/vgp/3021.html">ยุโรปตะวันตก: ประเทศ</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl08_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="ยุโรปตะวันออก: ประเทศ (10)" class="flag1 game3020" loading="lazy" src="exlflags/flag-europe.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="ยุโรปตะวันออก: ประเทศ (10)" href="th/vgp/3020.html">ยุโรปตะวันออก: ประเทศ</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl09_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="ยุโรป: ธง (37)" class="flag1 game2010" loading="lazy" src="exlflags/flag-europe.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="ยุโรป: ธง (37)" href="th/fl/2010.html">ยุโรป: ธง</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl10_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="ยุโรป: ธง (ยาก) (46)" class="flag1 game2013" loading="lazy" src="exlflags/flag-europe.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="ยุโรป: ธง (ยาก) (46)" href="th/fl/2013.html">ยุโรป: ธง (ยาก)</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl11_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="ยุโรปตะวันตก: ธง (16)" class="flag1 game2001" loading="lazy" src="exlflags/flag-europe.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="ยุโรปตะวันตก: ธง (16)" href="th/fl/2001.html">ยุโรปตะวันตก: ธง</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl12_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="ยุโรปตะวันออก: ธง (21)" class="flag1 game2002" loading="lazy" src="exlflags/flag-europe.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="ยุโรปตะวันออก: ธง (21)" href="th/fl/2002.html">ยุโรปตะวันออก: ธง</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl13_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="กลุ่มนอร์ดิก: ประเทศ (5)" class="flag1 game3025" loading="lazy" src="exlflags/flag-scandinavia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="กลุ่มนอร์ดิก: ประเทศ (5)" href="th/vgp/3025.html">กลุ่มนอร์ดิก: ประเทศ</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl14_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="ประเทศนอร์ดิกและเมืองหลวง (10)" class="flag1 game3187" loading="lazy" src="exlflags/flag-scandinavia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="ประเทศนอร์ดิกและเมืองหลวง (10)" href="th/vgp/3187.html">ประเทศนอร์ดิกและเมืองหลวง</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+</div>
+
+<div class="gamesublist horizontal" style="width: auto;">
+    
+
+</div>
+
+                <div style="clear: both;"></div>
+                <h3 style="margin-top:10px;margin-bottom:15px;">
+                    
+                </h3>
+            </div>
+        </td>
+	</tr><tr>
+		<td>
+            <div class="sectionhead fullwidth lrg">
+
+                <div class="sectionheadtext areaheading lrg" id="NAM">
+                    อเมริกาเหนือ
+                </div>
+                <div style="clear: both;"></div>
+
+            </div>
+            <div class="exblock">
+
+                
+
+<div class="gamesublist vertical">
+    
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl00_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="อเมริกาเหนือและอเมริกา: ประเทศ (14)" class="flag1 game3015" loading="lazy" src="exlflags/flag-northamerica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="อเมริกาเหนือและอเมริกา: ประเทศ (14)" href="th/vgp/3015.html">อเมริกาเหนือและอเมริกา: ประเทศ</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl01_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="อเมริกาเหนือและอเมริกากลาง: เมืองหลวง (14)" class="flag1 game3079" loading="lazy" src="exlflags/flag-northamerica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="อเมริกาเหนือและอเมริกากลาง: เมืองหลวง (14)" href="th/vgp/3079.html">อเมริกาเหนือและอเมริกากลาง: เมืองหลวง</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl02_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="อเมริกาเหนือและอเมริกากลาง: ธง (14)" class="flag1 game2015" loading="lazy" src="exlflags/flag-northamerica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="อเมริกาเหนือและอเมริกากลาง: ธง (14)" href="th/fl/2015.html">อเมริกาเหนือและอเมริกากลาง: ธง</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl03_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="ไอร์แลนด์: มณฑล (7)" class="flag1 game3217" loading="lazy" src="exlflags/flag-centralamerica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="ไอร์แลนด์: มณฑล (7)" href="th/vgp/3217.html">ไอร์แลนด์: มณฑล</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl04_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="แคริบเบียน: ประเทศ (24)" class="flag1 game3129" loading="lazy" src="exlflags/flag-caribbean.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="แคริบเบียน: ประเทศ (24)" href="th/vgp/3129.html">แคริบเบียน: ประเทศ</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl05_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="แคริบเบียน: ธง (13)" class="flag1 game2019" loading="lazy" src="exlflags/flag-caribbean.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="แคริบเบียน: ธง (13)" href="th/fl/2019.html">แคริบเบียน: ธง</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl06_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="สหรัฐ: 50 รัฐ (50)" class="flag1 game3003" loading="lazy" src="exlflags/flag-usa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="สหรัฐ: 50 รัฐ (50)" href="th/vgp/3003.html">สหรัฐ: 50 รัฐ</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl07_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="สหรัฐฯ: 50 รัฐ (พร้อมภาพ) (50)" class="flag1 game3285" loading="lazy" src="exlflags/flag-usa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="สหรัฐฯ: 50 รัฐ (พร้อมภาพ) (50)" href="th/vgp/3285.html">สหรัฐฯ: 50 รัฐ (พร้อมภาพ)</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl08_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="สหรัฐ: คำย่อของรัฐ (50)" class="flag1 game3002" loading="lazy" src="exlflags/flag-usa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="สหรัฐ: คำย่อของรัฐ (50)" href="th/vgp/3002.html">สหรัฐ: คำย่อของรัฐ</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl09_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="สหรัฐ: รัฐในภาคใต้และภาคตะวันออกเฉียงเหนือ (25)" class="flag1 game3042" loading="lazy" src="exlflags/flag-usa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="สหรัฐ: รัฐในภาคใต้และภาคตะวันออกเฉียงเหนือ (25)" href="th/vgp/3042.html">สหรัฐ: รัฐในภาคใต้และภาคตะวันออกเฉียงเหนือ</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl10_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="สหรัฐ: รัฐในภาคมิดเวสต์และภาคตะวันตก (23)" class="flag1 game3043" loading="lazy" src="exlflags/flag-usa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="สหรัฐ: รัฐในภาคมิดเวสต์และภาคตะวันตก (23)" href="th/vgp/3043.html">สหรัฐ: รัฐในภาคมิดเวสต์และภาคตะวันตก</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl11_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="สหรัฐ: รัฐในภาคใต้ (16)" class="flag1 game3140" loading="lazy" src="exlflags/flag-usa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="สหรัฐ: รัฐในภาคใต้ (16)" href="th/vgp/3140.html">สหรัฐ: รัฐในภาคใต้</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl12_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="สหรัฐ: รัฐในภาคตะวันตก (13)" class="flag1 game3139" loading="lazy" src="exlflags/flag-usa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="สหรัฐ: รัฐในภาคตะวันตก (13)" href="th/vgp/3139.html">สหรัฐ: รัฐในภาคตะวันตก</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl13_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="สหรัฐ: รัฐในภาคตะวันออกเฉียงเหนือ (9)" class="flag1 game3141" loading="lazy" src="exlflags/flag-usa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="สหรัฐ: รัฐในภาคตะวันออกเฉียงเหนือ (9)" href="th/vgp/3141.html">สหรัฐ: รัฐในภาคตะวันออกเฉียงเหนือ</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl14_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="สหรัฐ: รัฐในภาคมิดเวสต์ (12)" class="flag1 game3138" loading="lazy" src="exlflags/flag-usa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="สหรัฐ: รัฐในภาคมิดเวสต์ (12)" href="th/vgp/3138.html">สหรัฐ: รัฐในภาคมิดเวสต์</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl15_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="สหรัฐ: 13 อาณานิคม (13)" class="flag1 game3044" loading="lazy" src="exlflags/flag-uscolonies.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="สหรัฐ: 13 อาณานิคม (13)" href="th/vgp/3044.html">สหรัฐ: 13 อาณานิคม</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl16_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="สหรัฐฯ: เมืองใหญ่ (24)" class="flag1 game3095" loading="lazy" src="exlflags/flag-usa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="สหรัฐฯ: เมืองใหญ่ (24)" href="th/vgp/3095.html">สหรัฐฯ: เมืองใหญ่</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+</div>
+
+<div class="gamesublist horizontal" style="width: auto;">
+    
+
+</div>
+
+                <div style="clear: both;"></div>
+                <h3 style="margin-top:10px;margin-bottom:15px;">
+                    
+                </h3>
+            </div>
+        </td>
+	</tr><tr>
+		<td>
+            <div class="sectionhead fullwidth lrg">
+
+                <div class="sectionheadtext areaheading lrg" id="SAM">
+                    อเมริกาใต้
+                </div>
+                <div style="clear: both;"></div>
+
+            </div>
+            <div class="exblock">
+
+                
+
+<div class="gamesublist vertical">
+    
+            <div id="gamelist1_exlist1_ctl02_subex1_ctl00_ctl00_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="อเมริกาใต้: ประเทศ (13)" class="flag1 game3016" loading="lazy" src="exlflags/flag-southamerica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="อเมริกาใต้: ประเทศ (13)" href="th/vgp/3016.html">อเมริกาใต้: ประเทศ</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl02_subex1_ctl00_ctl01_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="อเมริกาใต้: ประเทศ (พร้อมภาพ) (13)" class="flag1 game3339" loading="lazy" src="exlflags/flag-southamerica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="อเมริกาใต้: ประเทศ (พร้อมภาพ) (13)" href="th/vgp/3339.html">อเมริกาใต้: ประเทศ (พร้อมภาพ)</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl02_subex1_ctl00_ctl02_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="อเมริกาใต้: เมืองหลวง (12)" class="flag1 game3017" loading="lazy" src="exlflags/flag-southamerica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="อเมริกาใต้: เมืองหลวง (12)" href="th/vgp/3017.html">อเมริกาใต้: เมืองหลวง</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl02_subex1_ctl00_ctl03_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="ลาตินอเมริกา: ประเทศ (21)" class="flag1 game3243" loading="lazy" src="exlflags/flag-southamerica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="ลาตินอเมริกา: ประเทศ (21)" href="th/vgp/3243.html">ลาตินอเมริกา: ประเทศ</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl02_subex1_ctl00_ctl04_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="อเมริกาใต้: ธง (12)" class="flag1 game2004" loading="lazy" src="exlflags/flag-southamerica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="อเมริกาใต้: ธง (12)" href="th/fl/2004.html">อเมริกาใต้: ธง</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+</div>
+
+<div class="gamesublist horizontal" style="width: auto;">
+    
+
+</div>
+
+                <div style="clear: both;"></div>
+                <h3 style="margin-top:10px;margin-bottom:15px;">
+                    
+                </h3>
+            </div>
+        </td>
+	</tr><tr>
+		<td>
+            <div class="sectionhead fullwidth lrg">
+
+                <div class="sectionheadtext areaheading lrg" id="AFR">
+                    แอฟริกา
+                </div>
+                <div style="clear: both;"></div>
+
+            </div>
+            <div class="exblock">
+
+                
+
+<div class="gamesublist vertical">
+    
+            <div id="gamelist1_exlist1_ctl03_subex1_ctl00_ctl00_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="แอฟริกา: ประเทศ (55)" class="flag1 game3163" loading="lazy" src="exlflags/flag-africa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="แอฟริกา: ประเทศ (55)" href="th/vgp/3163.html">แอฟริกา: ประเทศ</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl03_subex1_ctl00_ctl01_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="แอฟริกา: เมืองหลวง (54)" class="flag1 game3204" loading="lazy" src="exlflags/flag-africa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="แอฟริกา: เมืองหลวง (54)" href="th/vgp/3204.html">แอฟริกา: เมืองหลวง</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl03_subex1_ctl00_ctl02_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="แอฟริกาเหนือเส้นศูนย์สูตร: ประเทศ (30)" class="flag1 game3035" loading="lazy" src="exlflags/flag-africa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="แอฟริกาเหนือเส้นศูนย์สูตร: ประเทศ (30)" href="th/vgp/3035.html">แอฟริกาเหนือเส้นศูนย์สูตร: ประเทศ</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl03_subex1_ctl00_ctl03_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="แอฟริกาใต้เส้นศูนย์สูตร: ประเทศ (20)" class="flag1 game3036" loading="lazy" src="exlflags/flag-africa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="แอฟริกาใต้เส้นศูนย์สูตร: ประเทศ (20)" href="th/vgp/3036.html">แอฟริกาใต้เส้นศูนย์สูตร: ประเทศ</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl03_subex1_ctl00_ctl04_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="แอฟริกาเหนือ: ประเทศ (7)" class="flag1 game3037" loading="lazy" src="exlflags/flag-africa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="แอฟริกาเหนือ: ประเทศ (7)" href="th/vgp/3037.html">แอฟริกาเหนือ: ประเทศ</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl03_subex1_ctl00_ctl05_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="แอฟริกาใต้: ประเทศ (5)" class="flag1 game3041" loading="lazy" src="exlflags/flag-africa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="แอฟริกาใต้: ประเทศ (5)" href="th/vgp/3041.html">แอฟริกาใต้: ประเทศ</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl03_subex1_ctl00_ctl06_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="แอฟริกากลาง: ประเทศ (8)" class="flag1 game3039" loading="lazy" src="exlflags/flag-africa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="แอฟริกากลาง: ประเทศ (8)" href="th/vgp/3039.html">แอฟริกากลาง: ประเทศ</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl03_subex1_ctl00_ctl07_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="แอฟริกาตะวันตก: ประเทศ (15)" class="flag1 game3038" loading="lazy" src="exlflags/flag-africa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="แอฟริกาตะวันตก: ประเทศ (15)" href="th/vgp/3038.html">แอฟริกาตะวันตก: ประเทศ</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl03_subex1_ctl00_ctl08_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="แอฟริกาตะวันออก: ประเทศ (15)" class="flag1 game3040" loading="lazy" src="exlflags/flag-africa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="แอฟริกาตะวันออก: ประเทศ (15)" href="th/vgp/3040.html">แอฟริกาตะวันออก: ประเทศ</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl03_subex1_ctl00_ctl09_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="แอฟริกา: ธง (24)" class="flag1 game2003" loading="lazy" src="exlflags/flag-africa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="แอฟริกา: ธง (24)" href="th/fl/2003.html">แอฟริกา: ธง</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl03_subex1_ctl00_ctl10_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="แอฟริกา: ธง (54)" class="flag1 game2017" loading="lazy" src="exlflags/flag-africa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="แอฟริกา: ธง (54)" href="th/fl/2017.html">แอฟริกา: ธง</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+</div>
+
+<div class="gamesublist horizontal" style="width: auto;">
+    
+
+</div>
+
+                <div style="clear: both;"></div>
+                <h3 style="margin-top:10px;margin-bottom:15px;">
+                    
+                </h3>
+            </div>
+        </td>
+	</tr><tr>
+		<td>
+            <div class="sectionhead fullwidth lrg">
+
+                <div class="sectionheadtext areaheading lrg" id="ASI">
+                    เอเชีย
+                </div>
+                <div style="clear: both;"></div>
+
+            </div>
+            <div class="exblock">
+
+                
+
+<div class="gamesublist vertical">
+    
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl00_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="เอเชีย: ประเทศ (49)" class="flag1 game3646" loading="lazy" src="exlflags/flag-asia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="เอเชีย: ประเทศ (49)" href="th/vgp/3646.html">เอเชีย: ประเทศ</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl01_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="เอเชีย: ประเทศ (พร้อมภาพ) (48)" class="flag1 game3340" loading="lazy" src="exlflags/flag-asia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="เอเชีย: ประเทศ (พร้อมภาพ) (48)" href="th/vgp/3340.html">เอเชีย: ประเทศ (พร้อมภาพ)</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl02_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="เอเชีย: เมืองหลวง (47)" class="flag1 game3647" loading="lazy" src="exlflags/flag-asia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="เอเชีย: เมืองหลวง (47)" href="th/vgp/3647.html">เอเชีย: เมืองหลวง</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl03_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="เอเชีย: เมือง (27)" class="flag1 game3110" loading="lazy" src="exlflags/flag-asia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="เอเชีย: เมือง (27)" href="th/vgp/3110.html">เอเชีย: เมือง</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl04_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="เอเชีย: ลักษณะทางกายภาพ (28)" class="flag1 game3454" loading="lazy" src="exlflags/flag-asia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="เอเชีย: ลักษณะทางกายภาพ (28)" href="th/vgp/3454.html">เอเชีย: ลักษณะทางกายภาพ</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl05_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="เอเชียใต้: ประเทศ (8)" class="flag1 game3166" loading="lazy" src="exlflags/flag-asia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="เอเชียใต้: ประเทศ (8)" href="th/vgp/3166.html">เอเชียใต้: ประเทศ</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl06_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="เอเชียตะวันออกเฉียงใต้: เมือง (11)" class="flag1 game3107" loading="lazy" src="exlflags/flag-asia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="เอเชียตะวันออกเฉียงใต้: เมือง (11)" href="th/vgp/3107.html">เอเชียตะวันออกเฉียงใต้: เมือง</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl07_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="เอเชียตะวันออกเฉียงใต้: เมือง (แบบยาก) (43)" class="flag1 game3383" loading="lazy" src="exlflags/flag-asia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="เอเชียตะวันออกเฉียงใต้: เมือง (แบบยาก) (43)" href="th/vgp/3383.html">เอเชียตะวันออกเฉียงใต้: เมือง (แบบยาก)</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl08_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="เอเชียตะวันออกเฉียงใต้: ประเทศ (11)" class="flag1 game3033" loading="lazy" src="exlflags/flag-asia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="เอเชียตะวันออกเฉียงใต้: ประเทศ (11)" href="th/vgp/3033.html">เอเชียตะวันออกเฉียงใต้: ประเทศ</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl09_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="ตะวันออกกลาง: เมือง (33)" class="flag1 game3386" loading="lazy" src="exlflags/flag-asia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="ตะวันออกกลาง: เมือง (33)" href="th/vgp/3386.html">ตะวันออกกลาง: เมือง</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl10_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="ตะวันออกกลาง: ประเทศ (17)" class="flag1 game3648" loading="lazy" src="exlflags/flag-asia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="ตะวันออกกลาง: ประเทศ (17)" href="th/vgp/3648.html">ตะวันออกกลาง: ประเทศ</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl11_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="อดีตสหภาพโซเวียต: ประเทศ (15)" class="flag1 game3048" loading="lazy" src="exlflags/flag-soviet.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="อดีตสหภาพโซเวียต: ประเทศ (15)" href="th/vgp/3048.html">อดีตสหภาพโซเวียต: ประเทศ</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl12_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="เอเชีย: ธง (19)" class="flag1 game2006" loading="lazy" src="exlflags/flag-asia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="เอเชีย: ธง (19)" href="th/fl/2006.html">เอเชีย: ธง</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl13_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="เอเชีย: ธง (ยาก) (48)" class="flag1 game2065" loading="lazy" src="exlflags/flag-asia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="เอเชีย: ธง (ยาก) (48)" href="th/fl/2065.html">เอเชีย: ธง (ยาก)</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl14_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="เอเชียใต้: ธง (7)" class="flag1 game2026" loading="lazy" src="exlflags/flag-asia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="เอเชียใต้: ธง (7)" href="th/fl/2026.html">เอเชียใต้: ธง</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl15_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="เอเชียตะวันออกเฉียงใต้: ธง (11)" class="flag1 game2024" loading="lazy" src="exlflags/flag-asia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="เอเชียตะวันออกเฉียงใต้: ธง (11)" href="th/fl/2024.html">เอเชียตะวันออกเฉียงใต้: ธง</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl16_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="ตะวันออกกลาง: ธง (17)" class="flag1 game2066" loading="lazy" src="exlflags/flag-asia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="ตะวันออกกลาง: ธง (17)" href="th/fl/2066.html">ตะวันออกกลาง: ธง</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl17_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="ญี่ปุ่น: เมือง (16)" class="flag1 game3636" loading="lazy" src="exlflags/flag-japan.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="ญี่ปุ่น: เมือง (16)" href="th/vgp/3636.html">ญี่ปุ่น: เมือง</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl18_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="อินเดีย: เมือง (13)" class="flag1 game3115" loading="lazy" src="exlflags/flag-india.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="อินเดีย: เมือง (13)" href="th/vgp/3115.html">อินเดีย: เมือง</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl19_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="อินเดีย: รัฐและดินแดนสหภาพ (36)" class="flag1 game3369" loading="lazy" src="exlflags/flag-india.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="อินเดีย: รัฐและดินแดนสหภาพ (36)" href="th/vgp/3369.html">อินเดีย: รัฐและดินแดนสหภาพ</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl20_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="ประเทศไทย: จังหวัด (77)" class="flag1 game3082" loading="lazy" src="exlflags/flag-thailand.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="ประเทศไทย: จังหวัด (77)" href="th/vgp/3082.html">ประเทศไทย: จังหวัด</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl21_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="ภาคเหนือ: จังหวัด (17)" class="flag1 game3083" loading="lazy" src="exlflags/flag-thailand.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="ภาคเหนือ: จังหวัด (17)" href="th/vgp/3083.html">ภาคเหนือ: จังหวัด</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl22_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="ภาคใต้: จังหวัด (14)" class="flag1 game3084" loading="lazy" src="exlflags/flag-thailand.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="ภาคใต้: จังหวัด (14)" href="th/vgp/3084.html">ภาคใต้: จังหวัด</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl23_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="ภาคกลาง: จังหวัด (26)" class="flag1 game3086" loading="lazy" src="exlflags/flag-thailand.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="ภาคกลาง: จังหวัด (26)" href="th/vgp/3086.html">ภาคกลาง: จังหวัด</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl24_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="ภาคอีสาน: จังหวัด (20)" class="flag1 game3085" loading="lazy" src="exlflags/flag-thailand.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="ภาคอีสาน: จังหวัด (20)" href="th/vgp/3085.html">ภาคอีสาน: จังหวัด</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+</div>
+
+<div class="gamesublist horizontal" style="width: auto;">
+    
+
+</div>
+
+                <div style="clear: both;"></div>
+                <h3 style="margin-top:10px;margin-bottom:15px;">
+                    
+                </h3>
+            </div>
+        </td>
+	</tr><tr>
+		<td>
+            <div class="sectionhead fullwidth lrg">
+
+                <div class="sectionheadtext areaheading lrg" id="AUS">
+                    โอเชียเนีย
+                </div>
+                <div style="clear: both;"></div>
+
+            </div>
+            <div class="exblock">
+
+                
+
+<div class="gamesublist vertical">
+    
+            <div id="gamelist1_exlist1_ctl05_subex1_ctl00_ctl00_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="โอเชียเนีย: ประเทศ (14)" class="flag1 game3341" loading="lazy" src="exlflags/flag-oceania.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="โอเชียเนีย: ประเทศ (14)" href="th/vgp/3341.html">โอเชียเนีย: ประเทศ</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl05_subex1_ctl00_ctl01_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="โอเชียเนีย: ประเทศและดินแดน (23)" class="flag1 game3128" loading="lazy" src="exlflags/flag-oceania.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="โอเชียเนีย: ประเทศและดินแดน (23)" href="th/vgp/3128.html">โอเชียเนีย: ประเทศและดินแดน</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl05_subex1_ctl00_ctl02_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="โอเชียเนีย: ธง (14)" class="flag1 game2018" loading="lazy" src="exlflags/flag-oceania.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="โอเชียเนีย: ธง (14)" href="th/fl/2018.html">โอเชียเนีย: ธง</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl05_subex1_ctl00_ctl03_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="ออสเตรเลีย: ประเทศในแถบนั้น (9)" class="flag1 game3061" loading="lazy" src="exlflags/flag-austral.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="ออสเตรเลีย: ประเทศในแถบนั้น (9)" href="th/vgp/3061.html">ออสเตรเลีย: ประเทศในแถบนั้น</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+</div>
+
+<div class="gamesublist horizontal" style="width: auto;">
+    
+
+</div>
+
+                <div style="clear: both;"></div>
+                <h3 style="margin-top:10px;margin-bottom:15px;">
+                    
+                </h3>
+            </div>
+        </td>
+	</tr><tr>
+		<td>
+            <div class="sectionhead fullwidth lrg">
+
+                <div class="sectionheadtext areaheading lrg" id="WOR">
+                    โลก
+                </div>
+                <div style="clear: both;"></div>
+
+            </div>
+            <div class="exblock">
+
+                
+
+<div class="gamesublist vertical">
+    
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl00_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="โลก: ทวีป (7)" class="flag1 game3004" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="โลก: ทวีป (7)" href="th/vgp/3004.html">โลก: ทวีป</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl01_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="โลก: ทวีปและมหาสมุทร (12)" class="flag1 game3188" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="โลก: ทวีปและมหาสมุทร (12)" href="th/vgp/3188.html">โลก: ทวีปและมหาสมุทร</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl02_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="โลก: ประเทศสมาชิกจี 20 (19)" class="flag1 game3220" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="โลก: ประเทศสมาชิกจี 20 (19)" href="th/vgp/3220.html">โลก: ประเทศสมาชิกจี 20</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl03_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="โลก: ประเทศสมาชิกจี 20 และเมืองหลวง (19)" class="flag1 game3221" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="โลก: ประเทศสมาชิกจี 20 และเมืองหลวง (19)" href="th/vgp/3221.html">โลก: ประเทศสมาชิกจี 20 และเมืองหลวง</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl04_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="โลก: ประเทศสมาชิกองค์การเพื่อความร่วมมือและการพัฒนาทางเศรษฐกิจ (OECD) (38)" class="flag1 game3202" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="โลก: ประเทศสมาชิกองค์การเพื่อความร่วมมือและการพัฒนาทางเศรษฐกิจ (OECD) (38)" href="th/vgp/3202.html">โลก: ประเทศสมาชิกองค์การเพื่อความร่วมมือและการพัฒนาทางเศรษฐกิจ (OECD)</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl05_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="โลก: 30 ประเทศที่มีประชากรมากที่สุด (30)" class="flag1 game3154" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="โลก: 30 ประเทศที่มีประชากรมากที่สุด (30)" href="th/vgp/3154.html">โลก: 30 ประเทศที่มีประชากรมากที่สุด</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl06_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="โลก: 50 ประเทศที่มีประชากรมากที่สุด (50)" class="flag1 game3155" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="โลก: 50 ประเทศที่มีประชากรมากที่สุด (50)" href="th/vgp/3155.html">โลก: 50 ประเทศที่มีประชากรมากที่สุด</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl07_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="โลก: 70 ประเทศที่มีประชากรมากที่สุด (70)" class="flag1 game3156" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="โลก: 70 ประเทศที่มีประชากรมากที่สุด (70)" href="th/vgp/3156.html">โลก: 70 ประเทศที่มีประชากรมากที่สุด</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl08_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="โลก: 90 ประเทศที่มีประชากรมากที่สุด (90)" class="flag1 game3185" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="โลก: 90 ประเทศที่มีประชากรมากที่สุด (90)" href="th/vgp/3185.html">โลก: 90 ประเทศที่มีประชากรมากที่สุด</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl09_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="ประเทศและเมืองหลวงที่เป็นที่นิยมที่สุด 30 แห่ง (30)" class="flag1 game3232" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="ประเทศและเมืองหลวงที่เป็นที่นิยมที่สุด 30 แห่ง (30)" href="th/vgp/3232.html">ประเทศและเมืองหลวงที่เป็นที่นิยมที่สุด 30 แห่ง</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl10_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="โลก: 30 ประเทศที่ใหญ่ที่สุด (30)" class="flag1 game3157" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="โลก: 30 ประเทศที่ใหญ่ที่สุด (30)" href="th/vgp/3157.html">โลก: 30 ประเทศที่ใหญ่ที่สุด</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl11_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="โลก: 50 ประเทศที่ใหญ่ที่สุด (50)" class="flag1 game3158" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="โลก: 50 ประเทศที่ใหญ่ที่สุด (50)" href="th/vgp/3158.html">โลก: 50 ประเทศที่ใหญ่ที่สุด</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl12_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="โลก: 70 ประเทศที่ใหญ่ที่สุด (70)" class="flag1 game3159" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="โลก: 70 ประเทศที่ใหญ่ที่สุด (70)" href="th/vgp/3159.html">โลก: 70 ประเทศที่ใหญ่ที่สุด</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl13_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="โลก: 90 ประเทศที่ใหญ่ที่สุด (90)" class="flag1 game3195" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="โลก: 90 ประเทศที่ใหญ่ที่สุด (90)" href="th/vgp/3195.html">โลก: 90 ประเทศที่ใหญ่ที่สุด</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl14_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="โลก: 110 ประเทศที่ใหญ่ที่สุด (110)" class="flag1 game3196" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="โลก: 110 ประเทศที่ใหญ่ที่สุด (110)" href="th/vgp/3196.html">โลก: 110 ประเทศที่ใหญ่ที่สุด</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl15_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="โลก: 130 ประเทศที่ใหญ่ที่สุด (130)" class="flag1 game3197" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="โลก: 130 ประเทศที่ใหญ่ที่สุด (130)" href="th/vgp/3197.html">โลก: 130 ประเทศที่ใหญ่ที่สุด</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl16_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="โลก: 150 ประเทศที่ใหญ่ที่สุด (150)" class="flag1 game3198" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="โลก: 150 ประเทศที่ใหญ่ที่สุด (150)" href="th/vgp/3198.html">โลก: 150 ประเทศที่ใหญ่ที่สุด</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl17_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="โลก: รัฐสมาชิกสหประชาชาติ (193)" class="flag1 game3199" loading="lazy" src="exlflags/flag-un.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="โลก: รัฐสมาชิกสหประชาชาติ (193)" href="th/vgp/3199.html">โลก: รัฐสมาชิกสหประชาชาติ</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl18_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="รัฐและเมืองหลวงสมาชิกองค์การสหประชาชาติ 193 แห่ง (193)" class="flag1 game3238" loading="lazy" src="exlflags/flag-un.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="รัฐและเมืองหลวงสมาชิกองค์การสหประชาชาติ 193 แห่ง (193)" href="th/vgp/3238.html">รัฐและเมืองหลวงสมาชิกองค์การสหประชาชาติ 193 แห่ง</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl19_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="โลก: ประเทศใหญ่ (58)" class="flag1 game3069" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="โลก: ประเทศใหญ่ (58)" href="th/vgp/3069.html">โลก: ประเทศใหญ่</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl20_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="ประเทศและดินแดนมากกว่า 220 แห่ง (227)" class="flag1 game3355" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="ประเทศและดินแดนมากกว่า 220 แห่ง (227)" href="th/vgp/3355.html">ประเทศและดินแดนมากกว่า 220 แห่ง</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl21_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="โลก: เกาะ (39)" class="flag1 game3046" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="โลก: เกาะ (39)" href="th/vgp/3046.html">โลก: เกาะ</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl22_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="โลก: มหาสมุทร ทะเล และทะเลสาบ (29)" class="flag1 game3072" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="โลก: มหาสมุทร ทะเล และทะเลสาบ (29)" href="th/vgp/3072.html">โลก: มหาสมุทร ทะเล และทะเลสาบ</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl23_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="โลก: 25 เมืองที่ใหญ่ที่สุด (25)" class="flag1 game3127" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="โลก: 25 เมืองที่ใหญ่ที่สุด (25)" href="th/vgp/3127.html">โลก: 25 เมืองที่ใหญ่ที่สุด</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl24_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="โลก: ธง (16)" class="flag1 game2007" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="โลก: ธง (16)" href="th/fl/2007.html">โลก: ธง</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl25_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="โลก: ธง (ยาก) (105)" class="flag1 game2008" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="โลก: ธง (ยาก) (105)" href="th/fl/2008.html">โลก: ธง (ยาก)</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl26_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="รัฐสมาชิกองค์การสหประชาชาติ 193 แห่ง: ธง (192)" class="flag1 game2022" loading="lazy" src="exlflags/flag-un.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="รัฐสมาชิกองค์การสหประชาชาติ 193 แห่ง: ธง (192)" href="th/fl/2022.html">รัฐสมาชิกองค์การสหประชาชาติ 193 แห่ง: ธง</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl27_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="โลก: ธงที่คล้ายกันมาก (10)" class="flag1 game2040" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="โลก: ธงที่คล้ายกันมาก (10)" href="th/fl/2040.html">โลก: ธงที่คล้ายกันมาก</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl28_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="ธงที่มีจันทร์เสี้ยว (17)" class="flag1 game2050" loading="lazy" src="exlflags/flag-turkey.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="ธงที่มีจันทร์เสี้ยว (17)" href="th/fl/2050.html">ธงที่มีจันทร์เสี้ยว</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl29_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="ธงที่มียูเนียนแจ็ก (17)" class="flag1 game2047" loading="lazy" src="exlflags/flag-uk.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="ธงที่มียูเนียนแจ็ก (17)" href="th/fl/2047.html">ธงที่มียูเนียนแจ็ก</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl30_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="ธงสีแดง เขียว และเหลือง (20)" class="flag1 game2052" loading="lazy" src="exlflags/flag-mali.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="ธงสีแดง เขียว และเหลือง (20)" href="th/fl/2052.html">ธงสีแดง เขียว และเหลือง</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl31_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="ธงสีแดง เขียว ดำ และขาว (11)" class="flag1 game2055" loading="lazy" src="exlflags/flag-uae.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="ธงสีแดง เขียว ดำ และขาว (11)" href="th/fl/2055.html">ธงสีแดง เขียว ดำ และขาว</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl32_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="ธงสีแดง ขาว และฟ้า (31)" class="flag1 game2051" loading="lazy" src="exlflags/flag-netherland.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="ธงสีแดง ขาว และฟ้า (31)" href="th/fl/2051.html">ธงสีแดง ขาว และฟ้า</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl33_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="ธงสีแดงและขาว (19)" class="flag1 game2054" loading="lazy" src="exlflags/flag-indonesia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="ธงสีแดงและขาว (19)" href="th/fl/2054.html">ธงสีแดงและขาว</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl34_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="ธงสีฟ้าและขาว (14)" class="flag1 game2053" loading="lazy" src="exlflags/flag-argentin.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="ธงสีฟ้าและขาว (14)" href="th/fl/2053.html">ธงสีฟ้าและขาว</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl35_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="ระบบสุริยะ: ดาวเคราะห์ (8)" class="flag1 game3123" loading="lazy" src="exlflags/flag-solar.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="ระบบสุริยะ: ดาวเคราะห์ (8)" href="th/vgp/3123.html">ระบบสุริยะ: ดาวเคราะห์</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+</div>
+
+<div class="gamesublist horizontal" style="width: auto;">
+    
+
+</div>
+
+                <div style="clear: both;"></div>
+                <h3 style="margin-top:10px;margin-bottom:15px;">
+                    
+                </h3>
+            </div>
+        </td>
+	</tr>
+</table>
+
+
+</div>
+
+                                </div>
+                                <br />
+                                <hr />
+                                <div style="direction: ltr" lang="en">
+                                    <span id="lblGameCount" dir="ltr"><p>In <b>Thai (ไทย)</b>, 3,260 games were played yesterday.</p></span>
+                                </div>
+                                <br />
+                                <br />
+                                -
+                                <br />
+
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                    <div style="width: 100%; clear: both;padding-top:50px;">
+                        <div style="margin: auto;width:600px;text-align:center">
+                            <img src="images/system/plan-international.jpg" alt="Plan International Corporate Partner 2021" />
+                        <br />
+                            <div style="direction:ltr;">As a Corporate Partner, Seterra Geography supports <a href="https://plan-international.org/">Plan International</a> / <a href="https://plansverige.org/for-foretag/partnerskap/">Plan Sverige</a>, advancing childrenï¿½s rights in more than 70 countries.</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="rtcol">
+                    <div id="panApp">
+	
+                        <div class="applinks">
+
+                            <a href="https://itunes.apple.com/us/app/seterra-geography-full/id1093460065">
+                                <img src="images/system/appstore_en.png" style="padding-right: 20px; width: 150px; height: 45px;" /></a><br />
+                            <a href="https://play.google.com/store/apps/details?id=com.seterra">
+                                <img src="images/system/googleplay_en.png" style="padding-right: 20px; width: 150px; height: 45px;"></a>
+                        </div>
+                    
+</div>
+
+                    
+                    <br />
+
+
+                </div>
+
+
+
+                <div id="panFeatured">
+	
+                    <div class="featureddiv">
+                        
+<div>
+
+    
+               <div class="featureditem">
+                   <a id="featured_repFeatured_ctl00_lnkItem" class="featured" href="th/vgp/3007.html">
+                        <div class="divFeaturedImage">
+                            <img id="featured_repFeatured_ctl00_imgImage" title="ยุโรป: ประเทศ" class="featuredimage" loading="lazy" src="mapimage/thumbs150/3007.png" alt="ยุโรป: ประเทศ" height="100" width="150" border="0" />
+                        </div>
+                        <h4 style="margin:0px"><span id="featured_repFeatured_ctl00_lblTitle">ยุโรป: ประเทศ</span></h4>
+                        <p style="margin:0px"><span id="featured_repFeatured_ctl00_lblDescription">เกมแบบทดสอบแผนที่</span></p>
+                        <div style="clear:both"></div>
+                    </a>
+               </div>
+        
+               <div class="featureditem">
+                   <a id="featured_repFeatured_ctl01_lnkItem" class="featured" href="th/vgp/3163.html">
+                        <div class="divFeaturedImage">
+                            <img id="featured_repFeatured_ctl01_imgImage" title="แอฟริกา: ประเทศ" class="featuredimage" loading="lazy" src="mapimage/thumbs150/3163.png" alt="แอฟริกา: ประเทศ" height="100" width="150" border="0" />
+                        </div>
+                        <h4 style="margin:0px"><span id="featured_repFeatured_ctl01_lblTitle">แอฟริกา: ประเทศ</span></h4>
+                        <p style="margin:0px"><span id="featured_repFeatured_ctl01_lblDescription">เกมแบบทดสอบแผนที่</span></p>
+                        <div style="clear:both"></div>
+                    </a>
+               </div>
+        
+               <div class="featureditem">
+                   <a id="featured_repFeatured_ctl02_lnkItem" class="featured" href="th/vgp/3046.html">
+                        <div class="divFeaturedImage">
+                            <img id="featured_repFeatured_ctl02_imgImage" title="โลก: เกาะ" class="featuredimage" loading="lazy" src="images/system/island_150.jpg" alt="โลก: เกาะ" height="100" width="150" border="0" />
+                        </div>
+                        <h4 style="margin:0px"><span id="featured_repFeatured_ctl02_lblTitle">โลก: เกาะ</span></h4>
+                        <p style="margin:0px"><span id="featured_repFeatured_ctl02_lblDescription">เกมแบบทดสอบแผนที่</span></p>
+                        <div style="clear:both"></div>
+                    </a>
+               </div>
+        
+</div>
+
+
+                    </div>
+                
+</div>
+                <div style="clear: both;"></div>
+            </div>
+            
+
+<div id="footer">
+    <div id="footercontent">
+        <div class="smediawrapper">
+            <a href="https://www.twitch.tv/directory/game/Seterra/videos/all" style="text-decoration: none;">
+                <img alt="Twitch" class="smedia smediatwitch" src="images/system/twitch.png" style="width: 35px; height: 35px;" /></a>
+            <a href="https://discord.gg/kW8Y3AG9wk" style="text-decoration: none;">
+                <img alt="Discord" class="smedia " src="images/system/discord.png" style="width: 35px; height: 35px;" /></a>
+            <a href="https://www.facebook.com/seterra.geography" style="text-decoration: none;">
+                <img alt="Facebook" class="smedia" src="images/system/facebook.png" style="width: 35px; height: 35px;" /></a>
+            <a href="https://twitter.com/SeterraGeo">
+                <img alt="Twitter" class="smedia" src="images/system/twitter.png" style="width: 35px; height: 35px;" /></a>
+            <a href="https://www.youtube.com/c/seterrageography">
+                <img alt="Youtube" class="smedia" src="images/system/youtube3.png" style="width: 35px; height: 35px;" /></a>
+            <a href="https://bit.ly/2SntfBU">
+                <img alt="Instagram" class="smedia" src="images/system/instagram.png" style="width: 35px; height: 35px;" /></a>
+        </div>
+        <div style="max-width: 900px;">
+            <div class="footerMenu"><div class="title">Help Center</div>  <ul> <li><a href="en/p/contact.html">Contact Us</a></li> <li><a href="en/p/faq.html">FAQ (Website)</a></li> <li><a href="en/p/app-faq.html">FAQ (App)</a></li> <li><a href="en/p/tips-and-tricks.html">Tips & Tricks</a></li> <li><a href="pro.html">Pricing</a></li> <li><a href="en/blog.html">Blog</a></li> </ul>  </div>  <div class="footerMenu"><div class="title">&nbsp;</div>  <ul>  <li><a href="en/p/seterra-modes.html">Game Modes</a></li> <li><a href="en/p/seterra-highscores.html">Personal Leaderboards</a></li> <li><a href="en/p/custom-quizzes.html">Create Custom Quizzes</a></li> <li><a href="en/p/public-leaderboards.html">Public Leaderboards</a></li> <li><a href="en/p/custom-locations.html">Add Custom Locations</a></li>    </ul>  </div>  <div class="footerMenu"><div class="title">Resources</div> <ul> <li><a href="en/l/pdf%EF%B9%96img=1.html">Printables</a></li> <li><a href="en/l/bla.html">Blank Maps</a></li> <li><a href="en/p/user-quizzes.html">User Generated Quizzes</a></li> <li><a href="en-an.html">Science Quizzes</a></li> <li><a href="en/p/top-scores.html">Top Scores</a></li> <li><a href="https://www.speedrun.com/seterra">Speedrun.com</a></li> </ul>  </div>  <div class="footerMenu"><div class="title">About</div>  <ul> <li><a href="terms.aspx.html">Terms & Conditions</a></li> <li><a href="privacy.aspx.html">Privacy Policy</a></li> <li><a href="en/p/contact.html">Contact Us</a></li> </ul>  </div>  <div style="clear:both"></div><br><br><span style="padding-left:20px;font-size:13px;color:#AAAAAA">2/1/2023 11:24:00 PM</span>
+        </div>
+        <div style="clear:both"></div>
+        <div id="ccpa" style="display: none; cursor: pointer;margin-top:20px;">Do not share my Personal Information.</div>
+    </div>
+</div>
+
+
+
+        </div>
+    </form>
+
+</body>
+</html>

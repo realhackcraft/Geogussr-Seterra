@@ -1,0 +1,1787 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="twitter:image" content="https://www.geoguessr.com/seterra//seterra/images/system/banners/world.jpg" /><meta name="twitter:description" /><meta name="twitter:creator" content="@seterrageo" /><meta name="twitter:site" content="@seterrageo" /><meta name="twitter:title" content="Geografispil for Verden" /><meta name="twitter:card" content="summary_large_image" /><meta property="og:type" content="game" /><meta property="og:description" /><meta name="Description" /><meta property="og:title" content="Geografispil for Verden" /><meta property="fb:app_id" content="319599044764636" /><meta Property="og:image" content="https://www.geoguessr.com/seterra//seterra/images/system/banners/world.jpg" /><meta name="apple-itunes-app" content="app-id=1093460065" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="../../Scripts/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script src="../../Scripts/jquery.cookie.js" type="text/javascript"></script>
+    <link href="../../CSS/pagestyles.css" rel="stylesheet" type="text/css" /><link href="../../CSS/geoguessr.css" rel="stylesheet" type="text/css" />
+    <script src="../../Scripts/general.js" type="text/javascript" defer></script>
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" defer></script>
+
+
+    
+
+<link rel="icon" href="../../favicon.ico" type="image/x-icon" />
+<script type="text/javascript" src="../../Scripts/jquery.ddslick.min.js"></script>
+<script src="../../Scripts/utils.js"></script>
+<script src="../../Scripts/highscores.js"></script>
+
+
+    
+     <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <!-- Google Tag Manager -->
+    
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-W5K3B7M');</script>    
+    
+    <!-- End Google Tag Manager -->
+
+    <script>
+        var activeUnits = [
+            'gg-seterra_sidebar_right',
+            'gg-seterra_sidebar_right_2',
+            'gg-seterra_mobile_1',
+            'gg-seterra_headerleader',
+            'gg-seterra_nvu-and-float',
+            'gg-seterra_learboard_adhesion',
+            'gg-seterra_bottom_mpu',
+            'gg-seterra_outstream_mw'
+        ];
+
+        if (window.isProUser()) {
+            activeUnits = [];
+        }
+
+        window.snigelPubConf = {
+            "adengine": {
+                "activeAdUnits": activeUnits
+            }
+        };
+    </script>
+
+    
+        <script async data-cfasync="false" src="https://cdn.snigelweb.com/adengine/geoguessr.com/loader.js" type="text/javascript"></script>
+    
+    <script>
+        var lang = "da"
+        document.documentElement.setAttribute("lang", lang);
+
+    </script>
+<link rel="canonical" href="wor.html" /><title>
+	Geografispil for Verden - Seterra
+</title></head>
+
+
+<body>
+
+
+    <form name="aspnetForm" method="post" action="wor.html" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJODA3NjM5MzA2D2QWAmYPZBYCAgMPZBYGAgEPZBY2Zg8PFgIeC05hdmlnYXRlVXJsBfMBaHR0cHM6Ly93d3cucGF0cmVvbi5jb20vb2F1dGgyL2F1dGhvcml6ZT9yZXNwb25zZV90eXBlPWNvZGUmc2NvcGU9dXNlcnMlMjBwbGVkZ2VzLXRvLW1lJTIwbXktY2FtcGFpZ24mY2xpZW50X2lkPTM4NjUxNTUzMTVjOTVhMDBlMjc4YjJjM2JkM2E1YjY2ZGRmMmMxMmI4ZmU0ODYzMTdlNzRhMGUzOTJlYjFlYzMmcmVkaXJlY3RfdXJpPWh0dHBzOi8vd3d3Lmdlb2d1ZXNzci5jb20vc2V0ZXJyYS9tZW1iZXJSZWRpcmVjdC5hc3B4ZGQCBA8PFgIeB1Zpc2libGVoZGQCBQ8PFgIfAWhkZAIGDw8WAh8BaGRkAgcPDxYCHwFoZGQCCA8PFgIfAWhkZAIJDw8WAh8BaGRkAgsPDxYCHwFoZGQCDA8PFgIfAWhkZAINDw8WAh8BaGRkAg4PDxYCHwFoZGQCDw8PFgIfAWhkZAIQDw8WAh8BaGRkAhEPDxYCHwFoZGQCEg8PFgIfAWhkZAITDw8WAh8BaGRkAhQPDxYCHwFoZGQCFQ8PFgIfAWhkZAIWDw8WAh8BaGRkAhcPDxYCHwFoZGQCGA8PFgIfAWhkZAIZDw8WAh8BaGRkAhoPDxYCHwFoZGQCGw8PFgIfAWhkZAIcDw8WAh8BaGRkAh0PDxYCHwFoZGQCHg8PFgIfAWhkZAIDD2QWEAIBDw8WAh4ISW1hZ2VVcmwFKC9zZXRlcnJhL2ltYWdlcy9zeXN0ZW0vYmFubmVycy93b3JsZC5qcGdkZAIDDw8WAh4EVGV4dAVQPGEgaHJlZj0nL3NldGVycmEnID5Ib21lPC9hPiA+PiA8YSBocmVmPScvc2V0ZXJyYS9kYSc+R2VvZ3JhZmlzcGlsPC9hPiA+PiBWZXJkZW5kZAIFDw8WAh8DBRdHZW9ncmFmaXNwaWwgZm9yIFZlcmRlbmRkAgsPZBYEAgEPDxYIHwMFD1NlIHNvbSBiaWxsZWRlch8ABS9odHRwOi8vd3d3Lmdlb2d1ZXNzci5jb20vc2V0ZXJyYS9kYS9sL3dvcj9pbWc9MR4IQ3NzQ2xhc3MFC2VuYWJsZWRsaW5rHgRfIVNCAgJkZAIDDw8WCh8DBQxTZSBzb20gdGVrc3QfAAUpaHR0cDovL3d3dy5nZW9ndWVzc3IuY29tL3NldGVycmEvZGEvbC93b3IfBAUMZGlzYWJsZWRsaW5rHgdFbmFibGVkaB8FAgJkZAINDzwrAAkBAA8WBB4IRGF0YUtleXMWAB4LXyFJdGVtQ291bnQCBWQWCmYPZBYEAgEPDxYCHwMFGFNwaWwgbWVkIGtvcnQgZm9yIFZlcmRlbmRkAgMPZBYEAgEPFgIfCAIyFmRmD2QWAgIBD2QWBAIBDw8WCB8EBQ5mbGFnMSBnYW1lMzAwNB8CBSAvc2V0ZXJyYS9leGxmbGFncy9mbGFnLXdvcmxkLnBuZx4HVG9vbFRpcAUPVmVyZGVuc2RlbGUgKDcpHwUCAmRkAgMPDxYGHwMFC1ZlcmRlbnNkZWxlHwkFD1ZlcmRlbnNkZWxlICg3KR8ABQ1+L2RhL3ZncC8zMDA0ZGQCAQ9kFgICAQ9kFgQCAQ8PFggfBAUOZmxhZzEgZ2FtZTMxODgfAgUgL3NldGVycmEvZXhsZmxhZ3MvZmxhZy13b3JsZC5wbmcfCQUbVmVyZGVuc2RlbGUgb2cgb2NlYW5lciAoMTIpHwUCAmRkAgMPDxYGHwMFFlZlcmRlbnNkZWxlIG9nIG9jZWFuZXIfCQUbVmVyZGVuc2RlbGUgb2cgb2NlYW5lciAoMTIpHwAFDX4vZGEvdmdwLzMxODhkZAICD2QWAgIBD2QWBAIBDw8WCB8EBQ5mbGFnMSBnYW1lMzI4Nx8CBSAvc2V0ZXJyYS9leGxmbGFncy9mbGFnLXdvcmxkLnBuZx8JBSpWZXJkZW5zZGVsZSBvZyBvY2VhbmVyIChtZWQgYmlsbGVkZXIpICgxMikfBQICZGQCAw8PFgYfAwUlVmVyZGVuc2RlbGUgb2cgb2NlYW5lciAobWVkIGJpbGxlZGVyKR8JBSpWZXJkZW5zZGVsZSBvZyBvY2VhbmVyIChtZWQgYmlsbGVkZXIpICgxMikfAAUNfi9kYS92Z3AvMzI4N2RkAgMPZBYCAgEPZBYEAgEPDxYIHwQFDmZsYWcxIGdhbWUzNDU5HwIFIC9zZXRlcnJhL2V4bGZsYWdzL2ZsYWctd29ybGQucG5nHwkFGFZlcmRlbjogRnlzaXNrIGtvcnQgKDIzKR8FAgJkZAIDDw8WBh8DBRNWZXJkZW46IEZ5c2lzayBrb3J0HwkFGFZlcmRlbjogRnlzaXNrIGtvcnQgKDIzKR8ABQ1+L2RhL3ZncC8zNDU5ZGQCBA9kFgICAQ9kFgQCAQ8PFggfBAUOZmxhZzEgZ2FtZTM2NTAfAgUgL3NldGVycmEvZXhsZmxhZ3MvZmxhZy13b3JsZC5wbmcfCQUWTkFUTy1tZWRsZW1zbGFuZGUgKDMwKR8FAgJkZAIDDw8WBh8DBRFOQVRPLW1lZGxlbXNsYW5kZR8JBRZOQVRPLW1lZGxlbXNsYW5kZSAoMzApHwAFDX4vZGEvdmdwLzM2NTBkZAIFD2QWAgIBD2QWBAIBDw8WCB8EBQ5mbGFnMSBnYW1lMzIyMB8CBSAvc2V0ZXJyYS9leGxmbGFncy9mbGFnLXdvcmxkLnBuZx8JBRhWZXJkZW46IEcyMC1sYW5kZW5lICgxOSkfBQICZGQCAw8PFgYfAwUTVmVyZGVuOiBHMjAtbGFuZGVuZR8JBRhWZXJkZW46IEcyMC1sYW5kZW5lICgxOSkfAAUNfi9kYS92Z3AvMzIyMGRkAgYPZBYCAgEPZBYEAgEPDxYIHwQFDmZsYWcxIGdhbWUzMjIxHwIFIC9zZXRlcnJhL2V4bGZsYWdzL2ZsYWctd29ybGQucG5nHwkFJlZlcmRlbjogRzIwLWxhbmRlbmUsIGhvdmVkc3TDpmRlciAoMTkpHwUCAmRkAgMPDxYGHwMFIVZlcmRlbjogRzIwLWxhbmRlbmUsIGhvdmVkc3TDpmRlch8JBSZWZXJkZW46IEcyMC1sYW5kZW5lLCBob3ZlZHN0w6ZkZXIgKDE5KR8ABQ1+L2RhL3ZncC8zMjIxZGQCBw9kFgICAQ9kFgQCAQ8PFggfBAUOZmxhZzEgZ2FtZTMyMDIfAgUgL3NldGVycmEvZXhsZmxhZ3MvZmxhZy13b3JsZC5wbmcfCQUZVmVyZGVuOiBPRUNELWxhbmRlbmUgKDM4KR8FAgJkZAIDDw8WBh8DBRRWZXJkZW46IE9FQ0QtbGFuZGVuZR8JBRlWZXJkZW46IE9FQ0QtbGFuZGVuZSAoMzgpHwAFDX4vZGEvdmdwLzMyMDJkZAIID2QWAgIBD2QWBAIBDw8WCB8EBQ5mbGFnMSBnYW1lMzE1NB8CBSAvc2V0ZXJyYS9leGxmbGFncy9mbGFnLXdvcmxkLnBuZx8JBSRWZXJkZW46IDMwIG1lc3QgYmVmb2xrZWRlIGxhbmRlICgzMCkfBQICZGQCAw8PFgYfAwUfVmVyZGVuOiAzMCBtZXN0IGJlZm9sa2VkZSBsYW5kZR8JBSRWZXJkZW46IDMwIG1lc3QgYmVmb2xrZWRlIGxhbmRlICgzMCkfAAUNfi9kYS92Z3AvMzE1NGRkAgkPZBYCAgEPZBYEAgEPDxYIHwQFDmZsYWcxIGdhbWUzMjMyHwIFIC9zZXRlcnJhL2V4bGZsYWdzL2ZsYWctd29ybGQucG5nHwkFMlZlcmRlbjogMzAgbWVzdCBiZWZvbGtlZGUgbGFuZGUsIGhvdmVkc3TDpmRlciAoMzApHwUCAmRkAgMPDxYGHwMFLVZlcmRlbjogMzAgbWVzdCBiZWZvbGtlZGUgbGFuZGUsIGhvdmVkc3TDpmRlch8JBTJWZXJkZW46IDMwIG1lc3QgYmVmb2xrZWRlIGxhbmRlLCBob3ZlZHN0w6ZkZXIgKDMwKR8ABQ1+L2RhL3ZncC8zMjMyZGQCCg9kFgICAQ9kFgQCAQ8PFggfBAUOZmxhZzEgZ2FtZTMxNTUfAgUgL3NldGVycmEvZXhsZmxhZ3MvZmxhZy13b3JsZC5wbmcfCQUkVmVyZGVuOiA1MCBtZXN0IGJlZm9sa2VkZSBsYW5kZSAoNTApHwUCAmRkAgMPDxYGHwMFH1ZlcmRlbjogNTAgbWVzdCBiZWZvbGtlZGUgbGFuZGUfCQUkVmVyZGVuOiA1MCBtZXN0IGJlZm9sa2VkZSBsYW5kZSAoNTApHwAFDX4vZGEvdmdwLzMxNTVkZAILD2QWAgIBD2QWBAIBDw8WCB8EBQ5mbGFnMSBnYW1lMzIzMx8CBSAvc2V0ZXJyYS9leGxmbGFncy9mbGFnLXdvcmxkLnBuZx8JBTJWZXJkZW46IDUwIG1lc3QgYmVmb2xrZWRlIGxhbmRlLCBob3ZlZHN0w6ZkZXIgKDUwKR8FAgJkZAIDDw8WBh8DBS1WZXJkZW46IDUwIG1lc3QgYmVmb2xrZWRlIGxhbmRlLCBob3ZlZHN0w6ZkZXIfCQUyVmVyZGVuOiA1MCBtZXN0IGJlZm9sa2VkZSBsYW5kZSwgaG92ZWRzdMOmZGVyICg1MCkfAAUNfi9kYS92Z3AvMzIzM2RkAgwPZBYCAgEPZBYEAgEPDxYIHwQFDmZsYWcxIGdhbWUzMTU2HwIFIC9zZXRlcnJhL2V4bGZsYWdzL2ZsYWctd29ybGQucG5nHwkFJFZlcmRlbjogNzAgbWVzdCBiZWZvbGtlZGUgbGFuZGUgKDcwKR8FAgJkZAIDDw8WBh8DBR9WZXJkZW46IDcwIG1lc3QgYmVmb2xrZWRlIGxhbmRlHwkFJFZlcmRlbjogNzAgbWVzdCBiZWZvbGtlZGUgbGFuZGUgKDcwKR8ABQ1+L2RhL3ZncC8zMTU2ZGQCDQ9kFgICAQ9kFgQCAQ8PFggfBAUOZmxhZzEgZ2FtZTMyMzQfAgUgL3NldGVycmEvZXhsZmxhZ3MvZmxhZy13b3JsZC5wbmcfCQUyVmVyZGVuOiA3MCBtZXN0IGJlZm9sa2VkZSBsYW5kZSwgaG92ZWRzdMOmZGVyICg3MCkfBQICZGQCAw8PFgYfAwUtVmVyZGVuOiA3MCBtZXN0IGJlZm9sa2VkZSBsYW5kZSwgaG92ZWRzdMOmZGVyHwkFMlZlcmRlbjogNzAgbWVzdCBiZWZvbGtlZGUgbGFuZGUsIGhvdmVkc3TDpmRlciAoNzApHwAFDX4vZGEvdmdwLzMyMzRkZAIOD2QWAgIBD2QWBAIBDw8WCB8EBQ5mbGFnMSBnYW1lMzE4NR8CBSAvc2V0ZXJyYS9leGxmbGFncy9mbGFnLXdvcmxkLnBuZx8JBSRWZXJkZW46IDkwIG1lc3QgYmVmb2xrZWRlIGxhbmRlICg5MCkfBQICZGQCAw8PFgYfAwUfVmVyZGVuOiA5MCBtZXN0IGJlZm9sa2VkZSBsYW5kZR8JBSRWZXJkZW46IDkwIG1lc3QgYmVmb2xrZWRlIGxhbmRlICg5MCkfAAUNfi9kYS92Z3AvMzE4NWRkAg8PZBYCAgEPZBYEAgEPDxYIHwQFDmZsYWcxIGdhbWUzMjM1HwIFIC9zZXRlcnJhL2V4bGZsYWdzL2ZsYWctd29ybGQucG5nHwkFMlZlcmRlbjogOTAgbWVzdCBiZWZvbGtlZGUgbGFuZGUsIGhvdmVkc3TDpmRlciAoOTApHwUCAmRkAgMPDxYGHwMFLVZlcmRlbjogOTAgbWVzdCBiZWZvbGtlZGUgbGFuZGUsIGhvdmVkc3TDpmRlch8JBTJWZXJkZW46IDkwIG1lc3QgYmVmb2xrZWRlIGxhbmRlLCBob3ZlZHN0w6ZkZXIgKDkwKR8ABQ1+L2RhL3ZncC8zMjM1ZGQCEA9kFgICAQ9kFgQCAQ8PFggfBAUOZmxhZzEgZ2FtZTMxNTcfAgUgL3NldGVycmEvZXhsZmxhZ3MvZmxhZy13b3JsZC5wbmcfCQUiMzAgc3TDuHJzdGUgbGFuZGUgZWZ0ZXIgYXJlYWwgKDMwKR8FAgJkZAIDDw8WBh8DBR0zMCBzdMO4cnN0ZSBsYW5kZSBlZnRlciBhcmVhbB8JBSIzMCBzdMO4cnN0ZSBsYW5kZSBlZnRlciBhcmVhbCAoMzApHwAFDX4vZGEvdmdwLzMxNTdkZAIRD2QWAgIBD2QWBAIBDw8WCB8EBQ5mbGFnMSBnYW1lMzI2OR8CBSAvc2V0ZXJyYS9leGxmbGFncy9mbGFnLXdvcmxkLnBuZx8JBSEzMiBtaW5kc3RlIGxhbmRlIGVmdGVyIGFyZWFsICgzMikfBQICZGQCAw8PFgYfAwUcMzIgbWluZHN0ZSBsYW5kZSBlZnRlciBhcmVhbB8JBSEzMiBtaW5kc3RlIGxhbmRlIGVmdGVyIGFyZWFsICgzMikfAAUNfi9kYS92Z3AvMzI2OWRkAhIPZBYCAgEPZBYEAgEPDxYIHwQFDmZsYWcxIGdhbWUzMTU4HwIFIC9zZXRlcnJhL2V4bGZsYWdzL2ZsYWctd29ybGQucG5nHwkFKlZlcmRlbjogNTAgc3TDuHJzdGUgbGFuZGUgZWZ0ZXIgYXJlYWwgKDUwKR8FAgJkZAIDDw8WBh8DBSVWZXJkZW46IDUwIHN0w7hyc3RlIGxhbmRlIGVmdGVyIGFyZWFsHwkFKlZlcmRlbjogNTAgc3TDuHJzdGUgbGFuZGUgZWZ0ZXIgYXJlYWwgKDUwKR8ABQ1+L2RhL3ZncC8zMTU4ZGQCEw9kFgICAQ9kFgQCAQ8PFggfBAUOZmxhZzEgZ2FtZTMxNTkfAgUgL3NldGVycmEvZXhsZmxhZ3MvZmxhZy13b3JsZC5wbmcfCQUqVmVyZGVuOiA3MCBzdMO4cnN0ZSBsYW5kZSBlZnRlciBhcmVhbCAoNzApHwUCAmRkAgMPDxYGHwMFJVZlcmRlbjogNzAgc3TDuHJzdGUgbGFuZGUgZWZ0ZXIgYXJlYWwfCQUqVmVyZGVuOiA3MCBzdMO4cnN0ZSBsYW5kZSBlZnRlciBhcmVhbCAoNzApHwAFDX4vZGEvdmdwLzMxNTlkZAIUD2QWAgIBD2QWBAIBDw8WCB8EBQ5mbGFnMSBnYW1lMzE5NR8CBSAvc2V0ZXJyYS9leGxmbGFncy9mbGFnLXdvcmxkLnBuZx8JBSpWZXJkZW46IDkwIHN0w7hyc3RlIGxhbmRlIGVmdGVyIGFyZWFsICg5MCkfBQICZGQCAw8PFgYfAwUlVmVyZGVuOiA5MCBzdMO4cnN0ZSBsYW5kZSBlZnRlciBhcmVhbB8JBSpWZXJkZW46IDkwIHN0w7hyc3RlIGxhbmRlIGVmdGVyIGFyZWFsICg5MCkfAAUNfi9kYS92Z3AvMzE5NWRkAhUPZBYCAgEPZBYEAgEPDxYIHwQFDmZsYWcxIGdhbWUzMTk2HwIFIC9zZXRlcnJhL2V4bGZsYWdzL2ZsYWctd29ybGQucG5nHwkFLFZlcmRlbjogMTEwIHN0w7hyc3RlIGxhbmRlIGVmdGVyIGFyZWFsICgxMTApHwUCAmRkAgMPDxYGHwMFJlZlcmRlbjogMTEwIHN0w7hyc3RlIGxhbmRlIGVmdGVyIGFyZWFsHwkFLFZlcmRlbjogMTEwIHN0w7hyc3RlIGxhbmRlIGVmdGVyIGFyZWFsICgxMTApHwAFDX4vZGEvdmdwLzMxOTZkZAIWD2QWAgIBD2QWBAIBDw8WCB8EBQ5mbGFnMSBnYW1lMzE5Nx8CBSAvc2V0ZXJyYS9leGxmbGFncy9mbGFnLXdvcmxkLnBuZx8JBSxWZXJkZW46IDEzMCBzdMO4cnN0ZSBsYW5kZSBlZnRlciBhcmVhbCAoMTMwKR8FAgJkZAIDDw8WBh8DBSZWZXJkZW46IDEzMCBzdMO4cnN0ZSBsYW5kZSBlZnRlciBhcmVhbB8JBSxWZXJkZW46IDEzMCBzdMO4cnN0ZSBsYW5kZSBlZnRlciBhcmVhbCAoMTMwKR8ABQ1+L2RhL3ZncC8zMTk3ZGQCFw9kFgICAQ9kFgQCAQ8PFggfBAUOZmxhZzEgZ2FtZTMxOTgfAgUgL3NldGVycmEvZXhsZmxhZ3MvZmxhZy13b3JsZC5wbmcfCQUsVmVyZGVuOiAxNTAgc3TDuHJzdGUgbGFuZGUgZWZ0ZXIgYXJlYWwgKDE1MCkfBQICZGQCAw8PFgYfAwUmVmVyZGVuOiAxNTAgc3TDuHJzdGUgbGFuZGUgZWZ0ZXIgYXJlYWwfCQUsVmVyZGVuOiAxNTAgc3TDuHJzdGUgbGFuZGUgZWZ0ZXIgYXJlYWwgKDE1MCkfAAUNfi9kYS92Z3AvMzE5OGRkAhgPZBYCAgEPZBYEAgEPDxYIHwQFDmZsYWcxIGdhbWUzMTk5HwIFHS9zZXRlcnJhL2V4bGZsYWdzL2ZsYWctdW4ucG5nHwkFH1ZlcmRlbjogRk4ncyBtZWRsZW1zbGFuZGUgKDE5MykfBQICZGQCAw8PFgYfAwUZVmVyZGVuOiBGTidzIG1lZGxlbXNsYW5kZR8JBR9WZXJkZW46IEZOJ3MgbWVkbGVtc2xhbmRlICgxOTMpHwAFDX4vZGEvdmdwLzMxOTlkZAIZD2QWAgIBD2QWBAIBDw8WCB8EBQ5mbGFnMSBnYW1lMzIzOB8CBR0vc2V0ZXJyYS9leGxmbGFncy9mbGFnLXVuLnBuZx8JBS1WZXJkZW46IEZOJ3MgbWVkbGVtc2xhbmRlLCBob3ZlZHN0w6ZkZXIgKDE5MykfBQICZGQCAw8PFgYfAwUnVmVyZGVuOiBGTidzIG1lZGxlbXNsYW5kZSwgaG92ZWRzdMOmZGVyHwkFLVZlcmRlbjogRk4ncyBtZWRsZW1zbGFuZGUsIGhvdmVkc3TDpmRlciAoMTkzKR8ABQ1+L2RhL3ZncC8zMjM4ZGQCGg9kFgICAQ9kFgQCAQ8PFggfBAUOZmxhZzEgZ2FtZTMzNTYfAgUgL3NldGVycmEvZXhsZmxhZ3MvZmxhZy13b3JsZC5wbmcfCQUoMTk1IHN0YXRlciwgZGVyIGVyIGFuZXJrZW5kdCBhZiBGTiAoMTk1KR8FAgJkZAIDDw8WBh8DBSIxOTUgc3RhdGVyLCBkZXIgZXIgYW5lcmtlbmR0IGFmIEZOHwkFKDE5NSBzdGF0ZXIsIGRlciBlciBhbmVya2VuZHQgYWYgRk4gKDE5NSkfAAUNfi9kYS92Z3AvMzM1NmRkAhsPZBYCAgEPZBYEAgEPDxYIHwQFDmZsYWcxIGdhbWUzMzU3HwIFIi9zZXRlcnJhL2V4bGZsYWdzL2ZsYWctb2x5bXBpYy5wbmcfCQUcMjA2IG9seW1waXNrZSBuYXRpb25lciAoMjA2KR8FAgJkZAIDDw8WBh8DBRYyMDYgb2x5bXBpc2tlIG5hdGlvbmVyHwkFHDIwNiBvbHltcGlza2UgbmF0aW9uZXIgKDIwNikfAAUNfi9kYS92Z3AvMzM1N2RkAhwPZBYCAgEPZBYEAgEPDxYIHwQFDmZsYWcxIGdhbWUzMzU1HwIFIC9zZXRlcnJhL2V4bGZsYWdzL2ZsYWctd29ybGQucG5nHwkFJ1ZlcmRlbjogMjIwKyBsYW5kZSBvZyB0ZXJyaXRvcmllciAoMjI3KR8FAgJkZAIDDw8WBh8DBSFWZXJkZW46IDIyMCsgbGFuZGUgb2cgdGVycml0b3JpZXIfCQUnVmVyZGVuOiAyMjArIGxhbmRlIG9nIHRlcnJpdG9yaWVyICgyMjcpHwAFDX4vZGEvdmdwLzMzNTVkZAIdD2QWAgIBD2QWBAIBDw8WCB8EBQ5mbGFnMSBnYW1lMzA2OR8CBSAvc2V0ZXJyYS9leGxmbGFncy9mbGFnLXdvcmxkLnBuZx8JBRhWZXJkZW46IFN0b3JlIGxhbmRlICg1OCkfBQICZGQCAw8PFgYfAwUTVmVyZGVuOiBTdG9yZSBsYW5kZR8JBRhWZXJkZW46IFN0b3JlIGxhbmRlICg1OCkfAAUNfi9kYS92Z3AvMzA2OWRkAh4PZBYCAgEPZBYEAgEPDxYIHwQFDmZsYWcxIGdhbWUzMjEwHwIFIS9zZXRlcnJhL2V4bGZsYWdzL2ZsYWctZnJhbmNlLnBuZx8JBRhGcmFuc2t0YWxlbmRlIGxhbmRlICgyOSkfBQICZGQCAw8PFgYfAwUTRnJhbnNrdGFsZW5kZSBsYW5kZR8JBRhGcmFuc2t0YWxlbmRlIGxhbmRlICgyOSkfAAUNfi9kYS92Z3AvMzIxMGRkAh8PZBYCAgEPZBYEAgEPDxYIHwQFDmZsYWcxIGdhbWUzMTUzHwIFIC9zZXRlcnJhL2V4bGZsYWdzL2ZsYWctc3BhaW4ucG5nHwkFGFNwYW5za3RhbGVuZGUgbGFuZGUgKDIxKR8FAgJkZAIDDw8WBh8DBRNTcGFuc2t0YWxlbmRlIGxhbmRlHwkFGFNwYW5za3RhbGVuZGUgbGFuZGUgKDIxKR8ABQ1+L2RhL3ZncC8zMTUzZGQCIA9kFgICAQ9kFgQCAQ8PFggfBAUOZmxhZzEgZ2FtZTMxNjAfAgUgL3NldGVycmEvZXhsZmxhZ3MvZmxhZy1zcGFpbi5wbmcfCQUmU3BhbnNrdGFsZW5kZSBsYW5kZTogSG92ZWRzdMOmZGVyICgyMikfBQICZGQCAw8PFgYfAwUhU3BhbnNrdGFsZW5kZSBsYW5kZTogSG92ZWRzdMOmZGVyHwkFJlNwYW5za3RhbGVuZGUgbGFuZGU6IEhvdmVkc3TDpmRlciAoMjIpHwAFDX4vZGEvdmdwLzMxNjBkZAIhD2QWAgIBD2QWBAIBDw8WCB8EBQ5mbGFnMSBnYW1lMzA0Nx8CBSAvc2V0ZXJyYS9leGxmbGFncy9mbGFnLXdvcmxkLnBuZx8JBR9WZXJkZW46IEJqZXJnZSBvZyB2dWxrYW5lciAoMTYpHwUCAmRkAgMPDxYGHwMFGlZlcmRlbjogQmplcmdlIG9nIHZ1bGthbmVyHwkFH1ZlcmRlbjogQmplcmdlIG9nIHZ1bGthbmVyICgxNikfAAUNfi9kYS92Z3AvMzA0N2RkAiIPZBYCAgEPZBYEAgEPDxYIHwQFDmZsYWcxIGdhbWUzMTMxHwIFIC9zZXRlcnJhL2V4bGZsYWdzL2ZsYWctd29ybGQucG5nHwkFGFZlcmRlbjogQmplcmdrw6ZkZXIgKDE0KR8FAgJkZAIDDw8WBh8DBRNWZXJkZW46IEJqZXJna8OmZGVyHwkFGFZlcmRlbjogQmplcmdrw6ZkZXIgKDE0KR8ABQ1+L2RhL3ZncC8zMTMxZGQCIw9kFgICAQ9kFgQCAQ8PFggfBAUOZmxhZzEgZ2FtZTMxMzMfAgUgL3NldGVycmEvZXhsZmxhZ3MvZmxhZy13b3JsZC5wbmcfCQUTVmVyZGVuOiBGbG9kZXIgKDIxKR8FAgJkZAIDDw8WBh8DBQ5WZXJkZW46IEZsb2Rlch8JBRNWZXJkZW46IEZsb2RlciAoMjEpHwAFDX4vZGEvdmdwLzMxMzNkZAIkD2QWAgIBD2QWBAIBDw8WCB8EBQ5mbGFnMSBnYW1lMzIzMB8CBSAvc2V0ZXJyYS9leGxmbGFncy9mbGFnLXdvcmxkLnBuZx8JBRVWZXJkZW46IEhhbHbDuGVyICgyMSkfBQICZGQCAw8PFgYfAwUQVmVyZGVuOiBIYWx2w7hlch8JBRVWZXJkZW46IEhhbHbDuGVyICgyMSkfAAUNfi9kYS92Z3AvMzIzMGRkAiUPZBYCAgEPZBYEAgEPDxYIHwQFDmZsYWcxIGdhbWUzMDcyHwIFIC9zZXRlcnJhL2V4bGZsYWdzL2ZsYWctd29ybGQucG5nHwkFGlZlcmRlbjogSGF2ZSBvZyBzw7hlciAoMjkpHwUCAmRkAgMPDxYGHwMFFVZlcmRlbjogSGF2ZSBvZyBzw7hlch8JBRpWZXJkZW46IEhhdmUgb2cgc8O4ZXIgKDI5KR8ABQ1+L2RhL3ZncC8zMDcyZGQCJg9kFgICAQ9kFgQCAQ8PFggfBAUOZmxhZzEgZ2FtZTMyNDcfAgUgL3NldGVycmEvZXhsZmxhZ3MvZmxhZy13b3JsZC5wbmcfCQU3VmVyZGVuOiBPbXN0cmlkdGUgb21yw6VkZXIgb2cgbMO4c3JpdmVsc2VzcmVnaW9uZXIgKDIwKR8FAgJkZAIDDw8WBh8DBTJWZXJkZW46IE9tc3RyaWR0ZSBvbXLDpWRlciBvZyBsw7hzcml2ZWxzZXNyZWdpb25lch8JBTdWZXJkZW46IE9tc3RyaWR0ZSBvbXLDpWRlciBvZyBsw7hzcml2ZWxzZXNyZWdpb25lciAoMjApHwAFDX4vZGEvdmdwLzMyNDdkZAInD2QWAgIBD2QWBAIBDw8WCB8EBQ5mbGFnMSBnYW1lMzA0Nh8CBSAvc2V0ZXJyYS9leGxmbGFncy9mbGFnLXdvcmxkLnBuZx8JBRFWZXJkZW46IMOYZXIgKDM5KR8FAgJkZAIDDw8WBh8DBQxWZXJkZW46IMOYZXIfCQURVmVyZGVuOiDDmGVyICgzOSkfAAUNfi9kYS92Z3AvMzA0NmRkAigPZBYCAgEPZBYEAgEPDxYIHwQFDmZsYWcxIGdhbWUzMjQ1HwIFIC9zZXRlcnJhL2V4bGZsYWdzL2ZsYWctd29ybGQucG5nHwkFFVZlcmRlbjogw5hya2VuZXIgKDIxKR8FAgJkZAIDDw8WBh8DBRBWZXJkZW46IMOYcmtlbmVyHwkFFVZlcmRlbjogw5hya2VuZXIgKDIxKR8ABQ1+L2RhL3ZncC8zMjQ1ZGQCKQ9kFgICAQ9kFgQCAQ8PFggfBAUOZmxhZzEgZ2FtZTMyODgfAgUgL3NldGVycmEvZXhsZmxhZ3MvZmxhZy13b3JsZC5wbmcfCQUpVmVyZGVuOiAyMSBzdG9yZSBieWVyIChtZWQgYmlsbGVkZXIpICgyMSkfBQICZGQCAw8PFgYfAwUkVmVyZGVuOiAyMSBzdG9yZSBieWVyIChtZWQgYmlsbGVkZXIpHwkFKVZlcmRlbjogMjEgc3RvcmUgYnllciAobWVkIGJpbGxlZGVyKSAoMjEpHwAFDX4vZGEvdmdwLzMyODhkZAIqD2QWAgIBD2QWBAIBDw8WCB8EBQ5mbGFnMSBnYW1lMzEyNx8CBSAvc2V0ZXJyYS9leGxmbGFncy9mbGFnLXdvcmxkLnBuZx8JBRpWZXJkZW46IDI1IHN0b3JlIGJ5ZXIgKDI1KR8FAgJkZAIDDw8WBh8DBRVWZXJkZW46IDI1IHN0b3JlIGJ5ZXIfCQUaVmVyZGVuOiAyNSBzdG9yZSBieWVyICgyNSkfAAUNfi9kYS92Z3AvMzEyN2RkAisPZBYCAgEPZBYEAgEPDxYIHwQFDmZsYWcxIGdhbWUzMjI5HwIFIC9zZXRlcnJhL2V4bGZsYWdzL2ZsYWctd29ybGQucG5nHwkFGlZlcmRlbjogMzUgc3RvcmUgYnllciAoMzUpHwUCAmRkAgMPDxYGHwMFFVZlcmRlbjogMzUgc3RvcmUgYnllch8JBRpWZXJkZW46IDM1IHN0b3JlIGJ5ZXIgKDM1KR8ABQ1+L2RhL3ZncC8zMjI5ZGQCLA9kFgICAQ9kFgQCAQ8PFggfBAUOZmxhZzEgZ2FtZTM0MDIfAgUoL3NldGVycmEvZXhsZmxhZ3MvZmxhZy1jaXZpbGl6YXRpb25zLnBuZx8JBSVWZXJkZW46IERlIHN5diBnYW1sZSB1bmRlcnbDpnJrZXIgKDcpHwUCAmRkAgMPDxYGHwMFIVZlcmRlbjogRGUgc3l2IGdhbWxlIHVuZGVydsOmcmtlch8JBSVWZXJkZW46IERlIHN5diBnYW1sZSB1bmRlcnbDpnJrZXIgKDcpHwAFDX4vZGEvdmdwLzM0MDJkZAItD2QWAgIBD2QWBAIBDw8WCB8EBQ5mbGFnMSBnYW1lMzQwMR8CBSAvc2V0ZXJyYS9leGxmbGFncy9mbGFnLXdvcmxkLnBuZx8JBSRWZXJkZW46IFVuZGVydsOmcmtlciBvZyB2YXJ0ZWduICgxNCkfBQICZGQCAw8PFgYfAwUfVmVyZGVuOiBVbmRlcnbDpnJrZXIgb2cgdmFydGVnbh8JBSRWZXJkZW46IFVuZGVydsOmcmtlciBvZyB2YXJ0ZWduICgxNCkfAAUNfi9kYS92Z3AvMzQwMWRkAi4PZBYCAgEPZBYEAgEPDxYIHwQFDmZsYWcxIGdhbWUzMTI0HwIFIC9zZXRlcnJhL2V4bGZsYWdzL2ZsYWctd29ybGQucG5nHwkFHUJyZWRkZS0gb2cgbMOmbmdkZWdyYWRlciAoMTIpHwUCAmRkAgMPDxYGHwMFGEJyZWRkZS0gb2cgbMOmbmdkZWdyYWRlch8JBR1CcmVkZGUtIG9nIGzDpm5nZGVncmFkZXIgKDEyKR8ABQ1+L2RhL3ZncC8zMTI0ZGQCLw9kFgICAQ9kFgQCAQ8PFggfBAUOZmxhZzEgZ2FtZTMxNjEfAgUgL3NldGVycmEvZXhsZmxhZ3MvZmxhZy13b3JsZC5wbmcfCQUeVmVyZGVuOiBUZWt0b25pc2tlIHBsYWRlciAoMTUpHwUCAmRkAgMPDxYGHwMFGVZlcmRlbjogVGVrdG9uaXNrZSBwbGFkZXIfCQUeVmVyZGVuOiBUZWt0b25pc2tlIHBsYWRlciAoMTUpHwAFDX4vZGEvdmdwLzMxNjFkZAIwD2QWAgIBD2QWBAIBDw8WCB8EBQ5mbGFnMSBnYW1lMzMzNB8CBSAvc2V0ZXJyYS9leGxmbGFncy9mbGFnLXdvcmxkLnBuZx8JBR9NaWRkZWxoYXZldDogTGFuZGUgb2cgw7hlciAoMzApHwUCAmRkAgMPDxYGHwMFGk1pZGRlbGhhdmV0OiBMYW5kZSBvZyDDuGVyHwkFH01pZGRlbGhhdmV0OiBMYW5kZSBvZyDDuGVyICgzMCkfAAUNfi9kYS92Z3AvMzMzNGRkAjEPZBYCAgEPZBYEAgEPDxYIHwQFDmZsYWcxIGdhbWUzMTIzHwIFIC9zZXRlcnJhL2V4bGZsYWdzL2ZsYWctc29sYXIucG5nHwkFGVNvbHN5c3RlbWV0OiBQbGFuZXRlciAoOCkfBQICZGQCAw8PFgYfAwUVU29sc3lzdGVtZXQ6IFBsYW5ldGVyHwkFGVNvbHN5c3RlbWV0OiBQbGFuZXRlciAoOCkfAAUNfi9kYS92Z3AvMzEyM2RkAgMPFgQfCAL/////Dx8BaGQCAQ9kFgQCAQ8PFgIfAwUTRmxhZ3NwaWwgZm9yIFZlcmRlbmRkAgMPZBYEAgEPFgIfCAIPFh5mD2QWAgIBD2QWBAIBDw8WCB8EBQ5mbGFnMSBnYW1lMjAwNx8CBSAvc2V0ZXJyYS9leGxmbGFncy9mbGFnLXdvcmxkLnBuZx8JBRFWZXJkZW46IEZsYWcgKDE2KR8FAgJkZAIDDw8WBh8DBQxWZXJkZW46IEZsYWcfCQURVmVyZGVuOiBGbGFnICgxNikfAAUMfi9kYS9mbC8yMDA3ZGQCAQ9kFgICAQ9kFgQCAQ8PFggfBAUOZmxhZzEgZ2FtZTIwMDgfAgUgL3NldGVycmEvZXhsZmxhZ3MvZmxhZy13b3JsZC5wbmcfCQUhVmVyZGVuOiBGbGFnIChzdsOmciB1ZGdhdmUpICgxMDUpHwUCAmRkAgMPDxYGHwMFG1ZlcmRlbjogRmxhZyAoc3bDpnIgdWRnYXZlKR8JBSFWZXJkZW46IEZsYWcgKHN2w6ZyIHVkZ2F2ZSkgKDEwNSkfAAUMfi9kYS9mbC8yMDA4ZGQCAg9kFgICAQ9kFgQCAQ8PFggfBAUOZmxhZzEgZ2FtZTIwMjIfAgUdL3NldGVycmEvZXhsZmxhZ3MvZmxhZy11bi5wbmcfCQUnVmVyZGVuOiBGbGFnIChtZWdldCBzdsOmciB1ZGdhdmUpICgxOTIpHwUCAmRkAgMPDxYGHwMFIVZlcmRlbjogRmxhZyAobWVnZXQgc3bDpnIgdWRnYXZlKR8JBSdWZXJkZW46IEZsYWcgKG1lZ2V0IHN2w6ZyIHVkZ2F2ZSkgKDE5MikfAAUMfi9kYS9mbC8yMDIyZGQCAw9kFgICAQ9kFgQCAQ8PFggfBAUOZmxhZzEgZ2FtZTIwNDIfAgUgL3NldGVycmEvZXhsZmxhZ3MvZmxhZy13b3JsZC5wbmcfCQUvMjUwKyBsYW5kZSwgcmVnaW9uZXIgb2cgdGVycml0b3JpZXI6IEZsYWcgKDI1NCkfBQICZGQCAw8PFgYfAwUpMjUwKyBsYW5kZSwgcmVnaW9uZXIgb2cgdGVycml0b3JpZXI6IEZsYWcfCQUvMjUwKyBsYW5kZSwgcmVnaW9uZXIgb2cgdGVycml0b3JpZXI6IEZsYWcgKDI1NCkfAAUMfi9kYS9mbC8yMDQyZGQCBA9kFgICAQ9kFgQCAQ8PFggfBAUOZmxhZzEgZ2FtZTIwNDgfAgUhL3NldGVycmEvZXhsZmxhZ3MvZmxhZy1mcmFuY2UucG5nHwkFHkZyYW5za3RhbGVuZGUgbGFuZGU6IEZsYWcgKDI5KR8FAgJkZAIDDw8WBh8DBRlGcmFuc2t0YWxlbmRlIGxhbmRlOiBGbGFnHwkFHkZyYW5za3RhbGVuZGUgbGFuZGU6IEZsYWcgKDI5KR8ABQx+L2RhL2ZsLzIwNDhkZAIFD2QWAgIBD2QWBAIBDw8WCB8EBQ5mbGFnMSBnYW1lMjA0MR8CBSAvc2V0ZXJyYS9leGxmbGFncy9mbGFnLXNwYWluLnBuZx8JBR5TcGFuc2t0YWxlbmRlIGxhbmRlOiBmbGFnICgyMSkfBQICZGQCAw8PFgYfAwUZU3BhbnNrdGFsZW5kZSBsYW5kZTogZmxhZx8JBR5TcGFuc2t0YWxlbmRlIGxhbmRlOiBmbGFnICgyMSkfAAUMfi9kYS9mbC8yMDQxZGQCBg9kFgICAQ9kFgQCAQ8PFggfBAUOZmxhZzEgZ2FtZTIwNTMfAgUjL3NldGVycmEvZXhsZmxhZ3MvZmxhZy1hcmdlbnRpbi5wbmcfCQUiRmxhZyBtZWQgYmzDpSBvZyBodmlkZSBmYXJ2ZXIgKDE0KR8FAgJkZAIDDw8WBh8DBR1GbGFnIG1lZCBibMOlIG9nIGh2aWRlIGZhcnZlch8JBSJGbGFnIG1lZCBibMOlIG9nIGh2aWRlIGZhcnZlciAoMTQpHwAFDH4vZGEvZmwvMjA1M2RkAgcPZBYCAgEPZBYEAgEPDxYIHwQFDmZsYWcxIGdhbWUyMDUwHwIFIS9zZXRlcnJhL2V4bGZsYWdzL2ZsYWctdHVya2V5LnBuZx8JBRpGbGFnIG1lZCBlbiBoYWx2bcOlbmUgKDE3KR8FAgJkZAIDDw8WBh8DBRVGbGFnIG1lZCBlbiBoYWx2bcOlbmUfCQUaRmxhZyBtZWQgZW4gaGFsdm3DpW5lICgxNykfAAUMfi9kYS9mbC8yMDUwZGQCCA9kFgICAQ9kFgQCAQ8PFggfBAUOZmxhZzEgZ2FtZTIwNTQfAgUkL3NldGVycmEvZXhsZmxhZ3MvZmxhZy1pbmRvbmVzaWEucG5nHwkFI0ZsYWcgbWVkIHLDuGRlIG9nIGh2aWRlIGZhcnZlciAoMTkpHwUCAmRkAgMPDxYGHwMFHkZsYWcgbWVkIHLDuGRlIG9nIGh2aWRlIGZhcnZlch8JBSNGbGFnIG1lZCByw7hkZSBvZyBodmlkZSBmYXJ2ZXIgKDE5KR8ABQx+L2RhL2ZsLzIwNTRkZAIJD2QWAgIBD2QWBAIBDw8WCB8EBQ5mbGFnMSBnYW1lMjA1Mh8CBR8vc2V0ZXJyYS9leGxmbGFncy9mbGFnLW1hbGkucG5nHwkFK0ZsYWcgbWVkIHLDuGRlLCBncsO4bm5lIG9nIGd1bGUgZmFydmVyICgyMCkfBQICZGQCAw8PFgYfAwUmRmxhZyBtZWQgcsO4ZGUsIGdyw7hubmUgb2cgZ3VsZSBmYXJ2ZXIfCQUrRmxhZyBtZWQgcsO4ZGUsIGdyw7hubmUgb2cgZ3VsZSBmYXJ2ZXIgKDIwKR8ABQx+L2RhL2ZsLzIwNTJkZAIKD2QWAgIBD2QWBAIBDw8WCB8EBQ5mbGFnMSBnYW1lMjA1NR8CBR4vc2V0ZXJyYS9leGxmbGFncy9mbGFnLXVhZS5wbmcfCQUyRmxhZyBtZWQgcsO4ZGUsIGdyw7hubmUsIGJsw6Ugb2cgaHZpZGUgZmFydmVyICgxMSkfBQICZGQCAw8PFgYfAwUtRmxhZyBtZWQgcsO4ZGUsIGdyw7hubmUsIGJsw6Ugb2cgaHZpZGUgZmFydmVyHwkFMkZsYWcgbWVkIHLDuGRlLCBncsO4bm5lLCBibMOlIG9nIGh2aWRlIGZhcnZlciAoMTEpHwAFDH4vZGEvZmwvMjA1NWRkAgsPZBYCAgEPZBYEAgEPDxYIHwQFDmZsYWcxIGdhbWUyMDUxHwIFJS9zZXRlcnJhL2V4bGZsYWdzL2ZsYWctbmV0aGVybGFuZC5wbmcfCQUpRmxhZyBtZWQgcsO4ZGUsIGh2aWRlIG9nIGJsw6UgZmFydmVyICgzMSkfBQICZGQCAw8PFgYfAwUkRmxhZyBtZWQgcsO4ZGUsIGh2aWRlIG9nIGJsw6UgZmFydmVyHwkFKUZsYWcgbWVkIHLDuGRlLCBodmlkZSBvZyBibMOlIGZhcnZlciAoMzEpHwAFDH4vZGEvZmwvMjA1MWRkAgwPZBYCAgEPZBYEAgEPDxYIHwQFDmZsYWcxIGdhbWUyMDQ3HwIFHS9zZXRlcnJhL2V4bGZsYWdzL2ZsYWctdWsucG5nHwkFGEZsYWcgbWVkIFVuaW9uIEphY2sgKDE3KR8FAgJkZAIDDw8WBh8DBRNGbGFnIG1lZCBVbmlvbiBKYWNrHwkFGEZsYWcgbWVkIFVuaW9uIEphY2sgKDE3KR8ABQx+L2RhL2ZsLzIwNDdkZAIND2QWAgIBD2QWBAIBDw8WCB8EBQ5mbGFnMSBnYW1lMjA0MB8CBSAvc2V0ZXJyYS9leGxmbGFncy9mbGFnLXdvcmxkLnBuZx8JBRpWZXJkZW46IGxpZ25lbmRlIGZsYWcgKDEwKR8FAgJkZAIDDw8WBh8DBRVWZXJkZW46IGxpZ25lbmRlIGZsYWcfCQUaVmVyZGVuOiBsaWduZW5kZSBmbGFnICgxMCkfAAUMfi9kYS9mbC8yMDQwZGQCDg9kFgICAQ9kFgQCAQ8PFggfBAUOZmxhZzEgZ2FtZTIwMzAfAgUgL3NldGVycmEvZXhsZmxhZ3MvZmxhZy13b3JsZC5wbmcfCQUhQWZow6ZuZ2lnZSB0ZXJyaXRvcmllcjogRmxhZyAoMzYpHwUCAmRkAgMPDxYGHwMFHEFmaMOmbmdpZ2UgdGVycml0b3JpZXI6IEZsYWcfCQUhQWZow6ZuZ2lnZSB0ZXJyaXRvcmllcjogRmxhZyAoMzYpHwAFDH4vZGEvZmwvMjAzMGRkAgMPFgQfCAL/////Dx8BaGQCAg9kFgQCAQ8PFgQfAwUBLR8BaGRkAgMPDxYCHwFoZBYEAgEPFgIfCGZkAgMPFgQfCAL/////Dx8BaGQCAw9kFgQCAQ8PFgQfAwUBLR8BaGRkAgMPDxYCHwFoZBYEAgEPFgIfCGZkAgMPFgQfCAL/////Dx8BaGQCBA9kFgQCAQ8PFgQfAwUBLR8BaGRkAgMPDxYCHwFoZBYEAgEPFgIfCGZkAgMPFgQfCAL/////Dx8BaGQCEQ8PFgQfAAULL3NldGVycmEvZGEfAwUYPj4gU2UgZmxlcmUgZ2VvZ3JhZmlzcGlsZGQCFQ9kFgJmD2QWAgIBDxYCHwgCAxYGZg9kFgQCAQ8PFgQfAwUPMjQtMDQtMjAxOTxici8+HwFoZGQCAw8PFgYfAwUYTnkgc3BpbGZ1bmt0aW9uOiBSZXBldGVyHwkFGE55IHNwaWxmdW5rdGlvbjogUmVwZXRlch8ABRUvc2V0ZXJyYS9kYS9wL3JlcGV0ZXJkZAIBD2QWBAIBDw8WBB8DBQ8yMy0wNC0yMDE5PGJyLz4fAWhkZAIDDw8WBh8DBRtMYXYgZW4gYnJ1Z2VyZGVmaW5lcmV0IHF1aXofCQUbTGF2IGVuIGJydWdlcmRlZmluZXJldCBxdWl6HwAFJi9zZXRlcnJhL2RhL3AvYnJ1Z2VyZGVmaW5lcmVkZS1xdWl6emVyZGQCAg9kFgQCAQ8PFgQfAwUPMTMtMDQtMjAxOTxici8+HwFoZGQCAw8PFgYfAwUfRGUgc2VrcyBzcGlsdGlsc3RhbmRlIGkgU2V0ZXJyYR8JBR9EZSBzZWtzIHNwaWx0aWxzdGFuZGUgaSBTZXRlcnJhHwAFGy9zZXRlcnJhL2RhL3Avc3BpbHRpbHN0YW5kZWRkAhcPZBYCAgEPZBYCAgEPFgIfCAIEFghmD2QWAmYPDxYCHwAFFC9zZXRlcnJhL2RhL3ZncC8zMTI0ZBYGAgEPDxYGHwIFJC9zZXRlcnJhL21hcGltYWdlL3RodW1iczE1MC8zMTI0LnBuZx8JBRhCcmVkZGUtIG9nIGzDpm5nZGVncmFkZXIeDUFsdGVybmF0ZVRleHQFGEJyZWRkZS0gb2cgbMOmbmdkZWdyYWRlcmRkAgMPDxYCHwMFGEJyZWRkZS0gb2cgbMOmbmdkZWdyYWRlcmRkAgUPDxYCHwMFDEdlb2dyYWZpc3BpbGRkAgEPZBYCZg8PFgIfAAUUL3NldGVycmEvZGEvdmdwLzM0MDFkFgYCAQ8PFgYfAgUlL3NldGVycmEvaW1hZ2VzL3N5c3RlbS93b25kZXJfMTUwLmpwZx8JBRdVbmRlcnbDpnJrZXIgb2cgdmFydGVnbh8KBRdVbmRlcnbDpnJrZXIgb2cgdmFydGVnbmRkAgMPDxYCHwMFF1VuZGVydsOmcmtlciBvZyB2YXJ0ZWduZGQCBQ8PFgIfAwUMR2VvZ3JhZmlzcGlsZGQCAg9kFgJmDw8WAh8ABRQvc2V0ZXJyYS9kYS92Z3AvMzE5OWQWBgIBDw8WBh8CBS0vc2V0ZXJyYS9pbWFnZXMvc3lzdGVtL3VuaXRlZC1uYXRpb25zXzE1MC5qcGcfCQUZVmVyZGVuOiBGTidzIG1lZGxlbXNsYW5kZR8KBRlWZXJkZW46IEZOJ3MgbWVkbGVtc2xhbmRlZGQCAw8PFgIfAwUZVmVyZGVuOiBGTidzIG1lZGxlbXNsYW5kZWRkAgUPDxYCHwMFDEdlb2dyYWZpc3BpbGRkAgMPZBYCZg8PFgIfAAUUL3NldGVycmEvZGEvdmdwLzMyODhkFgYCAQ8PFgYfAgUtL3NldGVycmEvaW1hZ2VzL3N5c3RlbS9jYXJ0b29uLWNpdGllc18xNTAuanBnHwkFJFZlcmRlbjogMjEgc3RvcmUgYnllciAobWVkIGJpbGxlZGVyKR8KBSRWZXJkZW46IDIxIHN0b3JlIGJ5ZXIgKG1lZCBiaWxsZWRlcilkZAIDDw8WAh8DBSRWZXJkZW46IDIxIHN0b3JlIGJ5ZXIgKG1lZCBiaWxsZWRlcilkZAIFDw8WAh8DBQxHZW9ncmFmaXNwaWxkZAIFD2QWAgIBDxYCHwMFiw08ZGl2IGNsYXNzPSJmb290ZXJNZW51Ij48ZGl2IGNsYXNzPSJ0aXRsZSI+SGVscCBDZW50ZXI8L2Rpdj4gIDx1bD4gPGxpPjxhIGhyZWY9Ii9zZXRlcnJhL2VuL3AvY29udGFjdCI+Q29udGFjdCBVczwvYT48L2xpPiA8bGk+PGEgaHJlZj0iL3NldGVycmEvZW4vcC9mYXEiPkZBUSAoV2Vic2l0ZSk8L2E+PC9saT4gPGxpPjxhIGhyZWY9Ii9zZXRlcnJhL2VuL3AvYXBwLWZhcSI+RkFRIChBcHApPC9hPjwvbGk+IDxsaT48YSBocmVmPSIvc2V0ZXJyYS9lbi9wL3RpcHMtYW5kLXRyaWNrcyI+VGlwcyAmIFRyaWNrczwvYT48L2xpPiA8bGk+PGEgaHJlZj0iL3NldGVycmEvcHJvIj5QcmljaW5nPC9hPjwvbGk+IDxsaT48YSBocmVmPSIvc2V0ZXJyYS9lbi9ibG9nIj5CbG9nPC9hPjwvbGk+IDwvdWw+ICA8L2Rpdj4gIDxkaXYgY2xhc3M9ImZvb3Rlck1lbnUiPjxkaXYgY2xhc3M9InRpdGxlIj4mbmJzcDs8L2Rpdj4gIDx1bD4gIDxsaT48YSBocmVmPSIvc2V0ZXJyYS9lbi9wL3NldGVycmEtbW9kZXMiPkdhbWUgTW9kZXM8L2E+PC9saT4gPGxpPjxhIGhyZWY9Ii9zZXRlcnJhL2VuL3Avc2V0ZXJyYS1oaWdoc2NvcmVzIj5QZXJzb25hbCBMZWFkZXJib2FyZHM8L2E+PC9saT4gPGxpPjxhIGhyZWY9Ii9zZXRlcnJhL2VuL3AvY3VzdG9tLXF1aXp6ZXMiPkNyZWF0ZSBDdXN0b20gUXVpenplczwvYT48L2xpPiA8bGk+PGEgaHJlZj0iL3NldGVycmEvZW4vcC9wdWJsaWMtbGVhZGVyYm9hcmRzIj5QdWJsaWMgTGVhZGVyYm9hcmRzPC9hPjwvbGk+IDxsaT48YSBocmVmPSIvc2V0ZXJyYS9lbi9wL2N1c3RvbS1sb2NhdGlvbnMiPkFkZCBDdXN0b20gTG9jYXRpb25zPC9hPjwvbGk+ICAgIDwvdWw+ICA8L2Rpdj4gIDxkaXYgY2xhc3M9ImZvb3Rlck1lbnUiPjxkaXYgY2xhc3M9InRpdGxlIj5SZXNvdXJjZXM8L2Rpdj4gPHVsPiA8bGk+PGEgaHJlZj0iL3NldGVycmEvZW4vbC9wZGY/aW1nPTEiPlByaW50YWJsZXM8L2E+PC9saT4gPGxpPjxhIGhyZWY9Ii9zZXRlcnJhL2VuL2wvYmxhIj5CbGFuayBNYXBzPC9hPjwvbGk+IDxsaT48YSBocmVmPSIvc2V0ZXJyYS9lbi9wL3VzZXItcXVpenplcyI+VXNlciBHZW5lcmF0ZWQgUXVpenplczwvYT48L2xpPiA8bGk+PGEgaHJlZj0iL3NldGVycmEvZW4tYW4iPlNjaWVuY2UgUXVpenplczwvYT48L2xpPiA8bGk+PGEgaHJlZj0iL3NldGVycmEvZW4vcC90b3Atc2NvcmVzIj5Ub3AgU2NvcmVzPC9hPjwvbGk+IDxsaT48YSBocmVmPSJodHRwczovL3d3dy5zcGVlZHJ1bi5jb20vc2V0ZXJyYSI+U3BlZWRydW4uY29tPC9hPjwvbGk+IDwvdWw+ICA8L2Rpdj4gIDxkaXYgY2xhc3M9ImZvb3Rlck1lbnUiPjxkaXYgY2xhc3M9InRpdGxlIj5BYm91dDwvZGl2PiAgPHVsPiA8bGk+PGEgaHJlZj0iL3NldGVycmEvdGVybXMuYXNweCI+VGVybXMgJiBDb25kaXRpb25zPC9hPjwvbGk+IDxsaT48YSBocmVmPSIvc2V0ZXJyYS9wcml2YWN5LmFzcHgiPlByaXZhY3kgUG9saWN5PC9hPjwvbGk+IDxsaT48YSBocmVmPSIvc2V0ZXJyYS9lbi9wL2NvbnRhY3QiPkNvbnRhY3QgVXM8L2E+PC9saT4gPC91bD4gIDwvZGl2PiAgPGRpdiBzdHlsZT0iY2xlYXI6Ym90aCI+PC9kaXY+PGJyPjxicj48c3BhbiBzdHlsZT0icGFkZGluZy1sZWZ0OjIwcHg7Zm9udC1zaXplOjEzcHg7Y29sb3I6I0FBQUFBQSI+Mi8xLzIwMjMgMTE6MTE6NDggUE08L3NwYW4+ZGTOLmvpJ2g/6MRiKH0gOEBEC9aFDVtj3Mj/LQqPf+Hv2w==" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="EE7B4E72" />
+        
+<script async src="https://cse.google.com/cse.js?cx=1110b678f1dd23364"></script>
+<script>
+    function getCookie(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+
+    function hasDarkMode(url) {
+        var res = true
+        if (url.indexOf("terms.aspx") != -1) {
+            res = false
+        }
+        if (url.indexOf("privacy.aspx") != -1) {
+            res = false
+        }
+        if (url.indexOf("searchresults.aspx") != -1) {
+            res = false
+        }
+
+        return res
+    }
+
+    var darkmode = getCookie("darkmode");
+
+    if (hasDarkMode(window.location.href) == true) {
+        if (darkmode == "1" && (window.location.href.indexOf("darkmode") == -1)) {
+            document.write('<link rel="stylesheet" type="text/css" href="/seterra/css/darkmode.css" />');
+            
+        }
+        if (window.location.href.indexOf("noborders=1") != -1) {
+            document.write('<link rel="stylesheet" type="text/css" href="/seterra/css/noborders.css" />');
+        }
+
+        if (window.location.href.indexOf("darkmap=1") != -1) {
+            document.write('<link rel="stylesheet" type="text/css" href="/seterra/css/darkmap.css" />');
+        }
+    }
+
+    $(document).ready(function () {
+        if (window.location.href.indexOf("darkmode=0") != -1) {
+            $.cookie('darkmode', '0', { path: '/', expires: 14 });
+        }
+        if ($.cookie('darkmode') == "1" || window.location.href.indexOf("darkmode=1") != -1) {
+            $('#chkDarkMode').prop('checked', true);
+        }
+        setTimeout(function () {
+            if (document.getElementById("gsc-i-id1")) {
+                document.getElementById("gsc-i-id1").setAttribute("placeholder", "Search Seterra")
+            }
+        }, 1000);
+
+    })
+</script>
+
+
+ 
+<script>
+    $(document).ready(function () {
+        if (!!$.cookie('pledges')) {
+            $("#patreon-banner").show();
+        }
+    });
+</script>
+
+<style>#patreon-banner
+{
+    border-color: rgba(255, 216, 0, 0.5);
+    background-color: rgba(255, 216, 0, 0.2);
+}
+
+.patreon-banner-content {
+    margin:auto;
+    padding: 0.5rem;
+    max-width:1250px;
+}
+</style>
+
+<div id="patreon-banner" style="display:none;">
+    <div class="patreon-banner-content">
+        <p>
+            Patreon will be replaced with our GeoGuessr subscription.
+
+        <a href="../../patreon.html">Read more about the change here.</a>
+        </p>
+    </div>
+</div>
+ 
+
+<div id="header">
+    <div id="header-content-wrapper">
+        <div id="logo">
+            <a href="../../index.html">
+                <img src="../../images/system/gg-seterra-logo.png" class="wordmark" alt="Seterra logo"/>
+            </a>
+        </div>
+        <div id="divLanguageDropDown"></div>
+        <div class="spacer">
+            <div style="padding-top: 70px; padding-left: 20px; color: #888888;">
+                <input type="checkbox" id="chkDarkMode" onclick="loadDarkMode()" />
+                <label for="chkDarkMode">🌙 Dark Mode</label>
+            </div>
+
+            <div style="padding-top: 70px; padding-left: 20px; color: #888888; display: none;">
+                &nbsp;
+            </div>
+
+        </div>
+
+
+        <div id="socialmedia">
+
+            <div class="searchbox">
+                <div class="gcse-searchbox-only" data-resultsurl="/seterra/searchresults.aspx" data-autocompletemaxcompletions="35"></div>
+            </div>
+            <div class="mobilemenu">
+                <div class="mobilemenucontainer" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+            <div class="login-buttons">
+                <div id="logindiv">
+                    <span id="text-login" class="mem-login">Log in:</span>
+                    <a id="ctl00_header1_linkLoginPatreon" class="mem-login linkLogin linkLoginPatreon" href="https://www.patreon.com/oauth2/authorize?response_type=code&amp;scope=users%20pledges-to-me%20my-campaign&amp;client_id=3865155315c95a00e278b2c3bd3a5b66ddf2c12b8fe486317e74a0e392eb1ec3&amp;redirect_uri=https://www.geoguessr.com/seterra/memberRedirect.aspx">Patreon</a>
+                    <a id="ctl00_header1_linkLogoutPatreon" class="mem-login linkLogout linkLogoutPatreon" href="../../logout2.aspx.html">Log out</a>
+                    <a id="ctl00_header1_linkLoginGeoGuessr" class="mem-login linkLogin linkLoginGeoGuessr" href="../../../signin%EF%B9%96target=%EA%A4%B7seterra.html">GeoGuessr</a>
+                    <a id="ctl00_header1_linkLogoutGeoGuessr" class="mem-login linkLogout linkLogoutGeoGuessr" href="../../../signout%EF%B9%96target=%EA%A4%B7seterra.html">Log out</a>
+                </div>
+                <div id="loginName"></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+<div id="ctl00_header1_panMainNav_da">
+	
+    <div style="width: 100%;" class="nav-wrapper">
+        <div id="mainnav">
+            <a class="navlink" href="../../da.html">Alle</a> | <a class="navlink" href="eur.html">Europa</a> | <a class="navlink" href="nam.html">Nordamerika</a> | <a class="navlink" href="sam.html">Sydamerika</a> | <a class="navlink" href="afr.html">Afrika</a> | <a class="navlink" href="asi.html">Asien</a> | <a class="navlink" href="aus.html">Oceanien</a> | <a class="navlink" href="wor.html">Verden</a> | <a class="navlink" href="../blog.html">Blog</a> | <a class="navlink" href="../../en/p/faq.html" title="Frequently Asked Questions">FAQ</a>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="mobiledropdown" style="display: none">
+    <div class="mobiledropdowninner">
+        <div id="mainnav2" style="margin-bottom: 15px;">
+        </div>
+        <div style="margin-bottom: 15px;">
+            <a id="lnkDarkModeOn" class="navlink2" href="../../index.html" onclick="$('#chkDarkMode').prop('checked', true);loadDarkMode();return false;">Dark Mode On 🌙 </a>
+            <a id="lnkDarkModeOff" class="navlink2" href="../../index.html" onclick="$('#chkDarkMode').prop('checked', false);loadDarkMode();return false;">Dark Mode Off 🌙 </a>
+            <a id="lnkMyCustomQuizzes" class="navlink2 linkLogout" href='../../GenericErrorPage%EF%B9%96aspxerrorpath=%EA%A4%B7seterra%EA%A4%B7da%EA%A4%B7myaccount.aspx.htm'>My Custom Quizzes </a>
+
+            <a class="navlink2" href="../../index.html">Change language</a>
+
+            <div id="login2">
+            </div>
+            <div id="search2">
+                        <gcse:searchbox-only resultsurl="/seterra/searchresults.aspx"></gcse:searchbox-only>
+                </div>
+        </div>
+    </div>
+</div>
+<script>
+    var fFirst = true;
+    pageLang = 'da';
+
+    if (pageLang == '') pageLang = 'en';
+    pageLang = pageLang.toLowerCase();
+
+    if (window.location.href.indexOf("searchresult") == -1) {
+        $.cookie('recentlang', pageLang, { path: '/', expires: 14 });
+    }
+
+    function myFunction(x) {
+        x.classList.toggle("change");
+        var y = document.getElementsByClassName("mobiledropdown")[0];
+
+        if (y.style.display === "none") {
+            y.style.display = "block";
+        } else {
+            y.style.display = "none";
+        }
+    }
+
+    $(document).ready(function () {
+        var strMenu = "";
+        var navLinks = document.getElementsByClassName("navlink");
+        var i = 0;
+        var currentPage = window.location.pathname;
+        for (i; i < navLinks.length; i++) {
+            var lb = navLinks[i].getAttribute("href")
+            if (lb == currentPage) {
+                navLinks[i].classList.add("active")
+            }
+            strMenu = strMenu + navLinks[i].outerHTML;
+
+        }
+
+        $("#mainnav2").html(strMenu);
+        if (document.documentElement.clientWidth <= 820) {
+            $("#logindiv").appendTo("#login2")
+        };
+
+        var ddBasic = [
+        { text: "Afrikaans", imageSrc: "/seterra/images/system/flags/langlistflags/flag-af.png", value: "af", selected: false}, { text: "Čeština (Czech)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-cs.png", value: "cs", selected: false}, { text: "Català (Catalan)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ca.png", value: "ca", selected: false}, { text: "Dansk (Danish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-da.png", value: "da", selected: false}, { text: "Deutsch (German)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-de.png", value: "de", selected: false}, { text: "English", imageSrc: "/seterra/images/system/flags/langlistflags/flag-en.png", value: "en", selected: false}, { text: "Eesti (Estonian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-et.png", value: "et", selected: false}, { text: "Español (Spanish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-es.png", value: "es", selected: false}, { text: "Français (French)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-fr.png", value: "fr", selected: false}, { text: "Ελληνικά (Greek)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-el.png", value: "el", selected: false}, { text: "Gaeilge (Irish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ga.png", value: "ga", selected: false}, { text: "Hrvatski (Croatian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-hr.png", value: "hr", selected: false}, { text: "Bahasa Indonesia (Indonesian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-id.png", value: "id", selected: false}, { text: "Íslenska (Icelandic)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-is.png", value: "is", selected: false}, { text: "Italiano (Italian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-it.png", value: "it", selected: false}, { text: "Latviešu valoda (Latvian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-lv.png", value: "lv", selected: false}, { text: "Lietuvių (Lithuanian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-lt.png", value: "lt", selected: false}, { text: "Magyar (Hungarian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-hu.png", value: "hu", selected: false}, { text: "Nederlands (Dutch)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-nl.png", value: "nl", selected: false}, { text: "Norsk (Norwegian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-nb.png", value: "nb", selected: false}, { text: "Polski (Polish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-pl.png", value: "pl", selected: false}, { text: "Português (Portuguese)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-pt.png", value: "pt", selected: false}, { text: "Română (Romanian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ro.png", value: "ro", selected: false}, { text: "русский (Russian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ru.png", value: "ru", selected: false}, { text: "Shqip (Albanian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-sq.png", value: "sq", selected: false}, { text: "Slovenský jazyk (Slovak)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-sk.png", value: "sk", selected: false}, { text: "Slovenski jezik (Slovene)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-sl.png", value: "sl", selected: false}, { text: "српски (Serbian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-sr.png", value: "sr", selected: false}, { text: "Suomi (Finnish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-fi.png", value: "fi", selected: false}, { text: "Svenska (Swedish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-sv.png", value: "sv", selected: false}, { text: "Türkçe (Turkish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-tr.png", value: "tr", selected: false}, { text: "Українська (Ukrainian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-uk.png", value: "uk", selected: false}, { text: "Oʻzbekcha (Uzbek)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-uz.png", value: "uz", selected: false}, { text: "አማርኛ (Amharic)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-am.png", value: "am", selected: false}, { text: "العربية (Arabic)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ar.png", value: "ar", selected: false}, { text: "فارسی (Persian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-fa.png", value: "fa", selected: false}, { text: "български (Bulgarian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-bg.png", value: "bg", selected: false}, { text: "中文 (Chinese (simplified))", imageSrc: "/seterra/images/system/flags/langlistflags/flag-zh.png", value: "zh", selected: false}, { text: "עִבְרִית‎ (Hebrew)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-he.png", value: "he", selected: false}, { text: "हिन्दी (Hindi)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-hi.png", value: "hi", selected: false}, { text: "தமிழ் (Tamil)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ta.png", value: "ta", selected: false}, { text: "සිංහල (Sinhala)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-si.png", value: "si", selected: false}, { text: "日本語 (Japanese)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ja.png", value: "ja", selected: false}, { text: "한국어 (Korean)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ko.png", value: "ko", selected: false}, { text: "ไทย (Thai)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-th.png", value: "th", selected: false}
+        ];
+        var fFound = false;
+        for (var i = 0; i < ddBasic.length; i++) {
+            if (ddBasic[i].value == pageLang) {
+                ddBasic[i].selected = true;
+                fFound = true;
+            }
+        }
+
+        if (fFound == true) {
+            $('#divLanguageDropDown').ddslick({
+                data: ddBasic,
+                
+                selectText: "Select language",
+                imagePosition: "left",
+                onSelected: function (data) {
+                    if (fFirst == false) {
+                        window.location = "/seterra/" + data.selectedData.value;
+                    }
+                    fFirst = false;
+                }
+            })
+
+        }
+        else {
+            $('#divLanguageDropDown').hide;
+        }
+
+        $(".dd-selected-image").attr("alt", "Flag " + pageLang)
+
+    })
+</script>
+
+        <div>
+            
+
+    <div id="contentwrapper">
+
+        <div id="leftcol">
+            <div id="mainbanner">
+                <img id="ctl00_ContentPlaceHolder1_imgBanner" src="../../images/system/banners/world.jpg" alt="Image banner" border="0" />
+            </div>
+            <div id="breadcrumbs">
+                <span id="ctl00_ContentPlaceHolder1_breadcrumbs1"><a href='../../../seterra.html' >Home</a> >> <a href='../../da.html'>Geografispil</a> >> Verden</span>
+            </div>
+
+            <div class="sectioncontent" style="width: 100%">
+                <h1>
+                    <span id="ctl00_ContentPlaceHolder1_lblHeader">Geografispil for Verden</span></h1>
+
+                <div style="font-size: 15px; max-width: 880px;">
+                    <p>
+                        <span id="ctl00_ContentPlaceHolder1_lblContent"></span>
+                    </p>
+                </div>
+
+                <span id="ctl00_ContentPlaceHolder1_lblDebug"></span>
+                <div id="ctl00_ContentPlaceHolder1_listtype" class="listtoggle">
+                    <a id="ctl00_ContentPlaceHolder1_btnhoriz" class="enabledlink" href="http://www.geoguessr.com/seterra/da/l/wor?img=1">Se som billeder</a>
+                    <a id="ctl00_ContentPlaceHolder1_btnvert" disabled="disabled" class="disabledlink">Se som tekst</a>
+                </div>
+                <br />
+                <br />
+                <table id="ctl00_ContentPlaceHolder1_repSublabels" cellspacing="0" border="0" style="width: 100%">
+	<tr>
+		<td>
+                        <h3 style="margin: 2px;">
+                            <span id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_lblSubheader">Spil med kort for Verden</span></h3>
+                        <hr class="labelhr" />
+                        <div class="exblock exblock--blue" style="width: 100%">
+                            
+
+<div class="gamesublist vertical">
+    
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl00_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Verdensdele (7)" class="flag1 game3004" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Verdensdele (7)" href="../vgp/3004.html">Verdensdele</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl01_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Verdensdele og oceaner (12)" class="flag1 game3188" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Verdensdele og oceaner (12)" href="../vgp/3188.html">Verdensdele og oceaner</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl02_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Verdensdele og oceaner (med billeder) (12)" class="flag1 game3287" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Verdensdele og oceaner (med billeder) (12)" href="../vgp/3287.html">Verdensdele og oceaner (med billeder)</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl03_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Verden: Fysisk kort (23)" class="flag1 game3459" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Verden: Fysisk kort (23)" href="../vgp/3459.html">Verden: Fysisk kort</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl04_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="NATO-medlemslande (30)" class="flag1 game3650" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="NATO-medlemslande (30)" href="../vgp/3650.html">NATO-medlemslande</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl05_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Verden: G20-landene (19)" class="flag1 game3220" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Verden: G20-landene (19)" href="../vgp/3220.html">Verden: G20-landene</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl06_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Verden: G20-landene, hovedstæder (19)" class="flag1 game3221" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Verden: G20-landene, hovedstæder (19)" href="../vgp/3221.html">Verden: G20-landene, hovedstæder</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl07_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Verden: OECD-landene (38)" class="flag1 game3202" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Verden: OECD-landene (38)" href="../vgp/3202.html">Verden: OECD-landene</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl08_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Verden: 30 mest befolkede lande (30)" class="flag1 game3154" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Verden: 30 mest befolkede lande (30)" href="../vgp/3154.html">Verden: 30 mest befolkede lande</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl09_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Verden: 30 mest befolkede lande, hovedstæder (30)" class="flag1 game3232" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Verden: 30 mest befolkede lande, hovedstæder (30)" href="../vgp/3232.html">Verden: 30 mest befolkede lande, hovedstæder</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl10_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Verden: 50 mest befolkede lande (50)" class="flag1 game3155" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Verden: 50 mest befolkede lande (50)" href="../vgp/3155.html">Verden: 50 mest befolkede lande</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl11_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Verden: 50 mest befolkede lande, hovedstæder (50)" class="flag1 game3233" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Verden: 50 mest befolkede lande, hovedstæder (50)" href="../vgp/3233.html">Verden: 50 mest befolkede lande, hovedstæder</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl12_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Verden: 70 mest befolkede lande (70)" class="flag1 game3156" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Verden: 70 mest befolkede lande (70)" href="../vgp/3156.html">Verden: 70 mest befolkede lande</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl13_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Verden: 70 mest befolkede lande, hovedstæder (70)" class="flag1 game3234" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Verden: 70 mest befolkede lande, hovedstæder (70)" href="../vgp/3234.html">Verden: 70 mest befolkede lande, hovedstæder</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl14_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Verden: 90 mest befolkede lande (90)" class="flag1 game3185" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Verden: 90 mest befolkede lande (90)" href="../vgp/3185.html">Verden: 90 mest befolkede lande</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl15_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Verden: 90 mest befolkede lande, hovedstæder (90)" class="flag1 game3235" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Verden: 90 mest befolkede lande, hovedstæder (90)" href="../vgp/3235.html">Verden: 90 mest befolkede lande, hovedstæder</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl16_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="30 største lande efter areal (30)" class="flag1 game3157" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="30 største lande efter areal (30)" href="../vgp/3157.html">30 største lande efter areal</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl17_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="32 mindste lande efter areal (32)" class="flag1 game3269" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="32 mindste lande efter areal (32)" href="../vgp/3269.html">32 mindste lande efter areal</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl18_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Verden: 50 største lande efter areal (50)" class="flag1 game3158" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Verden: 50 største lande efter areal (50)" href="../vgp/3158.html">Verden: 50 største lande efter areal</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl19_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Verden: 70 største lande efter areal (70)" class="flag1 game3159" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Verden: 70 største lande efter areal (70)" href="https://www.geoguessr.com/seterra/da/vgp/3159">Verden: 70 største lande efter areal</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl20_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Verden: 90 største lande efter areal (90)" class="flag1 game3195" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Verden: 90 største lande efter areal (90)" href="../vgp/3195.html">Verden: 90 største lande efter areal</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl21_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Verden: 110 største lande efter areal (110)" class="flag1 game3196" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Verden: 110 største lande efter areal (110)" href="https://www.geoguessr.com/seterra/da/vgp/3196">Verden: 110 største lande efter areal</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl22_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Verden: 130 største lande efter areal (130)" class="flag1 game3197" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Verden: 130 største lande efter areal (130)" href="../vgp/3197.html">Verden: 130 største lande efter areal</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl23_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Verden: 150 største lande efter areal (150)" class="flag1 game3198" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Verden: 150 største lande efter areal (150)" href="../vgp/3198.html">Verden: 150 største lande efter areal</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl24_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Verden: FN&#39;s medlemslande (193)" class="flag1 game3199" loading="lazy" src="../../exlflags/flag-un.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Verden: FN&#39;s medlemslande (193)" href="../vgp/3199.html">Verden: FN's medlemslande</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl25_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Verden: FN&#39;s medlemslande, hovedstæder (193)" class="flag1 game3238" loading="lazy" src="../../exlflags/flag-un.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Verden: FN&#39;s medlemslande, hovedstæder (193)" href="../vgp/3238.html">Verden: FN's medlemslande, hovedstæder</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl26_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="195 stater, der er anerkendt af FN (195)" class="flag1 game3356" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="195 stater, der er anerkendt af FN (195)" href="../vgp/3356.html">195 stater, der er anerkendt af FN</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl27_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="206 olympiske nationer (206)" class="flag1 game3357" loading="lazy" src="../../exlflags/flag-olympic.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="206 olympiske nationer (206)" href="../vgp/3357.html">206 olympiske nationer</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl28_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Verden: 220+ lande og territorier (227)" class="flag1 game3355" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Verden: 220+ lande og territorier (227)" href="../vgp/3355.html">Verden: 220+ lande og territorier</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl29_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Verden: Store lande (58)" class="flag1 game3069" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Verden: Store lande (58)" href="../vgp/3069.html">Verden: Store lande</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl30_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Fransktalende lande (29)" class="flag1 game3210" loading="lazy" src="../../exlflags/flag-france.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Fransktalende lande (29)" href="../vgp/3210.html">Fransktalende lande</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl31_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Spansktalende lande (21)" class="flag1 game3153" loading="lazy" src="../../exlflags/flag-spain.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Spansktalende lande (21)" href="../vgp/3153.html">Spansktalende lande</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl32_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Spansktalende lande: Hovedstæder (22)" class="flag1 game3160" loading="lazy" src="../../exlflags/flag-spain.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Spansktalende lande: Hovedstæder (22)" href="../vgp/3160.html">Spansktalende lande: Hovedstæder</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl33_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Verden: Bjerge og vulkaner (16)" class="flag1 game3047" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Verden: Bjerge og vulkaner (16)" href="../vgp/3047.html">Verden: Bjerge og vulkaner</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl34_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Verden: Bjergkæder (14)" class="flag1 game3131" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Verden: Bjergkæder (14)" href="../vgp/3131.html">Verden: Bjergkæder</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl35_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Verden: Floder (21)" class="flag1 game3133" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Verden: Floder (21)" href="../vgp/3133.html">Verden: Floder</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl36_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Verden: Halvøer (21)" class="flag1 game3230" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Verden: Halvøer (21)" href="../vgp/3230.html">Verden: Halvøer</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl37_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Verden: Have og søer (29)" class="flag1 game3072" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Verden: Have og søer (29)" href="../vgp/3072.html">Verden: Have og søer</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl38_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Verden: Omstridte områder og løsrivelsesregioner (20)" class="flag1 game3247" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Verden: Omstridte områder og løsrivelsesregioner (20)" href="../vgp/3247.html">Verden: Omstridte områder og løsrivelsesregioner</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl39_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Verden: Øer (39)" class="flag1 game3046" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Verden: Øer (39)" href="../vgp/3046.html">Verden: Øer</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl40_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Verden: Ørkener (21)" class="flag1 game3245" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Verden: Ørkener (21)" href="../vgp/3245.html">Verden: Ørkener</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl41_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Verden: 21 store byer (med billeder) (21)" class="flag1 game3288" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Verden: 21 store byer (med billeder) (21)" href="../vgp/3288.html">Verden: 21 store byer (med billeder)</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl42_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Verden: 25 store byer (25)" class="flag1 game3127" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Verden: 25 store byer (25)" href="../vgp/3127.html">Verden: 25 store byer</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl43_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Verden: 35 store byer (35)" class="flag1 game3229" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Verden: 35 store byer (35)" href="../vgp/3229.html">Verden: 35 store byer</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl44_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Verden: De syv gamle underværker (7)" class="flag1 game3402" loading="lazy" src="../../exlflags/flag-civilizations.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Verden: De syv gamle underværker (7)" href="../vgp/3402.html">Verden: De syv gamle underværker</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl45_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Verden: Underværker og vartegn (14)" class="flag1 game3401" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Verden: Underværker og vartegn (14)" href="../vgp/3401.html">Verden: Underværker og vartegn</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl46_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Bredde- og længdegrader (12)" class="flag1 game3124" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Bredde- og længdegrader (12)" href="../vgp/3124.html">Bredde- og længdegrader</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl47_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Verden: Tektoniske plader (15)" class="flag1 game3161" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Verden: Tektoniske plader (15)" href="../vgp/3161.html">Verden: Tektoniske plader</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl48_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Middelhavet: Lande og øer (30)" class="flag1 game3334" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Middelhavet: Lande og øer (30)" href="../vgp/3334.html">Middelhavet: Lande og øer</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl00_subex1_ctl00_ctl49_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Solsystemet: Planeter (8)" class="flag1 game3123" loading="lazy" src="../../exlflags/flag-solar.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Solsystemet: Planeter (8)" href="../vgp/3123.html">Solsystemet: Planeter</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+</div>
+
+<div class="gamesublist horizontal" style="width: auto;">
+    
+
+</div>
+
+                        </div>
+                        <br />
+                    </td>
+	</tr><tr>
+		<td>
+                        <h3 style="margin: 2px;">
+                            <span id="ctl00_ContentPlaceHolder1_repSublabels_ctl01_lblSubheader">Flagspil for Verden</span></h3>
+                        <hr class="labelhr" />
+                        <div class="exblock exblock--blue" style="width: 100%">
+                            
+
+<div class="gamesublist vertical">
+    
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl01_subex1_ctl00_ctl00_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Verden: Flag (16)" class="flag1 game2007" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Verden: Flag (16)" href="../fl/2007.html">Verden: Flag</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl01_subex1_ctl00_ctl01_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Verden: Flag (svær udgave) (105)" class="flag1 game2008" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Verden: Flag (svær udgave) (105)" href="../fl/2008.html">Verden: Flag (svær udgave)</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl01_subex1_ctl00_ctl02_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Verden: Flag (meget svær udgave) (192)" class="flag1 game2022" loading="lazy" src="../../exlflags/flag-un.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Verden: Flag (meget svær udgave) (192)" href="../fl/2022.html">Verden: Flag (meget svær udgave)</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl01_subex1_ctl00_ctl03_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="250+ lande, regioner og territorier: Flag (254)" class="flag1 game2042" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="250+ lande, regioner og territorier: Flag (254)" href="../fl/2042.html">250+ lande, regioner og territorier: Flag</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl01_subex1_ctl00_ctl04_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Fransktalende lande: Flag (29)" class="flag1 game2048" loading="lazy" src="../../exlflags/flag-france.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Fransktalende lande: Flag (29)" href="../fl/2048.html">Fransktalende lande: Flag</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl01_subex1_ctl00_ctl05_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Spansktalende lande: flag (21)" class="flag1 game2041" loading="lazy" src="../../exlflags/flag-spain.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Spansktalende lande: flag (21)" href="../fl/2041.html">Spansktalende lande: flag</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl01_subex1_ctl00_ctl06_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Flag med blå og hvide farver (14)" class="flag1 game2053" loading="lazy" src="../../exlflags/flag-argentin.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Flag med blå og hvide farver (14)" href="../fl/2053.html">Flag med blå og hvide farver</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl01_subex1_ctl00_ctl07_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Flag med en halvmåne (17)" class="flag1 game2050" loading="lazy" src="../../exlflags/flag-turkey.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Flag med en halvmåne (17)" href="../fl/2050.html">Flag med en halvmåne</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl01_subex1_ctl00_ctl08_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Flag med røde og hvide farver (19)" class="flag1 game2054" loading="lazy" src="../../exlflags/flag-indonesia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Flag med røde og hvide farver (19)" href="../fl/2054.html">Flag med røde og hvide farver</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl01_subex1_ctl00_ctl09_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Flag med røde, grønne og gule farver (20)" class="flag1 game2052" loading="lazy" src="../../exlflags/flag-mali.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Flag med røde, grønne og gule farver (20)" href="../fl/2052.html">Flag med røde, grønne og gule farver</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl01_subex1_ctl00_ctl10_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Flag med røde, grønne, blå og hvide farver (11)" class="flag1 game2055" loading="lazy" src="../../exlflags/flag-uae.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Flag med røde, grønne, blå og hvide farver (11)" href="../fl/2055.html">Flag med røde, grønne, blå og hvide farver</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl01_subex1_ctl00_ctl11_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Flag med røde, hvide og blå farver (31)" class="flag1 game2051" loading="lazy" src="../../exlflags/flag-netherland.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Flag med røde, hvide og blå farver (31)" href="../fl/2051.html">Flag med røde, hvide og blå farver</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl01_subex1_ctl00_ctl12_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Flag med Union Jack (17)" class="flag1 game2047" loading="lazy" src="../../exlflags/flag-uk.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Flag med Union Jack (17)" href="../fl/2047.html">Flag med Union Jack</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl01_subex1_ctl00_ctl13_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Verden: lignende flag (10)" class="flag1 game2040" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Verden: lignende flag (10)" href="../fl/2040.html">Verden: lignende flag</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="ctl00_ContentPlaceHolder1_repSublabels_ctl01_subex1_ctl00_ctl14_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Afhængige territorier: Flag (36)" class="flag1 game2030" loading="lazy" src="../../exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Afhængige territorier: Flag (36)" href="../fl/2030.html">Afhængige territorier: Flag</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+</div>
+
+<div class="gamesublist horizontal" style="width: auto;">
+    
+
+</div>
+
+                        </div>
+                        <br />
+                    </td>
+	</tr><tr>
+		<td>
+                        <h3 style="margin: 2px;">
+                            </h3>
+                        <hr class="labelhr" />
+                        <div class="exblock exblock--blue" style="width: 100%">
+                            
+                        </div>
+                        <br />
+                    </td>
+	</tr><tr>
+		<td>
+                        <h3 style="margin: 2px;">
+                            </h3>
+                        <hr class="labelhr" />
+                        <div class="exblock exblock--blue" style="width: 100%">
+                            
+                        </div>
+                        <br />
+                    </td>
+	</tr><tr>
+		<td>
+                        <h3 style="margin: 2px;">
+                            </h3>
+                        <hr class="labelhr" />
+                        <div class="exblock exblock--blue" style="width: 100%">
+                            
+                        </div>
+                        <br />
+                    </td>
+	</tr>
+</table>
+
+                <div style="font-size: 16px; max-width: 880px;">
+                    <p>
+                        <span id="ctl00_ContentPlaceHolder1_lblContent2"></span>
+                    </p>
+                </div>
+
+                <h3>
+                    <a id="ctl00_ContentPlaceHolder1_lnkAllGames" href="../../da.html">>> Se flere geografispil</a></h3>
+            </div>
+
+            <br />
+        </div>
+        <div id="rtcol">
+
+            <div id="ctl00_ContentPlaceHolder1_panApp">
+	
+                <div class="applinks">
+
+                    <a href="https://itunes.apple.com/us/app/seterra-geography-full/id1093460065">
+                        <img alt="AppStore" src="../../images/system/appstore_en.png" style="padding-right: 20px; width: 150px; height: 45px;" /></a><br />
+                    <a href="https://play.google.com/store/apps/details?id=com.seterra">
+                        <img alt="Google Play" src="../../images/system/googleplay_en.png" style="padding-right: 20px; width: 150px; height: 45px;"></a>
+                </div>
+            
+</div>
+            <div id="ctl00_ContentPlaceHolder1_panBlog">
+	
+                <div class="divBlog">
+                    <a href='../blog.html'>
+                        <h4>Seterra Blog</h4>
+                    </a>
+                    
+<div>
+    
+            <div style="padding-bottom:13px;">
+                
+                <a id="ctl00_ContentPlaceHolder1_newscomp_repNews_ctl00_lnkNews" title="Ny spilfunktion: Repeter" href="../p/repeter.html">Ny spilfunktion: Repeter</a><br />
+            </div>
+        
+            <div style="padding-bottom:13px;">
+                
+                <a id="ctl00_ContentPlaceHolder1_newscomp_repNews_ctl01_lnkNews" title="Lav en brugerdefineret quiz" href="../p/brugerdefinerede-quizzer.html">Lav en brugerdefineret quiz</a><br />
+            </div>
+        
+            <div style="padding-bottom:13px;">
+                
+                <a id="ctl00_ContentPlaceHolder1_newscomp_repNews_ctl02_lnkNews" title="De seks spiltilstande i Seterra" href="../p/spiltilstande.html">De seks spiltilstande i Seterra</a><br />
+            </div>
+        
+</div>
+
+
+                </div>
+            
+</div>
+        </div>
+
+
+        <div id="ctl00_ContentPlaceHolder1_panFeatured">
+	
+
+
+
+            <div class="featureddiv">
+                
+<div>
+
+    
+               <div class="featureditem">
+                   <a id="ctl00_ContentPlaceHolder1_featured_repFeatured_ctl00_lnkItem" class="featured" href="../vgp/3124.html">
+                        <div class="divFeaturedImage">
+                            <img id="ctl00_ContentPlaceHolder1_featured_repFeatured_ctl00_imgImage" title="Bredde- og længdegrader" class="featuredimage" loading="lazy" src="../../mapimage/thumbs150/3124.png" alt="Bredde- og længdegrader" height="100" width="150" border="0" />
+                        </div>
+                        <h4 style="margin:0px"><span id="ctl00_ContentPlaceHolder1_featured_repFeatured_ctl00_lblTitle">Bredde- og længdegrader</span></h4>
+                        <p style="margin:0px"><span id="ctl00_ContentPlaceHolder1_featured_repFeatured_ctl00_lblDescription">Geografispil</span></p>
+                        <div style="clear:both"></div>
+                    </a>
+               </div>
+        
+               <div class="featureditem">
+                   <a id="ctl00_ContentPlaceHolder1_featured_repFeatured_ctl01_lnkItem" class="featured" href="../vgp/3401.html">
+                        <div class="divFeaturedImage">
+                            <img id="ctl00_ContentPlaceHolder1_featured_repFeatured_ctl01_imgImage" title="Underværker og vartegn" class="featuredimage" loading="lazy" src="../../images/system/wonder_150.jpg" alt="Underværker og vartegn" height="100" width="150" border="0" />
+                        </div>
+                        <h4 style="margin:0px"><span id="ctl00_ContentPlaceHolder1_featured_repFeatured_ctl01_lblTitle">Underværker og vartegn</span></h4>
+                        <p style="margin:0px"><span id="ctl00_ContentPlaceHolder1_featured_repFeatured_ctl01_lblDescription">Geografispil</span></p>
+                        <div style="clear:both"></div>
+                    </a>
+               </div>
+        
+               <div class="featureditem">
+                   <a id="ctl00_ContentPlaceHolder1_featured_repFeatured_ctl02_lnkItem" class="featured" href="../vgp/3199.html">
+                        <div class="divFeaturedImage">
+                            <img id="ctl00_ContentPlaceHolder1_featured_repFeatured_ctl02_imgImage" title="Verden: FN&#39;s medlemslande" class="featuredimage" loading="lazy" src="../../images/system/united-nations_150.jpg" alt="Verden: FN&#39;s medlemslande" height="100" width="150" border="0" />
+                        </div>
+                        <h4 style="margin:0px"><span id="ctl00_ContentPlaceHolder1_featured_repFeatured_ctl02_lblTitle">Verden: FN's medlemslande</span></h4>
+                        <p style="margin:0px"><span id="ctl00_ContentPlaceHolder1_featured_repFeatured_ctl02_lblDescription">Geografispil</span></p>
+                        <div style="clear:both"></div>
+                    </a>
+               </div>
+        
+               <div class="featureditem">
+                   <a id="ctl00_ContentPlaceHolder1_featured_repFeatured_ctl03_lnkItem" class="featured" href="../vgp/3288.html">
+                        <div class="divFeaturedImage">
+                            <img id="ctl00_ContentPlaceHolder1_featured_repFeatured_ctl03_imgImage" title="Verden: 21 store byer (med billeder)" class="featuredimage" loading="lazy" src="../../images/system/cartoon-cities_150.jpg" alt="Verden: 21 store byer (med billeder)" height="100" width="150" border="0" />
+                        </div>
+                        <h4 style="margin:0px"><span id="ctl00_ContentPlaceHolder1_featured_repFeatured_ctl03_lblTitle">Verden: 21 store byer (med billeder)</span></h4>
+                        <p style="margin:0px"><span id="ctl00_ContentPlaceHolder1_featured_repFeatured_ctl03_lblDescription">Geografispil</span></p>
+                        <div style="clear:both"></div>
+                    </a>
+               </div>
+        
+</div>
+
+
+            </div>
+        
+</div>
+    </div>
+
+
+        </div>
+        <div style="clear: both"></div>
+        
+
+<div id="footer">
+    <div id="footercontent">
+        <div class="smediawrapper">
+            <a href="https://www.twitch.tv/directory/game/Seterra/videos/all" style="text-decoration: none;">
+                <img alt="Twitch" class="smedia smediatwitch" src="../../images/system/twitch.png" style="width: 35px; height: 35px;" /></a>
+            <a href="https://discord.gg/kW8Y3AG9wk" style="text-decoration: none;">
+                <img alt="Discord" class="smedia " src="../../images/system/discord.png" style="width: 35px; height: 35px;" /></a>
+            <a href="https://www.facebook.com/seterra.geography" style="text-decoration: none;">
+                <img alt="Facebook" class="smedia" src="../../images/system/facebook.png" style="width: 35px; height: 35px;" /></a>
+            <a href="https://twitter.com/SeterraGeo">
+                <img alt="Twitter" class="smedia" src="../../images/system/twitter.png" style="width: 35px; height: 35px;" /></a>
+            <a href="https://www.youtube.com/c/seterrageography">
+                <img alt="Youtube" class="smedia" src="../../images/system/youtube3.png" style="width: 35px; height: 35px;" /></a>
+            <a href="https://bit.ly/2SntfBU">
+                <img alt="Instagram" class="smedia" src="../../images/system/instagram.png" style="width: 35px; height: 35px;" /></a>
+        </div>
+        <div style="max-width: 900px;">
+            <div class="footerMenu"><div class="title">Help Center</div>  <ul> <li><a href="../../en/p/contact.html">Contact Us</a></li> <li><a href="../../en/p/faq.html">FAQ (Website)</a></li> <li><a href="../../en/p/app-faq.html">FAQ (App)</a></li> <li><a href="../../en/p/tips-and-tricks.html">Tips & Tricks</a></li> <li><a href="../../pro.html">Pricing</a></li> <li><a href="../../en/blog.html">Blog</a></li> </ul>  </div>  <div class="footerMenu"><div class="title">&nbsp;</div>  <ul>  <li><a href="../../en/p/seterra-modes.html">Game Modes</a></li> <li><a href="../../en/p/seterra-highscores.html">Personal Leaderboards</a></li> <li><a href="../../en/p/custom-quizzes.html">Create Custom Quizzes</a></li> <li><a href="../../en/p/public-leaderboards.html">Public Leaderboards</a></li> <li><a href="../../en/p/custom-locations.html">Add Custom Locations</a></li>    </ul>  </div>  <div class="footerMenu"><div class="title">Resources</div> <ul> <li><a href="../../en/l/pdf%EF%B9%96img=1.html">Printables</a></li> <li><a href="../../en/l/bla.html">Blank Maps</a></li> <li><a href="../../en/p/user-quizzes.html">User Generated Quizzes</a></li> <li><a href="../../en-an.html">Science Quizzes</a></li> <li><a href="../../en/p/top-scores.html">Top Scores</a></li> <li><a href="https://www.speedrun.com/seterra">Speedrun.com</a></li> </ul>  </div>  <div class="footerMenu"><div class="title">About</div>  <ul> <li><a href="../../terms.aspx.html">Terms & Conditions</a></li> <li><a href="../../privacy.aspx.html">Privacy Policy</a></li> <li><a href="../../en/p/contact.html">Contact Us</a></li> </ul>  </div>  <div style="clear:both"></div><br><br><span style="padding-left:20px;font-size:13px;color:#AAAAAA">2/1/2023 11:11:48 PM</span>
+        </div>
+        <div style="clear:both"></div>
+        <div id="ccpa" style="display: none; cursor: pointer;margin-top:20px;">Do not share my Personal Information.</div>
+    </div>
+</div>
+
+    </form>
+</body>
+</html>

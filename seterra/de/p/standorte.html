@@ -1,0 +1,582 @@
+
+
+<!DOCTYPE html >
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="twitter:image" content="https://geoguessr.com/seterra/images/system/austria_custom_de.png" /><meta name="twitter:description" content="Eine neue Seterra-Funktion wurde gestartet: Füge benutzerdefinierte Standorte hinzu!" /><meta name="twitter:url" content="https://www.geoguessr.com/seterra/de/p/standorte" /><meta name="twitter:creator" content="@seterrageo" /><meta name="twitter:site" content="@seterrageo" /><meta name="twitter:title" content="Neues Feature: Benutzerdefinierte Standorte hinzufügen" /><meta name="twitter:card" content="summary_large_image" /><meta property="og:type" content="article" /><meta property="og:url" content="https://www.geoguessr.com/seterra/de/p/standorte" /><meta property="og:description" content="Eine neue Seterra-Funktion wurde gestartet: Füge benutzerdefinierte Standorte hinzu!" /><meta property="og:title" content="Neues Feature: Benutzerdefinierte Standorte hinzufügen" /><meta property="fb:app_id" content="319599044764636" /><meta name="Description" content="Eine neue Seterra-Funktion wurde gestartet: Füge benutzerdefinierte Standorte hinzu!" /><meta property="og:image" content="https://geoguessr.com/seterra/images/system/austria_custom_de.png" />
+
+    <script src="../../Scripts/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script src="../../Scripts/jquery.cookie.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" defer></script>
+        <script src="../../Scripts/general.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" defer="" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><link href="../../CSS/pagestyles.css" rel="stylesheet" type="text/css" /><link href="../../CSS/geoguessr.css" rel="stylesheet" type="text/css" />
+
+<link rel="icon" href="../../favicon.ico" type="image/x-icon" />
+<script type="text/javascript" src="../../Scripts/jquery.ddslick.min.js"></script>
+<script src="../../Scripts/utils.js"></script>
+<script src="../../Scripts/highscores.js"></script>
+
+
+    
+     <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <!-- Google Tag Manager -->
+    
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-W5K3B7M');</script>    
+    
+    <!-- End Google Tag Manager -->
+
+    <script>
+        var activeUnits = [
+            'gg-seterra_sidebar_right',
+            'gg-seterra_sidebar_right_2',
+            'gg-seterra_mobile_1',
+            'gg-seterra_headerleader',
+            'gg-seterra_nvu-and-float',
+            'gg-seterra_learboard_adhesion',
+            'gg-seterra_bottom_mpu',
+            'gg-seterra_outstream_mw'
+        ];
+
+        if (window.isProUser()) {
+            activeUnits = [];
+        }
+
+        window.snigelPubConf = {
+            "adengine": {
+                "activeAdUnits": activeUnits
+            }
+        };
+    </script>
+
+    
+        <script async data-cfasync="false" src="https://cdn.snigelweb.com/adengine/geoguessr.com/loader.js" type="text/javascript"></script>
+    
+    <style>h3 {
+            padding-bottom: 1px;
+            -webkit-margin-after: 0em;
+        }
+
+        p {
+            -webkit-margin-before: 0.5em;
+        }
+
+        img {
+            max-width: 100%
+        }
+    </style>
+
+    <script>
+        $(function () {
+            $("#accordion").accordion({
+                active: false,
+                collapsible: true,
+                heightStyle: "content",
+            });
+            $("#accordion2").accordion({
+                active: false,
+                collapsible: true,
+                heightStyle: "content",
+            });
+        });
+    </script>
+
+<link rel="canonical" href="standorte.html" /><title>
+	Neues Feature: Benutzerdefinierte Standorte hinzufügen
+</title></head>
+<body>
+
+    <script>
+        var lang="de"
+    </script>
+    <form name="form1" method="post" action="standorte.html" id="form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJNDA3MDkyOTc4D2QWAgIBD2QWFAIBD2QWNmYPDxYCHgtOYXZpZ2F0ZVVybAXzAWh0dHBzOi8vd3d3LnBhdHJlb24uY29tL29hdXRoMi9hdXRob3JpemU/cmVzcG9uc2VfdHlwZT1jb2RlJnNjb3BlPXVzZXJzJTIwcGxlZGdlcy10by1tZSUyMG15LWNhbXBhaWduJmNsaWVudF9pZD0zODY1MTU1MzE1Yzk1YTAwZTI3OGIyYzNiZDNhNWI2NmRkZjJjMTJiOGZlNDg2MzE3ZTc0YTBlMzkyZWIxZWMzJnJlZGlyZWN0X3VyaT1odHRwczovL3d3dy5nZW9ndWVzc3IuY29tL3NldGVycmEvbWVtYmVyUmVkaXJlY3QuYXNweGRkAgQPDxYCHgdWaXNpYmxlaGRkAgUPDxYCHwFoZGQCBw8PFgIfAWhkZAIIDw8WAh8BaGRkAgkPDxYCHwFoZGQCCg8PFgIfAWhkZAILDw8WAh8BaGRkAgwPDxYCHwFoZGQCDQ8PFgIfAWhkZAIODw8WAh8BaGRkAg8PDxYCHwFoZGQCEA8PFgIfAWhkZAIRDw8WAh8BaGRkAhIPDxYCHwFoZGQCEw8PFgIfAWhkZAIUDw8WAh8BaGRkAhUPDxYCHwFoZGQCFg8PFgIfAWhkZAIXDw8WAh8BaGRkAhgPDxYCHwFoZGQCGQ8PFgIfAWhkZAIaDw8WAh8BaGRkAhsPDxYCHwFoZGQCHA8PFgIfAWhkZAIdDw8WAh8BaGRkAh4PDxYCHwFoZGQCAw8PFgIeBFRleHQFnAE8YSBocmVmPScvc2V0ZXJyYScgPkhvbWU8L2E+ID4+IDxhIGhyZWY9Jy9zZXRlcnJhL2RlJz5TZXRlcnJhIC0gRGllIHVsdGltYXRpdmUgS2FydGVuLVF1aXotU2VpdGUhPC9hPiA+PiA8YSBocmVmPScvc2V0ZXJyYS9kZS9ibG9nJz5EZXIgU2V0ZXJyYSBCbG9nPC9hPiA+PiBkZAIFDxYCHwIFN05ldWVzIEZlYXR1cmU6IEJlbnV0emVyZGVmaW5pZXJ0ZSBTdGFuZG9ydGUgaGluenVmw7xnZW5kAgcPFgIfAWgWAgIBDw8WAh8AZGQWAmYPFCsCAmRkZAIJDxYCHwIF2gw8cD48aT4wNC4wNC4yMDE5PC9pPjwvcD4NCjxwPjxiPkVpbmUgbmV1ZSBTZXRlcnJhLUZ1bmt0aW9uIHd1cmRlIGdlc3RhcnRldDogRsO8Z2UgYmVudXR6ZXJkZWZpbmllcnRlIFN0YW5kb3J0ZSBoaW56dSE8L2I+PC9wPg0KDQpXZW5uIGR1IGVpbiBTZXRlcnJhLVN1cHBvcnRlciBiaXN0LCBrYW5uc3QgZHUgamV0enQgPGk+QmVudXR6ZXJkZWZpbmllcnRlIFN0YW5kb3J0ZTwvaT4gw7xiZXJhbGwgYXVmIGVpbmVyIEthcnRlIGhpbnp1ZsO8Z2VuISBJbiBqZWRlbSB1bnNlcmVyIEthcnRlbnF1aXoga2FubnN0IGR1IGRpZSBnZXfDvG5zY2h0ZW4gT3J0ZSBoaW56dWbDvGdlbiB1bmQgZWluaWdlIG9kZXIgYWxsZSBTdGFuZGFyZG9ydGUgZHVyY2ggZGVpbmUgZWlnZW5lbiBlcnNldHplbi4gQW0gRW5kZSB3aXJzdCBkdSBkZWluIHVsdGltYXRpdiBwZXJzb25hbGlzaWVydGVzIFF1aXogaGFiZW4hPC9wPjxicj48YnI+DQoNCjxpbWcgc3JjPSIvc2V0ZXJyYS9pbWFnZXMvc3lzdGVtL2F1c3RyaWFfY3VzdG9tX2RlLnBuZyIgc3R5bGU9ImJvcmRlcjoxcHggc29saWQiLz48YnI+PGk+RWluIHBhYXIgenVzw6R0emxpY2hlIFN0w6RkdGUgenVtIMOWc3RlcnJlaWNoIFN0w6RkdGUtUXVpeiBoaW56dWbDvGdlbi4gRHUga2FubnN0IGRhcyByZXN1bHRpZXJlbmRlIFF1aXogPGEgaHJlZj0iL3NldGVycmEvZGUvdmdwLzMxNjQ/Yz1HVERYUCI+aGllcjwvYT4gdGVzdGVuLjwvaT4NCjxicj48YnI+PGJyPjxicj4NCg0KPGltZyBzcmM9Ii9zZXRlcnJhL2ltYWdlcy9zeXN0ZW0vY3VzdG9tNV9kZS5wbmciIHN0eWxlPSJib3JkZXI6MXB4IHNvbGlkIi8+PGJyPjxicj4NCldlbm4gZHUgZWluaWdlIGRlaW5lciBiZW51dHplcmRlZmluaWVydGVuIE9ydGUgbMO2c2Noc3Qgb2RlciBub2NoIG1laHIgT3J0ZSB6dSBkZWluZW0gYmVudXR6ZXJkZWZpbmllcnRlbiBRdWl6IGhpbnp1ZsO8Z2VuIG3DtmNodGVzdCwga2xpY2tlIGVpbmZhY2ggZXJuZXV0IGF1ZiAiRWlnZW5lcyBRdWl6IGVyc3RlbGxlbiIsIHVuZCBkdSBrYW5uc3QgYWxsZSBnZXfDvG5zY2h0ZW4gw4RuZGVydW5nZW4gdm9ybmVobWVuLg0KPGJyPjxicj4NCjxwPkRpZXNlIEZ1bmt0aW9uIHN0ZWh0IG51ciB1bnNlcmVuIFBhdHJlb24tVW50ZXJzdMO8dHplcm4genVyIFZlcmbDvGd1bmcuIERpZSBVbnRlcnN0w7x0enVuZyB2b24gU2V0ZXJyYSBrb3N0ZXQgbnVyIDEgVVNEIHBybyBNb25hdC4gQWxsZSBWZXJwZsOkbmR1bmdlbiB3ZXJkZW4gYW0gZXJzdGVuIGVpbmVzIGplZGVuIEthbGVuZGVybW9uYXRzIGJlcmVjaG5ldCwgdW5kIGVzIHN0ZWh0IGRpciBmcmVpLCBkaWVzIGplZGVyemVpdCB6dSB3aWRlcnJ1ZmVuLiA8L3A+DQoNCjxwPkJpdHRlIGJlYWNodGUsIGRhc3Mgd2VubiBkdSBlaW4gYmVudXR6ZXJkZWZpbmllcnRlcyBRdWl6IGVyc3RlbGxzdCBqZWRlciwgZGVtIGR1IGRlbiBMaW5rIHNjaGlja3N0LCBpaG4gdmVyd2VuZGVuIGthbm4uIERpZXNlIG3DvHNzZW4ga2VpbmUgU2V0ZXJyYS1TdXBwb3J0ZXIgc2Vpbi4gPC9wPg0KDQo8cD48Yj48YSBocmVmPSJodHRwczovL3d3dy5wYXRyZW9uLmNvbS9zZXRlcnJhIj5VbnRlcnN0w7x0enVuZyBTZXRlcnJhIGF1ZiBQYXRyZW9uLmNvbTwvYT48L2I+PC9wPjwvcD5kAgsPZBYCAgEPFgIeC18hSXRlbUNvdW50ZmQCDw8PFgIfAWdkFgJmD2QWAgIBDxYCHwMCDxYeZg9kFgQCAQ8PFgIfAgUPMjkuMDEuMjAyMDxici8+ZGQCAw8PFgYfAgUuTmV1OiBCZXN0ZW5saXN0ZW4gZsO8ciBiZW51dHplcmRlZmluaWVydGUgUXVpeh4HVG9vbFRpcAUuTmV1OiBCZXN0ZW5saXN0ZW4gZsO8ciBiZW51dHplcmRlZmluaWVydGUgUXVpeh8ABRovc2V0ZXJyYS9kZS9wL2Jlc3Rlbmxpc3RlbmRkAgEPZBYEAgEPDxYCHwIFDzA1LjA0LjIwMTk8YnIvPmRkAgMPDxYGHwIFMEVyc3RlbGxlIGRlaW5lIGVpZ2VuZW4gYmVudXR6ZXJkZWZpbmllcnRlbiBRdWl6IR8EBTBFcnN0ZWxsZSBkZWluZSBlaWdlbmVuIGJlbnV0emVyZGVmaW5pZXJ0ZW4gUXVpeiEfAAUmL3NldGVycmEvZGUvcC9iZW51dHplcmRlZmluaWVydGVuLXF1aXpkZAICD2QWBAIBDw8WAh8CBQ8wNC4wNC4yMDE5PGJyLz5kZAIDDw8WBh8CBTdOZXVlcyBGZWF0dXJlOiBCZW51dHplcmRlZmluaWVydGUgU3RhbmRvcnRlIGhpbnp1ZsO8Z2VuHwQFN05ldWVzIEZlYXR1cmU6IEJlbnV0emVyZGVmaW5pZXJ0ZSBTdGFuZG9ydGUgaGluenVmw7xnZW4fAAUXL3NldGVycmEvZGUvcC9zdGFuZG9ydGVkZAIDD2QWBAIBDw8WAh8CBQ8xNi4wMS4yMDE5PGJyLz5kZAIDDw8WBh8CBSRQcm9iaWVyZSBkYXMgQXVzc3ByYWNoZSBGZWF0dXJlIGF1cyEfBAVBSMO2cmUsIHdpZSBkaWUgTmFtZW4gZGVyIEzDpG5kZXIgdW5kIFN0w6RkdGUgYXVzZ2VzcHJvY2hlbiB3ZXJkZW4fAAUgL3NldGVycmEvZGUvcC9hdXNzcHJhY2hlLWZlYXR1cmVkZAIED2QWBAIBDw8WAh8CBQ8xOS4xMS4yMDE4PGJyLz5kZAIDDw8WBh8CBR5EaWUgc2VjaHMgU3BpZWxtb2RpIGluIFNldGVycmEfBAUeRGllIHNlY2hzIFNwaWVsbW9kaSBpbiBTZXRlcnJhHwAFHy9zZXRlcnJhL2RlL3Avc2V0ZXJyYS1zcGllbG1vZGlkZAIFD2QWBAIBDw8WAh8CBQ8xNi4xMi4yMDIwPGJyLz5kZAIDDw8WBh8CBSpXaWUgdmllbGUgS29udGluZW50ZSBnaWJ0IGVzIGF1ZiBkZXIgV2VsdD8fBAUqV2llIHZpZWxlIEtvbnRpbmVudGUgZ2lidCBlcyBhdWYgZGVyIFdlbHQ/HwAFIi9zZXRlcnJhL2RlL3Avd2lldmllbGUta29udGluZW50ZW5kZAIGD2QWBAIBDw8WAh8CBQ8zMC4wMS4yMDIwPGJyLz5kZAIDDw8WBh8CBUdBdWZydWYgYW4gYWxsZSBMZWhyZXIhIEJpdHRlIGhlbGZlbiBTaWUgdW5zLCBkaWUgV2Vic2l0ZSB6dSB2ZXJiZXNzZXJuIR8EBUdBdWZydWYgYW4gYWxsZSBMZWhyZXIhIEJpdHRlIGhlbGZlbiBTaWUgdW5zLCBkaWUgV2Vic2l0ZSB6dSB2ZXJiZXNzZXJuIR8ABR0vc2V0ZXJyYS9kZS9wL2xlaHJlci1mZWVkYmFja2RkAgcPZBYEAgEPDxYCHwIFDzMwLjAxLjIwMjA8YnIvPmRkAgMPDxYGHwIFLFZpZGVvOiBFcnN0ZWxsZSBlaW4gYmVudXR6ZXJkZWZpbmllcnRlcyBRdWl6HwQFLFZpZGVvOiBFcnN0ZWxsZSBlaW4gYmVudXR6ZXJkZWZpbmllcnRlcyBRdWl6HwAFGC9zZXRlcnJhL2RlL3AvdmlkZW8tcXVpemRkAggPZBYEAgEPDxYCHwIFDzA4LjA0LjIwMTk8YnIvPmRkAgMPDxYGHwIFGFN3YXNpbGFuZCBvZGVyIEVzd2F0aW5pPx8EBRhTd2FzaWxhbmQgb2RlciBFc3dhdGluaT8fAAUWL3NldGVycmEvZGUvcC9lc3dhdGluaWRkAgkPZBYEAgEPDxYCHwIFDzAxLjA0LjIwMTk8YnIvPmRkAgMPDxYGHwIFP0RpZSBWZXJlaW50ZW4gTmF0aW9uZW4gKFVOKSByw6R1bWVuIG1pdCBkZW0gS2FydGVudm9ydXJ0ZWlsIGF1Zh8EBT9EaWUgVmVyZWludGVuIE5hdGlvbmVuIChVTikgcsOkdW1lbiBtaXQgZGVtIEthcnRlbnZvcnVydGVpbCBhdWYfAAUnL3NldGVycmEvZGUvcC92ZXJlaW50ZW4tbmF0aW9uZW4ta2FydGVuZGQCCg9kFgQCAQ8PFgIfAgUPMjUuMDMuMjAxOTxici8+ZGQCAw8PFgYfAgVCS2FzYWNoc3RhbnMgSGF1cHRzdGFkdCB3aXJkIG5hY2ggZWhlbWFsaWdlbSBQcsOkc2lkZW50ZW4gdW1iZW5hbm50HwQFQkthc2FjaHN0YW5zIEhhdXB0c3RhZHQgd2lyZCBuYWNoIGVoZW1hbGlnZW0gUHLDpHNpZGVudGVuIHVtYmVuYW5udB8ABSMvc2V0ZXJyYS9kZS9wL2thc2FjaHN0YW4taGF1cHRzdGFkdGRkAgsPZBYEAgEPDxYCHwIFDzI1LjAyLjIwMTk8YnIvPmRkAgMPDxYGHwIFFU5ldTogQ2FydG9vbi1RdWl6emVzIR8EBRVOZXU6IENhcnRvb24tUXVpenplcyEfAAUaL3NldGVycmEvZGUvcC9jYXJ0b29uLXF1aXpkZAIMD2QWBAIBDw8WAh8CBQ8wNi4wMi4yMDE5PGJyLz5kZAIDDw8WBh8CBTjDhGd5cHRlbiBwbGFudCBlaW5lIG5ldWUgSGF1cHRzdGFkdCDigJMgZWluIE1lZ2EtUHJvamVrdB8EBTjDhGd5cHRlbiBwbGFudCBlaW5lIG5ldWUgSGF1cHRzdGFkdCDigJMgZWluIE1lZ2EtUHJvamVrdB8ABSEvc2V0ZXJyYS9kZS9wL2FlZ3lwdGVuLWhhdXB0c3RhZHRkZAIND2QWBAIBDw8WAh8CBQ8zMS4wMS4yMDE5PGJyLz5kZAIDDw8WBh8CBStNYXplZG9uaWVuIHdpcmQgaW4gTm9yZG1hemVkb25pZW4gdW1iZW5hbm50HwQFK01hemVkb25pZW4gd2lyZCBpbiBOb3JkbWF6ZWRvbmllbiB1bWJlbmFubnQfAAUYL3NldGVycmEvZGUvcC9tYXplZG9uaWVuZGQCDg9kFgQCAQ8PFgIfAgUPMjQuMDEuMjAxOTxici8+ZGQCAw8PFgYfAgUgQnVydW5kaSBoYXQgZWluZSBuZXVlIEhhdXB0c3RhZHQfBAUgQnVydW5kaSBoYXQgZWluZSBuZXVlIEhhdXB0c3RhZHQfAAUgL3NldGVycmEvZGUvcC9idXJ1bmRpLWhhdXB0c3RhZHRkZAIRD2QWAgIBD2QWAgIBDxYCHwMCARYCZg9kFgJmDw8WAh8ABRQvc2V0ZXJyYS9kZS92Z3AvMzAwN2QWBgIBDw8WBh4ISW1hZ2VVcmwFIS9zZXRlcnJhL2ltYWdlcy9zeXN0ZW0vZXVfMTUwLmpwZx8EBQ9FdXJvcGE6IEzDpG5kZXIeDUFsdGVybmF0ZVRleHQFD0V1cm9wYTogTMOkbmRlcmRkAgMPDxYCHwIFD0V1cm9wYTogTMOkbmRlcmRkAgUPDxYCHwIFDUVyZGt1bmRlLVF1aXpkZAITDxYCHwIFAS1kAhUPZBYCAgEPFgIfAgWLDTxkaXYgY2xhc3M9ImZvb3Rlck1lbnUiPjxkaXYgY2xhc3M9InRpdGxlIj5IZWxwIENlbnRlcjwvZGl2PiAgPHVsPiA8bGk+PGEgaHJlZj0iL3NldGVycmEvZW4vcC9jb250YWN0Ij5Db250YWN0IFVzPC9hPjwvbGk+IDxsaT48YSBocmVmPSIvc2V0ZXJyYS9lbi9wL2ZhcSI+RkFRIChXZWJzaXRlKTwvYT48L2xpPiA8bGk+PGEgaHJlZj0iL3NldGVycmEvZW4vcC9hcHAtZmFxIj5GQVEgKEFwcCk8L2E+PC9saT4gPGxpPjxhIGhyZWY9Ii9zZXRlcnJhL2VuL3AvdGlwcy1hbmQtdHJpY2tzIj5UaXBzICYgVHJpY2tzPC9hPjwvbGk+IDxsaT48YSBocmVmPSIvc2V0ZXJyYS9wcm8iPlByaWNpbmc8L2E+PC9saT4gPGxpPjxhIGhyZWY9Ii9zZXRlcnJhL2VuL2Jsb2ciPkJsb2c8L2E+PC9saT4gPC91bD4gIDwvZGl2PiAgPGRpdiBjbGFzcz0iZm9vdGVyTWVudSI+PGRpdiBjbGFzcz0idGl0bGUiPiZuYnNwOzwvZGl2PiAgPHVsPiAgPGxpPjxhIGhyZWY9Ii9zZXRlcnJhL2VuL3Avc2V0ZXJyYS1tb2RlcyI+R2FtZSBNb2RlczwvYT48L2xpPiA8bGk+PGEgaHJlZj0iL3NldGVycmEvZW4vcC9zZXRlcnJhLWhpZ2hzY29yZXMiPlBlcnNvbmFsIExlYWRlcmJvYXJkczwvYT48L2xpPiA8bGk+PGEgaHJlZj0iL3NldGVycmEvZW4vcC9jdXN0b20tcXVpenplcyI+Q3JlYXRlIEN1c3RvbSBRdWl6emVzPC9hPjwvbGk+IDxsaT48YSBocmVmPSIvc2V0ZXJyYS9lbi9wL3B1YmxpYy1sZWFkZXJib2FyZHMiPlB1YmxpYyBMZWFkZXJib2FyZHM8L2E+PC9saT4gPGxpPjxhIGhyZWY9Ii9zZXRlcnJhL2VuL3AvY3VzdG9tLWxvY2F0aW9ucyI+QWRkIEN1c3RvbSBMb2NhdGlvbnM8L2E+PC9saT4gICAgPC91bD4gIDwvZGl2PiAgPGRpdiBjbGFzcz0iZm9vdGVyTWVudSI+PGRpdiBjbGFzcz0idGl0bGUiPlJlc291cmNlczwvZGl2PiA8dWw+IDxsaT48YSBocmVmPSIvc2V0ZXJyYS9lbi9sL3BkZj9pbWc9MSI+UHJpbnRhYmxlczwvYT48L2xpPiA8bGk+PGEgaHJlZj0iL3NldGVycmEvZW4vbC9ibGEiPkJsYW5rIE1hcHM8L2E+PC9saT4gPGxpPjxhIGhyZWY9Ii9zZXRlcnJhL2VuL3AvdXNlci1xdWl6emVzIj5Vc2VyIEdlbmVyYXRlZCBRdWl6emVzPC9hPjwvbGk+IDxsaT48YSBocmVmPSIvc2V0ZXJyYS9lbi1hbiI+U2NpZW5jZSBRdWl6emVzPC9hPjwvbGk+IDxsaT48YSBocmVmPSIvc2V0ZXJyYS9lbi9wL3RvcC1zY29yZXMiPlRvcCBTY29yZXM8L2E+PC9saT4gPGxpPjxhIGhyZWY9Imh0dHBzOi8vd3d3LnNwZWVkcnVuLmNvbS9zZXRlcnJhIj5TcGVlZHJ1bi5jb208L2E+PC9saT4gPC91bD4gIDwvZGl2PiAgPGRpdiBjbGFzcz0iZm9vdGVyTWVudSI+PGRpdiBjbGFzcz0idGl0bGUiPkFib3V0PC9kaXY+ICA8dWw+IDxsaT48YSBocmVmPSIvc2V0ZXJyYS90ZXJtcy5hc3B4Ij5UZXJtcyAmIENvbmRpdGlvbnM8L2E+PC9saT4gPGxpPjxhIGhyZWY9Ii9zZXRlcnJhL3ByaXZhY3kuYXNweCI+UHJpdmFjeSBQb2xpY3k8L2E+PC9saT4gPGxpPjxhIGhyZWY9Ii9zZXRlcnJhL2VuL3AvY29udGFjdCI+Q29udGFjdCBVczwvYT48L2xpPiA8L3VsPiAgPC9kaXY+ICA8ZGl2IHN0eWxlPSJjbGVhcjpib3RoIj48L2Rpdj48YnI+PGJyPjxzcGFuIHN0eWxlPSJwYWRkaW5nLWxlZnQ6MjBweDtmb250LXNpemU6MTNweDtjb2xvcjojQUFBQUFBIj4yLzEvMjAyMyAxMToxMDozOSBQTTwvc3Bhbj5kZHo7lg8qFtxa6Ixc8H80Yt6Wh3C2LzRVmmAxKQW1HsiP" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="36387C0A" />
+        
+<script async src="https://cse.google.com/cse.js?cx=1110b678f1dd23364"></script>
+<script>
+    function getCookie(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+
+    function hasDarkMode(url) {
+        var res = true
+        if (url.indexOf("terms.aspx") != -1) {
+            res = false
+        }
+        if (url.indexOf("privacy.aspx") != -1) {
+            res = false
+        }
+        if (url.indexOf("searchresults.aspx") != -1) {
+            res = false
+        }
+
+        return res
+    }
+
+    var darkmode = getCookie("darkmode");
+
+    if (hasDarkMode(window.location.href) == true) {
+        if (darkmode == "1" && (window.location.href.indexOf("darkmode") == -1)) {
+            document.write('<link rel="stylesheet" type="text/css" href="/seterra/css/darkmode.css" />');
+            
+        }
+        if (window.location.href.indexOf("noborders=1") != -1) {
+            document.write('<link rel="stylesheet" type="text/css" href="/seterra/css/noborders.css" />');
+        }
+
+        if (window.location.href.indexOf("darkmap=1") != -1) {
+            document.write('<link rel="stylesheet" type="text/css" href="/seterra/css/darkmap.css" />');
+        }
+    }
+
+    $(document).ready(function () {
+        if (window.location.href.indexOf("darkmode=0") != -1) {
+            $.cookie('darkmode', '0', { path: '/', expires: 14 });
+        }
+        if ($.cookie('darkmode') == "1" || window.location.href.indexOf("darkmode=1") != -1) {
+            $('#chkDarkMode').prop('checked', true);
+        }
+        setTimeout(function () {
+            if (document.getElementById("gsc-i-id1")) {
+                document.getElementById("gsc-i-id1").setAttribute("placeholder", "Search Seterra")
+            }
+        }, 1000);
+
+    })
+</script>
+
+
+ 
+<script>
+    $(document).ready(function () {
+        if (!!$.cookie('pledges')) {
+            $("#patreon-banner").show();
+        }
+    });
+</script>
+
+<style>#patreon-banner
+{
+    border-color: rgba(255, 216, 0, 0.5);
+    background-color: rgba(255, 216, 0, 0.2);
+}
+
+.patreon-banner-content {
+    margin:auto;
+    padding: 0.5rem;
+    max-width:1250px;
+}
+</style>
+
+<div id="patreon-banner" style="display:none;">
+    <div class="patreon-banner-content">
+        <p>
+            Patreon will be replaced with our GeoGuessr subscription.
+
+        <a href="../../patreon.html">Read more about the change here.</a>
+        </p>
+    </div>
+</div>
+ 
+
+<div id="header">
+    <div id="header-content-wrapper">
+        <div id="logo">
+            <a href="../../index.html">
+                <img src="../../images/system/gg-seterra-logo.png" class="wordmark" alt="Seterra logo"/>
+            </a>
+        </div>
+        <div id="divLanguageDropDown"></div>
+        <div class="spacer">
+            <div style="padding-top: 70px; padding-left: 20px; color: #888888;">
+                <input type="checkbox" id="chkDarkMode" onclick="loadDarkMode()" />
+                <label for="chkDarkMode">🌙 Dark Mode</label>
+            </div>
+
+            <div style="padding-top: 70px; padding-left: 20px; color: #888888; display: none;">
+                &nbsp;
+            </div>
+
+        </div>
+
+
+        <div id="socialmedia">
+
+            <div class="searchbox">
+                <div class="gcse-searchbox-only" data-resultsurl="/seterra/searchresults.aspx" data-autocompletemaxcompletions="35"></div>
+            </div>
+            <div class="mobilemenu">
+                <div class="mobilemenucontainer" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+            <div class="login-buttons">
+                <div id="logindiv">
+                    <span id="text-login" class="mem-login">Log in:</span>
+                    <a id="header1_linkLoginPatreon" class="mem-login linkLogin linkLoginPatreon" href="https://www.patreon.com/oauth2/authorize?response_type=code&amp;scope=users%20pledges-to-me%20my-campaign&amp;client_id=3865155315c95a00e278b2c3bd3a5b66ddf2c12b8fe486317e74a0e392eb1ec3&amp;redirect_uri=https://www.geoguessr.com/seterra/memberRedirect.aspx">Patreon</a>
+                    <a id="header1_linkLogoutPatreon" class="mem-login linkLogout linkLogoutPatreon" href="../../logout2.aspx.html">Log out</a>
+                    <a id="header1_linkLoginGeoGuessr" class="mem-login linkLogin linkLoginGeoGuessr" href="../../../signin%EF%B9%96target=%EA%A4%B7seterra.html">GeoGuessr</a>
+                    <a id="header1_linkLogoutGeoGuessr" class="mem-login linkLogout linkLogoutGeoGuessr" href="../../../signout%EF%B9%96target=%EA%A4%B7seterra.html">Log out</a>
+                </div>
+                <div id="loginName"></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<div id="header1_panMainNav_de">
+	
+    <div style="width: 100%;" class="nav-wrapper">
+        <div id="mainnav">
+            <a class="navlink" href="../../de.html">Alle</a> | <a class="navlink" href="../l/ger.html">Deutschsprachige Länder</a> | <a class="navlink" href="../l/eur.html">Europa</a> | <a class="navlink" href="../l/nam.html">Nordamerika</a> | <a class="navlink" href="../l/sam.html">Südamerika</a> | <a class="navlink" href="../l/afr.html">Afrika</a> | <a class="navlink" href="../l/asi.html">Asien</a> | <a class="navlink" href="../l/aus.html">Australien</a> | <a class="navlink" href="../l/wor.html">Die Welt</a> | <a class="navlink" href="../l/pdf%EF%B9%96img=1.html">PDF</a>  | <a class="navlink" href="../blog.html">Blog</a> | <a class="navlink" href="../../en/p/faq.html" title="Frequently Asked Questions">FAQ</a>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="mobiledropdown" style="display: none">
+    <div class="mobiledropdowninner">
+        <div id="mainnav2" style="margin-bottom: 15px;">
+        </div>
+        <div style="margin-bottom: 15px;">
+            <a id="lnkDarkModeOn" class="navlink2" href="../../index.html" onclick="$('#chkDarkMode').prop('checked', true);loadDarkMode();return false;">Dark Mode On 🌙 </a>
+            <a id="lnkDarkModeOff" class="navlink2" href="../../index.html" onclick="$('#chkDarkMode').prop('checked', false);loadDarkMode();return false;">Dark Mode Off 🌙 </a>
+            <a id="lnkMyCustomQuizzes" class="navlink2 linkLogout" href='../../GenericErrorPage%EF%B9%96aspxerrorpath=%EA%A4%B7seterra%EA%A4%B7de%EA%A4%B7myaccount.aspx.htm'>My Custom Quizzes </a>
+
+            <a class="navlink2" href="../../index.html">Change language</a>
+
+            <div id="login2">
+            </div>
+            <div id="search2">
+                        <gcse:searchbox-only resultsurl="/seterra/searchresults.aspx"></gcse:searchbox-only>
+                </div>
+        </div>
+    </div>
+</div>
+<script>
+    var fFirst = true;
+    pageLang = 'de';
+
+    if (pageLang == '') pageLang = 'en';
+    pageLang = pageLang.toLowerCase();
+
+    if (window.location.href.indexOf("searchresult") == -1) {
+        $.cookie('recentlang', pageLang, { path: '/', expires: 14 });
+    }
+
+    function myFunction(x) {
+        x.classList.toggle("change");
+        var y = document.getElementsByClassName("mobiledropdown")[0];
+
+        if (y.style.display === "none") {
+            y.style.display = "block";
+        } else {
+            y.style.display = "none";
+        }
+    }
+
+    $(document).ready(function () {
+        var strMenu = "";
+        var navLinks = document.getElementsByClassName("navlink");
+        var i = 0;
+        var currentPage = window.location.pathname;
+        for (i; i < navLinks.length; i++) {
+            var lb = navLinks[i].getAttribute("href")
+            if (lb == currentPage) {
+                navLinks[i].classList.add("active")
+            }
+            strMenu = strMenu + navLinks[i].outerHTML;
+
+        }
+
+        $("#mainnav2").html(strMenu);
+        if (document.documentElement.clientWidth <= 820) {
+            $("#logindiv").appendTo("#login2")
+        };
+
+        var ddBasic = [
+        { text: "Afrikaans", imageSrc: "/seterra/images/system/flags/langlistflags/flag-af.png", value: "af", selected: false}, { text: "Čeština (Czech)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-cs.png", value: "cs", selected: false}, { text: "Català (Catalan)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ca.png", value: "ca", selected: false}, { text: "Dansk (Danish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-da.png", value: "da", selected: false}, { text: "Deutsch (German)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-de.png", value: "de", selected: false}, { text: "English", imageSrc: "/seterra/images/system/flags/langlistflags/flag-en.png", value: "en", selected: false}, { text: "Eesti (Estonian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-et.png", value: "et", selected: false}, { text: "Español (Spanish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-es.png", value: "es", selected: false}, { text: "Français (French)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-fr.png", value: "fr", selected: false}, { text: "Ελληνικά (Greek)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-el.png", value: "el", selected: false}, { text: "Gaeilge (Irish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ga.png", value: "ga", selected: false}, { text: "Hrvatski (Croatian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-hr.png", value: "hr", selected: false}, { text: "Bahasa Indonesia (Indonesian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-id.png", value: "id", selected: false}, { text: "Íslenska (Icelandic)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-is.png", value: "is", selected: false}, { text: "Italiano (Italian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-it.png", value: "it", selected: false}, { text: "Latviešu valoda (Latvian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-lv.png", value: "lv", selected: false}, { text: "Lietuvių (Lithuanian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-lt.png", value: "lt", selected: false}, { text: "Magyar (Hungarian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-hu.png", value: "hu", selected: false}, { text: "Nederlands (Dutch)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-nl.png", value: "nl", selected: false}, { text: "Norsk (Norwegian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-nb.png", value: "nb", selected: false}, { text: "Polski (Polish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-pl.png", value: "pl", selected: false}, { text: "Português (Portuguese)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-pt.png", value: "pt", selected: false}, { text: "Română (Romanian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ro.png", value: "ro", selected: false}, { text: "русский (Russian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ru.png", value: "ru", selected: false}, { text: "Shqip (Albanian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-sq.png", value: "sq", selected: false}, { text: "Slovenský jazyk (Slovak)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-sk.png", value: "sk", selected: false}, { text: "Slovenski jezik (Slovene)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-sl.png", value: "sl", selected: false}, { text: "српски (Serbian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-sr.png", value: "sr", selected: false}, { text: "Suomi (Finnish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-fi.png", value: "fi", selected: false}, { text: "Svenska (Swedish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-sv.png", value: "sv", selected: false}, { text: "Türkçe (Turkish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-tr.png", value: "tr", selected: false}, { text: "Українська (Ukrainian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-uk.png", value: "uk", selected: false}, { text: "Oʻzbekcha (Uzbek)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-uz.png", value: "uz", selected: false}, { text: "አማርኛ (Amharic)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-am.png", value: "am", selected: false}, { text: "العربية (Arabic)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ar.png", value: "ar", selected: false}, { text: "فارسی (Persian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-fa.png", value: "fa", selected: false}, { text: "български (Bulgarian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-bg.png", value: "bg", selected: false}, { text: "中文 (Chinese (simplified))", imageSrc: "/seterra/images/system/flags/langlistflags/flag-zh.png", value: "zh", selected: false}, { text: "עִבְרִית‎ (Hebrew)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-he.png", value: "he", selected: false}, { text: "हिन्दी (Hindi)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-hi.png", value: "hi", selected: false}, { text: "தமிழ் (Tamil)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ta.png", value: "ta", selected: false}, { text: "සිංහල (Sinhala)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-si.png", value: "si", selected: false}, { text: "日本語 (Japanese)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ja.png", value: "ja", selected: false}, { text: "한국어 (Korean)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ko.png", value: "ko", selected: false}, { text: "ไทย (Thai)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-th.png", value: "th", selected: false}
+        ];
+        var fFound = false;
+        for (var i = 0; i < ddBasic.length; i++) {
+            if (ddBasic[i].value == pageLang) {
+                ddBasic[i].selected = true;
+                fFound = true;
+            }
+        }
+
+        if (fFound == true) {
+            $('#divLanguageDropDown').ddslick({
+                data: ddBasic,
+                
+                selectText: "Select language",
+                imagePosition: "left",
+                onSelected: function (data) {
+                    if (fFirst == false) {
+                        window.location = "/seterra/" + data.selectedData.value;
+                    }
+                    fFirst = false;
+                }
+            })
+
+        }
+        else {
+            $('#divLanguageDropDown').hide;
+        }
+
+        $(".dd-selected-image").attr("alt", "Flag " + pageLang)
+
+    })
+</script>
+
+        <div id="contentwrapper2">
+
+            <div id="leftcol2" style="padding-top: 20px;">
+                <div id="maincontent" style="padding-left: 15px; padding-top: 20px;">
+                    <div id="breadcrumbs" style="margin-left: 0px;">
+                        <span id="breadcrumbs1"><a href='../../../seterra.html' >Home</a> >> <a href='../../de.html'>Seterra - Die ultimative Karten-Quiz-Seite!</a> >> <a href='../blog.html'>Der Seterra Blog</a> >> </span>
+                    </div>
+                    <h1 class="h1large"> 
+                        Neues Feature: Benutzerdefinierte Standorte hinzufügen
+                    </h1>
+                    
+
+                    <div class="maintext">
+                        <p><i>04.04.2019</i></p>
+<p><b>Eine neue Seterra-Funktion wurde gestartet: Füge benutzerdefinierte Standorte hinzu!</b></p>
+
+Wenn du ein Seterra-Supporter bist, kannst du jetzt <i>Benutzerdefinierte Standorte</i> überall auf einer Karte hinzufügen! In jedem unserer Kartenquiz kannst du die gewünschten Orte hinzufügen und einige oder alle Standardorte durch deine eigenen ersetzen. Am Ende wirst du dein ultimativ personalisiertes Quiz haben!</p><br><br>
+
+<img src="https://www.geoguessr.com/seterra/images/system/austria_custom_de.png" style="border:1px solid"/><br><i>Ein paar zusätzliche Städte zum Österreich Städte-Quiz hinzufügen. Du kannst das resultierende Quiz <a href="https://www.geoguessr.com/seterra/de/vgp/3164?c=GTDXP">hier</a> testen.</i>
+<br><br><br><br>
+
+<img src="https://www.geoguessr.com/seterra/images/system/custom5_de.png" style="border:1px solid"/><br><br>
+Wenn du einige deiner benutzerdefinierten Orte löschst oder noch mehr Orte zu deinem benutzerdefinierten Quiz hinzufügen möchtest, klicke einfach erneut auf "Eigenes Quiz erstellen", und du kannst alle gewünschten Änderungen vornehmen.
+<br><br>
+<p>Diese Funktion steht nur unseren Patreon-Unterstützern zur Verfügung. Die Unterstützung von Seterra kostet nur 1 USD pro Monat. Alle Verpfändungen werden am ersten eines jeden Kalendermonats berechnet, und es steht dir frei, dies jederzeit zu widerrufen. </p>
+
+<p>Bitte beachte, dass wenn du ein benutzerdefiniertes Quiz erstellst jeder, dem du den Link schickst, ihn verwenden kann. Diese müssen keine Seterra-Supporter sein. </p>
+
+<p><b><a href="https://www.patreon.com/seterra">Unterstützung Seterra auf Patreon.com</a></b></p></p>
+                        
+<div>
+
+    
+</div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div id="rtcol2" style="padding-top: 20px">
+                
+
+                <div id="panBlog">
+	
+                    <div class="divBlog" style="width:180px">
+                        <a href='../blog.html'>
+                            <h4>Der Seterra Blog</h4>
+                        </a>
+                        
+<div>
+    
+            <div style="padding-bottom:13px;">
+                <span id="newscomp_repNews_ctl00_lblDate" style="font-size:10px;color:gray">29.01.2020<br/></span>
+                <a id="newscomp_repNews_ctl00_lnkNews" title="Neu: Bestenlisten für benutzerdefinierte Quiz" href="bestenlisten.html">Neu: Bestenlisten für benutzerdefinierte Quiz</a><br />
+            </div>
+        
+            <div style="padding-bottom:13px;">
+                <span id="newscomp_repNews_ctl01_lblDate" style="font-size:10px;color:gray">05.04.2019<br/></span>
+                <a id="newscomp_repNews_ctl01_lnkNews" title="Erstelle deine eigenen benutzerdefinierten Quiz!" href="benutzerdefinierten-quiz.html">Erstelle deine eigenen benutzerdefinierten Quiz!</a><br />
+            </div>
+        
+            <div style="padding-bottom:13px;">
+                <span id="newscomp_repNews_ctl02_lblDate" style="font-size:10px;color:gray">04.04.2019<br/></span>
+                <a id="newscomp_repNews_ctl02_lnkNews" title="Neues Feature: Benutzerdefinierte Standorte hinzufügen" href="standorte.html">Neues Feature: Benutzerdefinierte Standorte hinzufügen</a><br />
+            </div>
+        
+            <div style="padding-bottom:13px;">
+                <span id="newscomp_repNews_ctl03_lblDate" style="font-size:10px;color:gray">16.01.2019<br/></span>
+                <a id="newscomp_repNews_ctl03_lnkNews" title="Höre, wie die Namen der Länder und Städte ausgesprochen werden" href="aussprache-feature.html">Probiere das Aussprache Feature aus!</a><br />
+            </div>
+        
+            <div style="padding-bottom:13px;">
+                <span id="newscomp_repNews_ctl04_lblDate" style="font-size:10px;color:gray">19.11.2018<br/></span>
+                <a id="newscomp_repNews_ctl04_lnkNews" title="Die sechs Spielmodi in Seterra" href="seterra-spielmodi.html">Die sechs Spielmodi in Seterra</a><br />
+            </div>
+        
+            <div style="padding-bottom:13px;">
+                <span id="newscomp_repNews_ctl05_lblDate" style="font-size:10px;color:gray">16.12.2020<br/></span>
+                <a id="newscomp_repNews_ctl05_lnkNews" title="Wie viele Kontinente gibt es auf der Welt?" href="wieviele-kontinenten.html">Wie viele Kontinente gibt es auf der Welt?</a><br />
+            </div>
+        
+            <div style="padding-bottom:13px;">
+                <span id="newscomp_repNews_ctl06_lblDate" style="font-size:10px;color:gray">30.01.2020<br/></span>
+                <a id="newscomp_repNews_ctl06_lnkNews" title="Aufruf an alle Lehrer! Bitte helfen Sie uns, die Website zu verbessern!" href="lehrer-feedback.html">Aufruf an alle Lehrer! Bitte helfen Sie uns, die Website zu verbessern!</a><br />
+            </div>
+        
+            <div style="padding-bottom:13px;">
+                <span id="newscomp_repNews_ctl07_lblDate" style="font-size:10px;color:gray">30.01.2020<br/></span>
+                <a id="newscomp_repNews_ctl07_lnkNews" title="Video: Erstelle ein benutzerdefiniertes Quiz" href="https://www.geoguessr.com/seterra/de/p/video-quiz">Video: Erstelle ein benutzerdefiniertes Quiz</a><br />
+            </div>
+        
+            <div style="padding-bottom:13px;">
+                <span id="newscomp_repNews_ctl08_lblDate" style="font-size:10px;color:gray">08.04.2019<br/></span>
+                <a id="newscomp_repNews_ctl08_lnkNews" title="Swasiland oder Eswatini?" href="eswatini.html">Swasiland oder Eswatini?</a><br />
+            </div>
+        
+            <div style="padding-bottom:13px;">
+                <span id="newscomp_repNews_ctl09_lblDate" style="font-size:10px;color:gray">01.04.2019<br/></span>
+                <a id="newscomp_repNews_ctl09_lnkNews" title="Die Vereinten Nationen (UN) räumen mit dem Kartenvorurteil auf" href="https://www.geoguessr.com/seterra/de/p/vereinten-nationen-karten">Die Vereinten Nationen (UN) räumen mit dem Kartenvorurteil auf</a><br />
+            </div>
+        
+            <div style="padding-bottom:13px;">
+                <span id="newscomp_repNews_ctl10_lblDate" style="font-size:10px;color:gray">25.03.2019<br/></span>
+                <a id="newscomp_repNews_ctl10_lnkNews" title="Kasachstans Hauptstadt wird nach ehemaligem Präsidenten umbenannt" href="kasachstan-hauptstadt.html">Kasachstans Hauptstadt wird nach ehemaligem Präsidenten umbenannt</a><br />
+            </div>
+        
+            <div style="padding-bottom:13px;">
+                <span id="newscomp_repNews_ctl11_lblDate" style="font-size:10px;color:gray">25.02.2019<br/></span>
+                <a id="newscomp_repNews_ctl11_lnkNews" title="Neu: Cartoon-Quizzes!" href="cartoon-quiz.html">Neu: Cartoon-Quizzes!</a><br />
+            </div>
+        
+            <div style="padding-bottom:13px;">
+                <span id="newscomp_repNews_ctl12_lblDate" style="font-size:10px;color:gray">06.02.2019<br/></span>
+                <a id="newscomp_repNews_ctl12_lnkNews" title="Ägypten plant eine neue Hauptstadt – ein Mega-Projekt" href="aegypten-hauptstadt.html">Ägypten plant eine neue Hauptstadt – ein Mega-Projekt</a><br />
+            </div>
+        
+            <div style="padding-bottom:13px;">
+                <span id="newscomp_repNews_ctl13_lblDate" style="font-size:10px;color:gray">31.01.2019<br/></span>
+                <a id="newscomp_repNews_ctl13_lnkNews" title="Mazedonien wird in Nordmazedonien umbenannt" href="mazedonien.html">Mazedonien wird in Nordmazedonien umbenannt</a><br />
+            </div>
+        
+            <div style="padding-bottom:13px;">
+                <span id="newscomp_repNews_ctl14_lblDate" style="font-size:10px;color:gray">24.01.2019<br/></span>
+                <a id="newscomp_repNews_ctl14_lnkNews" title="Burundi hat eine neue Hauptstadt" href="burundi-hauptstadt.html">Burundi hat eine neue Hauptstadt</a><br />
+            </div>
+        
+</div>
+
+
+                    </div>
+                
+</div>
+
+            </div>
+            <div id="panFeatured">
+	
+                <div class="featured">
+                    
+<div>
+
+    
+               <div class="featureditem">
+                   <a id="featured_repFeatured_ctl00_lnkItem" class="featured" href="../vgp/3007.html">
+                        <div class="divFeaturedImage">
+                            <img id="featured_repFeatured_ctl00_imgImage" title="Europa: Länder" class="featuredimage" loading="lazy" src="../../images/system/eu_150.jpg" alt="Europa: Länder" height="100" width="150" border="0" />
+                        </div>
+                        <h4 style="margin:0px"><span id="featured_repFeatured_ctl00_lblTitle">Europa: Länder</span></h4>
+                        <p style="margin:0px"><span id="featured_repFeatured_ctl00_lblDescription">Erdkunde-Quiz</span></p>
+                        <div style="clear:both"></div>
+                    </a>
+               </div>
+        
+</div>
+
+
+                </div>
+            
+</div>
+
+            <div style="clear: both;">
+                <br />
+                <br />
+
+
+                <div class="keywords">
+                    -
+                </div>
+
+            </div>
+
+        </div>
+        
+
+<div id="footer">
+    <div id="footercontent">
+        <div class="smediawrapper">
+            <a href="https://www.twitch.tv/directory/game/Seterra/videos/all" style="text-decoration: none;">
+                <img alt="Twitch" class="smedia smediatwitch" src="../../images/system/twitch.png" style="width: 35px; height: 35px;" /></a>
+            <a href="https://discord.gg/kW8Y3AG9wk" style="text-decoration: none;">
+                <img alt="Discord" class="smedia " src="../../images/system/discord.png" style="width: 35px; height: 35px;" /></a>
+            <a href="https://www.facebook.com/seterra.geography" style="text-decoration: none;">
+                <img alt="Facebook" class="smedia" src="../../images/system/facebook.png" style="width: 35px; height: 35px;" /></a>
+            <a href="https://twitter.com/SeterraGeo">
+                <img alt="Twitter" class="smedia" src="../../images/system/twitter.png" style="width: 35px; height: 35px;" /></a>
+            <a href="https://www.youtube.com/c/seterrageography">
+                <img alt="Youtube" class="smedia" src="../../images/system/youtube3.png" style="width: 35px; height: 35px;" /></a>
+            <a href="https://bit.ly/2SntfBU">
+                <img alt="Instagram" class="smedia" src="../../images/system/instagram.png" style="width: 35px; height: 35px;" /></a>
+        </div>
+        <div style="max-width: 900px;">
+            <div class="footerMenu"><div class="title">Help Center</div>  <ul> <li><a href="../../en/p/contact.html">Contact Us</a></li> <li><a href="../../en/p/faq.html">FAQ (Website)</a></li> <li><a href="../../en/p/app-faq.html">FAQ (App)</a></li> <li><a href="../../en/p/tips-and-tricks.html">Tips & Tricks</a></li> <li><a href="../../pro.html">Pricing</a></li> <li><a href="../../en/blog.html">Blog</a></li> </ul>  </div>  <div class="footerMenu"><div class="title">&nbsp;</div>  <ul>  <li><a href="../../en/p/seterra-modes.html">Game Modes</a></li> <li><a href="../../en/p/seterra-highscores.html">Personal Leaderboards</a></li> <li><a href="../../en/p/custom-quizzes.html">Create Custom Quizzes</a></li> <li><a href="../../en/p/public-leaderboards.html">Public Leaderboards</a></li> <li><a href="../../en/p/custom-locations.html">Add Custom Locations</a></li>    </ul>  </div>  <div class="footerMenu"><div class="title">Resources</div> <ul> <li><a href="../../en/l/pdf%EF%B9%96img=1.html">Printables</a></li> <li><a href="../../en/l/bla.html">Blank Maps</a></li> <li><a href="../../en/p/user-quizzes.html">User Generated Quizzes</a></li> <li><a href="../../en-an.html">Science Quizzes</a></li> <li><a href="../../en/p/top-scores.html">Top Scores</a></li> <li><a href="https://www.speedrun.com/seterra">Speedrun.com</a></li> </ul>  </div>  <div class="footerMenu"><div class="title">About</div>  <ul> <li><a href="../../terms.aspx.html">Terms & Conditions</a></li> <li><a href="../../privacy.aspx.html">Privacy Policy</a></li> <li><a href="../../en/p/contact.html">Contact Us</a></li> </ul>  </div>  <div style="clear:both"></div><br><br><span style="padding-left:20px;font-size:13px;color:#AAAAAA">2/1/2023 11:10:39 PM</span>
+        </div>
+        <div style="clear:both"></div>
+        <div id="ccpa" style="display: none; cursor: pointer;margin-top:20px;">Do not share my Personal Information.</div>
+    </div>
+</div>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,3350 @@
+
+
+<!DOCTYPE html >
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="uk">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="twitter:image" content="https://www.geoguessr.com/seterra/img/phones.png" /><meta name="og:image" content="https://www.geoguessr.com/seterra/img/phones.png" /><meta name="twitter:description" content="Seterra – це безкоштовні картографічні вікторини, завдяки яким можна дізнатися більше про країни, міста й інші географічн локації в усьому світі." /><meta name="twitter:creator" content="@seterrageo" /><meta name="twitter:site" content="@seterrageo" /><meta name="twitter:title" content="Seterra Географія" /><meta name="twitter:card" content="summary_large_image" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="Scripts/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script src="Scripts/jquery.cookie.js" type="text/javascript"></script>
+    <meta name="apple-itunes-app" content="app-id=1093460065" /><link href="CSS/pagestyles.css" rel="stylesheet" type="text/css" /><link href="CSS/geoguessr.css" rel="stylesheet" type="text/css" />
+    <script src="Scripts/general.js" type="text/javascript"></script>
+
+    
+
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<script type="text/javascript" src="Scripts/jquery.ddslick.min.js"></script>
+<script src="Scripts/utils.js"></script>
+<script src="Scripts/highscores.js"></script>
+
+
+    
+     <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <!-- Google Tag Manager -->
+    
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-W5K3B7M');</script>    
+    
+    <!-- End Google Tag Manager -->
+
+    <script>
+        var activeUnits = [
+            'gg-seterra_sidebar_right',
+            'gg-seterra_sidebar_right_2',
+            'gg-seterra_mobile_1',
+            'gg-seterra_headerleader',
+            'gg-seterra_nvu-and-float',
+            'gg-seterra_learboard_adhesion',
+            'gg-seterra_bottom_mpu',
+            'gg-seterra_outstream_mw'
+        ];
+
+        if (window.isProUser()) {
+            activeUnits = [];
+        }
+
+        window.snigelPubConf = {
+            "adengine": {
+                "activeAdUnits": activeUnits
+            }
+        };
+    </script>
+
+    
+        <script async data-cfasync="false" src="https://cdn.snigelweb.com/adengine/geoguessr.com/loader.js" type="text/javascript"></script>
+    <meta name="Description" content="Seterra – це безкоштовні картографічні вікторини, завдяки яким можна дізнатися більше про країни, міста й інші географічн локації в усьому світі." /><link rel="canonical" href="uk.html" /><meta property="og:type" content="website" /><title>
+	Seterra Географія
+</title></head>
+
+<body>
+    <script>
+        var lang ='uk'
+    </script>
+    <form name="form1" method="post" action="uk.html" id="form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTExMjIyODY0NWRkGR8obKExxmLBiG908nSG6CiHoaZFtYz7pic+k3Qd4Hs=" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="ED111DFB" />
+        
+<script async src="https://cse.google.com/cse.js?cx=1110b678f1dd23364"></script>
+<script>
+    function getCookie(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+
+    function hasDarkMode(url) {
+        var res = true
+        if (url.indexOf("terms.aspx") != -1) {
+            res = false
+        }
+        if (url.indexOf("privacy.aspx") != -1) {
+            res = false
+        }
+        if (url.indexOf("searchresults.aspx") != -1) {
+            res = false
+        }
+
+        return res
+    }
+
+    var darkmode = getCookie("darkmode");
+
+    if (hasDarkMode(window.location.href) == true) {
+        if (darkmode == "1" && (window.location.href.indexOf("darkmode") == -1)) {
+            document.write('<link rel="stylesheet" type="text/css" href="/seterra/css/darkmode.css" />');
+            
+        }
+        if (window.location.href.indexOf("noborders=1") != -1) {
+            document.write('<link rel="stylesheet" type="text/css" href="/seterra/css/noborders.css" />');
+        }
+
+        if (window.location.href.indexOf("darkmap=1") != -1) {
+            document.write('<link rel="stylesheet" type="text/css" href="/seterra/css/darkmap.css" />');
+        }
+    }
+
+    $(document).ready(function () {
+        if (window.location.href.indexOf("darkmode=0") != -1) {
+            $.cookie('darkmode', '0', { path: '/', expires: 14 });
+        }
+        if ($.cookie('darkmode') == "1" || window.location.href.indexOf("darkmode=1") != -1) {
+            $('#chkDarkMode').prop('checked', true);
+        }
+        setTimeout(function () {
+            if (document.getElementById("gsc-i-id1")) {
+                document.getElementById("gsc-i-id1").setAttribute("placeholder", "Search Seterra")
+            }
+        }, 1000);
+
+    })
+</script>
+
+
+ 
+<script>
+    $(document).ready(function () {
+        if (!!$.cookie('pledges')) {
+            $("#patreon-banner").show();
+        }
+    });
+</script>
+
+<style>#patreon-banner
+{
+    border-color: rgba(255, 216, 0, 0.5);
+    background-color: rgba(255, 216, 0, 0.2);
+}
+
+.patreon-banner-content {
+    margin:auto;
+    padding: 0.5rem;
+    max-width:1250px;
+}
+</style>
+
+<div id="patreon-banner" style="display:none;">
+    <div class="patreon-banner-content">
+        <p>
+            Patreon will be replaced with our GeoGuessr subscription.
+
+        <a href="patreon.html">Read more about the change here.</a>
+        </p>
+    </div>
+</div>
+ 
+
+<div id="header">
+    <div id="header-content-wrapper">
+        <div id="logo">
+            <a href="index.html">
+                <img src="images/system/gg-seterra-logo.png" class="wordmark" alt="Seterra logo"/>
+            </a>
+        </div>
+        <div id="divLanguageDropDown"></div>
+        <div class="spacer">
+            <div style="padding-top: 70px; padding-left: 20px; color: #888888;">
+                <input type="checkbox" id="chkDarkMode" onclick="loadDarkMode()" />
+                <label for="chkDarkMode">🌙 Dark Mode</label>
+            </div>
+
+            <div style="padding-top: 70px; padding-left: 20px; color: #888888; display: none;">
+                &nbsp;
+            </div>
+
+        </div>
+
+
+        <div id="socialmedia">
+
+            <div class="searchbox">
+                <div class="gcse-searchbox-only" data-resultsurl="/seterra/searchresults.aspx" data-autocompletemaxcompletions="35"></div>
+            </div>
+            <div class="mobilemenu">
+                <div class="mobilemenucontainer" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+            <div class="login-buttons">
+                <div id="logindiv">
+                    <span id="text-login" class="mem-login">Log in:</span>
+                    <a id="header1_linkLoginPatreon" class="mem-login linkLogin linkLoginPatreon" href="https://www.patreon.com/oauth2/authorize?response_type=code&amp;scope=users%20pledges-to-me%20my-campaign&amp;client_id=3865155315c95a00e278b2c3bd3a5b66ddf2c12b8fe486317e74a0e392eb1ec3&amp;redirect_uri=https://www.geoguessr.com/seterra/memberRedirect.aspx">Patreon</a>
+                    <a id="header1_linkLogoutPatreon" class="mem-login linkLogout linkLogoutPatreon" href="logout2.aspx.html">Log out</a>
+                    <a id="header1_linkLoginGeoGuessr" class="mem-login linkLogin linkLoginGeoGuessr" href="../signin%EF%B9%96target=%EA%A4%B7seterra.html">GeoGuessr</a>
+                    <a id="header1_linkLogoutGeoGuessr" class="mem-login linkLogout linkLogoutGeoGuessr" href="../signout%EF%B9%96target=%EA%A4%B7seterra.html">Log out</a>
+                </div>
+                <div id="loginName"></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div id="header1_panMainNav_uk">
+	
+    <div style="width: 100%;" class="nav-wrapper">
+        <div id="mainnav">
+            <a class="navlink" href="uk.html">Усі</a> | <a class="navlink" href="uk/l/eur.html">Європа</a> | <a class="navlink" href="uk/l/nam.html">Північна Америка</a> | <a class="navlink" href="uk/l/sam.html">Південна Америка</a> | <a class="navlink" href="uk/l/afr.html">Африка</a> | <a class="navlink" href="uk/l/asi.html">Азія</a> | <a class="navlink" href="uk/l/aus.html">Австралія</a> | <a class="navlink" href="uk/l/wor.html">Світ</a>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="mobiledropdown" style="display: none">
+    <div class="mobiledropdowninner">
+        <div id="mainnav2" style="margin-bottom: 15px;">
+        </div>
+        <div style="margin-bottom: 15px;">
+            <a id="lnkDarkModeOn" class="navlink2" href="index.html" onclick="$('#chkDarkMode').prop('checked', true);loadDarkMode();return false;">Dark Mode On 🌙 </a>
+            <a id="lnkDarkModeOff" class="navlink2" href="index.html" onclick="$('#chkDarkMode').prop('checked', false);loadDarkMode();return false;">Dark Mode Off 🌙 </a>
+            <a id="lnkMyCustomQuizzes" class="navlink2 linkLogout" href='GenericErrorPage%EF%B9%96aspxerrorpath=%EA%A4%B7seterra%EA%A4%B7uk%EA%A4%B7myaccount.aspx.htm'>My Custom Quizzes </a>
+
+            <a class="navlink2" href="index.html">Change language</a>
+
+            <div id="login2">
+            </div>
+            <div id="search2">
+                        <gcse:searchbox-only resultsurl="/seterra/searchresults.aspx"></gcse:searchbox-only>
+                </div>
+        </div>
+    </div>
+</div>
+<script>
+    var fFirst = true;
+    pageLang = 'uk';
+
+    if (pageLang == '') pageLang = 'en';
+    pageLang = pageLang.toLowerCase();
+
+    if (window.location.href.indexOf("searchresult") == -1) {
+        $.cookie('recentlang', pageLang, { path: '/', expires: 14 });
+    }
+
+    function myFunction(x) {
+        x.classList.toggle("change");
+        var y = document.getElementsByClassName("mobiledropdown")[0];
+
+        if (y.style.display === "none") {
+            y.style.display = "block";
+        } else {
+            y.style.display = "none";
+        }
+    }
+
+    $(document).ready(function () {
+        var strMenu = "";
+        var navLinks = document.getElementsByClassName("navlink");
+        var i = 0;
+        var currentPage = window.location.pathname;
+        for (i; i < navLinks.length; i++) {
+            var lb = navLinks[i].getAttribute("href")
+            if (lb == currentPage) {
+                navLinks[i].classList.add("active")
+            }
+            strMenu = strMenu + navLinks[i].outerHTML;
+
+        }
+
+        $("#mainnav2").html(strMenu);
+        if (document.documentElement.clientWidth <= 820) {
+            $("#logindiv").appendTo("#login2")
+        };
+
+        var ddBasic = [
+        { text: "Afrikaans", imageSrc: "/seterra/images/system/flags/langlistflags/flag-af.png", value: "af", selected: false}, { text: "Čeština (Czech)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-cs.png", value: "cs", selected: false}, { text: "Català (Catalan)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ca.png", value: "ca", selected: false}, { text: "Dansk (Danish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-da.png", value: "da", selected: false}, { text: "Deutsch (German)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-de.png", value: "de", selected: false}, { text: "English", imageSrc: "/seterra/images/system/flags/langlistflags/flag-en.png", value: "en", selected: false}, { text: "Eesti (Estonian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-et.png", value: "et", selected: false}, { text: "Español (Spanish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-es.png", value: "es", selected: false}, { text: "Français (French)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-fr.png", value: "fr", selected: false}, { text: "Ελληνικά (Greek)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-el.png", value: "el", selected: false}, { text: "Gaeilge (Irish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ga.png", value: "ga", selected: false}, { text: "Hrvatski (Croatian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-hr.png", value: "hr", selected: false}, { text: "Bahasa Indonesia (Indonesian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-id.png", value: "id", selected: false}, { text: "Íslenska (Icelandic)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-is.png", value: "is", selected: false}, { text: "Italiano (Italian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-it.png", value: "it", selected: false}, { text: "Latviešu valoda (Latvian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-lv.png", value: "lv", selected: false}, { text: "Lietuvių (Lithuanian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-lt.png", value: "lt", selected: false}, { text: "Magyar (Hungarian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-hu.png", value: "hu", selected: false}, { text: "Nederlands (Dutch)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-nl.png", value: "nl", selected: false}, { text: "Norsk (Norwegian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-nb.png", value: "nb", selected: false}, { text: "Polski (Polish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-pl.png", value: "pl", selected: false}, { text: "Português (Portuguese)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-pt.png", value: "pt", selected: false}, { text: "Română (Romanian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ro.png", value: "ro", selected: false}, { text: "русский (Russian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ru.png", value: "ru", selected: false}, { text: "Shqip (Albanian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-sq.png", value: "sq", selected: false}, { text: "Slovenský jazyk (Slovak)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-sk.png", value: "sk", selected: false}, { text: "Slovenski jezik (Slovene)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-sl.png", value: "sl", selected: false}, { text: "српски (Serbian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-sr.png", value: "sr", selected: false}, { text: "Suomi (Finnish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-fi.png", value: "fi", selected: false}, { text: "Svenska (Swedish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-sv.png", value: "sv", selected: false}, { text: "Türkçe (Turkish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-tr.png", value: "tr", selected: false}, { text: "Українська (Ukrainian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-uk.png", value: "uk", selected: false}, { text: "Oʻzbekcha (Uzbek)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-uz.png", value: "uz", selected: false}, { text: "አማርኛ (Amharic)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-am.png", value: "am", selected: false}, { text: "العربية (Arabic)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ar.png", value: "ar", selected: false}, { text: "فارسی (Persian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-fa.png", value: "fa", selected: false}, { text: "български (Bulgarian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-bg.png", value: "bg", selected: false}, { text: "中文 (Chinese (simplified))", imageSrc: "/seterra/images/system/flags/langlistflags/flag-zh.png", value: "zh", selected: false}, { text: "עִבְרִית‎ (Hebrew)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-he.png", value: "he", selected: false}, { text: "हिन्दी (Hindi)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-hi.png", value: "hi", selected: false}, { text: "தமிழ் (Tamil)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ta.png", value: "ta", selected: false}, { text: "සිංහල (Sinhala)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-si.png", value: "si", selected: false}, { text: "日本語 (Japanese)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ja.png", value: "ja", selected: false}, { text: "한국어 (Korean)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ko.png", value: "ko", selected: false}, { text: "ไทย (Thai)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-th.png", value: "th", selected: false}
+        ];
+        var fFound = false;
+        for (var i = 0; i < ddBasic.length; i++) {
+            if (ddBasic[i].value == pageLang) {
+                ddBasic[i].selected = true;
+                fFound = true;
+            }
+        }
+
+        if (fFound == true) {
+            $('#divLanguageDropDown').ddslick({
+                data: ddBasic,
+                
+                selectText: "Select language",
+                imagePosition: "left",
+                onSelected: function (data) {
+                    if (fFirst == false) {
+                        window.location = "/seterra/" + data.selectedData.value;
+                    }
+                    fFirst = false;
+                }
+            })
+
+        }
+        else {
+            $('#divLanguageDropDown').hide;
+        }
+
+        $(".dd-selected-image").attr("alt", "Flag " + pageLang)
+
+    })
+</script>
+
+        <div>
+            <div class="search-results">
+                <gcse:searchresults></gcse:searchresults>
+            </div>
+            <div id="contentwrapper">
+                <div id="leftcol">
+                    <div id="mainbanner">
+	
+                        <img id="imgMain" src="images/system/banners/world.jpg" alt="Географічні Ігри" border="0" />
+
+                    
+</div>
+                    <div id="maincontent">
+                        <div id="breadcrumbs">
+                            <span id="breadcrumbs1"><a href='index.html' >Home</a> >> Seterra Географія</span>
+                        </div>
+
+                        <div class="sectioncontent">
+                            <h1 class="header">
+                                <span class='titleleft'>Seterra Географія</span>
+                            </h1>
+                            
+                            <div id="gameselect" style="margin-top: 17px;">
+
+                                <div class="exblock">
+                                    <div id="gamelist1_listtype" class="listtoggle">
+    <a id="gamelist1_btnhoriz" class="enabledlink" href="http://www.geoguessr.com/seterra/uk?img=1">Переглянути як зображення</a>
+    <a id="gamelist1_btnvert" disabled="disabled" class="disabledlink">Переглянути як текст</a>
+</div>
+<div id="gamelist" style="width:100%">
+    <table id="gamelist1_exlist1" cellspacing="0" border="0" width="100%">
+	<tr>
+		<td>
+            <div class="sectionhead fullwidth lrg">
+
+                <div class="sectionheadtext areaheading lrg" id="EUR">
+                    Європа
+                </div>
+                <div style="clear: both;"></div>
+
+            </div>
+            <div class="exblock">
+
+                
+
+<div class="gamesublist vertical">
+    
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl00_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Європа: Країни (46)" class="flag1 game3007" loading="lazy" src="exlflags/flag-europe.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Європа: Країни (46)" href="uk/vgp/3007.html">Європа: Країни</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl01_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Європа: Країни (Мульт. Версія) (46)" class="flag1 game3286" loading="lazy" src="exlflags/flag-europe.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Європа: Країни (Мульт. Версія) (46)" href="uk/vgp/3286.html">Європа: Країни (Мульт. Версія)</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl02_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Євросоюз: Країни (27)" class="flag1 game3387" loading="lazy" src="exlflags/flag-eu.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Євросоюз: Країни (27)" href="uk/vgp/3387.html">Євросоюз: Країни</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl03_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Європа: Столиці (Складна версія) (45)" class="flag1 game3225" loading="lazy" src="exlflags/flag-europe.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Європа: Столиці (Складна версія) (45)" href="uk/vgp/3225.html">Європа: Столиці (Складна версія)</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl04_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Європа: Міста (39)" class="flag1 game3073" loading="lazy" src="exlflags/flag-europe.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Європа: Міста (39)" href="uk/vgp/3073.html">Європа: Міста</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl05_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Європа: Фізична Карта (22)" class="flag1 game3453" loading="lazy" src="exlflags/flag-europe.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Європа: Фізична Карта (22)" href="uk/vgp/3453.html">Європа: Фізична Карта</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl06_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Європа: Водні Об’єкти (12)" class="flag1 game3132" loading="lazy" src="exlflags/flag-europe.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Європа: Водні Об’єкти (12)" href="uk/vgp/3132.html">Європа: Водні Об’єкти</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl07_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Європа: Гірські Хребти (10)" class="flag1 game3215" loading="lazy" src="exlflags/flag-europe.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Європа: Гірські Хребти (10)" href="uk/vgp/3215.html">Європа: Гірські Хребти</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl08_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Європа: Річки (18)" class="flag1 game3135" loading="lazy" src="exlflags/flag-europe.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Європа: Річки (18)" href="uk/vgp/3135.html">Європа: Річки</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl09_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Європа: Прапори (Складна версія) (46)" class="flag1 game2013" loading="lazy" src="exlflags/flag-europe.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Європа: Прапори (Складна версія) (46)" href="uk/fl/2013.html">Європа: Прапори (Складна версія)</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl10_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Холодна Війна в Європі (1949-1989) (28)" class="flag1 game3481" loading="lazy" src="exlflags/flag-europe.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Холодна Війна в Європі (1949-1989) (28)" href="uk/vgp/3481.html">Холодна Війна в Європі (1949-1989)</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl11_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Європа 1914 р. (22)" class="flag1 game3480" loading="lazy" src="exlflags/flag-europe.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Європа 1914 р. (22)" href="uk/vgp/3480.html">Європа 1914 р.</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl12_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Велика Британія: Міста (14)" class="flag1 game3104" loading="lazy" src="exlflags/flag-uk.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Велика Британія: Міста (14)" href="uk/vgp/3104.html">Велика Британія: Міста</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl13_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Велика Британія: Міста (Складна Версія) (26)" class="flag1 game3105" loading="lazy" src="exlflags/flag-uk.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Велика Британія: Міста (Складна Версія) (26)" href="uk/vgp/3105.html">Велика Британія: Міста (Складна Версія)</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl14_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Іспанія: Автономні Громади (17)" class="flag1 game3005" loading="lazy" src="exlflags/flag-spain.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Іспанія: Автономні Громади (17)" href="uk/vgp/3005.html">Іспанія: Автономні Громади</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl15_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Іспанія: Провінції (50)" class="flag1 game3240" loading="lazy" src="exlflags/flag-spain.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Іспанія: Провінції (50)" href="uk/vgp/3240.html">Іспанія: Провінції</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl16_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Італія: Міста (11)" class="flag1 game3093" loading="lazy" src="exlflags/flag-italy.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Італія: Міста (11)" href="uk/vgp/3093.html">Італія: Міста</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl17_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Італія: Регіони (20)" class="flag1 game3092" loading="lazy" src="exlflags/flag-italy.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Італія: Регіони (20)" href="uk/vgp/3092.html">Італія: Регіони</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl18_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Німеччина: Землі (16)" class="flag1 game3014" loading="lazy" src="exlflags/flag-germany.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Німеччина: Землі (16)" href="uk/vgp/3014.html">Німеччина: Землі</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl19_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Німеччина: Міста (12)" class="flag1 game3030" loading="lazy" src="exlflags/flag-germany.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Німеччина: Міста (12)" href="uk/vgp/3030.html">Німеччина: Міста</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl20_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Росія: Міста (11)" class="flag1 game3114" loading="lazy" src="exlflags/flag-russia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Росія: Міста (11)" href="uk/vgp/3114.html">Росія: Міста</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl21_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Росія: Сусідні Країни (15)" class="flag1 game3192" loading="lazy" src="exlflags/flag-russia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Росія: Сусідні Країни (15)" href="uk/vgp/3192.html">Росія: Сусідні Країни</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl22_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Росія: Федеральні Суб’єкти (83)" class="flag1 game3669" loading="lazy" src="exlflags/flag-russia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Росія: Федеральні Суб’єкти (83)" href="uk/vgp/3669.html">Росія: Федеральні Суб’єкти</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl23_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Росія: Федеральні Суб’єкти, Прапори (83)" class="flag1 game2043" loading="lazy" src="exlflags/flag-russia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Росія: Федеральні Суб’єкти, Прапори (83)" href="uk/fl/2043.html">Росія: Федеральні Суб’єкти, Прапори</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl24_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Румунія: Міста (17)" class="flag1 game3100" loading="lazy" src="exlflags/flag-romania.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Румунія: Міста (17)" href="uk/vgp/3100.html">Румунія: Міста</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl25_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Румунія: Повіти (41)" class="flag1 game3087" loading="lazy" src="exlflags/flag-romania.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Румунія: Повіти (41)" href="uk/vgp/3087.html">Румунія: Повіти</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl26_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Україна: Міста (15)" class="flag1 game3761" loading="lazy" src="exlflags/flag-ukraine.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Україна: Міста (15)" href="uk/vgp/3761.html">Україна: Міста</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl27_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Україна: Міста (Складна версія) (32)" class="flag1 game3921" loading="lazy" src="exlflags/flag-ukraine.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Україна: Міста (Складна версія) (32)" href="uk/vgp/3921.html">Україна: Міста (Складна версія)</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl28_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Україна: Прапори (27)" class="flag1 game2060" loading="lazy" src="exlflags/flag-ukraine.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Україна: Прапори (27)" href="uk/fl/2060.html">Україна: Прапори</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl29_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Україна: Регіони (27)" class="flag1 game3205" loading="lazy" src="exlflags/flag-ukraine.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Україна: Регіони (27)" href="uk/vgp/3205.html">Україна: Регіони</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl30_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Україна: Фізична Карта (12)" class="flag1 game3929" loading="lazy" src="exlflags/flag-ukraine.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Україна: Фізична Карта (12)" href="uk/vgp/3929.html">Україна: Фізична Карта</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl31_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Франція: Міста (11)" class="flag1 game3103" loading="lazy" src="exlflags/flag-france.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Франція: Міста (11)" href="uk/vgp/3103.html">Франція: Міста</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl32_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Франція: Регіони (18)" class="flag1 game3331" loading="lazy" src="exlflags/flag-france.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Франція: Регіони (18)" href="uk/vgp/3331.html">Франція: Регіони</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl33_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Швейцарія: Кантони (26)" class="flag1 game3013" loading="lazy" src="exlflags/flag-switzlnd.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Швейцарія: Кантони (26)" href="uk/vgp/3013.html">Швейцарія: Кантони</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl34_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Швеція: Міста (12)" class="flag1 game3183" loading="lazy" src="exlflags/flag-sweden.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Швеція: Міста (12)" href="https://www.geoguessr.com/seterra/uk/vgp/3183">Швеція: Міста</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+</div>
+
+<div class="gamesublist horizontal" style="width: auto;">
+    
+
+</div>
+
+                <div style="clear: both;"></div>
+                <h3 style="margin-top:10px;margin-bottom:15px;">
+                    <a id="gamelist1_exlist1_ctl00_lnkFinal" href="uk/l/eur.html">Показати всі ігри про Європа >></a>
+                </h3>
+            </div>
+        </td>
+	</tr><tr>
+		<td>
+            <div class="sectionhead fullwidth lrg">
+
+                <div class="sectionheadtext areaheading lrg" id="NAM">
+                    Північна Америка
+                </div>
+                <div style="clear: both;"></div>
+
+            </div>
+            <div class="exblock">
+
+                
+
+<div class="gamesublist vertical">
+    
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl00_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Північна та Центральна Америка: Країни (14)" class="flag1 game3015" loading="lazy" src="exlflags/flag-northamerica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Північна та Центральна Америка: Країни (14)" href="uk/vgp/3015.html">Північна та Центральна Америка: Країни</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl01_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Північна та Центральна Америка: Столиці (14)" class="flag1 game3079" loading="lazy" src="exlflags/flag-northamerica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Північна та Центральна Америка: Столиці (14)" href="uk/vgp/3079.html">Північна та Центральна Америка: Столиці</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl02_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Північна Америка: Фізична Карта (30)" class="flag1 game3452" loading="lazy" src="exlflags/flag-northamerica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Північна Америка: Фізична Карта (30)" href="uk/vgp/3452.html">Північна Америка: Фізична Карта</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl03_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Північна та Центральна Америка: Прапори (14)" class="flag1 game2015" loading="lazy" src="exlflags/flag-northamerica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Північна та Центральна Америка: Прапори (14)" href="uk/fl/2015.html">Північна та Центральна Америка: Прапори</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl04_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Центральна Америка: Країни (7)" class="flag1 game3217" loading="lazy" src="exlflags/flag-centralamerica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Центральна Америка: Країни (7)" href="uk/vgp/3217.html">Центральна Америка: Країни</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl05_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Центральна Америка: Столиці (7)" class="flag1 game3266" loading="lazy" src="exlflags/flag-centralamerica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Центральна Америка: Столиці (7)" href="uk/vgp/3266.html">Центральна Америка: Столиці</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl06_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Карибські Острови: Столиці (24)" class="flag1 game3130" loading="lazy" src="exlflags/flag-caribbean.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Карибські Острови: Столиці (24)" href="uk/vgp/3130.html">Карибські Острови: Столиці</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl07_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Кариби: Прапори (13)" class="flag1 game2019" loading="lazy" src="exlflags/flag-caribbean.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Кариби: Прапори (13)" href="uk/fl/2019.html">Кариби: Прапори</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl08_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="США: 50 Штатів (50)" class="flag1 game3003" loading="lazy" src="exlflags/flag-usa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="США: 50 Штатів (50)" href="uk/vgp/3003.html">США: 50 Штатів</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl09_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="США: 50 Штатів (Мульт. версія) (50)" class="flag1 game3285" loading="lazy" src="exlflags/flag-usa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="США: 50 Штатів (Мульт. версія) (50)" href="uk/vgp/3285.html">США: 50 Штатів (Мульт. версія)</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl10_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="США: 13 Колоній (13)" class="flag1 game3044" loading="lazy" src="exlflags/flag-uscolonies.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="США: 13 Колоній (13)" href="uk/vgp/3044.html">США: 13 Колоній</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl11_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="США: Столиці Штатів (51)" class="flag1 game3063" loading="lazy" src="exlflags/flag-usa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="США: Столиці Штатів (51)" href="uk/vgp/3063.html">США: Столиці Штатів</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl12_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="США: Основні Міста (24)" class="flag1 game3095" loading="lazy" src="exlflags/flag-usa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="США: Основні Міста (24)" href="uk/vgp/3095.html">США: Основні Міста</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl13_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="США: Міста (53)" class="flag1 game3094" loading="lazy" src="exlflags/flag-usa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="США: Міста (53)" href="uk/vgp/3094.html">США: Міста</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl14_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Суміжні США: Річки (14)" class="flag1 game3134" loading="lazy" src="exlflags/flag-usa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Суміжні США: Річки (14)" href="uk/vgp/3134.html">Суміжні США: Річки</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl15_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="США: 12 Пам’яток (12)" class="flag1 game3400" loading="lazy" src="exlflags/flag-usa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="США: 12 Пам’яток (12)" href="uk/vgp/3400.html">США: 12 Пам’яток</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl16_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="США: Геофізичні Регіони (13)" class="flag1 game3249" loading="lazy" src="exlflags/flag-usa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="США: Геофізичні Регіони (13)" href="uk/vgp/3249.html">США: Геофізичні Регіони</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl17_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Канада: Міста (9)" class="flag1 game3050" loading="lazy" src="exlflags/flag-canada.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Канада: Міста (9)" href="uk/vgp/3050.html">Канада: Міста</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl18_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Канада: Провінції і Території (13)" class="flag1 game3006" loading="lazy" src="exlflags/flag-canada.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Канада: Провінції і Території (13)" href="uk/vgp/3006.html">Канада: Провінції і Території</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl19_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Канада: Столиці Провінцій (13)" class="flag1 game3028" loading="lazy" src="exlflags/flag-canada.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Канада: Столиці Провінцій (13)" href="uk/vgp/3028.html">Канада: Столиці Провінцій</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl20_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Мексика: Столиці Штатів (31)" class="flag1 game3280" loading="lazy" src="exlflags/flag-mexico.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Мексика: Столиці Штатів (31)" href="uk/vgp/3280.html">Мексика: Столиці Штатів</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl21_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Мексика: Штати (32)" class="flag1 game3078" loading="lazy" src="exlflags/flag-mexico.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Мексика: Штати (32)" href="uk/vgp/3078.html">Мексика: Штати</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+</div>
+
+<div class="gamesublist horizontal" style="width: auto;">
+    
+
+</div>
+
+                <div style="clear: both;"></div>
+                <h3 style="margin-top:10px;margin-bottom:15px;">
+                    <a id="gamelist1_exlist1_ctl01_lnkFinal" href="uk/l/nam.html">Показати всі ігри про Північна Америка >></a>
+                </h3>
+            </div>
+        </td>
+	</tr><tr>
+		<td>
+            <div class="sectionhead fullwidth lrg">
+
+                <div class="sectionheadtext areaheading lrg" id="SAM">
+                    Південна Америка
+                </div>
+                <div style="clear: both;"></div>
+
+            </div>
+            <div class="exblock">
+
+                
+
+<div class="gamesublist vertical">
+    
+            <div id="gamelist1_exlist1_ctl02_subex1_ctl00_ctl00_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Південна Америка: Країни (13)" class="flag1 game3016" loading="lazy" src="exlflags/flag-southamerica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Південна Америка: Країни (13)" href="uk/vgp/3016.html">Південна Америка: Країни</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl02_subex1_ctl00_ctl01_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Південна Америка: Країни та Регіони (Мульт. Версія) (13)" class="flag1 game3339" loading="lazy" src="exlflags/flag-southamerica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Південна Америка: Країни та Регіони (Мульт. Версія) (13)" href="uk/vgp/3339.html">Південна Америка: Країни та Регіони (Мульт. Версія)</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl02_subex1_ctl00_ctl02_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Південна Америка: Столиці (12)" class="flag1 game3017" loading="lazy" src="exlflags/flag-southamerica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Південна Америка: Столиці (12)" href="uk/vgp/3017.html">Південна Америка: Столиці</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl02_subex1_ctl00_ctl03_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Південна Америка: Міста (22)" class="flag1 game3218" loading="lazy" src="exlflags/flag-southamerica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Південна Америка: Міста (22)" href="uk/vgp/3218.html">Південна Америка: Міста</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl02_subex1_ctl00_ctl04_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Латинська Америка: Країни (21)" class="flag1 game3243" loading="lazy" src="exlflags/flag-southamerica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Латинська Америка: Країни (21)" href="uk/vgp/3243.html">Латинська Америка: Країни</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl02_subex1_ctl00_ctl05_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Південна Америка: Фізична Карта (18)" class="flag1 game3451" loading="lazy" src="exlflags/flag-southamerica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Південна Америка: Фізична Карта (18)" href="uk/vgp/3451.html">Південна Америка: Фізична Карта</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl02_subex1_ctl00_ctl06_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Південна Америка: Прапори (12)" class="flag1 game2004" loading="lazy" src="exlflags/flag-southamerica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Південна Америка: Прапори (12)" href="uk/fl/2004.html">Південна Америка: Прапори</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl02_subex1_ctl00_ctl07_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Аргентина: Провінції (23)" class="flag1 game3081" loading="lazy" src="exlflags/flag-argentin.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Аргентина: Провінції (23)" href="uk/vgp/3081.html">Аргентина: Провінції</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl02_subex1_ctl00_ctl08_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Бразилія: Міста (11)" class="flag1 game3106" loading="lazy" src="exlflags/flag-brazil.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Бразилія: Міста (11)" href="uk/vgp/3106.html">Бразилія: Міста</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl02_subex1_ctl00_ctl09_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Бразилія: Штати (27)" class="flag1 game3068" loading="lazy" src="exlflags/flag-brazil.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Бразилія: Штати (27)" href="uk/vgp/3068.html">Бразилія: Штати</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl02_subex1_ctl00_ctl10_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Чилі: Регіони (16)" class="flag1 game3171" loading="lazy" src="exlflags/flag-chile.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Чилі: Регіони (16)" href="uk/vgp/3171.html">Чилі: Регіони</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+</div>
+
+<div class="gamesublist horizontal" style="width: auto;">
+    
+
+</div>
+
+                <div style="clear: both;"></div>
+                <h3 style="margin-top:10px;margin-bottom:15px;">
+                    <a id="gamelist1_exlist1_ctl02_lnkFinal" href="uk/l/sam.html">Показати всі ігри про Південна Америка >></a>
+                </h3>
+            </div>
+        </td>
+	</tr><tr>
+		<td>
+            <div class="sectionhead fullwidth lrg">
+
+                <div class="sectionheadtext areaheading lrg" id="AFR">
+                    Африка
+                </div>
+                <div style="clear: both;"></div>
+
+            </div>
+            <div class="exblock">
+
+                
+
+<div class="gamesublist vertical">
+    
+            <div id="gamelist1_exlist1_ctl03_subex1_ctl00_ctl00_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Африка: Країни (55)" class="flag1 game3163" loading="lazy" src="exlflags/flag-africa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Африка: Країни (55)" href="uk/vgp/3163.html">Африка: Країни</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl03_subex1_ctl00_ctl01_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Африка: Столиці (54)" class="flag1 game3204" loading="lazy" src="exlflags/flag-africa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Африка: Столиці (54)" href="uk/vgp/3204.html">Африка: Столиці</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl03_subex1_ctl00_ctl02_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Африка: Міста (24)" class="flag1 game3231" loading="lazy" src="exlflags/flag-africa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Африка: Міста (24)" href="uk/vgp/3231.html">Африка: Міста</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl03_subex1_ctl00_ctl03_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Африка: Фізична Карта (23)" class="flag1 game3450" loading="lazy" src="exlflags/flag-africa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Африка: Фізична Карта (23)" href="uk/vgp/3450.html">Африка: Фізична Карта</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl03_subex1_ctl00_ctl04_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Африка на Південь від Екватора: Країни (20)" class="flag1 game3036" loading="lazy" src="exlflags/flag-africa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Африка на Південь від Екватора: Країни (20)" href="uk/vgp/3036.html">Африка на Південь від Екватора: Країни</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl03_subex1_ctl00_ctl05_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Африка на Північ від Екватора: Країни (30)" class="flag1 game3035" loading="lazy" src="exlflags/flag-africa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Африка на Північ від Екватора: Країни (30)" href="uk/vgp/3035.html">Африка на Північ від Екватора: Країни</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl03_subex1_ctl00_ctl06_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Західна Африка: Країни (15)" class="flag1 game3038" loading="lazy" src="exlflags/flag-africa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Західна Африка: Країни (15)" href="uk/vgp/3038.html">Західна Африка: Країни</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl03_subex1_ctl00_ctl07_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Західна Африка: Столиці (15)" class="flag1 game3054" loading="lazy" src="exlflags/flag-africa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Західна Африка: Столиці (15)" href="uk/vgp/3054.html">Західна Африка: Столиці</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl03_subex1_ctl00_ctl08_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Південна Африка: Країни (5)" class="flag1 game3041" loading="lazy" src="exlflags/flag-africa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Південна Африка: Країни (5)" href="uk/vgp/3041.html">Південна Африка: Країни</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl03_subex1_ctl00_ctl09_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Південна Африка: Столиці (5)" class="flag1 game3057" loading="lazy" src="exlflags/flag-africa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Південна Африка: Столиці (5)" href="uk/vgp/3057.html">Південна Африка: Столиці</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl03_subex1_ctl00_ctl10_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Північна Африка: Країни (7)" class="flag1 game3037" loading="lazy" src="exlflags/flag-africa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Північна Африка: Країни (7)" href="uk/vgp/3037.html">Північна Африка: Країни</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl03_subex1_ctl00_ctl11_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Північна Африка: Столиці (6)" class="flag1 game3053" loading="lazy" src="exlflags/flag-africa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Північна Африка: Столиці (6)" href="uk/vgp/3053.html">Північна Африка: Столиці</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl03_subex1_ctl00_ctl12_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Східна Африка: Країни (15)" class="flag1 game3040" loading="lazy" src="exlflags/flag-africa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Східна Африка: Країни (15)" href="uk/vgp/3040.html">Східна Африка: Країни</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl03_subex1_ctl00_ctl13_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Східна Африка: Столиці (15)" class="flag1 game3056" loading="lazy" src="exlflags/flag-africa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Східна Африка: Столиці (15)" href="uk/vgp/3056.html">Східна Африка: Столиці</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl03_subex1_ctl00_ctl14_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Центральна Африка: Країни (8)" class="flag1 game3039" loading="lazy" src="exlflags/flag-africa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Центральна Африка: Країни (8)" href="uk/vgp/3039.html">Центральна Африка: Країни</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl03_subex1_ctl00_ctl15_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Центральна Африка: Столиці (8)" class="flag1 game3055" loading="lazy" src="exlflags/flag-africa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Центральна Африка: Столиці (8)" href="uk/vgp/3055.html">Центральна Африка: Столиці</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl03_subex1_ctl00_ctl16_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Африка: Прапори (Складна Версія) (54)" class="flag1 game2017" loading="lazy" src="exlflags/flag-africa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Африка: Прапори (Складна Версія) (54)" href="uk/fl/2017.html">Африка: Прапори (Складна Версія)</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl03_subex1_ctl00_ctl17_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Нігерія: Штати (37)" class="flag1 game3275" loading="lazy" src="exlflags/flag-nigeria.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Нігерія: Штати (37)" href="uk/vgp/3275.html">Нігерія: Штати</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl03_subex1_ctl00_ctl18_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Південно-Африканська Республіка: Провінції (9)" class="flag1 game3058" loading="lazy" src="exlflags/flag-safrica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Південно-Африканська Республіка: Провінції (9)" href="uk/vgp/3058.html">Південно-Африканська Республіка: Провінції</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+</div>
+
+<div class="gamesublist horizontal" style="width: auto;">
+    
+
+</div>
+
+                <div style="clear: both;"></div>
+                <h3 style="margin-top:10px;margin-bottom:15px;">
+                    <a id="gamelist1_exlist1_ctl03_lnkFinal" href="uk/l/afr.html">Показати всі ігри про Африка >></a>
+                </h3>
+            </div>
+        </td>
+	</tr><tr>
+		<td>
+            <div class="sectionhead fullwidth lrg">
+
+                <div class="sectionheadtext areaheading lrg" id="ASI">
+                    Азія
+                </div>
+                <div style="clear: both;"></div>
+
+            </div>
+            <div class="exblock">
+
+                
+
+<div class="gamesublist vertical">
+    
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl00_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Азія: Країни (49)" class="flag1 game3646" loading="lazy" src="exlflags/flag-asia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Азія: Країни (49)" href="uk/vgp/3646.html">Азія: Країни</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl01_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Азія: Столиці (47)" class="flag1 game3647" loading="lazy" src="exlflags/flag-asia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Азія: Столиці (47)" href="uk/vgp/3647.html">Азія: Столиці</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl02_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Азія: Міста (27)" class="flag1 game3110" loading="lazy" src="exlflags/flag-asia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Азія: Міста (27)" href="uk/vgp/3110.html">Азія: Міста</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl03_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Азія: Фізична Карта (28)" class="flag1 game3454" loading="lazy" src="exlflags/flag-asia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Азія: Фізична Карта (28)" href="uk/vgp/3454.html">Азія: Фізична Карта</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl04_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Південна Азія: Країни (8)" class="flag1 game3166" loading="lazy" src="exlflags/flag-asia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Південна Азія: Країни (8)" href="uk/vgp/3166.html">Південна Азія: Країни</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl05_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Південно-Східна Азія: Країни (11)" class="flag1 game3033" loading="lazy" src="exlflags/flag-asia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Південно-Східна Азія: Країни (11)" href="uk/vgp/3033.html">Південно-Східна Азія: Країни</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl06_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Південно-Східна Азія: Міста (11)" class="flag1 game3107" loading="lazy" src="exlflags/flag-asia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Південно-Східна Азія: Міста (11)" href="uk/vgp/3107.html">Південно-Східна Азія: Міста</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl07_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Близький Схід: Країни (17)" class="flag1 game3648" loading="lazy" src="exlflags/flag-asia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Близький Схід: Країни (17)" href="uk/vgp/3648.html">Близький Схід: Країни</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl08_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Близький Схід і Північна Африка: Країни (21)" class="flag1 game3649" loading="lazy" src="exlflags/flag-asia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Близький Схід і Північна Африка: Країни (21)" href="uk/vgp/3649.html">Близький Схід і Північна Африка: Країни</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl09_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Колишній Радянський Союз: Країни (15)" class="flag1 game3048" loading="lazy" src="exlflags/flag-soviet.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Колишній Радянський Союз: Країни (15)" href="uk/vgp/3048.html">Колишній Радянський Союз: Країни</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl10_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Азія: Прапори (Складна версія) (48)" class="flag1 game2065" loading="lazy" src="exlflags/flag-asia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Азія: Прапори (Складна версія) (48)" href="uk/fl/2065.html">Азія: Прапори (Складна версія)</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl11_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Індія: Міста (13)" class="flag1 game3115" loading="lazy" src="exlflags/flag-india.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Індія: Міста (13)" href="uk/vgp/3115.html">Індія: Міста</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl12_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Індія: Штати та Союзні Території (36)" class="flag1 game3369" loading="lazy" src="exlflags/flag-india.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Індія: Штати та Союзні Території (36)" href="uk/vgp/3369.html">Індія: Штати та Союзні Території</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl13_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Індонезія: Провінції (34)" class="flag1 game3219" loading="lazy" src="exlflags/flag-indonesia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Індонезія: Провінції (34)" href="uk/vgp/3219.html">Індонезія: Провінції</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl14_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Китай: Провінції (33)" class="flag1 game3206" loading="lazy" src="exlflags/flag-china.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Китай: Провінції (33)" href="uk/vgp/3206.html">Китай: Провінції</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl15_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Китай: Столиці Провінцій (33)" class="flag1 game3207" loading="lazy" src="exlflags/flag-china.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Китай: Столиці Провінцій (33)" href="uk/vgp/3207.html">Китай: Столиці Провінцій</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl16_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Південна Корея: Провінції (17)" class="flag1 game3180" loading="lazy" src="exlflags/flag-southkorea.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Південна Корея: Провінції (17)" href="uk/vgp/3180.html">Південна Корея: Провінції</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl17_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Японія: Префектури (47)" class="flag1 game3184" loading="lazy" src="exlflags/flag-japan.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Японія: Префектури (47)" href="uk/vgp/3184.html">Японія: Префектури</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl18_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Японія: Регіони (9)" class="flag1 game3089" loading="lazy" src="exlflags/flag-japan.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Японія: Регіони (9)" href="uk/vgp/3089.html">Японія: Регіони</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+</div>
+
+<div class="gamesublist horizontal" style="width: auto;">
+    
+
+</div>
+
+                <div style="clear: both;"></div>
+                <h3 style="margin-top:10px;margin-bottom:15px;">
+                    <a id="gamelist1_exlist1_ctl04_lnkFinal" href="uk/l/asi.html">Показати всі ігри про Азія >></a>
+                </h3>
+            </div>
+        </td>
+	</tr><tr>
+		<td>
+            <div class="sectionhead fullwidth lrg">
+
+                <div class="sectionheadtext areaheading lrg" id="AUS">
+                    Австралія
+                </div>
+                <div style="clear: both;"></div>
+
+            </div>
+            <div class="exblock">
+
+                
+
+<div class="gamesublist vertical">
+    
+            <div id="gamelist1_exlist1_ctl05_subex1_ctl00_ctl00_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Океанія: Країни та Території (23)" class="flag1 game3128" loading="lazy" src="exlflags/flag-oceania.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Океанія: Країни та Території (23)" href="uk/vgp/3128.html">Океанія: Країни та Території</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl05_subex1_ctl00_ctl01_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Океанія: Столиці (21)" class="flag1 game3216" loading="lazy" src="exlflags/flag-oceania.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Океанія: Столиці (21)" href="uk/vgp/3216.html">Океанія: Столиці</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl05_subex1_ctl00_ctl02_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Австралія та Океанія: Прапори (14)" class="flag1 game2018" loading="lazy" src="exlflags/flag-oceania.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Австралія та Океанія: Прапори (14)" href="uk/fl/2018.html">Австралія та Океанія: Прапори</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl05_subex1_ctl00_ctl03_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Австралія: Навколишні Країни (9)" class="flag1 game3061" loading="lazy" src="exlflags/flag-austral.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Австралія: Навколишні Країни (9)" href="uk/vgp/3061.html">Австралія: Навколишні Країни</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl05_subex1_ctl00_ctl04_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Австралія: Фізична Карта (26)" class="flag1 game3455" loading="lazy" src="exlflags/flag-austral.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Австралія: Фізична Карта (26)" href="uk/vgp/3455.html">Австралія: Фізична Карта</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+</div>
+
+<div class="gamesublist horizontal" style="width: auto;">
+    
+
+</div>
+
+                <div style="clear: both;"></div>
+                <h3 style="margin-top:10px;margin-bottom:15px;">
+                    <a id="gamelist1_exlist1_ctl05_lnkFinal" href="uk/l/aus.html">Показати всі ігри про Австралія >></a>
+                </h3>
+            </div>
+        </td>
+	</tr><tr>
+		<td>
+            <div class="sectionhead fullwidth lrg">
+
+                <div class="sectionheadtext areaheading lrg" id="WOR">
+                    Світ
+                </div>
+                <div style="clear: both;"></div>
+
+            </div>
+            <div class="exblock">
+
+                
+
+<div class="gamesublist vertical">
+    
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl00_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Світ: Континенти (7)" class="flag1 game3004" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Світ: Континенти (7)" href="uk/vgp/3004.html">Світ: Континенти</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl01_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Світ: Материки та Океани (12)" class="flag1 game3188" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Світ: Материки та Океани (12)" href="uk/vgp/3188.html">Світ: Материки та Океани</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl02_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Світ: Материки та Океани (Мульт. версія) (12)" class="flag1 game3287" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Світ: Материки та Океани (Мульт. версія) (12)" href="uk/vgp/3287.html">Світ: Материки та Океани (Мульт. версія)</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl03_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Світ: Фізична Карта (23)" class="flag1 game3459" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Світ: Фізична Карта (23)" href="uk/vgp/3459.html">Світ: Фізична Карта</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl04_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="30 Найнаселеніших Країн (30)" class="flag1 game3154" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="30 Найнаселеніших Країн (30)" href="uk/vgp/3154.html">30 Найнаселеніших Країн</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl05_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="30 Найнаселеніших Країн, Столиці (30)" class="flag1 game3232" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="30 Найнаселеніших Країн, Столиці (30)" href="uk/vgp/3232.html">30 Найнаселеніших Країн, Столиці</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl06_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="70 Найнаселеніших Країн (70)" class="flag1 game3156" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="70 Найнаселеніших Країн (70)" href="uk/vgp/3156.html">70 Найнаселеніших Країн</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl07_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="150 Найбільших Країн за Площею (150)" class="flag1 game3198" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="150 Найбільших Країн за Площею (150)" href="uk/vgp/3198.html">150 Найбільших Країн за Площею</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl08_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="150 Найбільших Країн за Площею, Столиці (150)" class="flag1 game3237" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="150 Найбільших Країн за Площею, Столиці (150)" href="uk/vgp/3237.html">150 Найбільших Країн за Площею, Столиці</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl09_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="193 Держави-Учасниці ООН (193)" class="flag1 game3199" loading="lazy" src="exlflags/flag-un.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="193 Держави-Учасниці ООН (193)" href="uk/vgp/3199.html">193 Держави-Учасниці ООН</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl10_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="193 Держави-Учасниці ООН, Столиці (193)" class="flag1 game3238" loading="lazy" src="exlflags/flag-un.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="193 Держави-Учасниці ООН, Столиці (193)" href="uk/vgp/3238.html">193 Держави-Учасниці ООН, Столиці</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl11_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Іспаномовні Країни (21)" class="flag1 game3153" loading="lazy" src="exlflags/flag-spain.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Іспаномовні Країни (21)" href="uk/vgp/3153.html">Іспаномовні Країни</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl12_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Іспаномовні Країни: Столиці (22)" class="flag1 game3160" loading="lazy" src="exlflags/flag-spain.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Іспаномовні Країни: Столиці (22)" href="uk/vgp/3160.html">Іспаномовні Країни: Столиці</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl13_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Франкомовні Країни (29)" class="flag1 game3210" loading="lazy" src="exlflags/flag-france.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Франкомовні Країни (29)" href="uk/vgp/3210.html">Франкомовні Країни</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl14_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Світ: Гори та Вулкани (16)" class="flag1 game3047" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Світ: Гори та Вулкани (16)" href="uk/vgp/3047.html">Світ: Гори та Вулкани</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl15_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Світ: Океани, Моря та Озера (29)" class="flag1 game3072" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Світ: Океани, Моря та Озера (29)" href="uk/vgp/3072.html">Світ: Океани, Моря та Озера</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl16_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Світ: Острови (39)" class="flag1 game3046" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Світ: Острови (39)" href="uk/vgp/3046.html">Світ: Острови</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl17_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Світ: Півострови (21)" class="flag1 game3230" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Світ: Півострови (21)" href="uk/vgp/3230.html">Світ: Півострови</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl18_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Світ: Пустелі (21)" class="flag1 game3245" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Світ: Пустелі (21)" href="uk/vgp/3245.html">Світ: Пустелі</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl19_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Світ: Річки (21)" class="flag1 game3133" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Світ: Річки (21)" href="uk/vgp/3133.html">Світ: Річки</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl20_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Світ: Спірні Території та Відокремлені Регіони (20)" class="flag1 game3247" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Світ: Спірні Території та Відокремлені Регіони (20)" href="uk/vgp/3247.html">Світ: Спірні Території та Відокремлені Регіони</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl21_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Світ: 21 Велике Місто (Мульт. Версія) (21)" class="flag1 game3288" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Світ: 21 Велике Місто (Мульт. Версія) (21)" href="uk/vgp/3288.html">Світ: 21 Велике Місто (Мульт. Версія)</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl22_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Світ: 25 Великих Міст (25)" class="flag1 game3127" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Світ: 25 Великих Міст (25)" href="uk/vgp/3127.html">Світ: 25 Великих Міст</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl23_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Світ: 35 Великих Міст (35)" class="flag1 game3229" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Світ: 35 Великих Міст (35)" href="uk/vgp/3229.html">Світ: 35 Великих Міст</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl24_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Світ: Прапори (16)" class="flag1 game2007" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Світ: Прапори (16)" href="uk/fl/2007.html">Світ: Прапори</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl25_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Світ: Прапори (Складна Версія) (105)" class="flag1 game2008" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Світ: Прапори (Складна Версія) (105)" href="uk/fl/2008.html">Світ: Прапори (Складна Версія)</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl26_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Світ: Прапори (Дуже складна версія) (192)" class="flag1 game2022" loading="lazy" src="exlflags/flag-un.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Світ: Прапори (Дуже складна версія) (192)" href="uk/fl/2022.html">Світ: Прапори (Дуже складна версія)</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl27_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Світ: Чудеса та Визначні Пам’ятки (14)" class="flag1 game3401" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Світ: Чудеса та Визначні Пам’ятки (14)" href="uk/vgp/3401.html">Світ: Чудеса та Визначні Пам’ятки</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl28_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Сонячна Система: Планети (8)" class="flag1 game3123" loading="lazy" src="exlflags/flag-solar.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Сонячна Система: Планети (8)" href="uk/vgp/3123.html">Сонячна Система: Планети</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+</div>
+
+<div class="gamesublist horizontal" style="width: auto;">
+    
+
+</div>
+
+                <div style="clear: both;"></div>
+                <h3 style="margin-top:10px;margin-bottom:15px;">
+                    <a id="gamelist1_exlist1_ctl06_lnkFinal" href="uk/l/wor.html">Показати всі ігри про Світ >></a>
+                </h3>
+            </div>
+        </td>
+	</tr>
+</table>
+
+
+</div>
+
+                                </div>
+                                <br />
+                                <hr />
+                                <div style="direction: ltr" lang="en">
+                                    <span id="lblGameCount" dir="ltr"><p>In <b>Ukrainian (Українська)</b>, 2,452 games were played yesterday.</p></span>
+                                </div>
+                                <br />
+                                <br />
+                                -
+                                <br />
+
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                    <div style="width: 100%; clear: both;padding-top:50px;">
+                        <div style="margin: auto;width:600px;text-align:center">
+                            <img src="images/system/plan-international.jpg" alt="Plan International Corporate Partner 2021" />
+                        <br />
+                            <div style="direction:ltr;">As a Corporate Partner, Seterra Geography supports <a href="https://plan-international.org/">Plan International</a> / <a href="https://plansverige.org/for-foretag/partnerskap/">Plan Sverige</a>, advancing childrenï¿½s rights in more than 70 countries.</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="rtcol">
+                    <div id="panApp">
+	
+                        <div class="applinks">
+
+                            <a href="https://itunes.apple.com/us/app/seterra-geography-full/id1093460065">
+                                <img src="images/system/appstore_en.png" style="padding-right: 20px; width: 150px; height: 45px;" /></a><br />
+                            <a href="https://play.google.com/store/apps/details?id=com.seterra">
+                                <img src="images/system/googleplay_en.png" style="padding-right: 20px; width: 150px; height: 45px;"></a>
+                        </div>
+                    
+</div>
+
+                    
+                    <br />
+
+
+                </div>
+
+
+
+                <div id="panFeatured">
+	
+                    <div class="featureddiv">
+                        
+<div>
+
+    
+               <div class="featureditem">
+                   <a id="featured_repFeatured_ctl00_lnkItem" class="featured" href="uk/vgp/3205.html">
+                        <div class="divFeaturedImage">
+                            <img id="featured_repFeatured_ctl00_imgImage" title="Україна: Регіони" class="featuredimage" loading="lazy" src="images/system/ukraine_150.jpg" alt="Україна: Регіони" height="100" width="150" border="0" />
+                        </div>
+                        <h4 style="margin:0px"><span id="featured_repFeatured_ctl00_lblTitle">Україна: Регіони</span></h4>
+                        <p style="margin:0px"><span id="featured_repFeatured_ctl00_lblDescription">Вікторини – Карти</span></p>
+                        <div style="clear:both"></div>
+                    </a>
+               </div>
+        
+               <div class="featureditem">
+                   <a id="featured_repFeatured_ctl01_lnkItem" class="featured" href="uk/vgp/3287.html">
+                        <div class="divFeaturedImage">
+                            <img id="featured_repFeatured_ctl01_imgImage" title="Світ: Материки та Океани (Мульт. версія)" class="featuredimage" loading="lazy" src="images/system/cartoon-world_150.jpg" alt="Світ: Материки та Океани (Мульт. версія)" height="100" width="150" border="0" />
+                        </div>
+                        <h4 style="margin:0px"><span id="featured_repFeatured_ctl01_lblTitle">Світ: Материки та Океани (Мульт. версія)</span></h4>
+                        <p style="margin:0px"><span id="featured_repFeatured_ctl01_lblDescription">Вікторини – Карти</span></p>
+                        <div style="clear:both"></div>
+                    </a>
+               </div>
+        
+               <div class="featureditem">
+                   <a id="featured_repFeatured_ctl02_lnkItem" class="featured" href="uk/vgp/3334.html">
+                        <div class="divFeaturedImage">
+                            <img id="featured_repFeatured_ctl02_imgImage" title="Середземне море: Країни та Острови" class="featuredimage" loading="lazy" src="mapimage/thumbs150/3334.png" alt="Середземне море: Країни та Острови" height="100" width="150" border="0" />
+                        </div>
+                        <h4 style="margin:0px"><span id="featured_repFeatured_ctl02_lblTitle">Середземне море: Країни та Острови</span></h4>
+                        <p style="margin:0px"><span id="featured_repFeatured_ctl02_lblDescription">Вікторини – Карти</span></p>
+                        <div style="clear:both"></div>
+                    </a>
+               </div>
+        
+               <div class="featureditem">
+                   <a id="featured_repFeatured_ctl03_lnkItem" class="featured" href="uk/vgp/3163.html">
+                        <div class="divFeaturedImage">
+                            <img id="featured_repFeatured_ctl03_imgImage" title="Африка: Країни" class="featuredimage" loading="lazy" src="mapimage/thumbs150/3163.png" alt="Африка: Країни" height="100" width="150" border="0" />
+                        </div>
+                        <h4 style="margin:0px"><span id="featured_repFeatured_ctl03_lblTitle">Африка: Країни</span></h4>
+                        <p style="margin:0px"><span id="featured_repFeatured_ctl03_lblDescription">Вікторини – Карти</span></p>
+                        <div style="clear:both"></div>
+                    </a>
+               </div>
+        
+               <div class="featureditem">
+                   <a id="featured_repFeatured_ctl04_lnkItem" class="featured" href="uk/vgp/3007.html">
+                        <div class="divFeaturedImage">
+                            <img id="featured_repFeatured_ctl04_imgImage" title="Європа: Країни" class="featuredimage" loading="lazy" src="mapimage/thumbs150/3007.png" alt="Європа: Країни" height="100" width="150" border="0" />
+                        </div>
+                        <h4 style="margin:0px"><span id="featured_repFeatured_ctl04_lblTitle">Європа: Країни</span></h4>
+                        <p style="margin:0px"><span id="featured_repFeatured_ctl04_lblDescription">Вікторини – Карти</span></p>
+                        <div style="clear:both"></div>
+                    </a>
+               </div>
+        
+               <div class="featureditem">
+                   <a id="featured_repFeatured_ctl05_lnkItem" class="featured" href="uk/vgp/3030.html">
+                        <div class="divFeaturedImage">
+                            <img id="featured_repFeatured_ctl05_imgImage" title="Німеччина: Міста" class="featuredimage" loading="lazy" src="mapimage/thumbs150/3030.png" alt="Німеччина: Міста" height="100" width="150" border="0" />
+                        </div>
+                        <h4 style="margin:0px"><span id="featured_repFeatured_ctl05_lblTitle">Німеччина: Міста</span></h4>
+                        <p style="margin:0px"><span id="featured_repFeatured_ctl05_lblDescription">Вікторини – Карти</span></p>
+                        <div style="clear:both"></div>
+                    </a>
+               </div>
+        
+               <div class="featureditem">
+                   <a id="featured_repFeatured_ctl06_lnkItem" class="featured" href="uk/vgp/3202.html">
+                        <div class="divFeaturedImage">
+                            <img id="featured_repFeatured_ctl06_imgImage" title="Світ: Країни-Учасниці ОЕСР" class="featuredimage" loading="lazy" src="mapimage/thumbs150/3202.png" alt="Світ: Країни-Учасниці ОЕСР" height="100" width="150" border="0" />
+                        </div>
+                        <h4 style="margin:0px"><span id="featured_repFeatured_ctl06_lblTitle">Світ: Країни-Учасниці ОЕСР</span></h4>
+                        <p style="margin:0px"><span id="featured_repFeatured_ctl06_lblDescription">Вікторини – Карти</span></p>
+                        <div style="clear:both"></div>
+                    </a>
+               </div>
+        
+               <div class="featureditem">
+                   <a id="featured_repFeatured_ctl07_lnkItem" class="featured" href="uk/vgp/3046.html">
+                        <div class="divFeaturedImage">
+                            <img id="featured_repFeatured_ctl07_imgImage" title="Світ: Острови" class="featuredimage" loading="lazy" src="images/system/island_150.jpg" alt="Світ: Острови" height="100" width="150" border="0" />
+                        </div>
+                        <h4 style="margin:0px"><span id="featured_repFeatured_ctl07_lblTitle">Світ: Острови</span></h4>
+                        <p style="margin:0px"><span id="featured_repFeatured_ctl07_lblDescription">Вікторини – Карти</span></p>
+                        <div style="clear:both"></div>
+                    </a>
+               </div>
+        
+               <div class="featureditem">
+                   <a id="featured_repFeatured_ctl08_lnkItem" class="featured" href="uk/vgp/3184.html">
+                        <div class="divFeaturedImage">
+                            <img id="featured_repFeatured_ctl08_imgImage" title="Японія: Префектури" class="featuredimage" loading="lazy" src="images/system/japan_150.jpg" alt="Японія: Префектури" height="100" width="150" border="0" />
+                        </div>
+                        <h4 style="margin:0px"><span id="featured_repFeatured_ctl08_lblTitle">Японія: Префектури</span></h4>
+                        <p style="margin:0px"><span id="featured_repFeatured_ctl08_lblDescription">Вікторини – Карти</span></p>
+                        <div style="clear:both"></div>
+                    </a>
+               </div>
+        
+               <div class="featureditem">
+                   <a id="featured_repFeatured_ctl09_lnkItem" class="featured" href="uk/vgp/3047.html">
+                        <div class="divFeaturedImage">
+                            <img id="featured_repFeatured_ctl09_imgImage" title="Світ: Гори та Вулкани" class="featuredimage" loading="lazy" src="images/system/volcano_150.jpg" alt="Світ: Гори та Вулкани" height="100" width="150" border="0" />
+                        </div>
+                        <h4 style="margin:0px"><span id="featured_repFeatured_ctl09_lblTitle">Світ: Гори та Вулкани</span></h4>
+                        <p style="margin:0px"><span id="featured_repFeatured_ctl09_lblDescription">Вікторини – Карти</span></p>
+                        <div style="clear:both"></div>
+                    </a>
+               </div>
+        
+               <div class="featureditem">
+                   <a id="featured_repFeatured_ctl10_lnkItem" class="featured" href="uk/vgp/3050.html">
+                        <div class="divFeaturedImage">
+                            <img id="featured_repFeatured_ctl10_imgImage" title="Канада: Міста" class="featuredimage" loading="lazy" src="images/system/toronto_150.jpg" alt="Канада: Міста" height="100" width="150" border="0" />
+                        </div>
+                        <h4 style="margin:0px"><span id="featured_repFeatured_ctl10_lblTitle">Канада: Міста</span></h4>
+                        <p style="margin:0px"><span id="featured_repFeatured_ctl10_lblDescription">Вікторини – Карти</span></p>
+                        <div style="clear:both"></div>
+                    </a>
+               </div>
+        
+               <div class="featureditem">
+                   <a id="featured_repFeatured_ctl11_lnkItem" class="featured" href="uk/vgp/3323.html">
+                        <div class="divFeaturedImage">
+                            <img id="featured_repFeatured_ctl11_imgImage" title="Велика Британія: Боро Лондона" class="featuredimage" loading="lazy" src="https://www.geoguessr.com/seterra/images/system/london_150.jpg" alt="Велика Британія: Боро Лондона" height="100" width="150" border="0" />
+                        </div>
+                        <h4 style="margin:0px"><span id="featured_repFeatured_ctl11_lblTitle">Велика Британія: Боро Лондона</span></h4>
+                        <p style="margin:0px"><span id="featured_repFeatured_ctl11_lblDescription">Вікторини – Карти</span></p>
+                        <div style="clear:both"></div>
+                    </a>
+               </div>
+        
+               <div class="featureditem">
+                   <a id="featured_repFeatured_ctl12_lnkItem" class="featured" href="uk/vgp/3700.html">
+                        <div class="divFeaturedImage">
+                            <img id="featured_repFeatured_ctl12_imgImage" title="Франція: Винні Регіони" class="featuredimage" loading="lazy" src="images/system/wine_150.jpg" alt="Франція: Винні Регіони" height="100" width="150" border="0" />
+                        </div>
+                        <h4 style="margin:0px"><span id="featured_repFeatured_ctl12_lblTitle">Франція: Винні Регіони</span></h4>
+                        <p style="margin:0px"><span id="featured_repFeatured_ctl12_lblDescription">Вікторини – Карти</span></p>
+                        <div style="clear:both"></div>
+                    </a>
+               </div>
+        
+</div>
+
+
+                    </div>
+                
+</div>
+                <div style="clear: both;"></div>
+            </div>
+            
+
+<div id="footer">
+    <div id="footercontent">
+        <div class="smediawrapper">
+            <a href="https://www.twitch.tv/directory/game/Seterra/videos/all" style="text-decoration: none;">
+                <img alt="Twitch" class="smedia smediatwitch" src="images/system/twitch.png" style="width: 35px; height: 35px;" /></a>
+            <a href="https://discord.gg/kW8Y3AG9wk" style="text-decoration: none;">
+                <img alt="Discord" class="smedia " src="images/system/discord.png" style="width: 35px; height: 35px;" /></a>
+            <a href="https://www.facebook.com/seterra.geography" style="text-decoration: none;">
+                <img alt="Facebook" class="smedia" src="images/system/facebook.png" style="width: 35px; height: 35px;" /></a>
+            <a href="https://twitter.com/SeterraGeo">
+                <img alt="Twitter" class="smedia" src="images/system/twitter.png" style="width: 35px; height: 35px;" /></a>
+            <a href="https://www.youtube.com/c/seterrageography">
+                <img alt="Youtube" class="smedia" src="images/system/youtube3.png" style="width: 35px; height: 35px;" /></a>
+            <a href="https://bit.ly/2SntfBU">
+                <img alt="Instagram" class="smedia" src="images/system/instagram.png" style="width: 35px; height: 35px;" /></a>
+        </div>
+        <div style="max-width: 900px;">
+            <div class="footerMenu"><div class="title">Help Center</div>  <ul> <li><a href="en/p/contact.html">Contact Us</a></li> <li><a href="en/p/faq.html">FAQ (Website)</a></li> <li><a href="en/p/app-faq.html">FAQ (App)</a></li> <li><a href="en/p/tips-and-tricks.html">Tips & Tricks</a></li> <li><a href="pro.html">Pricing</a></li> <li><a href="en/blog.html">Blog</a></li> </ul>  </div>  <div class="footerMenu"><div class="title">&nbsp;</div>  <ul>  <li><a href="en/p/seterra-modes.html">Game Modes</a></li> <li><a href="en/p/seterra-highscores.html">Personal Leaderboards</a></li> <li><a href="en/p/custom-quizzes.html">Create Custom Quizzes</a></li> <li><a href="en/p/public-leaderboards.html">Public Leaderboards</a></li> <li><a href="en/p/custom-locations.html">Add Custom Locations</a></li>    </ul>  </div>  <div class="footerMenu"><div class="title">Resources</div> <ul> <li><a href="en/l/pdf%EF%B9%96img=1.html">Printables</a></li> <li><a href="en/l/bla.html">Blank Maps</a></li> <li><a href="en/p/user-quizzes.html">User Generated Quizzes</a></li> <li><a href="en-an.html">Science Quizzes</a></li> <li><a href="en/p/top-scores.html">Top Scores</a></li> <li><a href="https://www.speedrun.com/seterra">Speedrun.com</a></li> </ul>  </div>  <div class="footerMenu"><div class="title">About</div>  <ul> <li><a href="terms.aspx.html">Terms & Conditions</a></li> <li><a href="privacy.aspx.html">Privacy Policy</a></li> <li><a href="en/p/contact.html">Contact Us</a></li> </ul>  </div>  <div style="clear:both"></div><br><br><span style="padding-left:20px;font-size:13px;color:#AAAAAA">2/1/2023 9:04:38 PM</span>
+        </div>
+        <div style="clear:both"></div>
+        <div id="ccpa" style="display: none; cursor: pointer;margin-top:20px;">Do not share my Personal Information.</div>
+    </div>
+</div>
+
+
+
+        </div>
+    </form>
+
+</body>
+</html>

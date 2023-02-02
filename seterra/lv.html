@@ -1,0 +1,2904 @@
+
+
+<!DOCTYPE html >
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="lv">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="twitter:image" content="https://www.geoguessr.com/seterra/img/phones.png" /><meta name="og:image" content="https://www.geoguessr.com/seterra/img/phones.png" /><meta name="twitter:description" content="Seterra ir bezmaksas karšu viktorīnas spēle, kas jums iemācīs visu par valstīm, pilsētām un citiem ģeogrāfiskiem objektiem visā pasaulē." /><meta name="twitter:creator" content="@seterrageo" /><meta name="twitter:site" content="@seterrageo" /><meta name="twitter:title" content="Seterra - Nepārspējamā karšu viktorīnu tīmekļa vietne" /><meta name="twitter:card" content="summary_large_image" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="Scripts/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script src="Scripts/jquery.cookie.js" type="text/javascript"></script>
+    <meta name="apple-itunes-app" content="app-id=1093460065" /><link href="CSS/pagestyles.css" rel="stylesheet" type="text/css" /><link href="CSS/geoguessr.css" rel="stylesheet" type="text/css" />
+    <script src="Scripts/general.js" type="text/javascript"></script>
+
+    
+
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<script type="text/javascript" src="Scripts/jquery.ddslick.min.js"></script>
+<script src="Scripts/utils.js"></script>
+<script src="Scripts/highscores.js"></script>
+
+
+    
+     <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <!-- Google Tag Manager -->
+    
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-W5K3B7M');</script>    
+    
+    <!-- End Google Tag Manager -->
+
+    <script>
+        var activeUnits = [
+            'gg-seterra_sidebar_right',
+            'gg-seterra_sidebar_right_2',
+            'gg-seterra_mobile_1',
+            'gg-seterra_headerleader',
+            'gg-seterra_nvu-and-float',
+            'gg-seterra_learboard_adhesion',
+            'gg-seterra_bottom_mpu',
+            'gg-seterra_outstream_mw'
+        ];
+
+        if (window.isProUser()) {
+            activeUnits = [];
+        }
+
+        window.snigelPubConf = {
+            "adengine": {
+                "activeAdUnits": activeUnits
+            }
+        };
+    </script>
+
+    
+        <script async data-cfasync="false" src="https://cdn.snigelweb.com/adengine/geoguessr.com/loader.js" type="text/javascript"></script>
+    <meta name="Description" content="Seterra ir bezmaksas karšu viktorīnas spēle, kas jums iemācīs visu par valstīm, pilsētām un citiem ģeogrāfiskiem objektiem visā pasaulē." /><link rel="canonical" href="lv.html" /><meta property="og:type" content="website" /><title>
+	Seterra - Nepārspējamā karšu viktorīnu tīmekļa vietne
+</title></head>
+
+<body>
+    <script>
+        var lang ='lv'
+    </script>
+    <form name="form1" method="post" action="lv.html" id="form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTExMjIyODY0NWRkGR8obKExxmLBiG908nSG6CiHoaZFtYz7pic+k3Qd4Hs=" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="ED111DFB" />
+        
+<script async src="https://cse.google.com/cse.js?cx=1110b678f1dd23364"></script>
+<script>
+    function getCookie(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+
+    function hasDarkMode(url) {
+        var res = true
+        if (url.indexOf("terms.aspx") != -1) {
+            res = false
+        }
+        if (url.indexOf("privacy.aspx") != -1) {
+            res = false
+        }
+        if (url.indexOf("searchresults.aspx") != -1) {
+            res = false
+        }
+
+        return res
+    }
+
+    var darkmode = getCookie("darkmode");
+
+    if (hasDarkMode(window.location.href) == true) {
+        if (darkmode == "1" && (window.location.href.indexOf("darkmode") == -1)) {
+            document.write('<link rel="stylesheet" type="text/css" href="/seterra/css/darkmode.css" />');
+            
+        }
+        if (window.location.href.indexOf("noborders=1") != -1) {
+            document.write('<link rel="stylesheet" type="text/css" href="/seterra/css/noborders.css" />');
+        }
+
+        if (window.location.href.indexOf("darkmap=1") != -1) {
+            document.write('<link rel="stylesheet" type="text/css" href="/seterra/css/darkmap.css" />');
+        }
+    }
+
+    $(document).ready(function () {
+        if (window.location.href.indexOf("darkmode=0") != -1) {
+            $.cookie('darkmode', '0', { path: '/', expires: 14 });
+        }
+        if ($.cookie('darkmode') == "1" || window.location.href.indexOf("darkmode=1") != -1) {
+            $('#chkDarkMode').prop('checked', true);
+        }
+        setTimeout(function () {
+            if (document.getElementById("gsc-i-id1")) {
+                document.getElementById("gsc-i-id1").setAttribute("placeholder", "Search Seterra")
+            }
+        }, 1000);
+
+    })
+</script>
+
+
+ 
+<script>
+    $(document).ready(function () {
+        if (!!$.cookie('pledges')) {
+            $("#patreon-banner").show();
+        }
+    });
+</script>
+
+<style>#patreon-banner
+{
+    border-color: rgba(255, 216, 0, 0.5);
+    background-color: rgba(255, 216, 0, 0.2);
+}
+
+.patreon-banner-content {
+    margin:auto;
+    padding: 0.5rem;
+    max-width:1250px;
+}
+</style>
+
+<div id="patreon-banner" style="display:none;">
+    <div class="patreon-banner-content">
+        <p>
+            Patreon will be replaced with our GeoGuessr subscription.
+
+        <a href="patreon.html">Read more about the change here.</a>
+        </p>
+    </div>
+</div>
+ 
+
+<div id="header">
+    <div id="header-content-wrapper">
+        <div id="logo">
+            <a href="index.html">
+                <img src="images/system/gg-seterra-logo.png" class="wordmark" alt="Seterra logo"/>
+            </a>
+        </div>
+        <div id="divLanguageDropDown"></div>
+        <div class="spacer">
+            <div style="padding-top: 70px; padding-left: 20px; color: #888888;">
+                <input type="checkbox" id="chkDarkMode" onclick="loadDarkMode()" />
+                <label for="chkDarkMode">🌙 Dark Mode</label>
+            </div>
+
+            <div style="padding-top: 70px; padding-left: 20px; color: #888888; display: none;">
+                &nbsp;
+            </div>
+
+        </div>
+
+
+        <div id="socialmedia">
+
+            <div class="searchbox">
+                <div class="gcse-searchbox-only" data-resultsurl="/seterra/searchresults.aspx" data-autocompletemaxcompletions="35"></div>
+            </div>
+            <div class="mobilemenu">
+                <div class="mobilemenucontainer" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+            <div class="login-buttons">
+                <div id="logindiv">
+                    <span id="text-login" class="mem-login">Log in:</span>
+                    <a id="header1_linkLoginPatreon" class="mem-login linkLogin linkLoginPatreon" href="https://www.patreon.com/oauth2/authorize?response_type=code&amp;scope=users%20pledges-to-me%20my-campaign&amp;client_id=3865155315c95a00e278b2c3bd3a5b66ddf2c12b8fe486317e74a0e392eb1ec3&amp;redirect_uri=https://www.geoguessr.com/seterra/memberRedirect.aspx">Patreon</a>
+                    <a id="header1_linkLogoutPatreon" class="mem-login linkLogout linkLogoutPatreon" href="logout2.aspx.html">Log out</a>
+                    <a id="header1_linkLoginGeoGuessr" class="mem-login linkLogin linkLoginGeoGuessr" href="../signin%EF%B9%96target=%EA%A4%B7seterra.html">GeoGuessr</a>
+                    <a id="header1_linkLogoutGeoGuessr" class="mem-login linkLogout linkLogoutGeoGuessr" href="../signout%EF%B9%96target=%EA%A4%B7seterra.html">Log out</a>
+                </div>
+                <div id="loginName"></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="mobiledropdown" style="display: none">
+    <div class="mobiledropdowninner">
+        <div id="mainnav2" style="margin-bottom: 15px;">
+        </div>
+        <div style="margin-bottom: 15px;">
+            <a id="lnkDarkModeOn" class="navlink2" href="index.html" onclick="$('#chkDarkMode').prop('checked', true);loadDarkMode();return false;">Dark Mode On 🌙 </a>
+            <a id="lnkDarkModeOff" class="navlink2" href="index.html" onclick="$('#chkDarkMode').prop('checked', false);loadDarkMode();return false;">Dark Mode Off 🌙 </a>
+            <a id="lnkMyCustomQuizzes" class="navlink2 linkLogout" href='GenericErrorPage%EF%B9%96aspxerrorpath=%EA%A4%B7seterra%EA%A4%B7lv%EA%A4%B7myaccount.aspx.htm'>My Custom Quizzes </a>
+
+            <a class="navlink2" href="index.html">Change language</a>
+
+            <div id="login2">
+            </div>
+            <div id="search2">
+                        <gcse:searchbox-only resultsurl="/seterra/searchresults.aspx"></gcse:searchbox-only>
+                </div>
+        </div>
+    </div>
+</div>
+<script>
+    var fFirst = true;
+    pageLang = 'lv';
+
+    if (pageLang == '') pageLang = 'en';
+    pageLang = pageLang.toLowerCase();
+
+    if (window.location.href.indexOf("searchresult") == -1) {
+        $.cookie('recentlang', pageLang, { path: '/', expires: 14 });
+    }
+
+    function myFunction(x) {
+        x.classList.toggle("change");
+        var y = document.getElementsByClassName("mobiledropdown")[0];
+
+        if (y.style.display === "none") {
+            y.style.display = "block";
+        } else {
+            y.style.display = "none";
+        }
+    }
+
+    $(document).ready(function () {
+        var strMenu = "";
+        var navLinks = document.getElementsByClassName("navlink");
+        var i = 0;
+        var currentPage = window.location.pathname;
+        for (i; i < navLinks.length; i++) {
+            var lb = navLinks[i].getAttribute("href")
+            if (lb == currentPage) {
+                navLinks[i].classList.add("active")
+            }
+            strMenu = strMenu + navLinks[i].outerHTML;
+
+        }
+
+        $("#mainnav2").html(strMenu);
+        if (document.documentElement.clientWidth <= 820) {
+            $("#logindiv").appendTo("#login2")
+        };
+
+        var ddBasic = [
+        { text: "Afrikaans", imageSrc: "/seterra/images/system/flags/langlistflags/flag-af.png", value: "af", selected: false}, { text: "Čeština (Czech)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-cs.png", value: "cs", selected: false}, { text: "Català (Catalan)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ca.png", value: "ca", selected: false}, { text: "Dansk (Danish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-da.png", value: "da", selected: false}, { text: "Deutsch (German)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-de.png", value: "de", selected: false}, { text: "English", imageSrc: "/seterra/images/system/flags/langlistflags/flag-en.png", value: "en", selected: false}, { text: "Eesti (Estonian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-et.png", value: "et", selected: false}, { text: "Español (Spanish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-es.png", value: "es", selected: false}, { text: "Français (French)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-fr.png", value: "fr", selected: false}, { text: "Ελληνικά (Greek)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-el.png", value: "el", selected: false}, { text: "Gaeilge (Irish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ga.png", value: "ga", selected: false}, { text: "Hrvatski (Croatian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-hr.png", value: "hr", selected: false}, { text: "Bahasa Indonesia (Indonesian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-id.png", value: "id", selected: false}, { text: "Íslenska (Icelandic)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-is.png", value: "is", selected: false}, { text: "Italiano (Italian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-it.png", value: "it", selected: false}, { text: "Latviešu valoda (Latvian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-lv.png", value: "lv", selected: false}, { text: "Lietuvių (Lithuanian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-lt.png", value: "lt", selected: false}, { text: "Magyar (Hungarian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-hu.png", value: "hu", selected: false}, { text: "Nederlands (Dutch)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-nl.png", value: "nl", selected: false}, { text: "Norsk (Norwegian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-nb.png", value: "nb", selected: false}, { text: "Polski (Polish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-pl.png", value: "pl", selected: false}, { text: "Português (Portuguese)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-pt.png", value: "pt", selected: false}, { text: "Română (Romanian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ro.png", value: "ro", selected: false}, { text: "русский (Russian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ru.png", value: "ru", selected: false}, { text: "Shqip (Albanian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-sq.png", value: "sq", selected: false}, { text: "Slovenský jazyk (Slovak)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-sk.png", value: "sk", selected: false}, { text: "Slovenski jezik (Slovene)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-sl.png", value: "sl", selected: false}, { text: "српски (Serbian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-sr.png", value: "sr", selected: false}, { text: "Suomi (Finnish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-fi.png", value: "fi", selected: false}, { text: "Svenska (Swedish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-sv.png", value: "sv", selected: false}, { text: "Türkçe (Turkish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-tr.png", value: "tr", selected: false}, { text: "Українська (Ukrainian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-uk.png", value: "uk", selected: false}, { text: "Oʻzbekcha (Uzbek)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-uz.png", value: "uz", selected: false}, { text: "አማርኛ (Amharic)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-am.png", value: "am", selected: false}, { text: "العربية (Arabic)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ar.png", value: "ar", selected: false}, { text: "فارسی (Persian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-fa.png", value: "fa", selected: false}, { text: "български (Bulgarian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-bg.png", value: "bg", selected: false}, { text: "中文 (Chinese (simplified))", imageSrc: "/seterra/images/system/flags/langlistflags/flag-zh.png", value: "zh", selected: false}, { text: "עִבְרִית‎ (Hebrew)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-he.png", value: "he", selected: false}, { text: "हिन्दी (Hindi)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-hi.png", value: "hi", selected: false}, { text: "தமிழ் (Tamil)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ta.png", value: "ta", selected: false}, { text: "සිංහල (Sinhala)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-si.png", value: "si", selected: false}, { text: "日本語 (Japanese)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ja.png", value: "ja", selected: false}, { text: "한국어 (Korean)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ko.png", value: "ko", selected: false}, { text: "ไทย (Thai)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-th.png", value: "th", selected: false}
+        ];
+        var fFound = false;
+        for (var i = 0; i < ddBasic.length; i++) {
+            if (ddBasic[i].value == pageLang) {
+                ddBasic[i].selected = true;
+                fFound = true;
+            }
+        }
+
+        if (fFound == true) {
+            $('#divLanguageDropDown').ddslick({
+                data: ddBasic,
+                
+                selectText: "Select language",
+                imagePosition: "left",
+                onSelected: function (data) {
+                    if (fFirst == false) {
+                        window.location = "/seterra/" + data.selectedData.value;
+                    }
+                    fFirst = false;
+                }
+            })
+
+        }
+        else {
+            $('#divLanguageDropDown').hide;
+        }
+
+        $(".dd-selected-image").attr("alt", "Flag " + pageLang)
+
+    })
+</script>
+
+        <div>
+            <div class="search-results">
+                <gcse:searchresults></gcse:searchresults>
+            </div>
+            <div id="contentwrapper">
+                <div id="leftcol">
+                    <div id="mainbanner">
+	
+                        <img id="imgMain" src="images/system/banners/world.jpg" alt="Ģeogrāfijas spēles" border="0" />
+
+                    
+</div>
+                    <div id="maincontent">
+                        <div id="breadcrumbs">
+                            <span id="breadcrumbs1"><a href='index.html' >Home</a> >> Seterra - Nepārspējamā karšu viktorīnu tīmekļa vietne</span>
+                        </div>
+
+                        <div class="sectioncontent">
+                            <h1 class="header">
+                                <span class='titleleft'>Seterra </span><span class='titlert'>- Nepārspējamā karšu viktorīnu tīmekļa vietne</span>
+                            </h1>
+                            <div id="panPreamble">
+	
+                                <div class="preambleExlist">
+                                    Kļūsti par ģeogrāfijas ekspertu un izklaidējies vienlaicīgi! "Seterra" ir izklaidējoši izglītojoša ģeogrāfijas spēle, kas tev dod pieeju vairāk nekā 300 dažādām pielāgojamām viktorīnām. "Seterra" tevi izaicinās ar viktorīnām par valstīm, galvaspilsētām, karogiem, okeāniem, ezeriem un daudz ko citu! Darbību uzsākusi 1997. gadā un pieejama 40 dažādās valodās, "Seterra" ir palīdzējusi tūkstošiem cilvēku mācīties ģeogrāfiju un mācīties par savu pasauli.
+                                </div>
+                            
+</div>
+                            <div id="gameselect" style="margin-top: 17px;">
+
+                                <div class="exblock">
+                                    <div id="gamelist1_listtype" class="listtoggle">
+    <a id="gamelist1_btnhoriz" class="enabledlink" href="http://www.geoguessr.com/seterra/lv?img=1">Skatīt kā attēlus</a>
+    <a id="gamelist1_btnvert" disabled="disabled" class="disabledlink">Skatīt kā tekstu</a>
+</div>
+<div id="gamelist" style="width:100%">
+    <table id="gamelist1_exlist1" cellspacing="0" border="0" width="100%">
+	<tr>
+		<td>
+            <div class="sectionhead fullwidth lrg">
+
+                <div class="sectionheadtext areaheading lrg" id="EUR">
+                    Eiropa
+                </div>
+                <div style="clear: both;"></div>
+
+            </div>
+            <div class="exblock">
+
+                
+
+<div class="gamesublist vertical">
+    
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl00_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Eiropa: Valstis (46)" class="flag1 game3007" loading="lazy" src="exlflags/flag-europe.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Eiropa: Valstis (46)" href="lv/vgp/3007.html">Eiropa: Valstis</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl01_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Eiropa: Valstis (karikatūras versija) (46)" class="flag1 game3286" loading="lazy" src="exlflags/flag-europe.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Eiropa: Valstis (karikatūras versija) (46)" href="lv/vgp/3286.html">Eiropa: Valstis (karikatūras versija)</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl02_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Eiropas Savienība: Valstis (27)" class="flag1 game3387" loading="lazy" src="exlflags/flag-eu.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Eiropas Savienība: Valstis (27)" href="lv/vgp/3387.html">Eiropas Savienība: Valstis</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl03_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Eiropa: Galvaspilsētas (39)" class="flag1 game3051" loading="lazy" src="exlflags/flag-europe.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Eiropa: Galvaspilsētas (39)" href="lv/vgp/3051.html">Eiropa: Galvaspilsētas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl04_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Eiropa: Pilsētas (39)" class="flag1 game3073" loading="lazy" src="exlflags/flag-europe.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Eiropa: Pilsētas (39)" href="lv/vgp/3073.html">Eiropa: Pilsētas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl05_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Eiropa: Fizioģeogrāfiskie objekti (22)" class="flag1 game3453" loading="lazy" src="exlflags/flag-europe.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Eiropa: Fizioģeogrāfiskie objekti (22)" href="lv/vgp/3453.html">Eiropa: Fizioģeogrāfiskie objekti</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl06_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Austrumeiropa: Valstis (10)" class="flag1 game3020" loading="lazy" src="exlflags/flag-europe.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Austrumeiropa: Valstis (10)" href="lv/vgp/3020.html">Austrumeiropa: Valstis</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl07_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Dienvideiropa: Valstis (18)" class="flag1 game3019" loading="lazy" src="exlflags/flag-europe.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Dienvideiropa: Valstis (18)" href="lv/vgp/3019.html">Dienvideiropa: Valstis</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl08_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Rietumeiropa: Valstis (9)" class="flag1 game3021" loading="lazy" src="exlflags/flag-europe.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Rietumeiropa: Valstis (9)" href="lv/vgp/3021.html">Rietumeiropa: Valstis</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl09_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Ziemeļeiropa: Valstis (10)" class="flag1 game3018" loading="lazy" src="exlflags/flag-europe.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Ziemeļeiropa: Valstis (10)" href="lv/vgp/3018.html">Ziemeļeiropa: Valstis</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl10_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Eiropa: Ūdensobjekti (12)" class="flag1 game3132" loading="lazy" src="exlflags/flag-europe.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Eiropa: Ūdensobjekti (12)" href="lv/vgp/3132.html">Eiropa: Ūdensobjekti</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl11_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Eiropa: Upes (18)" class="flag1 game3135" loading="lazy" src="exlflags/flag-europe.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Eiropa: Upes (18)" href="lv/vgp/3135.html">Eiropa: Upes</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl12_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Eiropa: Karogi (37)" class="flag1 game2010" loading="lazy" src="exlflags/flag-europe.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Eiropa: Karogi (37)" href="lv/fl/2010.html">Eiropa: Karogi</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl13_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Eiropa: Karogi (sarežģītā versija) (46)" class="flag1 game2013" loading="lazy" src="exlflags/flag-europe.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Eiropa: Karogi (sarežģītā versija) (46)" href="lv/fl/2013.html">Eiropa: Karogi (sarežģītā versija)</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl14_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Austrumeiropa: Karogi (21)" class="flag1 game2002" loading="lazy" src="exlflags/flag-europe.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Austrumeiropa: Karogi (21)" href="lv/fl/2002.html">Austrumeiropa: Karogi</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl15_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Rietumeiropa: Karogi (16)" class="flag1 game2001" loading="lazy" src="exlflags/flag-europe.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Rietumeiropa: Karogi (16)" href="lv/fl/2001.html">Rietumeiropa: Karogi</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl16_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Ziemeļvalstis (5)" class="flag1 game3025" loading="lazy" src="exlflags/flag-scandinavia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Ziemeļvalstis (5)" href="lv/vgp/3025.html">Ziemeļvalstis</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl17_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Ziemeļvalstis: Valstis un galvaspilsētas (10)" class="flag1 game3187" loading="lazy" src="exlflags/flag-scandinavia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Ziemeļvalstis: Valstis un galvaspilsētas (10)" href="lv/vgp/3187.html">Ziemeļvalstis: Valstis un galvaspilsētas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl18_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Benilukss: Pilsētas (12)" class="flag1 game3026" loading="lazy" src="exlflags/flag-benelux.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Benilukss: Pilsētas (12)" href="lv/vgp/3026.html">Benilukss: Pilsētas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl19_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Francija: Pilsētas (11)" class="flag1 game3103" loading="lazy" src="exlflags/flag-france.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Francija: Pilsētas (11)" href="lv/vgp/3103.html">Francija: Pilsētas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl20_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Itālija: Pilsētas (11)" class="flag1 game3093" loading="lazy" src="exlflags/flag-italy.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Itālija: Pilsētas (11)" href="lv/vgp/3093.html">Itālija: Pilsētas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl21_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Latvija: Pilsētas (9)" class="flag1 game3436" loading="lazy" src="exlflags/flag-latvia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Latvija: Pilsētas (9)" href="lv/vgp/3436.html">Latvija: Pilsētas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl22_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Latvijas administratīvais iedalījums (2021) (43)" class="flag1 game3677" loading="lazy" src="exlflags/flag-latvia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Latvijas administratīvais iedalījums (2021) (43)" href="lv/vgp/3677.html">Latvijas administratīvais iedalījums (2021)</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl23_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Lielbritānija: Pilsētas (14)" class="flag1 game3104" loading="lazy" src="exlflags/flag-uk.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Lielbritānija: Pilsētas (14)" href="lv/vgp/3104.html">Lielbritānija: Pilsētas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl24_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Portugāle: Pilsētas (11)" class="flag1 game3091" loading="lazy" src="exlflags/flag-portugal.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Portugāle: Pilsētas (11)" href="lv/vgp/3091.html">Portugāle: Pilsētas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl25_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Somija: Pilsētas (13)" class="flag1 game3101" loading="lazy" src="exlflags/flag-finland.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Somija: Pilsētas (13)" href="lv/vgp/3101.html">Somija: Pilsētas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl26_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Somija: Reģioni (19)" class="flag1 game3011" loading="lazy" src="exlflags/flag-finland.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Somija: Reģioni (19)" href="lv/vgp/3011.html">Somija: Reģioni</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl27_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Šveice un Austrija: Pilsētas (11)" class="flag1 game3027" loading="lazy" src="exlflags/flag-switzlnd.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Šveice un Austrija: Pilsētas (11)" href="lv/vgp/3027.html">Šveice un Austrija: Pilsētas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl28_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Vācija: Federālās zemes (16)" class="flag1 game3014" loading="lazy" src="exlflags/flag-germany.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Vācija: Federālās zemes (16)" href="lv/vgp/3014.html">Vācija: Federālās zemes</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl00_subex1_ctl00_ctl29_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Vācija: Pilsētas (12)" class="flag1 game3030" loading="lazy" src="exlflags/flag-germany.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Vācija: Pilsētas (12)" href="lv/vgp/3030.html">Vācija: Pilsētas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+</div>
+
+<div class="gamesublist horizontal" style="width: auto;">
+    
+
+</div>
+
+                <div style="clear: both;"></div>
+                <h3 style="margin-top:10px;margin-bottom:15px;">
+                    
+                </h3>
+            </div>
+        </td>
+	</tr><tr>
+		<td>
+            <div class="sectionhead fullwidth lrg">
+
+                <div class="sectionheadtext areaheading lrg" id="NAM">
+                    Ziemeļamerika
+                </div>
+                <div style="clear: both;"></div>
+
+            </div>
+            <div class="exblock">
+
+                
+
+<div class="gamesublist vertical">
+    
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl00_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Ziemeļamerika un Centrālamerika: Valstis (14)" class="flag1 game3015" loading="lazy" src="exlflags/flag-northamerica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Ziemeļamerika un Centrālamerika: Valstis (14)" href="lv/vgp/3015.html">Ziemeļamerika un Centrālamerika: Valstis</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl01_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Ziemeļamerika un Centrālamerika: Galvaspilsētas (14)" class="flag1 game3079" loading="lazy" src="exlflags/flag-northamerica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Ziemeļamerika un Centrālamerika: Galvaspilsētas (14)" href="lv/vgp/3079.html">Ziemeļamerika un Centrālamerika: Galvaspilsētas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl02_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Ziemeļamerika: Fizioģeogrāfiskie objekti (30)" class="flag1 game3452" loading="lazy" src="exlflags/flag-northamerica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Ziemeļamerika: Fizioģeogrāfiskie objekti (30)" href="lv/vgp/3452.html">Ziemeļamerika: Fizioģeogrāfiskie objekti</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl03_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Ziemeļamerika un Centrālamerika: Karogi (14)" class="flag1 game2015" loading="lazy" src="exlflags/flag-northamerica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Ziemeļamerika un Centrālamerika: Karogi (14)" href="lv/fl/2015.html">Ziemeļamerika un Centrālamerika: Karogi</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl04_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Centrālamerika: Valstis (7)" class="flag1 game3217" loading="lazy" src="exlflags/flag-centralamerica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Centrālamerika: Valstis (7)" href="lv/vgp/3217.html">Centrālamerika: Valstis</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl05_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Karību reģions: Valstis (24)" class="flag1 game3129" loading="lazy" src="exlflags/flag-caribbean.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Karību reģions: Valstis (24)" href="lv/vgp/3129.html">Karību reģions: Valstis</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl06_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Karību reģions: Galvaspilsētas (24)" class="flag1 game3130" loading="lazy" src="exlflags/flag-caribbean.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Karību reģions: Galvaspilsētas (24)" href="lv/vgp/3130.html">Karību reģions: Galvaspilsētas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl07_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Karību reģions: Karogi (13)" class="flag1 game2019" loading="lazy" src="exlflags/flag-caribbean.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Karību reģions: Karogi (13)" href="lv/fl/2019.html">Karību reģions: Karogi</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl08_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="ASV: 50 štati (50)" class="flag1 game3003" loading="lazy" src="exlflags/flag-usa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="ASV: 50 štati (50)" href="lv/vgp/3003.html">ASV: 50 štati</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl09_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="ASV: 50 štati (karikatūras versija) (50)" class="flag1 game3285" loading="lazy" src="exlflags/flag-usa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="ASV: 50 štati (karikatūras versija) (50)" href="lv/vgp/3285.html">ASV: 50 štati (karikatūras versija)</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl10_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="ASV: Štati Dienvidos un Ziemeļaustrumos (25)" class="flag1 game3042" loading="lazy" src="exlflags/flag-usa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="ASV: Štati Dienvidos un Ziemeļaustrumos (25)" href="lv/vgp/3042.html">ASV: Štati Dienvidos un Ziemeļaustrumos</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl11_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="ASV: Štati Vidējos Rietumos un Rietumos (23)" class="flag1 game3043" loading="lazy" src="exlflags/flag-usa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="ASV: Štati Vidējos Rietumos un Rietumos (23)" href="lv/vgp/3043.html">ASV: Štati Vidējos Rietumos un Rietumos</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl12_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="ASV: Lielās pilsētas (24)" class="flag1 game3095" loading="lazy" src="exlflags/flag-usa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="ASV: Lielās pilsētas (24)" href="lv/vgp/3095.html">ASV: Lielās pilsētas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl13_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="ASV: Pilsētas (53)" class="flag1 game3094" loading="lazy" src="exlflags/flag-usa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="ASV: Pilsētas (53)" href="lv/vgp/3094.html">ASV: Pilsētas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl14_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Kanāda: Pilsētas (9)" class="flag1 game3050" loading="lazy" src="exlflags/flag-canada.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Kanāda: Pilsētas (9)" href="lv/vgp/3050.html">Kanāda: Pilsētas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl01_subex1_ctl00_ctl15_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Meksika: Pilsētas (15)" class="flag1 game3080" loading="lazy" src="exlflags/flag-mexico.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Meksika: Pilsētas (15)" href="lv/vgp/3080.html">Meksika: Pilsētas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+</div>
+
+<div class="gamesublist horizontal" style="width: auto;">
+    
+
+</div>
+
+                <div style="clear: both;"></div>
+                <h3 style="margin-top:10px;margin-bottom:15px;">
+                    
+                </h3>
+            </div>
+        </td>
+	</tr><tr>
+		<td>
+            <div class="sectionhead fullwidth lrg">
+
+                <div class="sectionheadtext areaheading lrg" id="SAM">
+                    Dienvidamerika
+                </div>
+                <div style="clear: both;"></div>
+
+            </div>
+            <div class="exblock">
+
+                
+
+<div class="gamesublist vertical">
+    
+            <div id="gamelist1_exlist1_ctl02_subex1_ctl00_ctl00_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Dienvidamerika: Valstis (13)" class="flag1 game3016" loading="lazy" src="exlflags/flag-southamerica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Dienvidamerika: Valstis (13)" href="lv/vgp/3016.html">Dienvidamerika: Valstis</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl02_subex1_ctl00_ctl01_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Dienvidamerika: Valstis (karikatūras versija) (13)" class="flag1 game3339" loading="lazy" src="exlflags/flag-southamerica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Dienvidamerika: Valstis (karikatūras versija) (13)" href="lv/vgp/3339.html">Dienvidamerika: Valstis (karikatūras versija)</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl02_subex1_ctl00_ctl02_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Dienvidamerika: Galvaspilsētas (12)" class="flag1 game3017" loading="lazy" src="exlflags/flag-southamerica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Dienvidamerika: Galvaspilsētas (12)" href="lv/vgp/3017.html">Dienvidamerika: Galvaspilsētas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl02_subex1_ctl00_ctl03_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Latīņamerika: Valstis (21)" class="flag1 game3243" loading="lazy" src="exlflags/flag-southamerica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Latīņamerika: Valstis (21)" href="lv/vgp/3243.html">Latīņamerika: Valstis</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl02_subex1_ctl00_ctl04_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Dienvidamerika: Fizioģeogrāfiskie objekti (18)" class="flag1 game3451" loading="lazy" src="exlflags/flag-southamerica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Dienvidamerika: Fizioģeogrāfiskie objekti (18)" href="lv/vgp/3451.html">Dienvidamerika: Fizioģeogrāfiskie objekti</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl02_subex1_ctl00_ctl05_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Dienvidamerika: Karogi (12)" class="flag1 game2004" loading="lazy" src="exlflags/flag-southamerica.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Dienvidamerika: Karogi (12)" href="lv/fl/2004.html">Dienvidamerika: Karogi</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+</div>
+
+<div class="gamesublist horizontal" style="width: auto;">
+    
+
+</div>
+
+                <div style="clear: both;"></div>
+                <h3 style="margin-top:10px;margin-bottom:15px;">
+                    
+                </h3>
+            </div>
+        </td>
+	</tr><tr>
+		<td>
+            <div class="sectionhead fullwidth lrg">
+
+                <div class="sectionheadtext areaheading lrg" id="AFR">
+                    Āfrika
+                </div>
+                <div style="clear: both;"></div>
+
+            </div>
+            <div class="exblock">
+
+                
+
+<div class="gamesublist vertical">
+    
+            <div id="gamelist1_exlist1_ctl03_subex1_ctl00_ctl00_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Āfrika: Valstis (55)" class="flag1 game3163" loading="lazy" src="exlflags/flag-africa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Āfrika: Valstis (55)" href="lv/vgp/3163.html">Āfrika: Valstis</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl03_subex1_ctl00_ctl01_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Āfrika: Galvaspilsētas (54)" class="flag1 game3204" loading="lazy" src="exlflags/flag-africa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Āfrika: Galvaspilsētas (54)" href="lv/vgp/3204.html">Āfrika: Galvaspilsētas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl03_subex1_ctl00_ctl02_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Āfrika: Fizioģeogrāfiskie objekti (23)" class="flag1 game3450" loading="lazy" src="exlflags/flag-africa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Āfrika: Fizioģeogrāfiskie objekti (23)" href="lv/vgp/3450.html">Āfrika: Fizioģeogrāfiskie objekti</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl03_subex1_ctl00_ctl03_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Āfrika uz Dienvidiem no ekvatora: Valstis (20)" class="flag1 game3036" loading="lazy" src="exlflags/flag-africa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Āfrika uz Dienvidiem no ekvatora: Valstis (20)" href="lv/vgp/3036.html">Āfrika uz Dienvidiem no ekvatora: Valstis</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl03_subex1_ctl00_ctl04_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Āfrika uz Ziemeļiem no ekvatora: Valstis (30)" class="flag1 game3035" loading="lazy" src="exlflags/flag-africa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Āfrika uz Ziemeļiem no ekvatora: Valstis (30)" href="lv/vgp/3035.html">Āfrika uz Ziemeļiem no ekvatora: Valstis</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl03_subex1_ctl00_ctl05_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Austrumāfrika: Galvaspilsētas (15)" class="flag1 game3056" loading="lazy" src="exlflags/flag-africa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Austrumāfrika: Galvaspilsētas (15)" href="lv/vgp/3056.html">Austrumāfrika: Galvaspilsētas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl03_subex1_ctl00_ctl06_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Austrumāfrika: Valstis (15)" class="flag1 game3040" loading="lazy" src="exlflags/flag-africa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Austrumāfrika: Valstis (15)" href="lv/vgp/3040.html">Austrumāfrika: Valstis</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl03_subex1_ctl00_ctl07_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Centrālā Āfrika: Galvaspilsētas (8)" class="flag1 game3055" loading="lazy" src="exlflags/flag-africa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Centrālā Āfrika: Galvaspilsētas (8)" href="lv/vgp/3055.html">Centrālā Āfrika: Galvaspilsētas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl03_subex1_ctl00_ctl08_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Centrālā Āfrika: Valstis (8)" class="flag1 game3039" loading="lazy" src="exlflags/flag-africa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Centrālā Āfrika: Valstis (8)" href="lv/vgp/3039.html">Centrālā Āfrika: Valstis</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl03_subex1_ctl00_ctl09_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Dienvidu Āfrika: Galvaspilsētas (5)" class="flag1 game3057" loading="lazy" src="exlflags/flag-africa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Dienvidu Āfrika: Galvaspilsētas (5)" href="lv/vgp/3057.html">Dienvidu Āfrika: Galvaspilsētas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl03_subex1_ctl00_ctl10_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Dienvidu Āfrika: Valstis (5)" class="flag1 game3041" loading="lazy" src="exlflags/flag-africa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Dienvidu Āfrika: Valstis (5)" href="lv/vgp/3041.html">Dienvidu Āfrika: Valstis</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl03_subex1_ctl00_ctl11_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Rietumāfrika: Galvaspilsētas (15)" class="flag1 game3054" loading="lazy" src="exlflags/flag-africa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Rietumāfrika: Galvaspilsētas (15)" href="lv/vgp/3054.html">Rietumāfrika: Galvaspilsētas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl03_subex1_ctl00_ctl12_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Rietumāfrika: Valstis (15)" class="flag1 game3038" loading="lazy" src="exlflags/flag-africa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Rietumāfrika: Valstis (15)" href="lv/vgp/3038.html">Rietumāfrika: Valstis</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl03_subex1_ctl00_ctl13_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Ziemeļāfrika: Galvaspilsētas (6)" class="flag1 game3053" loading="lazy" src="exlflags/flag-africa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Ziemeļāfrika: Galvaspilsētas (6)" href="lv/vgp/3053.html">Ziemeļāfrika: Galvaspilsētas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl03_subex1_ctl00_ctl14_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Ziemeļāfrika: Valstis (7)" class="flag1 game3037" loading="lazy" src="exlflags/flag-africa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Ziemeļāfrika: Valstis (7)" href="lv/vgp/3037.html">Ziemeļāfrika: Valstis</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl03_subex1_ctl00_ctl15_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Āfrika: Karogi (24)" class="flag1 game2003" loading="lazy" src="exlflags/flag-africa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Āfrika: Karogi (24)" href="lv/fl/2003.html">Āfrika: Karogi</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl03_subex1_ctl00_ctl16_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Āfrika: Karogi (sarežģītā versija) (54)" class="flag1 game2017" loading="lazy" src="exlflags/flag-africa.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Āfrika: Karogi (sarežģītā versija) (54)" href="lv/fl/2017.html">Āfrika: Karogi (sarežģītā versija)</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+</div>
+
+<div class="gamesublist horizontal" style="width: auto;">
+    
+
+</div>
+
+                <div style="clear: both;"></div>
+                <h3 style="margin-top:10px;margin-bottom:15px;">
+                    
+                </h3>
+            </div>
+        </td>
+	</tr><tr>
+		<td>
+            <div class="sectionhead fullwidth lrg">
+
+                <div class="sectionheadtext areaheading lrg" id="ASI">
+                    Āzija
+                </div>
+                <div style="clear: both;"></div>
+
+            </div>
+            <div class="exblock">
+
+                
+
+<div class="gamesublist vertical">
+    
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl00_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Āzija: Valstis (49)" class="flag1 game3646" loading="lazy" src="exlflags/flag-asia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Āzija: Valstis (49)" href="lv/vgp/3646.html">Āzija: Valstis</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl01_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Āzija: Valstis (karikatūras versija) (48)" class="flag1 game3340" loading="lazy" src="exlflags/flag-asia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Āzija: Valstis (karikatūras versija) (48)" href="lv/vgp/3340.html">Āzija: Valstis (karikatūras versija)</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl02_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Āzija: Galvaspilsētas (47)" class="flag1 game3647" loading="lazy" src="exlflags/flag-asia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Āzija: Galvaspilsētas (47)" href="lv/vgp/3647.html">Āzija: Galvaspilsētas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl03_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Āzija: Pilsētas (27)" class="flag1 game3110" loading="lazy" src="exlflags/flag-asia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Āzija: Pilsētas (27)" href="lv/vgp/3110.html">Āzija: Pilsētas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl04_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Āzija: Fizioģeogrāfiskie objekti (28)" class="flag1 game3454" loading="lazy" src="exlflags/flag-asia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Āzija: Fizioģeogrāfiskie objekti (28)" href="lv/vgp/3454.html">Āzija: Fizioģeogrāfiskie objekti</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl05_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Dienvidaustrumāzija: Pilsētas (11)" class="flag1 game3107" loading="lazy" src="exlflags/flag-asia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Dienvidaustrumāzija: Pilsētas (11)" href="lv/vgp/3107.html">Dienvidaustrumāzija: Pilsētas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl06_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Dienvidaustrumāzija: Valstis (11)" class="flag1 game3033" loading="lazy" src="exlflags/flag-asia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Dienvidaustrumāzija: Valstis (11)" href="lv/vgp/3033.html">Dienvidaustrumāzija: Valstis</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl07_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Vidējie Austrumi: Valstis (17)" class="flag1 game3648" loading="lazy" src="exlflags/flag-asia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Vidējie Austrumi: Valstis (17)" href="lv/vgp/3648.html">Vidējie Austrumi: Valstis</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl08_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Vidējie Austrumi un Ziemeļāfrika: Valstis (21)" class="flag1 game3649" loading="lazy" src="exlflags/flag-asia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Vidējie Austrumi un Ziemeļāfrika: Valstis (21)" href="lv/vgp/3649.html">Vidējie Austrumi un Ziemeļāfrika: Valstis</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl09_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Bijusī Padomju Savienība: Valstis (15)" class="flag1 game3048" loading="lazy" src="exlflags/flag-soviet.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Bijusī Padomju Savienība: Valstis (15)" href="lv/vgp/3048.html">Bijusī Padomju Savienība: Valstis</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl10_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Āzija: Karogi (19)" class="flag1 game2006" loading="lazy" src="exlflags/flag-asia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Āzija: Karogi (19)" href="lv/fl/2006.html">Āzija: Karogi</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl11_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Dienvidaustrumāzija: Karogi (11)" class="flag1 game2024" loading="lazy" src="exlflags/flag-asia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Dienvidaustrumāzija: Karogi (11)" href="lv/fl/2024.html">Dienvidaustrumāzija: Karogi</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl12_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Dienvidāzija: Karogi (7)" class="flag1 game2026" loading="lazy" src="exlflags/flag-asia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Dienvidāzija: Karogi (7)" href="lv/fl/2026.html">Dienvidāzija: Karogi</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl04_subex1_ctl00_ctl13_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Vidējie Austrumi: Karogi (17)" class="flag1 game2066" loading="lazy" src="exlflags/flag-asia.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Vidējie Austrumi: Karogi (17)" href="lv/fl/2066.html">Vidējie Austrumi: Karogi</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+</div>
+
+<div class="gamesublist horizontal" style="width: auto;">
+    
+
+</div>
+
+                <div style="clear: both;"></div>
+                <h3 style="margin-top:10px;margin-bottom:15px;">
+                    
+                </h3>
+            </div>
+        </td>
+	</tr><tr>
+		<td>
+            <div class="sectionhead fullwidth lrg">
+
+                <div class="sectionheadtext areaheading lrg" id="AUS">
+                    Austrālāzija
+                </div>
+                <div style="clear: both;"></div>
+
+            </div>
+            <div class="exblock">
+
+                
+
+<div class="gamesublist vertical">
+    
+            <div id="gamelist1_exlist1_ctl05_subex1_ctl00_ctl00_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Okeānija: Valstis (23)" class="flag1 game3128" loading="lazy" src="exlflags/flag-oceania.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Okeānija: Valstis (23)" href="lv/vgp/3128.html">Okeānija: Valstis</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl05_subex1_ctl00_ctl01_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Okeānija: Galvaspilsētas (21)" class="flag1 game3216" loading="lazy" src="exlflags/flag-oceania.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Okeānija: Galvaspilsētas (21)" href="lv/vgp/3216.html">Okeānija: Galvaspilsētas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl05_subex1_ctl00_ctl02_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Okeānija: Karogi (14)" class="flag1 game2018" loading="lazy" src="exlflags/flag-oceania.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Okeānija: Karogi (14)" href="lv/fl/2018.html">Okeānija: Karogi</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl05_subex1_ctl00_ctl03_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Austrālija: Apkārt esošās valstis (9)" class="flag1 game3061" loading="lazy" src="exlflags/flag-austral.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Austrālija: Apkārt esošās valstis (9)" href="lv/vgp/3061.html">Austrālija: Apkārt esošās valstis</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl05_subex1_ctl00_ctl04_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Austrālija: Štati un federālās teritorijas (8)" class="flag1 game3060" loading="lazy" src="exlflags/flag-austral.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Austrālija: Štati un federālās teritorijas (8)" href="lv/vgp/3060.html">Austrālija: Štati un federālās teritorijas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl05_subex1_ctl00_ctl05_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Austrālija un Jaunzēlande: Pilsētas (11)" class="flag1 game3031" loading="lazy" src="exlflags/flag-austral.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Austrālija un Jaunzēlande: Pilsētas (11)" href="lv/vgp/3031.html">Austrālija un Jaunzēlande: Pilsētas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl05_subex1_ctl00_ctl06_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Austrālija: Fizioģeogrāfiskie objekti (26)" class="flag1 game3455" loading="lazy" src="exlflags/flag-austral.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Austrālija: Fizioģeogrāfiskie objekti (26)" href="lv/vgp/3455.html">Austrālija: Fizioģeogrāfiskie objekti</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+</div>
+
+<div class="gamesublist horizontal" style="width: auto;">
+    
+
+</div>
+
+                <div style="clear: both;"></div>
+                <h3 style="margin-top:10px;margin-bottom:15px;">
+                    
+                </h3>
+            </div>
+        </td>
+	</tr><tr>
+		<td>
+            <div class="sectionhead fullwidth lrg">
+
+                <div class="sectionheadtext areaheading lrg" id="WOR">
+                    Pasaule
+                </div>
+                <div style="clear: both;"></div>
+
+            </div>
+            <div class="exblock">
+
+                
+
+<div class="gamesublist vertical">
+    
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl00_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Okeāni un pasaules daļas (karikatūras versija) (12)" class="flag1 game3287" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Okeāni un pasaules daļas (karikatūras versija) (12)" href="lv/vgp/3287.html">Okeāni un pasaules daļas (karikatūras versija)</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl01_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Pasaule: Kontinenti (7)" class="flag1 game3004" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Pasaule: Kontinenti (7)" href="lv/vgp/3004.html">Pasaule: Kontinenti</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl02_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Pasaule: Kontinenti un okeāni (12)" class="flag1 game3188" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Pasaule: Kontinenti un okeāni (12)" href="lv/vgp/3188.html">Pasaule: Kontinenti un okeāni</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl03_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Pasaule: Fizioģeogrāfiskie objekti (23)" class="flag1 game3459" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Pasaule: Fizioģeogrāfiskie objekti (23)" href="lv/vgp/3459.html">Pasaule: Fizioģeogrāfiskie objekti</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl04_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Pasaule: G-20 dalībvalstis (19)" class="flag1 game3220" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Pasaule: G-20 dalībvalstis (19)" href="lv/vgp/3220.html">Pasaule: G-20 dalībvalstis</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl05_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Pasaule: OECD dalībvalstis (38)" class="flag1 game3202" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Pasaule: OECD dalībvalstis (38)" href="lv/vgp/3202.html">Pasaule: OECD dalībvalstis</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl06_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Pasaule: 30 pēc iedzīvotāju skaita lielākās valstis (30)" class="flag1 game3154" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Pasaule: 30 pēc iedzīvotāju skaita lielākās valstis (30)" href="lv/vgp/3154.html">Pasaule: 30 pēc iedzīvotāju skaita lielākās valstis</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl07_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Pasaule: 30 pēc iedzīvotāju skaita lielāko valstu galvaspilsētas (30)" class="flag1 game3232" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Pasaule: 30 pēc iedzīvotāju skaita lielāko valstu galvaspilsētas (30)" href="lv/vgp/3232.html">Pasaule: 30 pēc iedzīvotāju skaita lielāko valstu galvaspilsētas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl08_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Pasaule: 150 pēc platības lielākās valstis (150)" class="flag1 game3198" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Pasaule: 150 pēc platības lielākās valstis (150)" href="lv/vgp/3198.html">Pasaule: 150 pēc platības lielākās valstis</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl09_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Pasaule: 150 pēc platības lielāko valstu galvaspilsētas (150)" class="flag1 game3237" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Pasaule: 150 pēc platības lielāko valstu galvaspilsētas (150)" href="lv/vgp/3237.html">Pasaule: 150 pēc platības lielāko valstu galvaspilsētas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl10_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Pasaule: ANO dalībvalstis (193)" class="flag1 game3199" loading="lazy" src="exlflags/flag-un.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Pasaule: ANO dalībvalstis (193)" href="lv/vgp/3199.html">Pasaule: ANO dalībvalstis</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl11_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Pasaule: Lielās valstis (58)" class="flag1 game3069" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Pasaule: Lielās valstis (58)" href="lv/vgp/3069.html">Pasaule: Lielās valstis</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl12_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Valstis, kurās franču valoda ir oficiālā valoda (29)" class="flag1 game3210" loading="lazy" src="exlflags/flag-france.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Valstis, kurās franču valoda ir oficiālā valoda (29)" href="lv/vgp/3210.html">Valstis, kurās franču valoda ir oficiālā valoda</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl13_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Valstis, kurās portugāļu valoda ir oficiālā valoda (9)" class="flag1 game3250" loading="lazy" src="exlflags/flag-portugal.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Valstis, kurās portugāļu valoda ir oficiālā valoda (9)" href="lv/vgp/3250.html">Valstis, kurās portugāļu valoda ir oficiālā valoda</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl14_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Valstis, kurās spāņu valoa ir oficiālā valoda (21)" class="flag1 game3153" loading="lazy" src="exlflags/flag-spain.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Valstis, kurās spāņu valoa ir oficiālā valoda (21)" href="lv/vgp/3153.html">Valstis, kurās spāņu valoa ir oficiālā valoda</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl15_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Pasaule: Apstrīdētās teritorijas (20)" class="flag1 game3247" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Pasaule: Apstrīdētās teritorijas (20)" href="lv/vgp/3247.html">Pasaule: Apstrīdētās teritorijas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl16_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Pasaule: Kalni un vulkāni (16)" class="flag1 game3047" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Pasaule: Kalni un vulkāni (16)" href="lv/vgp/3047.html">Pasaule: Kalni un vulkāni</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl17_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Pasaule: Kalnu grēdas (14)" class="flag1 game3131" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Pasaule: Kalnu grēdas (14)" href="lv/vgp/3131.html">Pasaule: Kalnu grēdas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl18_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Pasaule: Okeāni, jūras un ezeri (29)" class="flag1 game3072" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Pasaule: Okeāni, jūras un ezeri (29)" href="lv/vgp/3072.html">Pasaule: Okeāni, jūras un ezeri</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl19_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Pasaule: Salas (39)" class="flag1 game3046" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Pasaule: Salas (39)" href="lv/vgp/3046.html">Pasaule: Salas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl20_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Pasaule: Tuksneši (21)" class="flag1 game3245" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Pasaule: Tuksneši (21)" href="lv/vgp/3245.html">Pasaule: Tuksneši</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl21_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Pasaule: Upes (21)" class="flag1 game3133" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Pasaule: Upes (21)" href="lv/vgp/3133.html">Pasaule: Upes</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl22_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Pasaule: 21 lielākās pilsētas (karikatūras versija) (21)" class="flag1 game3288" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Pasaule: 21 lielākās pilsētas (karikatūras versija) (21)" href="lv/vgp/3288.html">Pasaule: 21 lielākās pilsētas (karikatūras versija)</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl23_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Pasaule: 25 lielākās pilsētas (25)" class="flag1 game3127" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Pasaule: 25 lielākās pilsētas (25)" href="lv/vgp/3127.html">Pasaule: 25 lielākās pilsētas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl24_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Pasaule: 35 lielākās pilsētas (35)" class="flag1 game3229" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Pasaule: 35 lielākās pilsētas (35)" href="lv/vgp/3229.html">Pasaule: 35 lielākās pilsētas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl25_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Pasaule: Karogi (16)" class="flag1 game2007" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Pasaule: Karogi (16)" href="lv/fl/2007.html">Pasaule: Karogi</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl26_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Pasaule: Karogi (sarežģītā versija) (105)" class="flag1 game2008" loading="lazy" src="exlflags/flag-world.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Pasaule: Karogi (sarežģītā versija) (105)" href="lv/fl/2008.html">Pasaule: Karogi (sarežģītā versija)</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl27_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="ANO dalībvalstis: Karogi (192)" class="flag1 game2022" loading="lazy" src="exlflags/flag-un.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="ANO dalībvalstis: Karogi (192)" href="lv/fl/2022.html">ANO dalībvalstis: Karogi</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+            <div id="gamelist1_exlist1_ctl06_subex1_ctl00_ctl28_panel1">
+			
+                <div class="exitemwrapper">
+                    <div class="exitem" style="">
+                        <div class="exicon">
+                            <img title="Saules sistēma: Planētas (8)" class="flag1 game3123" loading="lazy" src="exlflags/flag-solar.png" alt="Flag" height="15" width="20" border="0" />
+                        </div>
+
+                        <div class="textlink">
+                            <a title="Saules sistēma: Planētas (8)" href="lv/vgp/3123.html">Saules sistēma: Planētas</a>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+		</div>
+        
+</div>
+
+<div class="gamesublist horizontal" style="width: auto;">
+    
+
+</div>
+
+                <div style="clear: both;"></div>
+                <h3 style="margin-top:10px;margin-bottom:15px;">
+                    
+                </h3>
+            </div>
+        </td>
+	</tr>
+</table>
+
+
+</div>
+
+                                </div>
+                                <br />
+                                <hr />
+                                <div style="direction: ltr" lang="en">
+                                    <span id="lblGameCount" dir="ltr"><p>In <b>Latvian (Latviešu valoda)</b>, 513 games were played yesterday.</p></span>
+                                </div>
+                                <br />
+                                <br />
+                                -
+                                <br />
+
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                    <div style="width: 100%; clear: both;padding-top:50px;">
+                        <div style="margin: auto;width:600px;text-align:center">
+                            <img src="images/system/plan-international.jpg" alt="Plan International Corporate Partner 2021" />
+                        <br />
+                            <div style="direction:ltr;">As a Corporate Partner, Seterra Geography supports <a href="https://plan-international.org/">Plan International</a> / <a href="https://plansverige.org/for-foretag/partnerskap/">Plan Sverige</a>, advancing childrenï¿½s rights in more than 70 countries.</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="rtcol">
+                    <div id="panApp">
+	
+                        <div class="applinks">
+
+                            <a href="https://itunes.apple.com/us/app/seterra-geography-full/id1093460065">
+                                <img src="images/system/appstore_en.png" style="padding-right: 20px; width: 150px; height: 45px;" /></a><br />
+                            <a href="https://play.google.com/store/apps/details?id=com.seterra">
+                                <img src="images/system/googleplay_en.png" style="padding-right: 20px; width: 150px; height: 45px;"></a>
+                        </div>
+                    
+</div>
+
+                    
+                    <br />
+
+
+                </div>
+
+
+
+                <div id="panFeatured">
+	
+                    <div class="featureddiv">
+                        
+<div>
+
+    
+               <div class="featureditem">
+                   <a id="featured_repFeatured_ctl00_lnkItem" class="featured" href="lv/vgp/3287.html">
+                        <div class="divFeaturedImage">
+                            <img id="featured_repFeatured_ctl00_imgImage" title="Okeāni un pasaules daļas (karikatūras versija)" class="featuredimage" loading="lazy" src="images/system/cartoon-world_150.jpg" alt="Okeāni un pasaules daļas (karikatūras versija)" height="100" width="150" border="0" />
+                        </div>
+                        <h4 style="margin:0px"><span id="featured_repFeatured_ctl00_lblTitle">Okeāni un pasaules daļas (karikatūras versija)</span></h4>
+                        <p style="margin:0px"><span id="featured_repFeatured_ctl00_lblDescription">Karšu viktorīnas spēles</span></p>
+                        <div style="clear:both"></div>
+                    </a>
+               </div>
+        
+               <div class="featureditem">
+                   <a id="featured_repFeatured_ctl01_lnkItem" class="featured" href="lv/vgp/3007.html">
+                        <div class="divFeaturedImage">
+                            <img id="featured_repFeatured_ctl01_imgImage" title="Eiropa: Valstis" class="featuredimage" loading="lazy" src="mapimage/thumbs150/3007.png" alt="Eiropa: Valstis" height="100" width="150" border="0" />
+                        </div>
+                        <h4 style="margin:0px"><span id="featured_repFeatured_ctl01_lblTitle">Eiropa: Valstis</span></h4>
+                        <p style="margin:0px"><span id="featured_repFeatured_ctl01_lblDescription">Karšu viktorīnas spēles</span></p>
+                        <div style="clear:both"></div>
+                    </a>
+               </div>
+        
+               <div class="featureditem">
+                   <a id="featured_repFeatured_ctl02_lnkItem" class="featured" href="lv/vgp/3030.html">
+                        <div class="divFeaturedImage">
+                            <img id="featured_repFeatured_ctl02_imgImage" title="Vācija: Pilsētas" class="featuredimage" loading="lazy" src="mapimage/thumbs150/3030.png" alt="Vācija: Pilsētas" height="100" width="150" border="0" />
+                        </div>
+                        <h4 style="margin:0px"><span id="featured_repFeatured_ctl02_lblTitle">Vācija: Pilsētas</span></h4>
+                        <p style="margin:0px"><span id="featured_repFeatured_ctl02_lblDescription">Karšu viktorīnas spēles</span></p>
+                        <div style="clear:both"></div>
+                    </a>
+               </div>
+        
+               <div class="featureditem">
+                   <a id="featured_repFeatured_ctl03_lnkItem" class="featured" href="lv/vgp/3202.html">
+                        <div class="divFeaturedImage">
+                            <img id="featured_repFeatured_ctl03_imgImage" title="Pasaule: OECD dalībvalstis" class="featuredimage" loading="lazy" src="mapimage/thumbs150/3202.png" alt="Pasaule: OECD dalībvalstis" height="100" width="150" border="0" />
+                        </div>
+                        <h4 style="margin:0px"><span id="featured_repFeatured_ctl03_lblTitle">Pasaule: OECD dalībvalstis</span></h4>
+                        <p style="margin:0px"><span id="featured_repFeatured_ctl03_lblDescription">Karšu viktorīnas spēles</span></p>
+                        <div style="clear:both"></div>
+                    </a>
+               </div>
+        
+               <div class="featureditem">
+                   <a id="featured_repFeatured_ctl04_lnkItem" class="featured" href="lv/vgp/3046.html">
+                        <div class="divFeaturedImage">
+                            <img id="featured_repFeatured_ctl04_imgImage" title="Pasaule: Salas" class="featuredimage" loading="lazy" src="images/system/island_150.jpg" alt="Pasaule: Salas" height="100" width="150" border="0" />
+                        </div>
+                        <h4 style="margin:0px"><span id="featured_repFeatured_ctl04_lblTitle">Pasaule: Salas</span></h4>
+                        <p style="margin:0px"><span id="featured_repFeatured_ctl04_lblDescription">Karšu viktorīnas spēles</span></p>
+                        <div style="clear:both"></div>
+                    </a>
+               </div>
+        
+               <div class="featureditem">
+                   <a id="featured_repFeatured_ctl05_lnkItem" class="featured" href="lv/vgp/3047.html">
+                        <div class="divFeaturedImage">
+                            <img id="featured_repFeatured_ctl05_imgImage" title="Pasaule: Kalni un vulkāni" class="featuredimage" loading="lazy" src="images/system/volcano_150.jpg" alt="Pasaule: Kalni un vulkāni" height="100" width="150" border="0" />
+                        </div>
+                        <h4 style="margin:0px"><span id="featured_repFeatured_ctl05_lblTitle">Pasaule: Kalni un vulkāni</span></h4>
+                        <p style="margin:0px"><span id="featured_repFeatured_ctl05_lblDescription">Karšu viktorīnas spēles</span></p>
+                        <div style="clear:both"></div>
+                    </a>
+               </div>
+        
+               <div class="featureditem">
+                   <a id="featured_repFeatured_ctl06_lnkItem" class="featured" href="lv/vgp/3050.html">
+                        <div class="divFeaturedImage">
+                            <img id="featured_repFeatured_ctl06_imgImage" title="Kanāda: Pilsētas" class="featuredimage" loading="lazy" src="images/system/toronto_150.jpg" alt="Kanāda: Pilsētas" height="100" width="150" border="0" />
+                        </div>
+                        <h4 style="margin:0px"><span id="featured_repFeatured_ctl06_lblTitle">Kanāda: Pilsētas</span></h4>
+                        <p style="margin:0px"><span id="featured_repFeatured_ctl06_lblDescription">Karšu viktorīnas spēles</span></p>
+                        <div style="clear:both"></div>
+                    </a>
+               </div>
+        
+</div>
+
+
+                    </div>
+                
+</div>
+                <div style="clear: both;"></div>
+            </div>
+            
+
+<div id="footer">
+    <div id="footercontent">
+        <div class="smediawrapper">
+            <a href="https://www.twitch.tv/directory/game/Seterra/videos/all" style="text-decoration: none;">
+                <img alt="Twitch" class="smedia smediatwitch" src="images/system/twitch.png" style="width: 35px; height: 35px;" /></a>
+            <a href="https://discord.gg/kW8Y3AG9wk" style="text-decoration: none;">
+                <img alt="Discord" class="smedia " src="images/system/discord.png" style="width: 35px; height: 35px;" /></a>
+            <a href="https://www.facebook.com/seterra.geography" style="text-decoration: none;">
+                <img alt="Facebook" class="smedia" src="images/system/facebook.png" style="width: 35px; height: 35px;" /></a>
+            <a href="https://twitter.com/SeterraGeo">
+                <img alt="Twitter" class="smedia" src="images/system/twitter.png" style="width: 35px; height: 35px;" /></a>
+            <a href="https://www.youtube.com/c/seterrageography">
+                <img alt="Youtube" class="smedia" src="images/system/youtube3.png" style="width: 35px; height: 35px;" /></a>
+            <a href="https://bit.ly/2SntfBU">
+                <img alt="Instagram" class="smedia" src="images/system/instagram.png" style="width: 35px; height: 35px;" /></a>
+        </div>
+        <div style="max-width: 900px;">
+            <div class="footerMenu"><div class="title">Help Center</div>  <ul> <li><a href="en/p/contact.html">Contact Us</a></li> <li><a href="en/p/faq.html">FAQ (Website)</a></li> <li><a href="en/p/app-faq.html">FAQ (App)</a></li> <li><a href="en/p/tips-and-tricks.html">Tips & Tricks</a></li> <li><a href="pro.html">Pricing</a></li> <li><a href="en/blog.html">Blog</a></li> </ul>  </div>  <div class="footerMenu"><div class="title">&nbsp;</div>  <ul>  <li><a href="en/p/seterra-modes.html">Game Modes</a></li> <li><a href="en/p/seterra-highscores.html">Personal Leaderboards</a></li> <li><a href="en/p/custom-quizzes.html">Create Custom Quizzes</a></li> <li><a href="en/p/public-leaderboards.html">Public Leaderboards</a></li> <li><a href="en/p/custom-locations.html">Add Custom Locations</a></li>    </ul>  </div>  <div class="footerMenu"><div class="title">Resources</div> <ul> <li><a href="en/l/pdf%EF%B9%96img=1.html">Printables</a></li> <li><a href="en/l/bla.html">Blank Maps</a></li> <li><a href="en/p/user-quizzes.html">User Generated Quizzes</a></li> <li><a href="en-an.html">Science Quizzes</a></li> <li><a href="en/p/top-scores.html">Top Scores</a></li> <li><a href="https://www.speedrun.com/seterra">Speedrun.com</a></li> </ul>  </div>  <div class="footerMenu"><div class="title">About</div>  <ul> <li><a href="terms.aspx.html">Terms & Conditions</a></li> <li><a href="privacy.aspx.html">Privacy Policy</a></li> <li><a href="en/p/contact.html">Contact Us</a></li> </ul>  </div>  <div style="clear:both"></div><br><br><span style="padding-left:20px;font-size:13px;color:#AAAAAA">2/1/2023 11:20:09 PM</span>
+        </div>
+        <div style="clear:both"></div>
+        <div id="ccpa" style="display: none; cursor: pointer;margin-top:20px;">Do not share my Personal Information.</div>
+    </div>
+</div>
+
+
+
+        </div>
+    </form>
+
+</body>
+</html>

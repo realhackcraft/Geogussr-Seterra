@@ -1,0 +1,933 @@
+.popup-overlay {
+    /*Hides pop-up when there is no "active" class*/
+    visibility: hidden;
+    position: absolute;
+    top: 20px;
+    background: #ffffff;
+    border: 3px solid #666666;
+    width: 750px;
+    height: 700px;
+    left: 10%;
+    z-index: 9999;
+}
+
+.popup-content {
+    visibility: hidden;
+}
+
+
+
+
+#popup-paper {
+    left: 50px;
+    top: 50px;
+    position: absolute;
+    border: 1px solid #dddddd;
+    pointer-events: none;
+}
+
+
+.printclose {
+    position: absolute;
+    top: 5px;
+    left: 720px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+}
+
+
+.popup-overlay.active {
+    /*displays pop-up when "active" class is present*/
+    visibility: visible;
+    text-align: center;
+}
+
+.popup-content.active {
+    visibility: visible;
+}
+
+.hint {
+    font-size: .8em;
+    margin-bottom: 2px;
+    padding-top: 2px;
+    background-color: white;
+    border: solid 1px black;
+    user-select: all;
+}
+
+
+/*SVG ELEMENTS*/
+
+svg {
+    overflow: hidden;
+}
+
+.svgMap {
+    display: none;
+}
+
+
+
+
+.misc {
+    pointer-events: none;
+}
+
+g.q:hover:not(.answered) circle.city {
+    stroke-width: 3px;
+    stroke-opacity: 1;
+
+}
+
+g.q:hover:not(.answered) ellipse.city {
+    stroke-width: 3px;
+    stroke-opacity: 1;
+
+}
+
+g.q:hover:not(.answered) ellipse.city1 {
+    stroke-width: 3px;
+    stroke-opacity: 1;
+
+}
+
+g.q:hover:not(.answered) circle.city1 {
+    stroke-width: 3px;
+    stroke-opacity: 1;
+
+}
+
+
+
+#hints {
+    display: inline-block;
+    padding: 2px;
+    font-size: .9em;
+    text-align: center;
+    width: 145px;
+    margin: 0px;
+    background-color: white;
+    opacity: 0.7;
+    word-wrap: break-word;
+    user-select: all;
+}
+
+/*SVG ELEMENTS*/
+
+svg {
+    overflow: hidden;
+}
+
+g.prompted:not(.answered):not(.flashing) polygon, g.prompted:not(.answered):not(.flashing) circle:not(.city):not(.city1):not(.city2), g.prompted:not(.answered):not(.flashing) path {
+    fill: #831e5b;
+}
+
+
+
+
+g.prompted circle.city, g.prompted circle.city1 {
+    fill: #831e5c !important;
+}
+
+g.prompted ellipse.city, g.prompted ellipse.city1 {
+    fill: #831e5c !important;
+}
+
+#divSkip:hover {
+    opacity: 1;
+}
+
+
+#divSkip {
+    opacity: 0.5;
+    z-index: 9000;
+    cursor: pointer;
+    user-select: none;
+    font-size:22px;
+    margin-top:3px;
+}
+
+
+.svgMap {
+    display: none;
+}
+
+.river {
+    fill: none !important;
+}
+
+g.q:hover:not(.answered) .river {
+    opacity: 1;
+    fill-opacity: 0;
+    fill: none;
+    stroke-width: 3px !important;
+}
+
+#typeInputForm input[type="text"] {
+    opacity: 0.95;
+    border: 1px solid black;
+    padding: 1px;
+    width: 147px;
+    text-align: center;
+    background-color: #cbb4c2;
+    margin: 0px;
+    font-size: 16px;
+}
+
+#imgDrag {
+    float: right;
+    opacity: 1;
+    padding: 2px;
+    padding-left: 0 px;
+    padding-top: 5px;
+    pointer-events: none;
+}
+
+#zoomInfo {
+    position: absolute;
+    z-index: 999;
+    bottom: 0px;
+    background-color: rgba(255, 255, 255, 1);
+    width: 100%;
+    height: 34px;
+    align-content: center;
+    text-align: center;
+    color: black;
+    vertical-align: central;
+    pointer-events: none;
+    font-size: 15px;
+    padding-top: 6px;
+    display: none;
+    opacity: 0.8;
+}
+
+
+#divDrag {
+    float: right;
+    background-color: green;
+    height: 50px;
+}
+
+.type-input-form {
+    position: absolute;
+    align-items: center;
+    width: 179px;
+    align-self: center;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.multi-input-form {
+    position: absolute;
+    align-items: center;
+    width: 259px;
+    align-self: center;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#typeEasyInputForm input[type="text"] {
+    opacity: 0.95;
+    border: 1px solid black;
+    padding: 1px;
+    padding-left: 5px;
+    width: 200px;
+    margin: 0px;
+    font-size: 22px;
+}
+
+#typeEasyInputForm button {
+    font-size: 22px;
+    opacity: 0.8;
+    color: #111111;
+    margin-left: 15px;
+}
+
+
+#typeEasyInputForm input[type="button"] {
+    font-size: 22px;
+    opacity: 0.8;
+    color: #111111;
+    margin-left: 15px;
+}
+
+
+
+
+
+.typeeasy-input-form {
+    position: absolute;
+    top: 2px;
+    left: 200px;
+    width: 580px;
+    z-index: 800;
+    font-size: 22px;
+}
+
+
+#typeInputForm button {
+    opacity: 0.8;
+    margin: 0px;
+    width: 100%;
+    padding: 1px;
+    width: 150px;
+    font-size: 15px;
+}
+
+
+#typeInputForm input[type="button"] {
+    opacity: 0.8;
+    margin: 0px;
+    width: 100%;
+    padding: 1px;
+    width: 150px;
+    font-size: 15px;
+}
+
+
+#multiInputForm button {
+    opacity: 0.9;
+    margin: 0px;
+    width: 100%;
+    padding: 1px;
+    width: 230px;
+    min-height: 30px;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+#multiInputForm input[type="button"] {
+    opacity: 0.9;
+    margin: 0px;
+    width: 100%;
+    padding: 1px;
+    width: 230px;
+    height: 30px;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+#typeInputForm button:hover {
+    opacity: 1;
+}
+
+
+.strike {
+    text-decoration: line-through;
+}
+
+
+.river {
+    stroke-width: 1.5px;
+    fill: none;
+    stroke: #75b7c7;
+    border-width: 3px;
+    opacity: 1;
+}
+
+
+
+g.q:hover:not(.answered) circle.city2 {
+    stroke-width: 3px;
+    stroke: #FFFFFF;
+    stroke-opacity: 0.3;
+    opacity: 1;
+    fill: none;
+}
+
+
+g.flashing .city2 {
+    stroke-width: 5px;
+    stroke: #FFFFFF;
+    stroke-opacity: 0.3;
+    opacity: 1;
+    fill: none;
+}
+
+
+
+g.q:not(.answered) .showafter {
+    opacity: 0.0;
+    pointer-events: none;
+}
+
+g.prompted .showafter {
+    opacity: 0.0;
+    pointer-events: none;
+}
+
+g.q .showafter {
+    opacity: 1;
+    pointer-events: none;
+}
+
+
+.blackandwhite {
+    -webkit - filter: grayscale(100 % ); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100 % );
+}
+
+
+
+g.q.answered .showbefore {
+    opacity: 0;
+}
+
+
+#cbVoice {
+    margin-right: 10px;
+}
+
+#cbSoundOn {
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+/*polygon.q:hover:not(.answered):not(.flashing), path.q:hover:not(.answered):not(.flashing) {
+    fill: #157a3e;
+    stroke-width: 0.5px;
+}
+
+.q:hover:not(.answered):not(.flashing) polygon, .q:hover:not(.answered):not(.flashing) path {
+    fill: #157a3e;
+    stroke-width: 0.5px;
+}
+
+.hovering:not(.answered):not(.flashing) path {
+    fill: #157a3e;
+}
+
+.hovering:not(.answered):not(.flashing) polygon {
+    fill: #157a3e;
+}
+
+    */
+
+.svgLabelText {
+    pointer-events: none;
+    opacity: .8;
+    font-weight: 200;
+    text-anchor: middle !important;
+    z-index: 500;
+    padding-top: 5px;
+    user-select: none;
+}
+
+.svgLabelTextVideo {
+    font-size: 14px;
+    pointer-events: none;
+    opacity: .8;
+    font-weight: bold;
+    text-anchor: middle !important;
+    z-index: 500;
+    padding-top: 5px;
+    color: #ffffff;
+    paint-order: stroke;
+    stroke: #000000;
+    stroke-width: 0px;
+    stroke-linecap: butt;
+    stroke-linejoin: miter;
+    stroke-opacity: 1;
+    user-select: none;
+}
+
+.labelBkgrd {
+    /*  position:absolute !important;*/
+    padding-top: 18px;
+    pointer-events: none;
+    stroke: #c0c0c0;
+    stroke-width: 1px;
+    stroke-opacity: 0.2;
+    opacity: 0.9;
+    z-index: 499;
+    rx: 3;
+    ry: 3;
+    transform-origin: center;
+}
+
+
+.labelBkgrd2 {
+    /*  position:absolute !important;*/
+    padding-top: 18px;
+    pointer-events: none;
+    stroke: #c0c0c0;
+    stroke-width: 1px;
+    stroke-opacity: 0.2;
+    opacity: 0.7;
+    z-index: 499;
+    rx: 3;
+    ry: 3;
+}
+
+
+.labelBkgrd3 {
+    /*  position:absolute !important;*/
+    padding-top: 18px;
+    pointer-events: none;
+    stroke: #c0c0c0;
+    stroke-width: 1px;
+    stroke-opacity: 0.2;
+    opacity: 1;
+    z-index: 499;
+    rx: 3;
+    ry: 3;
+}
+
+
+.learnClicked path:not(.semitransparent), .learnClicked polygon:not(.semitransparent), .learnedClicked circle {
+    transition: fill 0.5s ease;
+    fill: #157a3e;
+}
+
+.message {
+    font-size: 18px;
+}
+
+
+#divTips {
+    padding-bottom: 10px;
+    color: #111111;
+    font-weight:bold;
+}
+
+canvas {
+    background-color: white;
+}
+
+#colorDataForm {
+    position: absolute;
+    right: 350px;
+    width: 350px;
+}
+
+#svgWrapper {
+    position: relative;
+}
+
+.label {
+    position: absolute;
+    z-index: 1410;
+    /*  padding: 0px 0px 10px 5px;
+        height:25px;*/
+    /*  background-image: url('https://www.geoguessr.com/images/system/mapMarker.png');*/
+    background-position: 8px 14px;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    display: inline-block;
+    color: black;
+    padding: 0px 0px 10px 5px;
+}
+
+
+.tempLabel {
+    position: absolute;
+    z-index: 9;
+    padding: 15px 0px 15px 5px;
+    height: 45px;
+    /*  background-image:url('https://www.geoguessr.com/images/system/mapMarkerUpper.png');
+    background-position:8px 3px;
+    background-repeat:no-repeat;*/
+    opacity: .88;
+    pointer-events: none;
+}
+
+circle.mapcircle {
+    opacity: 0.4;
+}
+
+
+
+.labelText {
+    font-size: 17px;
+    color: #000000;
+    background-color: #ffffff;
+    opacity: 0.8;
+    padding: 2px 6px 2px 6px;
+    border-radius: 4px;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+
+.tempLabel .labelText {
+    background-color: #005000;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+#imgInFlag {
+    float: right;
+    height: 26px;
+    margin: 0px;
+    margin-top: -3px;
+    padding: 0px;
+    opacity: 0.7;
+    display: none;
+    pointer-events: auto;
+}
+
+#imgOutFlag {
+    float: right;
+    height: 26px;
+    margin: 0px;
+    margin-top: -3px;
+    padding: 0px;
+    opacity: 0.7;
+    display: none;
+    pointer-events: auto;
+    padding-right: 10px;
+}
+
+#imgInFlag:hover {
+    opacity: 1;
+}
+
+#imgOutFlag:hover {
+    opacity: 1;
+}
+
+
+.formItem {
+    width: 400px;
+    height: 25px;
+    margin: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #c0c0c0;
+    clear: both;
+}
+
+.divExtraInfoFloat {
+    position: absolute;
+    background-Color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    opacity: 0.85;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+
+.patch {
+    float: left;
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+.pixels {
+    float: left;
+    margin-left: 20px;
+    margin-right: 25px;
+    width: 100px;
+    font-size: 12px;
+    font-family: Verdana;
+    text-align: right;
+}
+
+.formField {
+    float: left;
+}
+
+#HUDGroup {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    z-index: 550;
+    display: none;
+    pointer-events: none;
+}
+
+#HUDWrapper {
+    position: absolute;
+    margin: 0px;
+    width: 100%;
+    height: 40px;
+    background-color: #ffffff;
+    z-index: 500;
+    opacity: 0.4;
+    pointer-events: none;
+    border-bottom: 1px solid #dddddd;
+}
+
+#HUD {
+    position: absolute;
+    margin: 0px;
+    width: 100%;
+    font-size: 22px;
+    padding: 3px 0px 3px 10px;
+    z-index: 510;
+    text-align: left;
+    color: #000000;
+    pointer-events: none;
+}
+
+#canvasContainer {
+    width: 975px;
+    height: 675px;
+}
+
+.gamewindow {
+    clear: both !important;
+}
+
+#gameOptions {
+    clear: both;
+    height: 5px;
+}
+
+
+
+
+
+/*#HUDWrapper:hover
+{
+ display:none;   
+}
+*/
+
+
+
+
+/*INFO LABEL*/
+
+.infoLabel {
+    position: relative;
+    display: table-cell;
+    text-align: left;
+    max-width: 350px;
+    padding: 10px;
+    background-color: #ffffff;
+    opacity: 0.95;
+    color: #353535;
+    border-radius: 5px;
+    z-index: 500;
+}
+
+    .infoLabel img {
+        float: left;
+        height: 50px;
+        margin-right: 7px;
+        margin-bottom: 7px;
+        opacity: 1;
+    }
+
+    .infoLabel #infoText {
+        font-size: 0.8em;
+        line-height: 0.8em;
+    }
+
+
+
+
+.closer {
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    width: 13px;
+    height: 13px;
+    background-color: #ffffff;
+    padding-left: 4px;
+    padding-bottom: 3px;
+    padding-top: 1px;
+    overflow: visible;
+    border-radius: 12px;
+    border: solid 2px #202020;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+    .closer:hover, .infoLink:hover {
+        cursor: pointer;
+    }
+
+.infoLink {
+    color: #ffffff;
+    background-color: #339966;
+    z-index: 500;
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    width: 13px;
+    height: 13px;
+    padding-left: 5px;
+    padding-bottom: 3px;
+    padding-top: 1px;
+    overflow: visible;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/*DRAG LABELS*/
+
+
+#dragLabels {
+    clear: both;
+    float: left;
+    position: relative;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.dragItem {
+    position: relative;
+    float: left;
+    font-size: 13px;
+    font-weight: 200;
+    color: #000000;
+    fill: #EEEEEE;
+    background-color: #EEEEEE;
+    opacity: .9;
+    border-radius: 3px;
+    border: 1px solid #c0c0c0;
+    margin: 3px 5px;
+    z-index: 650;
+
+}
+
+
+
+.draggable {
+    opacity: 0.2;
+}
+
+.dragHandle {
+    position: relative;
+    float: left;
+    font-size: 13px;
+    font-weight: 200;
+    fill: none;
+    opacity: .9;
+    border-radius: 3px;
+    margin: 3px 5px;
+    z-index: 650;
+    font-size: 18px;
+    cursor: default;
+    font-family: 'Arial';
+
+}
+
+.dragInnerHandle {
+    position: absolute;
+    left: -5%;
+    top: -5%;
+    background-color: transparent;
+    width: 110%;
+    height: 110%;
+}
+
+.testItem {
+    float: left;
+    background-color: #dddddd;
+    opacity: 0.7;
+    padding: 2px;
+    border-radius: 3px;
+    font-size: 0.9em;
+    font-weight: bolder;
+    font-family: Verdana,sans serif;
+    color: #000000;
+    margin: 20px;
+    z-index: 650;
+}
+
+
+.clickedLabel {
+    -webkit-box-shadow: 0px 0px 5px 5px rgb(33, 33, 33);
+    -moz-box-shadow: 0px 0px 5px 5px rgb(33, 33, 33);
+    box-shadow: 0px 0px 0px 5px rgb(33, 33, 33);
+}
+
+
+
+.qImgWrapper {
+    position: absolute;
+}
+
+    .qImgWrapper img {
+        height: 25px;
+    }
+
+#divExtraInfo {
+    font-size: 15px;
+    padding-top: 5px;
+    min-height: 25px;
+}
+
+
+
+@media (max-width: 950px) {
+    #divExtraInfo {
+        font-size: 11px;
+        padding: 10px;
+    }
+
+    #typeeasyprompt {
+        display: none;
+    }
+}
+
+@media (max-width: 750px) {
+    #divExtraInfo {
+        font-size: 9px;
+        padding: 2px;
+    }
+
+    .divExtraInfoFloat {
+        padding: 2px;
+        border-radius: 1px;
+    }
+}
+
+@media (max-width: 850px) {
+    #divSkip {
+        font-size: .85em;
+
+    }
+}
+
+
+    @media (max-width: 700px) {
+        #typeEasyInputForm input[type="text"] {
+            font-size: .95em !important;
+            width: 150px;
+        }
+
+        #typeEasyInputForm button {
+            font-size: .95em !important;
+        }
+
+        .typeeasy-input-form {
+            font-size: .95em !important;
+            left: 110px;
+        }
+
+        .dragHandle {
+            font-size: 15px;
+        }
+    }
+
+
+
+
+    @media (max-width: 450px) {
+        #divExtraInfo {
+            font-size: 8px;
+            padding: 2px;
+            min-height: 12px;
+        }
+
+        .dragHandle {
+            font-size: 13px;
+        }
+
+        #typeEasyInputForm input[type="text"] {
+            width: 100px;
+        }
+    }

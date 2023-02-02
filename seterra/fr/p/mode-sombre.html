@@ -1,0 +1,525 @@
+
+
+<!DOCTYPE html >
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="twitter:image" content="https://geoguessr.com/seterra/images/system/dark-mode.png" /><meta name="twitter:description" content="À l’origine, le site Seterra a été conçu en couleurs claires, mais certains pensent que les couleurs plus sombres sont plus agréables à l’œil, ou plus confortables à regarder. Désormais vous pouvez choisir entre le mode sombre ou le mode clair sur le site Seterra !" /><meta name="twitter:url" content="https://www.geoguessr.com/seterra/fr/p/mode-sombre" /><meta name="twitter:creator" content="@seterrageo" /><meta name="twitter:site" content="@seterrageo" /><meta name="twitter:title" content="Nouvelle fonctionnalité : le mode sombre&amp;nbsp;!" /><meta name="twitter:card" content="summary_large_image" /><meta property="og:type" content="article" /><meta property="og:url" content="https://www.geoguessr.com/seterra/fr/p/mode-sombre" /><meta property="og:description" content="À l’origine, le site Seterra a été conçu en couleurs claires, mais certains pensent que les couleurs plus sombres sont plus agréables à l’œil, ou plus confortables à regarder. Désormais vous pouvez choisir entre le mode sombre ou le mode clair sur le site Seterra !" /><meta property="og:title" content="Nouvelle fonctionnalité : le mode sombre&amp;nbsp;!" /><meta property="fb:app_id" content="319599044764636" /><meta name="Description" content="À l’origine, le site Seterra a été conçu en couleurs claires, mais certains pensent que les couleurs plus sombres sont plus agréables à l’œil, ou plus confortables à regarder. Désormais vous pouvez choisir entre le mode sombre ou le mode clair sur le site Seterra !" /><meta property="og:image" content="https://geoguessr.com/seterra/images/system/dark-mode.png" />
+
+    <script src="../../Scripts/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script src="../../Scripts/jquery.cookie.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" defer></script>
+        <script src="../../Scripts/general.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" defer="" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><link href="../../CSS/pagestyles.css" rel="stylesheet" type="text/css" /><link href="../../CSS/geoguessr.css" rel="stylesheet" type="text/css" />
+
+<link rel="icon" href="../../favicon.ico" type="image/x-icon" />
+<script type="text/javascript" src="../../Scripts/jquery.ddslick.min.js"></script>
+<script src="../../Scripts/utils.js"></script>
+<script src="../../Scripts/highscores.js"></script>
+
+
+    
+     <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <!-- Google Tag Manager -->
+    
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-W5K3B7M');</script>    
+    
+    <!-- End Google Tag Manager -->
+
+    <script>
+        var activeUnits = [
+            'gg-seterra_sidebar_right',
+            'gg-seterra_sidebar_right_2',
+            'gg-seterra_mobile_1',
+            'gg-seterra_headerleader',
+            'gg-seterra_nvu-and-float',
+            'gg-seterra_learboard_adhesion',
+            'gg-seterra_bottom_mpu',
+            'gg-seterra_outstream_mw'
+        ];
+
+        if (window.isProUser()) {
+            activeUnits = [];
+        }
+
+        window.snigelPubConf = {
+            "adengine": {
+                "activeAdUnits": activeUnits
+            }
+        };
+    </script>
+
+    
+        <script async data-cfasync="false" src="https://cdn.snigelweb.com/adengine/geoguessr.com/loader.js" type="text/javascript"></script>
+    
+    <style>h3 {
+            padding-bottom: 1px;
+            -webkit-margin-after: 0em;
+        }
+
+        p {
+            -webkit-margin-before: 0.5em;
+        }
+
+        img {
+            max-width: 100%
+        }
+    </style>
+
+    <script>
+        $(function () {
+            $("#accordion").accordion({
+                active: false,
+                collapsible: true,
+                heightStyle: "content",
+            });
+            $("#accordion2").accordion({
+                active: false,
+                collapsible: true,
+                heightStyle: "content",
+            });
+        });
+    </script>
+
+<link rel="canonical" href="mode-sombre.html" /><title>
+	Nouvelle fonctionnalité : le mode sombre&nbsp;!
+</title></head>
+<body>
+
+    <script>
+        var lang="fr"
+    </script>
+    <form name="form1" method="post" action="mode-sombre.html" id="form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJNDA3MDkyOTc4D2QWAgIBD2QWFAIBD2QWNmYPDxYCHgtOYXZpZ2F0ZVVybAXzAWh0dHBzOi8vd3d3LnBhdHJlb24uY29tL29hdXRoMi9hdXRob3JpemU/cmVzcG9uc2VfdHlwZT1jb2RlJnNjb3BlPXVzZXJzJTIwcGxlZGdlcy10by1tZSUyMG15LWNhbXBhaWduJmNsaWVudF9pZD0zODY1MTU1MzE1Yzk1YTAwZTI3OGIyYzNiZDNhNWI2NmRkZjJjMTJiOGZlNDg2MzE3ZTc0YTBlMzkyZWIxZWMzJnJlZGlyZWN0X3VyaT1odHRwczovL3d3dy5nZW9ndWVzc3IuY29tL3NldGVycmEvbWVtYmVyUmVkaXJlY3QuYXNweGRkAgQPDxYCHgdWaXNpYmxlaGRkAgUPDxYCHwFoZGQCBg8PFgIfAWhkZAIHDw8WAh8BaGRkAggPDxYCHwFoZGQCCQ8PFgIfAWhkZAIKDw8WAh8BaGRkAgsPDxYCHwFoZGQCDQ8PFgIfAWhkZAIODw8WAh8BaGRkAg8PDxYCHwFoZGQCEA8PFgIfAWhkZAIRDw8WAh8BaGRkAhIPDxYCHwFoZGQCEw8PFgIfAWhkZAIUDw8WAh8BaGRkAhUPDxYCHwFoZGQCFg8PFgIfAWhkZAIXDw8WAh8BaGRkAhgPDxYCHwFoZGQCGQ8PFgIfAWhkZAIaDw8WAh8BaGRkAhsPDxYCHwFoZGQCHA8PFgIfAWhkZAIdDw8WAh8BaGRkAh4PDxYCHwFoZGQCAw8PFgIeBFRleHQFjQE8YSBocmVmPScvc2V0ZXJyYScgPkhvbWU8L2E+ID4+IDxhIGhyZWY9Jy9zZXRlcnJhL2ZyJz5TZXRlcnJhIC0gSmV1eCBkZSBHw6lvZ3JhcGhpZTwvYT4gPj4gPGEgaHJlZj0nL3NldGVycmEvZnIvYmxvZyc+QmxvZyBkZSBTZXRlcnJhPC9hPiA+PiBkZAIFDxYCHwIFME5vdXZlbGxlIGZvbmN0aW9ubmFsaXTDqSA6IGxlIG1vZGUgc29tYnJlJm5ic3A7IWQCBw8WAh8BaBYCAgEPDxYCHwBkZBYCZg8UKwICZGRkAgkPFgIfAgXBBjxwPjxiPsOAIGzigJlvcmlnaW5lLCBsZSBzaXRlIFNldGVycmEgYSDDqXTDqSBjb27Dp3UgZW4gY291bGV1cnMgY2xhaXJlcywgbWFpcyBjZXJ0YWlucyBwZW5zZW50IHF1ZSBsZXMgY291bGV1cnMgcGx1cyBzb21icmVzIHNvbnQgcGx1cyBhZ3LDqWFibGVzIMOgIGzigJnFk2lsLCBvdSBwbHVzIGNvbmZvcnRhYmxlcyDDoCByZWdhcmRlci4gRMOpc29ybWFpcyB2b3VzIHBvdXZleiBjaG9pc2lyIGVudHJlIGxlIG1vZGUgc29tYnJlIG91IGxlIG1vZGUgY2xhaXIgc3VyIGxlIHNpdGUgU2V0ZXJyYSAhPC9iPjwvcD4NCg0KPGltZyBzcmM9Ii9zZXRlcnJhL2ltYWdlcy9zeXN0ZW0vZGFyay1tb2RlMi5wbmciIGFsdD0iZGFyayBtb2RlIj48YnI+DQoNCjxwPlBvdXIgYWN0aXZlciBsZSBtb2RlIHNvbWJyZSwgY2xpcXVleiBzdXIgbGEgY2FzZSDDoCBjb2NoZXIgZGFucyBsZSBjb2luIHN1cMOpcmlldXIgZHJvaXQuIFNpIHZvdXMgdmlzaXRleiBsZSBzaXRlIMOgIGzigJlhaWRlIGTigJl1biBuYXZpZ2F0ZXVyIHN1ciB2b3RyZSB0w6lsw6lwaG9uZSwgdm91cyBkZXZyZXogYXUgbGlldSBkZSBjZWxhIGNoZXJjaGVyIGxlIGJvdXRvbiBkdSBtb2RlIHNvbWJyZSBkYW5zIGxlIG1lbnUgZMOpcm91bGFudC48L3A+DQoNCjxpbWcgc3JjPSIgL2ltYWdlcy9zeXN0ZW0vZGFyay1tb2RlLnBuZyIgYWx0PSJtb2RlIHNvbWJyZSI+DQoNCjxwPkxlIG1vZGUgc29tYnJlIGVzdCBwYXIgYWlsbGV1cnMgbMOpZ8OocmVtZW50IHBsdXMgY29tcGFjdCBxdWUgbGUgbW9kZSBjbGFpciwgY2UgcXVpIG7DqWNlc3NpdGUgbW9pbnMgZGUgZMOpZmlsZW1lbnQgw6AgbOKAmcOpY3Jhbi48L3A+ZAILD2QWAgIBDxYCHgtfIUl0ZW1Db3VudGZkAg8PDxYCHwFnZBYCZg9kFgICAQ8WAh8DAgUWCmYPZBYEAgEPDxYCHwIFDzMxLzA4LzIwMjE8YnIvPmRkAgMPDxYGHwIFGUZvaXJlIEF1eCBRdWVzdGlvbnMgKEZBUSkeB1Rvb2xUaXAFGUZvaXJlIEF1eCBRdWVzdGlvbnMgKEZBUSkfAAUUL3NldGVycmEvZnIvcC9mYXEtZnJkZAIBD2QWBAIBDw8WAh8CBQ8yMi8wNC8yMDIxPGJyLz5kZAIDDw8WBh8CBR1UcnVjcyBldCBhc3R1Y2VzIGRhbnMgU2V0ZXJyYR8EBR1UcnVjcyBldCBhc3R1Y2VzIGRhbnMgU2V0ZXJyYR8ABRMvc2V0ZXJyYS9mci9wL3RydWNzZGQCAg9kFgQCAQ8PFgIfAgUPMTYvMDQvMjAyMTxici8+ZGQCAw8PFgYfAgUgTGVzIG1vZGVzIGRlIGpldSBkdSBzaXRlIFNldGVycmEfBAUgTGVzIG1vZGVzIGRlIGpldSBkdSBzaXRlIFNldGVycmEfAAUaL3NldGVycmEvZnIvcC9tb2Rlcy1kZS1qZXVkZAIDD2QWBAIBDw8WAh8CBQ8xMy8wNC8yMDIxPGJyLz5kZAIDDw8WBh8CBTZFbnRyZXRpZW4gYXZlYyBNYXJpYW5uZSBXYXJ0b2Z0LCBmb25kYXRyaWNlIGRlIFNldGVycmEfBAU2RW50cmV0aWVuIGF2ZWMgTWFyaWFubmUgV2FydG9mdCwgZm9uZGF0cmljZSBkZSBTZXRlcnJhHwAFFy9zZXRlcnJhL2ZyL3AvZW50cmV0aWVuZGQCBA9kFgQCAQ8PFgIfAgUPMjAvMDIvMjAyMTxici8+ZGQCAw8PFgYfAgUwTm91dmVsbGUgZm9uY3Rpb25uYWxpdMOpIDogbGUgbW9kZSBzb21icmUmbmJzcDshHwQFME5vdXZlbGxlIGZvbmN0aW9ubmFsaXTDqSA6IGxlIG1vZGUgc29tYnJlJm5ic3A7IR8ABRkvc2V0ZXJyYS9mci9wL21vZGUtc29tYnJlZGQCEQ9kFgICAQ9kFgICAQ8WAh8DAgEWAmYPZBYCZg8PFgIfAAUUL3NldGVycmEvZnIvdmdwLzMyNDZkFgYCAQ8PFgYeCEltYWdlVXJsBSQvc2V0ZXJyYS9tYXBpbWFnZS90aHVtYnMxNTAvMzI0Ni5wbmcfBAUqRnJhbmNlIG3DqXRyb3BvbGl0YWluZSA6IGxlcyBkw6lwYXJ0ZW1lbnRzHg1BbHRlcm5hdGVUZXh0BSpGcmFuY2UgbcOpdHJvcG9saXRhaW5lIDogbGVzIGTDqXBhcnRlbWVudHNkZAIDDw8WAh8CBSpGcmFuY2UgbcOpdHJvcG9saXRhaW5lIDogbGVzIGTDqXBhcnRlbWVudHNkZAIFDw8WAh8CBRNRdWl6IGRlIGfDqW9ncmFwaGllZGQCEw8WAh8CZWQCFQ9kFgICAQ8WAh8CBYsNPGRpdiBjbGFzcz0iZm9vdGVyTWVudSI+PGRpdiBjbGFzcz0idGl0bGUiPkhlbHAgQ2VudGVyPC9kaXY+ICA8dWw+IDxsaT48YSBocmVmPSIvc2V0ZXJyYS9lbi9wL2NvbnRhY3QiPkNvbnRhY3QgVXM8L2E+PC9saT4gPGxpPjxhIGhyZWY9Ii9zZXRlcnJhL2VuL3AvZmFxIj5GQVEgKFdlYnNpdGUpPC9hPjwvbGk+IDxsaT48YSBocmVmPSIvc2V0ZXJyYS9lbi9wL2FwcC1mYXEiPkZBUSAoQXBwKTwvYT48L2xpPiA8bGk+PGEgaHJlZj0iL3NldGVycmEvZW4vcC90aXBzLWFuZC10cmlja3MiPlRpcHMgJiBUcmlja3M8L2E+PC9saT4gPGxpPjxhIGhyZWY9Ii9zZXRlcnJhL3BybyI+UHJpY2luZzwvYT48L2xpPiA8bGk+PGEgaHJlZj0iL3NldGVycmEvZW4vYmxvZyI+QmxvZzwvYT48L2xpPiA8L3VsPiAgPC9kaXY+ICA8ZGl2IGNsYXNzPSJmb290ZXJNZW51Ij48ZGl2IGNsYXNzPSJ0aXRsZSI+Jm5ic3A7PC9kaXY+ICA8dWw+ICA8bGk+PGEgaHJlZj0iL3NldGVycmEvZW4vcC9zZXRlcnJhLW1vZGVzIj5HYW1lIE1vZGVzPC9hPjwvbGk+IDxsaT48YSBocmVmPSIvc2V0ZXJyYS9lbi9wL3NldGVycmEtaGlnaHNjb3JlcyI+UGVyc29uYWwgTGVhZGVyYm9hcmRzPC9hPjwvbGk+IDxsaT48YSBocmVmPSIvc2V0ZXJyYS9lbi9wL2N1c3RvbS1xdWl6emVzIj5DcmVhdGUgQ3VzdG9tIFF1aXp6ZXM8L2E+PC9saT4gPGxpPjxhIGhyZWY9Ii9zZXRlcnJhL2VuL3AvcHVibGljLWxlYWRlcmJvYXJkcyI+UHVibGljIExlYWRlcmJvYXJkczwvYT48L2xpPiA8bGk+PGEgaHJlZj0iL3NldGVycmEvZW4vcC9jdXN0b20tbG9jYXRpb25zIj5BZGQgQ3VzdG9tIExvY2F0aW9uczwvYT48L2xpPiAgICA8L3VsPiAgPC9kaXY+ICA8ZGl2IGNsYXNzPSJmb290ZXJNZW51Ij48ZGl2IGNsYXNzPSJ0aXRsZSI+UmVzb3VyY2VzPC9kaXY+IDx1bD4gPGxpPjxhIGhyZWY9Ii9zZXRlcnJhL2VuL2wvcGRmP2ltZz0xIj5QcmludGFibGVzPC9hPjwvbGk+IDxsaT48YSBocmVmPSIvc2V0ZXJyYS9lbi9sL2JsYSI+QmxhbmsgTWFwczwvYT48L2xpPiA8bGk+PGEgaHJlZj0iL3NldGVycmEvZW4vcC91c2VyLXF1aXp6ZXMiPlVzZXIgR2VuZXJhdGVkIFF1aXp6ZXM8L2E+PC9saT4gPGxpPjxhIGhyZWY9Ii9zZXRlcnJhL2VuLWFuIj5TY2llbmNlIFF1aXp6ZXM8L2E+PC9saT4gPGxpPjxhIGhyZWY9Ii9zZXRlcnJhL2VuL3AvdG9wLXNjb3JlcyI+VG9wIFNjb3JlczwvYT48L2xpPiA8bGk+PGEgaHJlZj0iaHR0cHM6Ly93d3cuc3BlZWRydW4uY29tL3NldGVycmEiPlNwZWVkcnVuLmNvbTwvYT48L2xpPiA8L3VsPiAgPC9kaXY+ICA8ZGl2IGNsYXNzPSJmb290ZXJNZW51Ij48ZGl2IGNsYXNzPSJ0aXRsZSI+QWJvdXQ8L2Rpdj4gIDx1bD4gPGxpPjxhIGhyZWY9Ii9zZXRlcnJhL3Rlcm1zLmFzcHgiPlRlcm1zICYgQ29uZGl0aW9uczwvYT48L2xpPiA8bGk+PGEgaHJlZj0iL3NldGVycmEvcHJpdmFjeS5hc3B4Ij5Qcml2YWN5IFBvbGljeTwvYT48L2xpPiA8bGk+PGEgaHJlZj0iL3NldGVycmEvZW4vcC9jb250YWN0Ij5Db250YWN0IFVzPC9hPjwvbGk+IDwvdWw+ICA8L2Rpdj4gIDxkaXYgc3R5bGU9ImNsZWFyOmJvdGgiPjwvZGl2Pjxicj48YnI+PHNwYW4gc3R5bGU9InBhZGRpbmctbGVmdDoyMHB4O2ZvbnQtc2l6ZToxM3B4O2NvbG9yOiNBQUFBQUEiPjIvMS8yMDIzIDEwOjI4OjQ2IFBNPC9zcGFuPmRkCMoC6EmNLI9+oZ4hchVNs4sxV1zlzPDjpzfOq4UDeSc=" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="36387C0A" />
+        
+<script async src="https://cse.google.com/cse.js?cx=1110b678f1dd23364"></script>
+<script>
+    function getCookie(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+
+    function hasDarkMode(url) {
+        var res = true
+        if (url.indexOf("terms.aspx") != -1) {
+            res = false
+        }
+        if (url.indexOf("privacy.aspx") != -1) {
+            res = false
+        }
+        if (url.indexOf("searchresults.aspx") != -1) {
+            res = false
+        }
+
+        return res
+    }
+
+    var darkmode = getCookie("darkmode");
+
+    if (hasDarkMode(window.location.href) == true) {
+        if (darkmode == "1" && (window.location.href.indexOf("darkmode") == -1)) {
+            document.write('<link rel="stylesheet" type="text/css" href="/seterra/css/darkmode.css" />');
+            
+        }
+        if (window.location.href.indexOf("noborders=1") != -1) {
+            document.write('<link rel="stylesheet" type="text/css" href="/seterra/css/noborders.css" />');
+        }
+
+        if (window.location.href.indexOf("darkmap=1") != -1) {
+            document.write('<link rel="stylesheet" type="text/css" href="/seterra/css/darkmap.css" />');
+        }
+    }
+
+    $(document).ready(function () {
+        if (window.location.href.indexOf("darkmode=0") != -1) {
+            $.cookie('darkmode', '0', { path: '/', expires: 14 });
+        }
+        if ($.cookie('darkmode') == "1" || window.location.href.indexOf("darkmode=1") != -1) {
+            $('#chkDarkMode').prop('checked', true);
+        }
+        setTimeout(function () {
+            if (document.getElementById("gsc-i-id1")) {
+                document.getElementById("gsc-i-id1").setAttribute("placeholder", "Search Seterra")
+            }
+        }, 1000);
+
+    })
+</script>
+
+
+ 
+<script>
+    $(document).ready(function () {
+        if (!!$.cookie('pledges')) {
+            $("#patreon-banner").show();
+        }
+    });
+</script>
+
+<style>#patreon-banner
+{
+    border-color: rgba(255, 216, 0, 0.5);
+    background-color: rgba(255, 216, 0, 0.2);
+}
+
+.patreon-banner-content {
+    margin:auto;
+    padding: 0.5rem;
+    max-width:1250px;
+}
+</style>
+
+<div id="patreon-banner" style="display:none;">
+    <div class="patreon-banner-content">
+        <p>
+            Patreon will be replaced with our GeoGuessr subscription.
+
+        <a href="https://www.geoguessr.com/seterra/patreon.html">Read more about the change here.</a>
+        </p>
+    </div>
+</div>
+ 
+
+<div id="header">
+    <div id="header-content-wrapper">
+        <div id="logo">
+            <a href="https://www.geoguessr.com/seterra/index.html">
+                <img src="../../images/system/gg-seterra-logo.png" class="wordmark" alt="Seterra logo"/>
+            </a>
+        </div>
+        <div id="divLanguageDropDown"></div>
+        <div class="spacer">
+            <div style="padding-top: 70px; padding-left: 20px; color: #888888;">
+                <input type="checkbox" id="chkDarkMode" onclick="loadDarkMode()" />
+                <label for="chkDarkMode">🌙 Dark Mode</label>
+            </div>
+
+            <div style="padding-top: 70px; padding-left: 20px; color: #888888; display: none;">
+                &nbsp;
+            </div>
+
+        </div>
+
+
+        <div id="socialmedia">
+
+            <div class="searchbox">
+                <div class="gcse-searchbox-only" data-resultsurl="/seterra/searchresults.aspx" data-autocompletemaxcompletions="35"></div>
+            </div>
+            <div class="mobilemenu">
+                <div class="mobilemenucontainer" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+            <div class="login-buttons">
+                <div id="logindiv">
+                    <span id="text-login" class="mem-login">Log in:</span>
+                    <a id="header1_linkLoginPatreon" class="mem-login linkLogin linkLoginPatreon" href="https://www.patreon.com/oauth2/authorize?response_type=code&amp;scope=users%20pledges-to-me%20my-campaign&amp;client_id=3865155315c95a00e278b2c3bd3a5b66ddf2c12b8fe486317e74a0e392eb1ec3&amp;redirect_uri=https://www.geoguessr.com/seterra/memberRedirect.aspx">Patreon</a>
+                    <a id="header1_linkLogoutPatreon" class="mem-login linkLogout linkLogoutPatreon" href="https://www.geoguessr.com/seterra/logout2.aspx.html">Log out</a>
+                    <a id="header1_linkLoginGeoGuessr" class="mem-login linkLogin linkLoginGeoGuessr" href="https://www.geoguessr.com/signin%EF%B9%96target=%EA%A4%B7seterra.html">GeoGuessr</a>
+                    <a id="header1_linkLogoutGeoGuessr" class="mem-login linkLogout linkLogoutGeoGuessr" href="https://www.geoguessr.com/signout%EF%B9%96target=%EA%A4%B7seterra.html">Log out</a>
+                </div>
+                <div id="loginName"></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<div id="header1_panMainNav_fr">
+	
+    <div style="width: 100%;" class="nav-wrapper">
+        <div id="mainnav">
+            <a class="navlink" href="../../fr.html">Tout</a> | <a class="navlink" href="../l/eur.html">Europe</a> | <a class="navlink" href="../l/nam.html">Amérique du Nord</a> | <a class="navlink" href="../l/sam.html">Amérique du Sud</a> | <a class="navlink" href="../l/afr.html">Afrique</a> | <a class="navlink" href="../l/asi.html">Asie</a> | <a class="navlink" href="../l/aus.html">Océanie</a> | <a class="navlink" href="../l/wor.html">Le Monde</a> | <a class="navlink" href="../l/pdf%EF%B9%96img=1.html">PDF</a> | <a class="navlink" href="../blog.html">Blog</a> | <a class="navlink" href="faq-fr.html">FAQ</a>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="mobiledropdown" style="display: none">
+    <div class="mobiledropdowninner">
+        <div id="mainnav2" style="margin-bottom: 15px;">
+        </div>
+        <div style="margin-bottom: 15px;">
+            <a id="lnkDarkModeOn" class="navlink2" href="https://www.geoguessr.com/seterra/index.html" onclick="$('#chkDarkMode').prop('checked', true);loadDarkMode();return false;">Dark Mode On 🌙 </a>
+            <a id="lnkDarkModeOff" class="navlink2" href="https://www.geoguessr.com/seterra/index.html" onclick="$('#chkDarkMode').prop('checked', false);loadDarkMode();return false;">Dark Mode Off 🌙 </a>
+            <a id="lnkMyCustomQuizzes" class="navlink2 linkLogout" href='https://www.geoguessr.com/seterra/GenericErrorPage%EF%B9%96aspxerrorpath=%EA%A4%B7seterra%EA%A4%B7fr%EA%A4%B7myaccount.aspx.htm'>My Custom Quizzes </a>
+
+            <a class="navlink2" href="https://www.geoguessr.com/seterra/index.html">Change language</a>
+
+            <div id="login2">
+            </div>
+            <div id="search2">
+                        <gcse:searchbox-only resultsurl="/seterra/searchresults.aspx"></gcse:searchbox-only>
+                </div>
+        </div>
+    </div>
+</div>
+<script>
+    var fFirst = true;
+    pageLang = 'fr';
+
+    if (pageLang == '') pageLang = 'en';
+    pageLang = pageLang.toLowerCase();
+
+    if (window.location.href.indexOf("searchresult") == -1) {
+        $.cookie('recentlang', pageLang, { path: '/', expires: 14 });
+    }
+
+    function myFunction(x) {
+        x.classList.toggle("change");
+        var y = document.getElementsByClassName("mobiledropdown")[0];
+
+        if (y.style.display === "none") {
+            y.style.display = "block";
+        } else {
+            y.style.display = "none";
+        }
+    }
+
+    $(document).ready(function () {
+        var strMenu = "";
+        var navLinks = document.getElementsByClassName("navlink");
+        var i = 0;
+        var currentPage = window.location.pathname;
+        for (i; i < navLinks.length; i++) {
+            var lb = navLinks[i].getAttribute("href")
+            if (lb == currentPage) {
+                navLinks[i].classList.add("active")
+            }
+            strMenu = strMenu + navLinks[i].outerHTML;
+
+        }
+
+        $("#mainnav2").html(strMenu);
+        if (document.documentElement.clientWidth <= 820) {
+            $("#logindiv").appendTo("#login2")
+        };
+
+        var ddBasic = [
+        { text: "Afrikaans", imageSrc: "/seterra/images/system/flags/langlistflags/flag-af.png", value: "af", selected: false}, { text: "Čeština (Czech)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-cs.png", value: "cs", selected: false}, { text: "Català (Catalan)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ca.png", value: "ca", selected: false}, { text: "Dansk (Danish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-da.png", value: "da", selected: false}, { text: "Deutsch (German)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-de.png", value: "de", selected: false}, { text: "English", imageSrc: "/seterra/images/system/flags/langlistflags/flag-en.png", value: "en", selected: false}, { text: "Eesti (Estonian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-et.png", value: "et", selected: false}, { text: "Español (Spanish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-es.png", value: "es", selected: false}, { text: "Français (French)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-fr.png", value: "fr", selected: false}, { text: "Ελληνικά (Greek)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-el.png", value: "el", selected: false}, { text: "Gaeilge (Irish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ga.png", value: "ga", selected: false}, { text: "Hrvatski (Croatian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-hr.png", value: "hr", selected: false}, { text: "Bahasa Indonesia (Indonesian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-id.png", value: "id", selected: false}, { text: "Íslenska (Icelandic)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-is.png", value: "is", selected: false}, { text: "Italiano (Italian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-it.png", value: "it", selected: false}, { text: "Latviešu valoda (Latvian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-lv.png", value: "lv", selected: false}, { text: "Lietuvių (Lithuanian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-lt.png", value: "lt", selected: false}, { text: "Magyar (Hungarian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-hu.png", value: "hu", selected: false}, { text: "Nederlands (Dutch)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-nl.png", value: "nl", selected: false}, { text: "Norsk (Norwegian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-nb.png", value: "nb", selected: false}, { text: "Polski (Polish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-pl.png", value: "pl", selected: false}, { text: "Português (Portuguese)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-pt.png", value: "pt", selected: false}, { text: "Română (Romanian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ro.png", value: "ro", selected: false}, { text: "русский (Russian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ru.png", value: "ru", selected: false}, { text: "Shqip (Albanian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-sq.png", value: "sq", selected: false}, { text: "Slovenský jazyk (Slovak)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-sk.png", value: "sk", selected: false}, { text: "Slovenski jezik (Slovene)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-sl.png", value: "sl", selected: false}, { text: "српски (Serbian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-sr.png", value: "sr", selected: false}, { text: "Suomi (Finnish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-fi.png", value: "fi", selected: false}, { text: "Svenska (Swedish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-sv.png", value: "sv", selected: false}, { text: "Türkçe (Turkish)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-tr.png", value: "tr", selected: false}, { text: "Українська (Ukrainian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-uk.png", value: "uk", selected: false}, { text: "Oʻzbekcha (Uzbek)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-uz.png", value: "uz", selected: false}, { text: "አማርኛ (Amharic)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-am.png", value: "am", selected: false}, { text: "العربية (Arabic)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ar.png", value: "ar", selected: false}, { text: "فارسی (Persian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-fa.png", value: "fa", selected: false}, { text: "български (Bulgarian)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-bg.png", value: "bg", selected: false}, { text: "中文 (Chinese (simplified))", imageSrc: "/seterra/images/system/flags/langlistflags/flag-zh.png", value: "zh", selected: false}, { text: "עִבְרִית‎ (Hebrew)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-he.png", value: "he", selected: false}, { text: "हिन्दी (Hindi)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-hi.png", value: "hi", selected: false}, { text: "தமிழ் (Tamil)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ta.png", value: "ta", selected: false}, { text: "සිංහල (Sinhala)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-si.png", value: "si", selected: false}, { text: "日本語 (Japanese)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ja.png", value: "ja", selected: false}, { text: "한국어 (Korean)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-ko.png", value: "ko", selected: false}, { text: "ไทย (Thai)", imageSrc: "/seterra/images/system/flags/langlistflags/flag-th.png", value: "th", selected: false}
+        ];
+        var fFound = false;
+        for (var i = 0; i < ddBasic.length; i++) {
+            if (ddBasic[i].value == pageLang) {
+                ddBasic[i].selected = true;
+                fFound = true;
+            }
+        }
+
+        if (fFound == true) {
+            $('#divLanguageDropDown').ddslick({
+                data: ddBasic,
+                
+                selectText: "Select language",
+                imagePosition: "left",
+                onSelected: function (data) {
+                    if (fFirst == false) {
+                        window.location = "/seterra/" + data.selectedData.value;
+                    }
+                    fFirst = false;
+                }
+            })
+
+        }
+        else {
+            $('#divLanguageDropDown').hide;
+        }
+
+        $(".dd-selected-image").attr("alt", "Flag " + pageLang)
+
+    })
+</script>
+
+        <div id="contentwrapper2">
+
+            <div id="leftcol2" style="padding-top: 20px;">
+                <div id="maincontent" style="padding-left: 15px; padding-top: 20px;">
+                    <div id="breadcrumbs" style="margin-left: 0px;">
+                        <span id="breadcrumbs1"><a href='../../../seterra.html' >Home</a> >> <a href='../../fr.html'>Seterra - Jeux de Géographie</a> >> <a href='../blog.html'>Blog de Seterra</a> >> </span>
+                    </div>
+                    <h1 class="h1large"> 
+                        Nouvelle fonctionnalité : le mode sombre&nbsp;!
+                    </h1>
+                    
+
+                    <div class="maintext">
+                        <p><b>À l’origine, le site Seterra a été conçu en couleurs claires, mais certains pensent que les couleurs plus sombres sont plus agréables à l’œil, ou plus confortables à regarder. Désormais vous pouvez choisir entre le mode sombre ou le mode clair sur le site Seterra !</b></p>
+
+<img src="../../images/system/dark-mode2.png" alt="dark mode"><br>
+
+<p>Pour activer le mode sombre, cliquez sur la case à cocher dans le coin supérieur droit. Si vous visitez le site à l’aide d’un navigateur sur votre téléphone, vous devrez au lieu de cela chercher le bouton du mode sombre dans le menu déroulant.</p>
+
+<img src="https://www.geoguessr.com/images/system/dark-mode.png" alt="mode sombre">
+
+<p>Le mode sombre est par ailleurs légèrement plus compact que le mode clair, ce qui nécessite moins de défilement à l’écran.</p>
+                        
+<div>
+
+    
+</div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div id="rtcol2" style="padding-top: 20px">
+                
+
+                <div id="panBlog">
+	
+                    <div class="divBlog" style="width:180px">
+                        <a href='../blog.html'>
+                            <h4>Blog de Seterra</h4>
+                        </a>
+                        
+<div>
+    
+            <div style="padding-bottom:13px;">
+                <span id="newscomp_repNews_ctl00_lblDate" style="font-size:10px;color:gray">31/08/2021<br/></span>
+                <a id="newscomp_repNews_ctl00_lnkNews" title="Foire Aux Questions (FAQ)" href="faq-fr.html">Foire Aux Questions (FAQ)</a><br />
+            </div>
+        
+            <div style="padding-bottom:13px;">
+                <span id="newscomp_repNews_ctl01_lblDate" style="font-size:10px;color:gray">22/04/2021<br/></span>
+                <a id="newscomp_repNews_ctl01_lnkNews" title="Trucs et astuces dans Seterra" href="trucs.html">Trucs et astuces dans Seterra</a><br />
+            </div>
+        
+            <div style="padding-bottom:13px;">
+                <span id="newscomp_repNews_ctl02_lblDate" style="font-size:10px;color:gray">16/04/2021<br/></span>
+                <a id="newscomp_repNews_ctl02_lnkNews" title="Les modes de jeu du site Seterra" href="modes-de-jeu.html">Les modes de jeu du site Seterra</a><br />
+            </div>
+        
+            <div style="padding-bottom:13px;">
+                <span id="newscomp_repNews_ctl03_lblDate" style="font-size:10px;color:gray">13/04/2021<br/></span>
+                <a id="newscomp_repNews_ctl03_lnkNews" title="Entretien avec Marianne Wartoft, fondatrice de Seterra" href="entretien.html">Entretien avec Marianne Wartoft, fondatrice de Seterra</a><br />
+            </div>
+        
+            <div style="padding-bottom:13px;">
+                <span id="newscomp_repNews_ctl04_lblDate" style="font-size:10px;color:gray">20/02/2021<br/></span>
+                <a id="newscomp_repNews_ctl04_lnkNews" title="Nouvelle fonctionnalité : le mode sombre&amp;nbsp;!" href="mode-sombre.html">Nouvelle fonctionnalité : le mode sombre&nbsp;!</a><br />
+            </div>
+        
+</div>
+
+
+                    </div>
+                
+</div>
+
+            </div>
+            <div id="panFeatured">
+	
+                <div class="featured">
+                    
+<div>
+
+    
+               <div class="featureditem">
+                   <a id="featured_repFeatured_ctl00_lnkItem" class="featured" href="../vgp/3246.html">
+                        <div class="divFeaturedImage">
+                            <img id="featured_repFeatured_ctl00_imgImage" title="France métropolitaine : les départements" class="featuredimage" loading="lazy" src="../../mapimage/thumbs150/3246.png" alt="France métropolitaine : les départements" height="100" width="150" border="0" />
+                        </div>
+                        <h4 style="margin:0px"><span id="featured_repFeatured_ctl00_lblTitle">France métropolitaine : les départements</span></h4>
+                        <p style="margin:0px"><span id="featured_repFeatured_ctl00_lblDescription">Quiz de géographie</span></p>
+                        <div style="clear:both"></div>
+                    </a>
+               </div>
+        
+</div>
+
+
+                </div>
+            
+</div>
+
+            <div style="clear: both;">
+                <br />
+                <br />
+
+
+                <div class="keywords">
+                    
+                </div>
+
+            </div>
+
+        </div>
+        
+
+<div id="footer">
+    <div id="footercontent">
+        <div class="smediawrapper">
+            <a href="https://www.twitch.tv/directory/game/Seterra/videos/all" style="text-decoration: none;">
+                <img alt="Twitch" class="smedia smediatwitch" src="../../images/system/twitch.png" style="width: 35px; height: 35px;" /></a>
+            <a href="https://discord.gg/kW8Y3AG9wk" style="text-decoration: none;">
+                <img alt="Discord" class="smedia " src="../../images/system/discord.png" style="width: 35px; height: 35px;" /></a>
+            <a href="https://www.facebook.com/seterra.geography" style="text-decoration: none;">
+                <img alt="Facebook" class="smedia" src="../../images/system/facebook.png" style="width: 35px; height: 35px;" /></a>
+            <a href="https://twitter.com/SeterraGeo">
+                <img alt="Twitter" class="smedia" src="../../images/system/twitter.png" style="width: 35px; height: 35px;" /></a>
+            <a href="https://www.youtube.com/c/seterrageography">
+                <img alt="Youtube" class="smedia" src="../../images/system/youtube3.png" style="width: 35px; height: 35px;" /></a>
+            <a href="https://bit.ly/2SntfBU">
+                <img alt="Instagram" class="smedia" src="../../images/system/instagram.png" style="width: 35px; height: 35px;" /></a>
+        </div>
+        <div style="max-width: 900px;">
+            <div class="footerMenu"><div class="title">Help Center</div>  <ul> <li><a href="https://www.geoguessr.com/seterra/en/p/contact.html">Contact Us</a></li> <li><a href="https://www.geoguessr.com/seterra/en/p/faq.html">FAQ (Website)</a></li> <li><a href="https://www.geoguessr.com/seterra/en/p/app-faq.html">FAQ (App)</a></li> <li><a href="https://www.geoguessr.com/seterra/en/p/tips-and-tricks.html">Tips & Tricks</a></li> <li><a href="https://www.geoguessr.com/seterra/pro.html">Pricing</a></li> <li><a href="https://www.geoguessr.com/seterra/en/blog.html">Blog</a></li> </ul>  </div>  <div class="footerMenu"><div class="title">&nbsp;</div>  <ul>  <li><a href="https://www.geoguessr.com/seterra/en/p/seterra-modes.html">Game Modes</a></li> <li><a href="https://www.geoguessr.com/seterra/en/p/seterra-highscores.html">Personal Leaderboards</a></li> <li><a href="https://www.geoguessr.com/seterra/en/p/custom-quizzes.html">Create Custom Quizzes</a></li> <li><a href="https://www.geoguessr.com/seterra/en/p/public-leaderboards.html">Public Leaderboards</a></li> <li><a href="https://www.geoguessr.com/seterra/en/p/custom-locations.html">Add Custom Locations</a></li>    </ul>  </div>  <div class="footerMenu"><div class="title">Resources</div> <ul> <li><a href="https://www.geoguessr.com/seterra/en/l/pdf%EF%B9%96img=1.html">Printables</a></li> <li><a href="https://www.geoguessr.com/seterra/en/l/bla.html">Blank Maps</a></li> <li><a href="https://www.geoguessr.com/seterra/en/p/user-quizzes.html">User Generated Quizzes</a></li> <li><a href="https://www.geoguessr.com/seterra/en-an.html">Science Quizzes</a></li> <li><a href="https://www.geoguessr.com/seterra/en/p/top-scores.html">Top Scores</a></li> <li><a href="https://www.speedrun.com/seterra">Speedrun.com</a></li> </ul>  </div>  <div class="footerMenu"><div class="title">About</div>  <ul> <li><a href="https://www.geoguessr.com/seterra/terms.aspx.html">Terms & Conditions</a></li> <li><a href="https://www.geoguessr.com/seterra/privacy.aspx.html">Privacy Policy</a></li> <li><a href="https://www.geoguessr.com/seterra/en/p/contact.html">Contact Us</a></li> </ul>  </div>  <div style="clear:both"></div><br><br><span style="padding-left:20px;font-size:13px;color:#AAAAAA">2/1/2023 10:28:46 PM</span>
+        </div>
+        <div style="clear:both"></div>
+        <div id="ccpa" style="display: none; cursor: pointer;margin-top:20px;">Do not share my Personal Information.</div>
+    </div>
+</div>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,106 @@
+body {
+    direction:rtl;
+
+}
+
+#questionFlag {
+    float: left;
+    margin-left: 25px;
+}
+
+.gameflag {
+    float: right;
+    margin-left: 20px;
+}
+
+#divLanguageDropDown {
+    direction: ltr;
+}
+
+#currQuestion {
+    text-align: right;
+}
+
+#divAvailable {
+    display: none;
+}
+
+#tblTop10 {
+    direction: ltr;
+}
+
+
+element.style {
+}
+
+#leftcol {
+    float: left;
+    overflow: hidden;
+}
+
+
+#rtcol {
+    float: left;
+    margin-left: 0px;
+    margin-right: 5px;
+}
+
+
+
+
+
+#imgInFlag {
+    display: none;
+    opacity: 0.01;
+    pointer-events: none;
+}
+
+.anicircle {
+    display: none;
+}
+
+.anicircle2 {
+    display: none;
+}
+
+#breadcrumbs {
+    display: none;
+}
+
+#HUD {
+    text-align: right;
+    padding-right: 20px;
+}
+
+.exicon {
+    float: right;
+    margin-left: 8px;
+}
+
+.sectionheadtext {
+    float: right;
+}
+
+#mainnav {
+    max-width: 700px;
+}
+
+#footer {
+    direction: ltr;
+}
+
+
+@media (max-width: 1250px) {
+    #mainnav {
+        margin-right: 20px;
+        max-width: 900px;
+    }
+}
+
+@media (max-width: 1000px) {
+    #mainnav {
+        margin-right: 20px;
+        width: 100%;
+        max-width: 1000px;
+    }
+}

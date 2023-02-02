@@ -1,0 +1,32 @@
+g.q:hover:not(.answered):not(.flashing) polygon:not(.showbefore):not(.misc), g.q:hover:not(.answered):not(.flashing) circle:not(.city):not(.city1):not(.city2):not(.showbefore):not(.showafter):not(.misc), g.q:hover:not(.answered):not(.flashing) path:not(.showbefore):not(.showafter), g.q:hover:not(.answered):not(.flashing) ellipse:not(.city):not(.city1):not(.city2):not(.showbefore):not(.showafter):not(.misc) {
+    fill: #37915a;
+    stroke-width: 1px;
+}
+
+g.q:hover:not(.answered) .semitransparent {
+    fill-opacity: 0.12;
+    fill: #FFFFFF !important;
+}
+
+
+
+g.prompted .semitransparent {
+    opacity: 0.18;
+    stroke-opacity: 0;
+    fill: #FFFFFF !important;
+}
+
+
+g.q:hover:not(.answered) .semitransparent2 {
+    fill-opacity: 0.2;
+    opacity: 1;
+    stroke-opacity: 0;
+    fill: #FFFFFF !important;
+}
+
+.semitransparent.answered {
+    stroke-width: 1px;
+    stroke: #888888;
+    stroke-opacity: 0.1;
+    fill-opacity: 0.1;
+}
